@@ -34,7 +34,7 @@ class CallgraphInfoNode:
         match = pattern.match(line)
         if not match:
             raise Exception(f"Couldn't parse the line: '{line}'")
-        print(match.groupdict())
+
         return cls(**match.groupdict())
 
 
