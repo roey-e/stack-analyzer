@@ -3,7 +3,6 @@ import re
 from enum import Enum
 from typing import ClassVar, List, Optional
 
-from .stack_usage import StackUsageQualifier
 from .util import get_optional_arg, is_type_optional
 
 
@@ -13,7 +12,7 @@ class CallgraphInfoNode:
     declared_name: str
     origin: str
     stack_usage: Optional[int] = None
-    stack_usage_qualifier: Optional[StackUsageQualifier] = None
+    stack_usage_qualifier: str = None
 
     LINE_FORMAT: ClassVar[
         str
