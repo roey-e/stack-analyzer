@@ -1,0 +1,20 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "stack-analyzer"
+description = ""
+readme = "README.md"
+requires-python = ">=3.7"
+license = "MIT"
+keywords = []
+authors = [
+  { name = "roey-e" },
+]
+classifiers = []
+dependencies = []
+dynamic = ["version"]
+
+[tool.hatch.version]
+path = "stack_analyzer/__about__.py"
