@@ -55,29 +55,3 @@ class CallgraphInfoEdge:
             raise Exception(f"Couldn't parse the line: '{line}'")
 
         return cls(**match.groupdict())
-
-
-@dataclasses.dataclass
-class CallgraphInfoGraph:
-    title: str
-    nodes: List[CallgraphInfoNode]
-    edges: List[CallgraphInfoEdge]
-
-    TITLE_FORMAT: ClassVar[str] = r"graph: \{ title: \"(?P<title>\S*)\""
-
-    @classmethod
-    def parse_text(cls, text: str) -> "CallgraphInfoGraph":
-        pattern = re.compile(cls.TITLE_FORMAT)
-        match = pattern.match(text)
-        if not match:
-            raise Exception(f"Couldn't parse the graph:\n'''{text}'''")
-
-        nodes = []
-        edges = []
-        for line in text.splitlines():
-            if line.strip().startswith("node"):
-                nodes.append(CallgraphInfoNode.parse_line(line))
-            elif line.strip().startswith("edge"):
-                edges.append(CallgraphInfoEdge.parse_line(line))
-
-        return cls(title=match.groupdict()["title"], nodes=nodes, edges=edges)

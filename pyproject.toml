@@ -13,7 +13,9 @@ authors = [
   { name = "roey-e" },
 ]
 classifiers = []
-dependencies = []
+dependencies = [
+  "networkx"
+]
 dynamic = ["version"]
 
 [tool.hatch.version]
