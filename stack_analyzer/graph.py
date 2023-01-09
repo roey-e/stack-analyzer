@@ -6,18 +6,18 @@ import networkx as nx
 from .callgraph_info import CallgraphInfoEdge, CallgraphInfoNode
 
 
-class CallgraphInfoGraph:
+class CallgraphInfoGraph(nx.DiGraph):
 
     TITLE_FORMAT: ClassVar[str] = r"graph: \{ title: \"(?P<title>\S*)\""
 
     def __init__(self, title: str) -> None:
-        self.graph = nx.DiGraph(title=title)
+        super().__init__(title=title)
 
     def add_node(self, node: CallgraphInfoNode) -> None:
-        self.graph.add_node(node.unique_name, data=node)
+        super().add_node(node.unique_name, data=node)
 
     def add_edge(self, edge: CallgraphInfoEdge) -> None:
-        self.graph.add_edge(edge.sourcename, edge.targername, data=edge)
+        super().add_edge(edge.sourcename, edge.targername, data=edge)
 
     @classmethod
     def from_text(cls, text: str) -> "CallgraphInfoGraph":
