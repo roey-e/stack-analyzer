@@ -3,7 +3,8 @@ from typing import ClassVar
 
 import networkx as nx
 
-from .callgraph_info import CallgraphInfoEdge, CallgraphInfoNode
+from .edge import CallgraphInfoEdge
+from .node import CallgraphInfoNode
 
 
 class CallgraphInfoGraph(nx.DiGraph):
@@ -14,7 +15,7 @@ class CallgraphInfoGraph(nx.DiGraph):
         super().__init__(title=title)
 
     def add_node(self, node: CallgraphInfoNode) -> None:
-        super().add_node(node.unique_name, data=node)
+        super().add_node(node.name, data=node)
 
     def add_edge(self, edge: CallgraphInfoEdge) -> None:
         super().add_edge(edge.sourcename, edge.targername, data=edge)
@@ -30,8 +31,8 @@ class CallgraphInfoGraph(nx.DiGraph):
 
         for line in text.splitlines():
             if line.strip().startswith("node"):
-                graph.add_node(CallgraphInfoNode.parse_line(line))
+                graph.add_node(CallgraphInfoNode.from_line(line))
             elif line.strip().startswith("edge"):
-                graph.add_edge(CallgraphInfoEdge.parse_line(line))
+                graph.add_edge(CallgraphInfoEdge.from_line(line))
 
         return graph
