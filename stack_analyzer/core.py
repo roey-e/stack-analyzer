@@ -1,5 +1,7 @@
+from collections.abc import Iterable, Iterator
+from functools import reduce
 from itertools import chain
-from typing import List, Tuple
+from typing import List, Optional, Tuple
 
 import networkx as nx
 
@@ -14,10 +16,11 @@ class WeightedCallgraph(nx.DiGraph):
         weighted_graph = cls()
 
         dummy_edges: List[Tuple[str, str]] = []
-        for node in graph.nodes:
+        for node, attr in graph.nodes(data=True):
             dummy_node = cls.get_dummy_node(node)
 
-            weighted_graph.add_nodes_from([node, dummy_node])
+            weighted_graph.add_node(node, **attr)
+            weighted_graph.add_node(dummy_node)
 
             dummy_edges.append((dummy_node, node))
 
@@ -48,3 +51,27 @@ class WeightedCallgraph(nx.DiGraph):
         nodes.extend(nx.descendants(self, source))
 
         return self.subgraph(nodes)
+
+    def make_callstack(self, path: Iterable[str]) -> Iterator[Tuple[str, int]]:
+        for node in path:
+            if self.is_dummy_node(node):
+                continue
+            yield (node, self.nodes[node]["stack_usage"])
+
+    def max_stack_usage_callstack(
+        self, source: Optional[str] = None
+    ) -> List[Tuple[str, int]]:
+        graph = self.subgraph_from(source) if source else self
+
+        if not nx.is_directed_acyclic_graph(graph):
+            raise RuntimeError("Recursions")
+
+        path = nx.dag_longest_path(graph)
+
+        return list(self.make_callstack(path))
+
+    def max_stack_usage(self, source: Optional[str] = None) -> List[Tuple[str, int]]:
+        return reduce(
+            lambda x, y: x[1] + y[1],
+            self.max_stack_usage_callstack(source),
+        )
