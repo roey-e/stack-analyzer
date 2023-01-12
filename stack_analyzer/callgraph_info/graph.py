@@ -1,3 +1,4 @@
+import dataclasses
 import re
 from typing import ClassVar
 
@@ -15,10 +16,10 @@ class CallgraphInfoGraph(nx.DiGraph):
         super().__init__(title=title)
 
     def add_node(self, node: CallgraphInfoNode) -> None:
-        super().add_node(node.name, data=node)
+        super().add_node(node.name, **dataclasses.asdict(node))
 
     def add_edge(self, edge: CallgraphInfoEdge) -> None:
-        super().add_edge(edge.sourcename, edge.targername, data=edge)
+        super().add_edge(edge.sourcename, edge.targername, **dataclasses.asdict(edge))
 
     @classmethod
     def from_text(cls, text: str) -> "CallgraphInfoGraph":
