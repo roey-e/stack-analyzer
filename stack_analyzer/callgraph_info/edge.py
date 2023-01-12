@@ -12,4 +12,4 @@ class CallgraphInfoEdge(ParsedDataclass):
 
     LINE_FORMAT: ClassVar[
         str
-    ] = r"edge: \{ sourcename: \"(?P<sourcename>[\w\d_]+)\" targetname: \"(?P<targername>[\w\d_]+)\"( label: \"(?P<origin>\S*)\")? \}"
+    ] = r"edge: \{ sourcename: \"(?P<sourcename>\S+)\" targetname: \"(?P<targername>\S+)\"( label: \"(?P<origin>\S*)\")? \}"

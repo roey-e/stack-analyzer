@@ -64,7 +64,7 @@ class WeightedCallgraph(nx.DiGraph):
         graph = self.subgraph_from(source) if source else self
 
         if not nx.is_directed_acyclic_graph(graph):
-            raise RuntimeError("Recursions")
+            raise Exception("Recursions")
 
         path = nx.dag_longest_path(graph)
 

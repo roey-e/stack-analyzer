@@ -14,4 +14,4 @@ class CallgraphInfoNode(ParsedDataclass):
 
     LINE_FORMAT: ClassVar[
         str
-    ] = r"node: \{ title: \"(?P<name>[\w\d_]+)\" label: \"(?P<declared_name>[\w\d_]+)\\n(?P<origin>\S*)(\\n(?P<stack_usage>\d+) bytes \((?P<stack_usage_qualifier>[\w+,]+)\))?\".* \}"
+    ] = r"node: \{ title: \"(?P<name>\S+)\" label: \"(?P<declared_name>[\w\d_]+)\\n(?P<origin>\S*)(\\n(?P<stack_usage>\d+) bytes \((?P<stack_usage_qualifier>[\w,]+)\))?\".* \}"
