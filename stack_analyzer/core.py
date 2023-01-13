@@ -67,11 +67,11 @@ class WeightedCallgraph(nx.DiGraph):
             raise Exception("Recursions")
 
         path = nx.dag_longest_path(graph)
+        callstack = list(self.make_callstack(path))
 
-        return list(self.make_callstack(path))
+        return callstack
 
     def max_stack_usage(self, source: Optional[str] = None) -> List[Tuple[str, int]]:
-        return reduce(
-            lambda x, y: x[1] + y[1],
-            self.max_stack_usage_callstack(source),
+        return sum(
+            stack_usage for node, stack_usage in self.max_stack_usage_callstack(source)
         )
