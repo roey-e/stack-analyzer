@@ -1,0 +1,432 @@
+graph: { title: "Action.c"
+node: { title: "Action.c:actionToggleKernelThreads" label: "actionToggleKernelThreads\nAction.c:214:22\n0 bytes (static)" }
+node: { title: "Action.c:actionToggleUserlandThreads" label: "actionToggleUserlandThreads\nAction.c:221:22\n0 bytes (static)" }
+node: { title: "Action.c:actionToggleRunningInContainer" label: "actionToggleRunningInContainer\nAction.c:228:22\n0 bytes (static)" }
+node: { title: "Action.c:actionToggleProgramPath" label: "actionToggleProgramPath\nAction.c:235:22\n0 bytes (static)" }
+node: { title: "Action.c:actionToggleMergedCommand" label: "actionToggleMergedCommand\nAction.c:242:22\n0 bytes (static)" }
+node: { title: "Action.c:actionToggleHideMeters" label: "actionToggleHideMeters\nAction.c:258:22\n0 bytes (static)" }
+node: { title: "Action.c:actionNextScreen" label: "actionNextScreen\nAction.c:331:22\n0 bytes (static)" }
+node: { title: "Action.c:actionPrevScreen" label: "actionPrevScreen\nAction.c:341:22\n0 bytes (static)" }
+node: { title: "Action.c:actionQuit" label: "actionQuit\nAction.c:370:22\n0 bytes (static)" }
+node: { title: "Action.c:actionTogglePauseProcessUpdate" label: "actionTogglePauseProcessUpdate\nAction.c:522:22\n0 bytes (static)" }
+node: { title: "Action.c:actionSortByTime" label: "actionSortByTime\nAction.c:210:22\n16 bytes (static)" }
+node: { title: "ScreenSettings_setSortKey" label: "ScreenSettings_setSortKey\nSettings.h:127:6" shape : ellipse }
+edge: { sourcename: "Action.c:actionSortByTime" targetname: "ScreenSettings_setSortKey" label: "Action.c:158:4" }
+node: { title: "Action.c:actionSortByCPU" label: "actionSortByCPU\nAction.c:206:22\n16 bytes (static)" }
+edge: { sourcename: "Action.c:actionSortByCPU" targetname: "ScreenSettings_setSortKey" label: "Action.c:158:4" }
+node: { title: "Action.c:actionSortByPID" label: "actionSortByPID\nAction.c:198:22\n16 bytes (static)" }
+edge: { sourcename: "Action.c:actionSortByPID" targetname: "ScreenSettings_setSortKey" label: "Action.c:158:4" }
+node: { title: "Action.c:actionSortByMemory" label: "actionSortByMemory\nAction.c:202:22\n16 bytes (static)" }
+edge: { sourcename: "Action.c:actionSortByMemory" targetname: "ScreenSettings_setSortKey" label: "Action.c:158:4" }
+node: { title: "Action_follow" label: "Action_follow\nAction.c:449:15\n32 bytes (static)" }
+node: { title: "MainPanel_selectedPid" label: "MainPanel_selectedPid\nMainPanel.h:38:5" shape : ellipse }
+edge: { sourcename: "Action_follow" targetname: "MainPanel_selectedPid" label: "Action.c:450:24" }
+node: { title: "Panel_setSelectionColor" label: "Panel_setSelectionColor\nPanel.h:101:6" shape : ellipse }
+edge: { sourcename: "Action_follow" targetname: "Panel_setSelectionColor" label: "Action.c:451:4" }
+node: { title: "Action.c:actionRedraw" label: "actionRedraw\nAction.c:517:22\n16 bytes (static)" }
+node: { title: "wclear" label: "wclear\n/usr/include/curses.h:796:28" shape : ellipse }
+edge: { sourcename: "Action.c:actionRedraw" targetname: "wclear" label: "Action.c:518:4" }
+node: { title: "Action.c:actionShowLocks" label: "actionShowLocks\nAction.c:476:22\n32 bytes (static)" }
+node: { title: "Panel_getSelected" label: "Panel_getSelected\nPanel.h:121:9" shape : ellipse }
+edge: { sourcename: "Action.c:actionShowLocks" targetname: "Panel_getSelected" label: "Action.c:477:34" }
+node: { title: "ProcessLocksScreen_new" label: "ProcessLocksScreen_new\nProcessLocksScreen.h:48:21" shape : ellipse }
+edge: { sourcename: "Action.c:actionShowLocks" targetname: "ProcessLocksScreen_new" label: "Action.c:480:30" }
+node: { title: "InfoScreen_run" label: "InfoScreen_run\nInfoScreen.h:53:6" shape : ellipse }
+edge: { sourcename: "Action.c:actionShowLocks" targetname: "InfoScreen_run" label: "Action.c:481:4" }
+node: { title: "ProcessLocksScreen_delete" label: "ProcessLocksScreen_delete\nProcessLocksScreen.h:50:6" shape : ellipse }
+edge: { sourcename: "Action.c:actionShowLocks" targetname: "ProcessLocksScreen_delete" label: "Action.c:482:4" }
+edge: { sourcename: "Action.c:actionShowLocks" targetname: "wclear" label: "Action.c:483:4" }
+node: { title: "CRT_enableDelay" label: "CRT_enableDelay\nCRT.h:204:6" shape : ellipse }
+edge: { sourcename: "Action.c:actionShowLocks" targetname: "CRT_enableDelay" label: "Action.c:484:4" }
+node: { title: "Action.c:actionShowCommandScreen" label: "actionShowCommandScreen\nAction.c:744:22\n32 bytes (static)" }
+edge: { sourcename: "Action.c:actionShowCommandScreen" targetname: "Panel_getSelected" label: "Action.c:745:28" }
+node: { title: "CommandScreen_new" label: "CommandScreen_new\nCommandScreen.h:15:16" shape : ellipse }
+edge: { sourcename: "Action.c:actionShowCommandScreen" targetname: "CommandScreen_new" label: "Action.c:749:28" }
+edge: { sourcename: "Action.c:actionShowCommandScreen" targetname: "InfoScreen_run" label: "Action.c:750:4" }
+node: { title: "CommandScreen_delete" label: "CommandScreen_delete\nCommandScreen.h:17:6" shape : ellipse }
+edge: { sourcename: "Action.c:actionShowCommandScreen" targetname: "CommandScreen_delete" label: "Action.c:751:4" }
+edge: { sourcename: "Action.c:actionShowCommandScreen" targetname: "wclear" label: "Action.c:752:4" }
+edge: { sourcename: "Action.c:actionShowCommandScreen" targetname: "CRT_enableDelay" label: "Action.c:753:4" }
+node: { title: "Action.c:addUserToVector" label: "addUserToVector\nAction.c:104:13\n32 bytes (static)" }
+node: { title: "ListItem_new" label: "ListItem_new\nListItem.h:30:11" shape : ellipse }
+edge: { sourcename: "Action.c:addUserToVector" targetname: "ListItem_new" label: "Action.c:107:31" }
+node: { title: "Panel_add" label: "Panel_add\nPanel.h:111:6" shape : ellipse }
+edge: { sourcename: "Action.c:addUserToVector" targetname: "Panel_add" label: "Action.c:107:4" }
+node: { title: "Action.c:actionToggleTreeView" label: "actionToggleTreeView\nAction.c:249:22\n16 bytes (static)" }
+node: { title: "ProcessList_expandTree" label: "ProcessList_expandTree\nProcessList.h:113:6" shape : ellipse }
+edge: { sourcename: "Action.c:actionToggleTreeView" targetname: "ProcessList_expandTree" label: "Action.c:254:7" }
+node: { title: "Action.c:actionShowEnvScreen" label: "actionShowEnvScreen\nAction.c:731:22\n32 bytes (static)" }
+edge: { sourcename: "Action.c:actionShowEnvScreen" targetname: "Panel_getSelected" label: "Action.c:732:28" }
+node: { title: "EnvScreen_new" label: "EnvScreen_new\nEnvScreen.h:15:12" shape : ellipse }
+edge: { sourcename: "Action.c:actionShowEnvScreen" targetname: "EnvScreen_new" label: "Action.c:736:20" }
+edge: { sourcename: "Action.c:actionShowEnvScreen" targetname: "InfoScreen_run" label: "Action.c:737:4" }
+node: { title: "EnvScreen_delete" label: "EnvScreen_delete\nEnvScreen.h:17:6" shape : ellipse }
+edge: { sourcename: "Action.c:actionShowEnvScreen" targetname: "EnvScreen_delete" label: "Action.c:738:4" }
+edge: { sourcename: "Action.c:actionShowEnvScreen" targetname: "wclear" label: "Action.c:739:4" }
+edge: { sourcename: "Action.c:actionShowEnvScreen" targetname: "CRT_enableDelay" label: "Action.c:740:4" }
+node: { title: "Action.c:tagAllChildren" label: "tagAllChildren\nAction.c:120:13\n48 bytes (static)" }
+node: { title: "Panel_get" label: "Panel_get\nPanel.h:117:9" shape : ellipse }
+edge: { sourcename: "Action.c:tagAllChildren" targetname: "Panel_get" label: "Action.c:124:31" }
+edge: { sourcename: "Action.c:tagAllChildren" targetname: "Action.c:tagAllChildren" label: "Action.c:126:10" }
+node: { title: "Panel_size" label: "Panel_size\nPanel.h:129:5" shape : ellipse }
+edge: { sourcename: "Action.c:tagAllChildren" targetname: "Panel_size" label: "Action.c:123:24" }
+node: { title: "Action.c:actionTagAllChildren" label: "actionTagAllChildren\nAction.c:722:22\n32 bytes (static)" }
+edge: { sourcename: "Action.c:actionTagAllChildren" targetname: "Panel_getSelected" label: "Action.c:723:28" }
+edge: { sourcename: "Action.c:actionTagAllChildren" targetname: "Action.c:tagAllChildren" label: "Action.c:727:4" }
+node: { title: "Action.c:actionUntagAll" label: "actionUntagAll\nAction.c:714:22\n32 bytes (static)" }
+edge: { sourcename: "Action.c:actionUntagAll" targetname: "Panel_get" label: "Action.c:716:31" }
+edge: { sourcename: "Action.c:actionUntagAll" targetname: "Panel_size" label: "Action.c:715:24" }
+node: { title: "Action.c:actionIncFilter" label: "actionIncFilter\nAction.c:276:22\n32 bytes (static)" }
+node: { title: "IncSet_activate" label: "IncSet_activate\nIncSet.h:59:6" shape : ellipse }
+edge: { sourcename: "Action.c:actionIncFilter" targetname: "IncSet_activate" label: "Action.c:278:4" }
+node: { title: "Action.c:actionInvertSortOrder" label: "actionInvertSortOrder\nAction.c:305:22\n32 bytes (static)" }
+node: { title: "ScreenSettings_invertSortOrder" label: "ScreenSettings_invertSortOrder\nSettings.h:125:6" shape : ellipse }
+edge: { sourcename: "Action.c:actionInvertSortOrder" targetname: "ScreenSettings_invertSortOrder" label: "Action.c:306:4" }
+node: { title: "Action.c:actionSetup" label: "actionSetup\nAction.c:455:22\n32 bytes (static)" }
+node: { title: "ScreenManager_new" label: "ScreenManager_new\nScreenManager.h:33:16" shape : ellipse }
+edge: { sourcename: "Action.c:actionSetup" targetname: "ScreenManager_new" label: "Action.c:86:25" }
+node: { title: "CategoriesPanel_new" label: "CategoriesPanel_new\nCategoriesPanel.h:28:18" shape : ellipse }
+edge: { sourcename: "Action.c:actionSetup" targetname: "CategoriesPanel_new" label: "Action.c:87:4" }
+node: { title: "ScreenManager_run" label: "ScreenManager_run\nScreenManager.h:47:6" shape : ellipse }
+edge: { sourcename: "Action.c:actionSetup" targetname: "ScreenManager_run" label: "Action.c:88:4" }
+node: { title: "ScreenManager_delete" label: "ScreenManager_delete\nScreenManager.h:35:6" shape : ellipse }
+edge: { sourcename: "Action.c:actionSetup" targetname: "ScreenManager_delete" label: "Action.c:89:4" }
+node: { title: "CRT_setMouse" label: "CRT_setMouse\nCRT.h:189:6" shape : ellipse }
+edge: { sourcename: "Action.c:actionSetup" targetname: "CRT_setMouse" label: "Action.c:91:7" }
+node: { title: "Header_writeBackToSettings" label: "Header_writeBackToSettings\nHeader.h:36:6" shape : ellipse }
+edge: { sourcename: "Action.c:actionSetup" targetname: "Header_writeBackToSettings" label: "Action.c:92:7" }
+node: { title: "Action.c:actionIncSearch" label: "actionIncSearch\nAction.c:283:22\n32 bytes (static)" }
+node: { title: "IncSet_reset" label: "IncSet_reset\nIncSet.h:49:6" shape : ellipse }
+edge: { sourcename: "Action.c:actionIncSearch" targetname: "IncSet_reset" label: "Action.c:284:4" }
+edge: { sourcename: "Action.c:actionIncSearch" targetname: "IncSet_activate" label: "Action.c:285:4" }
+node: { title: "Action.c:actionExpandOrCollapseAllBranches" label: "actionExpandOrCollapseAllBranches\nAction.c:263:22\n16 bytes (static)" }
+node: { title: "ProcessList_collapseAllBranches" label: "ProcessList_collapseAllBranches\nProcessList.h:115:6" shape : ellipse }
+edge: { sourcename: "Action.c:actionExpandOrCollapseAllBranches" targetname: "ProcessList_collapseAllBranches" label: "Action.c:270:7" }
+edge: { sourcename: "Action.c:actionExpandOrCollapseAllBranches" targetname: "ProcessList_expandTree" label: "Action.c:272:7" }
+node: { title: "Action.c:actionTag" label: "actionTag\nAction.c:507:22\n32 bytes (static)" }
+edge: { sourcename: "Action.c:actionTag" targetname: "Panel_getSelected" label: "Action.c:508:28" }
+node: { title: "Process_toggleTag" label: "Process_toggleTag\nProcess.h:381:6" shape : ellipse }
+edge: { sourcename: "Action.c:actionTag" targetname: "Process_toggleTag" label: "Action.c:512:4" }
+node: { title: "Panel_onKey" label: "Panel_onKey\nPanel.h:137:6" shape : ellipse }
+edge: { sourcename: "Action.c:actionTag" targetname: "Panel_onKey" label: "Action.c:513:4" }
+node: { title: "Action.c:actionCollapseIntoParent" label: "actionCollapseIntoParent\nAction.c:319:22\n48 bytes (static)" }
+edge: { sourcename: "Action.c:actionCollapseIntoParent" targetname: "Panel_getSelected" label: "Action.c:141:34" }
+edge: { sourcename: "Action.c:actionCollapseIntoParent" targetname: "Panel_get" label: "Action.c:147:31" }
+node: { title: "Panel_setSelected" label: "Panel_setSelected\nPanel.h:131:6" shape : ellipse }
+edge: { sourcename: "Action.c:actionCollapseIntoParent" targetname: "Panel_setSelected" label: "Action.c:150:10" }
+edge: { sourcename: "Action.c:actionCollapseIntoParent" targetname: "Panel_size" label: "Action.c:146:24" }
+node: { title: "Action.c:actionHigherPriority" label: "actionHigherPriority\nAction.c:289:22\n48 bytes (static)" }
+node: { title: "Settings_isReadonly" label: "Settings_isReadonly\nSettings.h:131:6" shape : ellipse }
+edge: { sourcename: "Action.c:actionHigherPriority" targetname: "Settings_isReadonly" label: "Action.c:290:8" }
+node: { title: "MainPanel_foreachProcess" label: "MainPanel_foreachProcess\nMainPanel.h:40:6" shape : ellipse }
+edge: { sourcename: "Action.c:actionHigherPriority" targetname: "MainPanel_foreachProcess" label: "Action.c:98:14" }
+node: { title: "beep" label: "beep\n/usr/include/curses.h:576:28" shape : ellipse }
+edge: { sourcename: "Action.c:actionHigherPriority" targetname: "beep" label: "Action.c:100:7" }
+node: { title: "Action.c:actionLsof" label: "actionLsof\nAction.c:460:22\n32 bytes (static)" }
+edge: { sourcename: "Action.c:actionLsof" targetname: "Settings_isReadonly" label: "Action.c:461:8" }
+edge: { sourcename: "Action.c:actionLsof" targetname: "Panel_getSelected" label: "Action.c:464:34" }
+node: { title: "OpenFilesScreen_new" label: "OpenFilesScreen_new\nOpenFilesScreen.h:24:18" shape : ellipse }
+edge: { sourcename: "Action.c:actionLsof" targetname: "OpenFilesScreen_new" label: "Action.c:468:27" }
+edge: { sourcename: "Action.c:actionLsof" targetname: "InfoScreen_run" label: "Action.c:469:4" }
+node: { title: "OpenFilesScreen_delete" label: "OpenFilesScreen_delete\nOpenFilesScreen.h:26:6" shape : ellipse }
+edge: { sourcename: "Action.c:actionLsof" targetname: "OpenFilesScreen_delete" label: "Action.c:470:4" }
+edge: { sourcename: "Action.c:actionLsof" targetname: "wclear" label: "Action.c:471:4" }
+edge: { sourcename: "Action.c:actionLsof" targetname: "CRT_enableDelay" label: "Action.c:472:4" }
+node: { title: "Action.c:actionStrace" label: "actionStrace\nAction.c:488:22\n32 bytes (static)" }
+edge: { sourcename: "Action.c:actionStrace" targetname: "Settings_isReadonly" label: "Action.c:489:8" }
+edge: { sourcename: "Action.c:actionStrace" targetname: "Panel_getSelected" label: "Action.c:492:34" }
+node: { title: "TraceScreen_new" label: "TraceScreen_new\nTraceScreen.h:31:14" shape : ellipse }
+edge: { sourcename: "Action.c:actionStrace" targetname: "TraceScreen_new" label: "Action.c:496:22" }
+node: { title: "TraceScreen_forkTracer" label: "TraceScreen_forkTracer\nTraceScreen.h:35:6" shape : ellipse }
+edge: { sourcename: "Action.c:actionStrace" targetname: "TraceScreen_forkTracer" label: "Action.c:497:14" }
+edge: { sourcename: "Action.c:actionStrace" targetname: "InfoScreen_run" label: "Action.c:499:7" }
+node: { title: "TraceScreen_delete" label: "TraceScreen_delete\nTraceScreen.h:33:6" shape : ellipse }
+edge: { sourcename: "Action.c:actionStrace" targetname: "TraceScreen_delete" label: "Action.c:501:4" }
+edge: { sourcename: "Action.c:actionStrace" targetname: "wclear" label: "Action.c:502:4" }
+edge: { sourcename: "Action.c:actionStrace" targetname: "CRT_enableDelay" label: "Action.c:503:4" }
+node: { title: "Action.c:actionExpandOrCollapse" label: "actionExpandOrCollapse\nAction.c:311:22\n16 bytes (static)" }
+edge: { sourcename: "Action.c:actionExpandOrCollapse" targetname: "Panel_getSelected" label: "Action.c:132:28" }
+node: { title: "Action.c:actionLowerPriority" label: "actionLowerPriority\nAction.c:297:22\n48 bytes (static)" }
+edge: { sourcename: "Action.c:actionLowerPriority" targetname: "Settings_isReadonly" label: "Action.c:298:8" }
+edge: { sourcename: "Action.c:actionLowerPriority" targetname: "MainPanel_foreachProcess" label: "Action.c:98:14" }
+edge: { sourcename: "Action.c:actionLowerPriority" targetname: "beep" label: "Action.c:100:7" }
+node: { title: "Action.c:actionHelp" label: "actionHelp\nAction.c:585:22\n144 bytes (static)" }
+edge: { sourcename: "Action.c:actionHelp" targetname: "wclear" label: "Action.c:586:4" }
+node: { title: "wattrset" label: "wattrset\n/usr/include/curses.h:787:28" shape : ellipse }
+edge: { sourcename: "Action.c:actionHelp" targetname: "wattrset" label: "Action.c:587:4" }
+node: { title: "wmove" label: "wmove\n/usr/include/curses.h:819:28" shape : ellipse }
+edge: { sourcename: "Action.c:actionHelp" targetname: "wmove" label: "Action.c:594:4" }
+edge: { sourcename: "Action.c:actionHelp" targetname: "wmove" label: "Action.c:590:7" }
+node: { title: "whline" label: "whline\n/usr/include/curses.h:808:28" shape : ellipse }
+edge: { sourcename: "Action.c:actionHelp" targetname: "whline" label: "Action.c:590:7" }
+node: { title: "waddnstr" label: "waddnstr\n/usr/include/curses.h:783:28" shape : ellipse }
+edge: { sourcename: "Action.c:actionHelp" targetname: "waddnstr" label: "Action.c:594:4" }
+edge: { sourcename: "Action.c:actionHelp" targetname: "wmove" label: "Action.c:595:4" }
+edge: { sourcename: "Action.c:actionHelp" targetname: "waddnstr" label: "Action.c:595:4" }
+edge: { sourcename: "Action.c:actionHelp" targetname: "wattrset" label: "Action.c:597:4" }
+edge: { sourcename: "Action.c:actionHelp" targetname: "wmove" label: "Action.c:599:4" }
+edge: { sourcename: "Action.c:actionHelp" targetname: "waddnstr" label: "Action.c:599:4" }
+edge: { sourcename: "Action.c:actionHelp" targetname: "wattrset" label: "Action.c:581:4" }
+edge: { sourcename: "Action.c:actionHelp" targetname: "waddnstr" label: "Action.c:582:4" }
+edge: { sourcename: "Action.c:actionHelp" targetname: "wattrset" label: "Action.c:581:4" }
+edge: { sourcename: "Action.c:actionHelp" targetname: "waddnstr" label: "Action.c:582:4" }
+edge: { sourcename: "Action.c:actionHelp" targetname: "wattrset" label: "Action.c:581:4" }
+edge: { sourcename: "Action.c:actionHelp" targetname: "waddnstr" label: "Action.c:582:4" }
+edge: { sourcename: "Action.c:actionHelp" targetname: "wattrset" label: "Action.c:581:4" }
+edge: { sourcename: "Action.c:actionHelp" targetname: "waddnstr" label: "Action.c:582:4" }
+edge: { sourcename: "Action.c:actionHelp" targetname: "wattrset" label: "Action.c:581:4" }
+edge: { sourcename: "Action.c:actionHelp" targetname: "waddnstr" label: "Action.c:582:4" }
+edge: { sourcename: "Action.c:actionHelp" targetname: "wattrset" label: "Action.c:581:4" }
+edge: { sourcename: "Action.c:actionHelp" targetname: "waddnstr" label: "Action.c:582:4" }
+edge: { sourcename: "Action.c:actionHelp" targetname: "wattrset" label: "Action.c:581:4" }
+edge: { sourcename: "Action.c:actionHelp" targetname: "waddnstr" label: "Action.c:582:4" }
+edge: { sourcename: "Action.c:actionHelp" targetname: "wattrset" label: "Action.c:581:4" }
+edge: { sourcename: "Action.c:actionHelp" targetname: "waddnstr" label: "Action.c:582:4" }
+edge: { sourcename: "Action.c:actionHelp" targetname: "wattrset" label: "Action.c:581:4" }
+edge: { sourcename: "Action.c:actionHelp" targetname: "waddnstr" label: "Action.c:582:4" }
+edge: { sourcename: "Action.c:actionHelp" targetname: "wattrset" label: "Action.c:581:4" }
+edge: { sourcename: "Action.c:actionHelp" targetname: "waddnstr" label: "Action.c:582:4" }
+edge: { sourcename: "Action.c:actionHelp" targetname: "wattrset" label: "Action.c:581:4" }
+edge: { sourcename: "Action.c:actionHelp" targetname: "waddnstr" label: "Action.c:582:4" }
+edge: { sourcename: "Action.c:actionHelp" targetname: "wattrset" label: "Action.c:581:4" }
+edge: { sourcename: "Action.c:actionHelp" targetname: "waddnstr" label: "Action.c:582:4" }
+edge: { sourcename: "Action.c:actionHelp" targetname: "wattrset" label: "Action.c:581:4" }
+edge: { sourcename: "Action.c:actionHelp" targetname: "waddnstr" label: "Action.c:582:4" }
+edge: { sourcename: "Action.c:actionHelp" targetname: "wattrset" label: "Action.c:581:4" }
+edge: { sourcename: "Action.c:actionHelp" targetname: "waddnstr" label: "Action.c:582:4" }
+edge: { sourcename: "Action.c:actionHelp" targetname: "wattrset" label: "Action.c:581:4" }
+edge: { sourcename: "Action.c:actionHelp" targetname: "waddnstr" label: "Action.c:582:4" }
+edge: { sourcename: "Action.c:actionHelp" targetname: "wattrset" label: "Action.c:581:4" }
+edge: { sourcename: "Action.c:actionHelp" targetname: "waddnstr" label: "Action.c:582:4" }
+edge: { sourcename: "Action.c:actionHelp" targetname: "wattrset" label: "Action.c:581:4" }
+edge: { sourcename: "Action.c:actionHelp" targetname: "waddnstr" label: "Action.c:582:4" }
+edge: { sourcename: "Action.c:actionHelp" targetname: "wattrset" label: "Action.c:581:4" }
+edge: { sourcename: "Action.c:actionHelp" targetname: "waddnstr" label: "Action.c:582:4" }
+edge: { sourcename: "Action.c:actionHelp" targetname: "wattrset" label: "Action.c:581:4" }
+edge: { sourcename: "Action.c:actionHelp" targetname: "waddnstr" label: "Action.c:582:4" }
+edge: { sourcename: "Action.c:actionHelp" targetname: "wattrset" label: "Action.c:581:4" }
+edge: { sourcename: "Action.c:actionHelp" targetname: "waddnstr" label: "Action.c:582:4" }
+edge: { sourcename: "Action.c:actionHelp" targetname: "wattrset" label: "Action.c:581:4" }
+edge: { sourcename: "Action.c:actionHelp" targetname: "waddnstr" label: "Action.c:582:4" }
+edge: { sourcename: "Action.c:actionHelp" targetname: "wattrset" label: "Action.c:581:4" }
+edge: { sourcename: "Action.c:actionHelp" targetname: "waddnstr" label: "Action.c:582:4" }
+edge: { sourcename: "Action.c:actionHelp" targetname: "wattrset" label: "Action.c:581:4" }
+edge: { sourcename: "Action.c:actionHelp" targetname: "waddnstr" label: "Action.c:582:4" }
+edge: { sourcename: "Action.c:actionHelp" targetname: "wattrset" label: "Action.c:581:4" }
+edge: { sourcename: "Action.c:actionHelp" targetname: "waddnstr" label: "Action.c:582:4" }
+edge: { sourcename: "Action.c:actionHelp" targetname: "wattrset" label: "Action.c:624:4" }
+edge: { sourcename: "Action.c:actionHelp" targetname: "wmove" label: "Action.c:625:4" }
+edge: { sourcename: "Action.c:actionHelp" targetname: "waddnstr" label: "Action.c:625:4" }
+edge: { sourcename: "Action.c:actionHelp" targetname: "wattrset" label: "Action.c:581:4" }
+edge: { sourcename: "Action.c:actionHelp" targetname: "waddnstr" label: "Action.c:582:4" }
+edge: { sourcename: "Action.c:actionHelp" targetname: "wattrset" label: "Action.c:581:4" }
+edge: { sourcename: "Action.c:actionHelp" targetname: "waddnstr" label: "Action.c:582:4" }
+edge: { sourcename: "Action.c:actionHelp" targetname: "wattrset" label: "Action.c:581:4" }
+edge: { sourcename: "Action.c:actionHelp" targetname: "waddnstr" label: "Action.c:582:4" }
+edge: { sourcename: "Action.c:actionHelp" targetname: "wattrset" label: "Action.c:581:4" }
+edge: { sourcename: "Action.c:actionHelp" targetname: "waddnstr" label: "Action.c:582:4" }
+edge: { sourcename: "Action.c:actionHelp" targetname: "wattrset" label: "Action.c:581:4" }
+edge: { sourcename: "Action.c:actionHelp" targetname: "waddnstr" label: "Action.c:582:4" }
+edge: { sourcename: "Action.c:actionHelp" targetname: "wattrset" label: "Action.c:581:4" }
+edge: { sourcename: "Action.c:actionHelp" targetname: "waddnstr" label: "Action.c:582:4" }
+edge: { sourcename: "Action.c:actionHelp" targetname: "wattrset" label: "Action.c:581:4" }
+edge: { sourcename: "Action.c:actionHelp" targetname: "waddnstr" label: "Action.c:582:4" }
+edge: { sourcename: "Action.c:actionHelp" targetname: "wattrset" label: "Action.c:581:4" }
+edge: { sourcename: "Action.c:actionHelp" targetname: "waddnstr" label: "Action.c:582:4" }
+edge: { sourcename: "Action.c:actionHelp" targetname: "wattrset" label: "Action.c:581:4" }
+edge: { sourcename: "Action.c:actionHelp" targetname: "waddnstr" label: "Action.c:582:4" }
+edge: { sourcename: "Action.c:actionHelp" targetname: "wattrset" label: "Action.c:581:4" }
+edge: { sourcename: "Action.c:actionHelp" targetname: "waddnstr" label: "Action.c:582:4" }
+edge: { sourcename: "Action.c:actionHelp" targetname: "wattrset" label: "Action.c:581:4" }
+edge: { sourcename: "Action.c:actionHelp" targetname: "waddnstr" label: "Action.c:582:4" }
+edge: { sourcename: "Action.c:actionHelp" targetname: "wattrset" label: "Action.c:581:4" }
+edge: { sourcename: "Action.c:actionHelp" targetname: "waddnstr" label: "Action.c:582:4" }
+edge: { sourcename: "Action.c:actionHelp" targetname: "wattrset" label: "Action.c:581:4" }
+edge: { sourcename: "Action.c:actionHelp" targetname: "waddnstr" label: "Action.c:582:4" }
+edge: { sourcename: "Action.c:actionHelp" targetname: "wattrset" label: "Action.c:581:4" }
+edge: { sourcename: "Action.c:actionHelp" targetname: "waddnstr" label: "Action.c:582:4" }
+edge: { sourcename: "Action.c:actionHelp" targetname: "wattrset" label: "Action.c:635:4" }
+edge: { sourcename: "Action.c:actionHelp" targetname: "wmove" label: "Action.c:636:4" }
+edge: { sourcename: "Action.c:actionHelp" targetname: "waddnstr" label: "Action.c:636:4" }
+edge: { sourcename: "Action.c:actionHelp" targetname: "wattrset" label: "Action.c:581:4" }
+edge: { sourcename: "Action.c:actionHelp" targetname: "waddnstr" label: "Action.c:582:4" }
+edge: { sourcename: "Action.c:actionHelp" targetname: "wattrset" label: "Action.c:581:4" }
+edge: { sourcename: "Action.c:actionHelp" targetname: "waddnstr" label: "Action.c:582:4" }
+edge: { sourcename: "Action.c:actionHelp" targetname: "wattrset" label: "Action.c:581:4" }
+edge: { sourcename: "Action.c:actionHelp" targetname: "waddnstr" label: "Action.c:582:4" }
+edge: { sourcename: "Action.c:actionHelp" targetname: "wattrset" label: "Action.c:581:4" }
+edge: { sourcename: "Action.c:actionHelp" targetname: "waddnstr" label: "Action.c:582:4" }
+edge: { sourcename: "Action.c:actionHelp" targetname: "wattrset" label: "Action.c:581:4" }
+edge: { sourcename: "Action.c:actionHelp" targetname: "waddnstr" label: "Action.c:582:4" }
+edge: { sourcename: "Action.c:actionHelp" targetname: "wattrset" label: "Action.c:581:4" }
+edge: { sourcename: "Action.c:actionHelp" targetname: "waddnstr" label: "Action.c:582:4" }
+edge: { sourcename: "Action.c:actionHelp" targetname: "wattrset" label: "Action.c:581:4" }
+edge: { sourcename: "Action.c:actionHelp" targetname: "waddnstr" label: "Action.c:582:4" }
+edge: { sourcename: "Action.c:actionHelp" targetname: "wattrset" label: "Action.c:581:4" }
+edge: { sourcename: "Action.c:actionHelp" targetname: "waddnstr" label: "Action.c:582:4" }
+edge: { sourcename: "Action.c:actionHelp" targetname: "wattrset" label: "Action.c:581:4" }
+edge: { sourcename: "Action.c:actionHelp" targetname: "waddnstr" label: "Action.c:582:4" }
+edge: { sourcename: "Action.c:actionHelp" targetname: "wattrset" label: "Action.c:581:4" }
+edge: { sourcename: "Action.c:actionHelp" targetname: "waddnstr" label: "Action.c:582:4" }
+edge: { sourcename: "Action.c:actionHelp" targetname: "wattrset" label: "Action.c:652:4" }
+edge: { sourcename: "Action.c:actionHelp" targetname: "wmove" label: "Action.c:653:4" }
+edge: { sourcename: "Action.c:actionHelp" targetname: "waddnstr" label: "Action.c:653:4" }
+edge: { sourcename: "Action.c:actionHelp" targetname: "wmove" label: "Action.c:655:7" }
+edge: { sourcename: "Action.c:actionHelp" targetname: "waddnstr" label: "Action.c:655:7" }
+edge: { sourcename: "Action.c:actionHelp" targetname: "wmove" label: "Action.c:665:4" }
+edge: { sourcename: "Action.c:actionHelp" targetname: "waddnstr" label: "Action.c:665:4" }
+edge: { sourcename: "Action.c:actionHelp" targetname: "wattrset" label: "Action.c:581:4" }
+edge: { sourcename: "Action.c:actionHelp" targetname: "waddnstr" label: "Action.c:582:4" }
+edge: { sourcename: "Action.c:actionHelp" targetname: "wattrset" label: "Action.c:581:4" }
+edge: { sourcename: "Action.c:actionHelp" targetname: "waddnstr" label: "Action.c:582:4" }
+edge: { sourcename: "Action.c:actionHelp" targetname: "wattrset" label: "Action.c:581:4" }
+edge: { sourcename: "Action.c:actionHelp" targetname: "waddnstr" label: "Action.c:582:4" }
+edge: { sourcename: "Action.c:actionHelp" targetname: "wattrset" label: "Action.c:581:4" }
+edge: { sourcename: "Action.c:actionHelp" targetname: "waddnstr" label: "Action.c:582:4" }
+edge: { sourcename: "Action.c:actionHelp" targetname: "wattrset" label: "Action.c:581:4" }
+edge: { sourcename: "Action.c:actionHelp" targetname: "waddnstr" label: "Action.c:582:4" }
+edge: { sourcename: "Action.c:actionHelp" targetname: "wattrset" label: "Action.c:581:4" }
+edge: { sourcename: "Action.c:actionHelp" targetname: "waddnstr" label: "Action.c:582:4" }
+edge: { sourcename: "Action.c:actionHelp" targetname: "wattrset" label: "Action.c:581:4" }
+edge: { sourcename: "Action.c:actionHelp" targetname: "waddnstr" label: "Action.c:582:4" }
+edge: { sourcename: "Action.c:actionHelp" targetname: "wattrset" label: "Action.c:581:4" }
+edge: { sourcename: "Action.c:actionHelp" targetname: "waddnstr" label: "Action.c:582:4" }
+edge: { sourcename: "Action.c:actionHelp" targetname: "wattrset" label: "Action.c:581:4" }
+edge: { sourcename: "Action.c:actionHelp" targetname: "waddnstr" label: "Action.c:582:4" }
+edge: { sourcename: "Action.c:actionHelp" targetname: "wattrset" label: "Action.c:581:4" }
+edge: { sourcename: "Action.c:actionHelp" targetname: "waddnstr" label: "Action.c:582:4" }
+edge: { sourcename: "Action.c:actionHelp" targetname: "wattrset" label: "Action.c:671:4" }
+edge: { sourcename: "Action.c:actionHelp" targetname: "Settings_isReadonly" label: "Action.c:677:26" }
+edge: { sourcename: "Action.c:actionHelp" targetname: "wattrset" label: "Action.c:681:7" }
+edge: { sourcename: "Action.c:actionHelp" targetname: "wmove" label: "Action.c:682:7" }
+edge: { sourcename: "Action.c:actionHelp" targetname: "waddnstr" label: "Action.c:682:7" }
+edge: { sourcename: "Action.c:actionHelp" targetname: "wattrset" label: "Action.c:681:7" }
+edge: { sourcename: "Action.c:actionHelp" targetname: "wmove" label: "Action.c:682:7" }
+edge: { sourcename: "Action.c:actionHelp" targetname: "wattrset" label: "Action.c:683:7" }
+edge: { sourcename: "Action.c:actionHelp" targetname: "wmove" label: "Action.c:684:7" }
+edge: { sourcename: "Action.c:actionHelp" targetname: "waddnstr" label: "Action.c:684:7" }
+node: { title: "strcmp" label: "strcmp\n/usr/include/string.h:137:12" shape : ellipse }
+edge: { sourcename: "Action.c:actionHelp" targetname: "strcmp" label: "XUtils.h:46:11" }
+edge: { sourcename: "Action.c:actionHelp" targetname: "wattrset" label: "Action.c:686:10" }
+edge: { sourcename: "Action.c:actionHelp" targetname: "wmove" label: "Action.c:687:10" }
+edge: { sourcename: "Action.c:actionHelp" targetname: "waddnstr" label: "Action.c:687:10" }
+edge: { sourcename: "Action.c:actionHelp" targetname: "strcmp" label: "XUtils.h:46:11" }
+edge: { sourcename: "Action.c:actionHelp" targetname: "wattrset" label: "Action.c:689:10" }
+edge: { sourcename: "Action.c:actionHelp" targetname: "wmove" label: "Action.c:690:10" }
+edge: { sourcename: "Action.c:actionHelp" targetname: "waddnstr" label: "Action.c:690:10" }
+edge: { sourcename: "Action.c:actionHelp" targetname: "wattrset" label: "Action.c:696:7" }
+edge: { sourcename: "Action.c:actionHelp" targetname: "wmove" label: "Action.c:697:7" }
+edge: { sourcename: "Action.c:actionHelp" targetname: "wattrset" label: "Action.c:696:7" }
+edge: { sourcename: "Action.c:actionHelp" targetname: "wmove" label: "Action.c:697:7" }
+edge: { sourcename: "Action.c:actionHelp" targetname: "wattrset" label: "Action.c:698:7" }
+edge: { sourcename: "Action.c:actionHelp" targetname: "wmove" label: "Action.c:699:7" }
+edge: { sourcename: "Action.c:actionHelp" targetname: "waddnstr" label: "Action.c:699:7" }
+edge: { sourcename: "Action.c:actionHelp" targetname: "wattrset" label: "Action.c:704:4" }
+edge: { sourcename: "Action.c:actionHelp" targetname: "wmove" label: "Action.c:705:4" }
+edge: { sourcename: "Action.c:actionHelp" targetname: "waddnstr" label: "Action.c:705:4" }
+edge: { sourcename: "Action.c:actionHelp" targetname: "wattrset" label: "Action.c:706:4" }
+node: { title: "wrefresh" label: "wrefresh\n/usr/include/curses.h:824:28" shape : ellipse }
+edge: { sourcename: "Action.c:actionHelp" targetname: "wrefresh" label: "Action.c:707:4" }
+node: { title: "CRT_readKey" label: "CRT_readKey\nCRT.h:200:5" shape : ellipse }
+edge: { sourcename: "Action.c:actionHelp" targetname: "CRT_readKey" label: "Action.c:708:4" }
+edge: { sourcename: "Action.c:actionHelp" targetname: "wclear" label: "Action.c:709:4" }
+edge: { sourcename: "Action.c:actionHelp" targetname: "waddnstr" label: "Action.c:697:7" }
+edge: { sourcename: "Action.c:actionHelp" targetname: "waddnstr" label: "Action.c:697:7" }
+edge: { sourcename: "Action.c:actionHelp" targetname: "waddnstr" label: "Action.c:682:7" }
+node: { title: "Action_pickFromVector" label: "Action_pickFromVector\nAction.c:44:9\n96 bytes (static)" }
+edge: { sourcename: "Action_pickFromVector" targetname: "ScreenManager_new" label: "Action.c:49:25" }
+node: { title: "ScreenManager_add" label: "ScreenManager_add\nScreenManager.h:39:6" shape : ellipse }
+edge: { sourcename: "Action_pickFromVector" targetname: "ScreenManager_add" label: "Action.c:51:4" }
+edge: { sourcename: "Action_pickFromVector" targetname: "ScreenManager_add" label: "Action.c:52:4" }
+edge: { sourcename: "Action_pickFromVector" targetname: "MainPanel_selectedPid" label: "Action.c:56:30" }
+edge: { sourcename: "Action_pickFromVector" targetname: "ScreenManager_run" label: "Action.c:61:4" }
+edge: { sourcename: "Action_pickFromVector" targetname: "ScreenManager_run" label: "Action.c:61:4" }
+edge: { sourcename: "Action_pickFromVector" targetname: "ScreenManager_delete" label: "Action.c:65:4" }
+node: { title: "Panel_move" label: "Panel_move\nPanel.h:105:6" shape : ellipse }
+edge: { sourcename: "Action_pickFromVector" targetname: "Panel_move" label: "Action.c:66:4" }
+node: { title: "Panel_resize" label: "Panel_resize\nPanel.h:107:6" shape : ellipse }
+edge: { sourcename: "Action_pickFromVector" targetname: "Panel_resize" label: "Action.c:67:4" }
+edge: { sourcename: "Action_pickFromVector" targetname: "Panel_getSelected" label: "Action.c:70:52" }
+edge: { sourcename: "Action_pickFromVector" targetname: "Panel_getSelected" label: "Action.c:72:20" }
+edge: { sourcename: "Action_pickFromVector" targetname: "beep" label: "Action.c:74:10" }
+edge: { sourcename: "Action_pickFromVector" targetname: "Panel_getSelected" label: "Action.c:76:17" }
+edge: { sourcename: "Action_pickFromVector" targetname: "ScreenManager_run" label: "Action.c:61:4" }
+node: { title: "Action.c:actionKill" label: "actionKill\nAction.c:410:22\n64 bytes (static)" }
+edge: { sourcename: "Action.c:actionKill" targetname: "Settings_isReadonly" label: "Action.c:411:8" }
+node: { title: "SignalsPanel_new" label: "SignalsPanel_new\nSignalsPanel.h:26:8" shape : ellipse }
+edge: { sourcename: "Action.c:actionKill" targetname: "SignalsPanel_new" label: "Action.c:416:26" }
+edge: { sourcename: "Action.c:actionKill" targetname: "Action_pickFromVector" label: "Action.c:417:38" }
+node: { title: "Panel_setHeader" label: "Panel_setHeader\nPanel.h:103:6" shape : ellipse }
+edge: { sourcename: "Action.c:actionKill" targetname: "Panel_setHeader" label: "Action.c:420:7" }
+node: { title: "Panel_draw" label: "Panel_draw\nPanel.h:133:6" shape : ellipse }
+edge: { sourcename: "Action.c:actionKill" targetname: "Panel_draw" label: "Action.c:421:7" }
+edge: { sourcename: "Action.c:actionKill" targetname: "wrefresh" label: "Action.c:422:7" }
+edge: { sourcename: "Action.c:actionKill" targetname: "MainPanel_foreachProcess" label: "Action.c:423:7" }
+node: { title: "napms" label: "napms\n/usr/include/curses.h:699:28" shape : ellipse }
+edge: { sourcename: "Action.c:actionKill" targetname: "napms" label: "Action.c:424:7" }
+node: { title: "Panel_delete" label: "Panel_delete\nPanel.h:93:6" shape : ellipse }
+edge: { sourcename: "Action.c:actionKill" targetname: "Panel_delete" label: "Action.c:426:4" }
+node: { title: "Action.c:actionSetAffinity" label: "actionSetAffinity\nAction.c:374:22\n64 bytes (static)" }
+edge: { sourcename: "Action.c:actionSetAffinity" targetname: "Settings_isReadonly" label: "Action.c:375:8" }
+edge: { sourcename: "Action.c:actionSetAffinity" targetname: "Panel_getSelected" label: "Action.c:382:40" }
+node: { title: "Affinity_get" label: "Affinity_get\nAffinity.h:43:11" shape : ellipse }
+edge: { sourcename: "Action.c:actionSetAffinity" targetname: "Affinity_get" label: "Action.c:386:26" }
+node: { title: "AffinityPanel_new" label: "AffinityPanel_new\nAffinityPanel.h:17:8" shape : ellipse }
+edge: { sourcename: "Action.c:actionSetAffinity" targetname: "AffinityPanel_new" label: "Action.c:391:27" }
+node: { title: "Affinity_delete" label: "Affinity_delete\nAffinity.h:37:6" shape : ellipse }
+edge: { sourcename: "Action.c:actionSetAffinity" targetname: "Affinity_delete" label: "Action.c:392:4" }
+edge: { sourcename: "Action.c:actionSetAffinity" targetname: "Action_pickFromVector" label: "Action.c:394:22" }
+node: { title: "AffinityPanel_getAffinity" label: "AffinityPanel_getAffinity\nAffinityPanel.h:19:11" shape : ellipse }
+edge: { sourcename: "Action.c:actionSetAffinity" targetname: "AffinityPanel_getAffinity" label: "Action.c:396:29" }
+edge: { sourcename: "Action.c:actionSetAffinity" targetname: "MainPanel_foreachProcess" label: "Action.c:397:17" }
+edge: { sourcename: "Action.c:actionSetAffinity" targetname: "beep" label: "Action.c:399:10" }
+edge: { sourcename: "Action.c:actionSetAffinity" targetname: "Affinity_delete" label: "Action.c:400:7" }
+node: { title: "__indirect_call" label: "Indirect Call Placeholder" shape : ellipse }
+edge: { sourcename: "Action.c:actionSetAffinity" targetname: "__indirect_call" label: "Action.c:402:4" }
+node: { title: "Action.c:actionFilterByUser" label: "actionFilterByUser\nAction.c:430:22\n48 bytes (static)" }
+node: { title: "FunctionBar_newEnterEsc" label: "FunctionBar_newEnterEsc\nFunctionBar.h:24:14" shape : ellipse }
+edge: { sourcename: "Action.c:actionFilterByUser" targetname: "FunctionBar_newEnterEsc" label: "Action.c:431:24" }
+node: { title: "Panel_new" label: "Panel_new\nPanel.h:91:8" shape : ellipse }
+edge: { sourcename: "Action.c:actionFilterByUser" targetname: "Panel_new" label: "Action.c:431:24" }
+edge: { sourcename: "Action.c:actionFilterByUser" targetname: "Panel_setHeader" label: "Action.c:432:4" }
+node: { title: "UsersTable_foreach" label: "UsersTable_foreach\nUsersTable.h:23:6" shape : ellipse }
+edge: { sourcename: "Action.c:actionFilterByUser" targetname: "UsersTable_foreach" label: "Action.c:433:4" }
+node: { title: "Vector_insertionSort" label: "Vector_insertionSort\nVector.h:44:6" shape : ellipse }
+edge: { sourcename: "Action.c:actionFilterByUser" targetname: "Vector_insertionSort" label: "Action.c:434:4" }
+edge: { sourcename: "Action.c:actionFilterByUser" targetname: "ListItem_new" label: "Action.c:435:25" }
+node: { title: "Panel_insert" label: "Panel_insert\nPanel.h:113:6" shape : ellipse }
+edge: { sourcename: "Action.c:actionFilterByUser" targetname: "Panel_insert" label: "Action.c:436:4" }
+edge: { sourcename: "Action.c:actionFilterByUser" targetname: "Action_pickFromVector" label: "Action.c:437:41" }
+node: { title: "getpwnam" label: "getpwnam\n/usr/include/pwd.h:116:23" shape : ellipse }
+edge: { sourcename: "Action.c:actionFilterByUser" targetname: "getpwnam" label: "Action.c:111:32" }
+edge: { sourcename: "Action.c:actionFilterByUser" targetname: "Panel_delete" label: "Action.c:445:4" }
+node: { title: "Action.c:actionSetSortColumn" label: "actionSetSortColumn\nAction.c:164:22\n80 bytes (static)" }
+edge: { sourcename: "Action.c:actionSetSortColumn" targetname: "FunctionBar_newEnterEsc" label: "Action.c:166:23" }
+edge: { sourcename: "Action.c:actionSetSortColumn" targetname: "Panel_new" label: "Action.c:166:23" }
+edge: { sourcename: "Action.c:actionSetSortColumn" targetname: "Panel_setHeader" label: "Action.c:167:4" }
+edge: { sourcename: "Action.c:actionSetSortColumn" targetname: "Action_pickFromVector" label: "Action.c:187:46" }
+node: { title: "Hashtable_get" label: "Hashtable_get\nHashtable.h:38:7" shape : ellipse }
+edge: { sourcename: "Action.c:actionSetSortColumn" targetname: "Hashtable_get" label: "Action.c:174:34" }
+node: { title: "xStrdup" label: "xStrdup\nXUtils.h:68:7" shape : ellipse }
+edge: { sourcename: "Action.c:actionSetSortColumn" targetname: "xStrdup" label: "Action.c:177:17" }
+node: { title: "String_trim" label: "String_trim\nXUtils.h:51:7" shape : ellipse }
+edge: { sourcename: "Action.c:actionSetSortColumn" targetname: "String_trim" label: "Action.c:179:17" }
+edge: { sourcename: "Action.c:actionSetSortColumn" targetname: "ListItem_new" label: "Action.c:181:38" }
+edge: { sourcename: "Action.c:actionSetSortColumn" targetname: "Panel_add" label: "Action.c:181:7" }
+edge: { sourcename: "Action.c:actionSetSortColumn" targetname: "Panel_setSelected" label: "Action.c:183:10" }
+node: { title: "free" label: "free\n/usr/include/stdlib.h:565:13" shape : ellipse }
+edge: { sourcename: "Action.c:actionSetSortColumn" targetname: "free" label: "Action.c:185:7" }
+edge: { sourcename: "Action.c:actionSetSortColumn" targetname: "ScreenSettings_setSortKey" label: "Action.c:158:4" }
+edge: { sourcename: "Action.c:actionSetSortColumn" targetname: "__indirect_call" label: "Action.c:191:4" }
+node: { title: "Action.c:actionExpandCollapseOrSortColumn" label: "actionExpandCollapseOrSortColumn\nAction.c:327:22\n16 bytes (static)" }
+edge: { sourcename: "Action.c:actionExpandCollapseOrSortColumn" targetname: "Panel_getSelected" label: "Action.c:132:28" }
+edge: { sourcename: "Action.c:actionExpandCollapseOrSortColumn" targetname: "Action.c:actionSetSortColumn" label: "Action.c:328:69" }
+node: { title: "Action_setUserOnly" label: "Action_setUserOnly\nAction.c:110:6\n32 bytes (static)" }
+edge: { sourcename: "Action_setUserOnly" targetname: "getpwnam" label: "Action.c:111:32" }
+node: { title: "Action_setSortKey" label: "Action_setSortKey\nAction.c:157:15\n16 bytes (static)" }
+edge: { sourcename: "Action_setSortKey" targetname: "ScreenSettings_setSortKey" label: "Action.c:158:4" }
+node: { title: "Action_setScreenTab" label: "Action_setScreenTab\nAction.c:352:15\n80 bytes (static)" }
+node: { title: "strlen" label: "strlen\n/usr/include/string.h:385:15" shape : ellipse }
+edge: { sourcename: "Action_setScreenTab" targetname: "strlen" label: "Action.c:359:17" }
+node: { title: "Action_setBindings" label: "Action_setBindings\nAction.c:757:6\n32 bytes (static)" }
+}

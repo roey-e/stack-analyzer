@@ -1,0 +1,7 @@
+graph: { title: "SysArchMeter.c"
+node: { title: "SysArchMeter.c:SysArchMeter_updateValues" label: "SysArchMeter_updateValues\nSysArchMeter.c:22:13\n32 bytes (static)" }
+node: { title: "Generic_uname" label: "Generic_uname\n./generic/uname.h:10:7" shape : ellipse }
+edge: { sourcename: "SysArchMeter.c:SysArchMeter_updateValues" targetname: "Generic_uname" label: "./linux/Platform.h:93:14" }
+node: { title: "String_safeStrncpy" label: "String_safeStrncpy\nXUtils.h:60:8" shape : ellipse }
+edge: { sourcename: "SysArchMeter.c:SysArchMeter_updateValues" targetname: "String_safeStrncpy" label: "SysArchMeter.c:28:4" }
+}

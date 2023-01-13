@@ -1,0 +1,62 @@
+graph: { title: "IncSet.c"
+node: { title: "IncSet_reset" label: "IncSet_reset\nIncSet.c:28:6\n0 bytes (static)" }
+node: { title: "IncSet_setFilter" label: "IncSet_setFilter\nIncSet.c:32:6\n32 bytes (static)" }
+node: { title: "String_safeStrncpy" label: "String_safeStrncpy\nXUtils.h:60:8" shape : ellipse }
+edge: { sourcename: "IncSet_setFilter" targetname: "String_safeStrncpy" label: "IncSet.c:34:17" }
+node: { title: "IncSet_new" label: "IncSet_new\nIncSet.c:63:9\n64 bytes (static)" }
+node: { title: "xMalloc" label: "xMalloc\nXUtils.h:23:7" shape : ellipse }
+edge: { sourcename: "IncSet_new" targetname: "xMalloc" label: "IncSet.c:64:19" }
+node: { title: "FunctionBar_new" label: "FunctionBar_new\nFunctionBar.h:26:14" shape : ellipse }
+edge: { sourcename: "IncSet_new" targetname: "FunctionBar_new" label: "IncSet.c:45:18" }
+edge: { sourcename: "IncSet_new" targetname: "FunctionBar_new" label: "IncSet.c:55:18" }
+node: { title: "IncSet_delete" label: "IncSet_delete\nIncSet.c:74:6\n32 bytes (static)" }
+node: { title: "FunctionBar_delete" label: "FunctionBar_delete\nFunctionBar.h:28:6" shape : ellipse }
+edge: { sourcename: "IncSet_delete" targetname: "FunctionBar_delete" label: "IncSet.c:60:4" }
+edge: { sourcename: "IncSet_delete" targetname: "FunctionBar_delete" label: "IncSet.c:60:4" }
+node: { title: "free" label: "free\n/usr/include/stdlib.h:565:13" shape : ellipse }
+edge: { sourcename: "IncSet_delete" targetname: "free" label: "IncSet.c:77:4" }
+node: { title: "IncSet_activate" label: "IncSet_activate\nIncSet.c:120:6\n32 bytes (static)" }
+node: { title: "FunctionBar_drawExtra" label: "FunctionBar_drawExtra\nFunctionBar.h:34:5" shape : ellipse }
+edge: { sourcename: "IncSet_activate" targetname: "FunctionBar_drawExtra" label: "IncSet.c:233:21" }
+node: { title: "FunctionBar_draw" label: "FunctionBar_draw\nFunctionBar.h:32:5" shape : ellipse }
+edge: { sourcename: "IncSet_activate" targetname: "FunctionBar_draw" label: "IncSet.c:237:7" }
+node: { title: "IncSet_handleKey" label: "IncSet_handleKey\nIncSet.c:158:6\n96 bytes (static)" }
+node: { title: "Panel_size" label: "Panel_size\nPanel.h:129:5" shape : ellipse }
+edge: { sourcename: "IncSet_handleKey" targetname: "Panel_size" label: "IncSet.c:163:15" }
+edge: { sourcename: "IncSet_handleKey" targetname: "Panel_size" label: "IncSet.c:136:15" }
+node: { title: "Panel_getSelectedIndex" label: "Panel_getSelectedIndex\nPanel.h:127:5" shape : ellipse }
+edge: { sourcename: "IncSet_handleKey" targetname: "Panel_getSelectedIndex" label: "IncSet.c:137:15" }
+node: { title: "__indirect_call" label: "Indirect Call Placeholder" shape : ellipse }
+edge: { sourcename: "IncSet_handleKey" targetname: "__indirect_call" label: "IncSet.c:151:11" }
+node: { title: "String_contains_i" label: "String_contains_i\nXUtils.h:43:6" shape : ellipse }
+edge: { sourcename: "IncSet_handleKey" targetname: "String_contains_i" label: "IncSet.c:151:11" }
+node: { title: "Panel_setSelected" label: "Panel_setSelected\nPanel.h:131:6" shape : ellipse }
+edge: { sourcename: "IncSet_handleKey" targetname: "Panel_setSelected" label: "IncSet.c:152:10" }
+node: { title: "__ctype_b_loc" label: "__ctype_b_loc\n/usr/include/ctype.h:79:35" shape : ellipse }
+edge: { sourcename: "IncSet_handleKey" targetname: "__ctype_b_loc" label: "IncSet.c:172:37" }
+edge: { sourcename: "IncSet_handleKey" targetname: "FunctionBar_draw" label: "IncSet.c:132:4" }
+edge: { sourcename: "IncSet_handleKey" targetname: "Panel_size" label: "IncSet.c:109:15" }
+edge: { sourcename: "IncSet_handleKey" targetname: "__indirect_call" label: "IncSet.c:111:11" }
+edge: { sourcename: "IncSet_handleKey" targetname: "String_contains_i" label: "IncSet.c:111:11" }
+edge: { sourcename: "IncSet_handleKey" targetname: "Panel_setSelected" label: "IncSet.c:112:10" }
+node: { title: "Panel_getSelected" label: "Panel_getSelected\nPanel.h:121:9" shape : ellipse }
+edge: { sourcename: "IncSet_handleKey" targetname: "Panel_getSelected" label: "IncSet.c:81:29" }
+node: { title: "Panel_prune" label: "Panel_prune\nPanel.h:109:6" shape : ellipse }
+edge: { sourcename: "IncSet_handleKey" targetname: "Panel_prune" label: "IncSet.c:82:4" }
+edge: { sourcename: "IncSet_handleKey" targetname: "String_contains_i" label: "IncSet.c:88:14" }
+node: { title: "Panel_add" label: "Panel_add\nPanel.h:111:6" shape : ellipse }
+edge: { sourcename: "IncSet_handleKey" targetname: "Panel_add" label: "IncSet.c:89:13" }
+edge: { sourcename: "IncSet_handleKey" targetname: "Panel_setSelected" label: "IncSet.c:91:16" }
+edge: { sourcename: "IncSet_handleKey" targetname: "Panel_add" label: "IncSet.c:100:10" }
+edge: { sourcename: "IncSet_handleKey" targetname: "Panel_setSelected" label: "IncSet.c:102:13" }
+node: { title: "IncSet_getListItemValue" label: "IncSet_getListItemValue\nIncSet.c:224:13\n16 bytes (static)" }
+node: { title: "Panel_get" label: "Panel_get\nPanel.h:117:9" shape : ellipse }
+edge: { sourcename: "IncSet_getListItemValue" targetname: "Panel_get" label: "IncSet.c:225:42" }
+node: { title: "IncSet_drawBar" label: "IncSet_drawBar\nIncSet.c:229:6\n32 bytes (static)" }
+edge: { sourcename: "IncSet_drawBar" targetname: "FunctionBar_drawExtra" label: "IncSet.c:233:21" }
+edge: { sourcename: "IncSet_drawBar" targetname: "FunctionBar_draw" label: "IncSet.c:237:7" }
+node: { title: "IncSet_synthesizeEvent" label: "IncSet_synthesizeEvent\nIncSet.c:241:5\n0 bytes (static)" }
+node: { title: "FunctionBar_synthesizeEvent" label: "FunctionBar_synthesizeEvent\nFunctionBar.h:38:5" shape : ellipse }
+edge: { sourcename: "IncSet_synthesizeEvent" targetname: "FunctionBar_synthesizeEvent" label: "IncSet.c:243:14" }
+edge: { sourcename: "IncSet_synthesizeEvent" targetname: "FunctionBar_synthesizeEvent" label: "IncSet.c:245:14" }
+}

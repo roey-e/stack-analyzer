@@ -1,0 +1,127 @@
+graph: { title: "Panel.c"
+node: { title: "Panel_delete" label: "Panel_delete\nPanel.c:41:6\n32 bytes (static)" }
+node: { title: "free" label: "free\n/usr/include/stdlib.h:565:13" shape : ellipse }
+edge: { sourcename: "Panel_delete" targetname: "free" label: "Panel.c:72:4" }
+node: { title: "Vector_delete" label: "Vector_delete\nVector.h:35:6" shape : ellipse }
+edge: { sourcename: "Panel_delete" targetname: "Vector_delete" label: "Panel.c:73:4" }
+node: { title: "FunctionBar_delete" label: "FunctionBar_delete\nFunctionBar.h:28:6" shape : ellipse }
+edge: { sourcename: "Panel_delete" targetname: "FunctionBar_delete" label: "Panel.c:74:4" }
+node: { title: "RichString_delete" label: "RichString_delete\nRichString.h:50:6" shape : ellipse }
+edge: { sourcename: "Panel_delete" targetname: "RichString_delete" label: "Panel.c:75:4" }
+edge: { sourcename: "Panel_delete" targetname: "free" label: "Panel.c:44:4" }
+node: { title: "Panel_selectByTyping" label: "Panel_selectByTyping\nPanel.c:443:15\n96 bytes (static)" }
+node: { title: "xCalloc" label: "xCalloc\nXUtils.h:27:7" shape : ellipse }
+edge: { sourcename: "Panel_selectByTyping" targetname: "xCalloc" label: "Panel.c:450:33" }
+node: { title: "__ctype_b_loc" label: "__ctype_b_loc\n/usr/include/ctype.h:79:35" shape : ellipse }
+edge: { sourcename: "Panel_selectByTyping" targetname: "__ctype_b_loc" label: "Panel.c:453:30" }
+node: { title: "strlen" label: "strlen\n/usr/include/string.h:385:15" shape : ellipse }
+edge: { sourcename: "Panel_selectByTyping" targetname: "strlen" label: "Panel.c:454:17" }
+edge: { sourcename: "Panel_selectByTyping" targetname: "strlen" label: "Panel.c:471:16" }
+node: { title: "strncasecmp" label: "strncasecmp\n/usr/include/strings.h:120:12" shape : ellipse }
+edge: { sourcename: "Panel_selectByTyping" targetname: "strncasecmp" label: "Panel.c:476:17" }
+node: { title: "__indirect_call" label: "Indirect Call Placeholder" shape : ellipse }
+edge: { sourcename: "Panel_selectByTyping" targetname: "__indirect_call" label: "Panel.c:207:7" }
+edge: { sourcename: "Panel_selectByTyping" targetname: "strlen" label: "Panel.c:471:16" }
+node: { title: "Panel_new" label: "Panel_new\nPanel.c:33:8\n80 bytes (static)" }
+node: { title: "xMalloc" label: "xMalloc\nXUtils.h:23:7" shape : ellipse }
+edge: { sourcename: "Panel_new" targetname: "xMalloc" label: "Panel.c:35:11" }
+node: { title: "Vector_new" label: "Vector_new\nVector.h:33:9" shape : ellipse }
+edge: { sourcename: "Panel_new" targetname: "Vector_new" label: "Panel.c:55:18" }
+node: { title: "Panel_init" label: "Panel_init\nPanel.c:47:6\n32 bytes (static)" }
+edge: { sourcename: "Panel_init" targetname: "Vector_new" label: "Panel.c:55:18" }
+node: { title: "Panel_done" label: "Panel_done\nPanel.c:70:6\n32 bytes (static)" }
+edge: { sourcename: "Panel_done" targetname: "free" label: "Panel.c:72:4" }
+edge: { sourcename: "Panel_done" targetname: "Vector_delete" label: "Panel.c:73:4" }
+edge: { sourcename: "Panel_done" targetname: "FunctionBar_delete" label: "Panel.c:74:4" }
+edge: { sourcename: "Panel_done" targetname: "RichString_delete" label: "Panel.c:75:4" }
+node: { title: "Panel_setCursorToSelection" label: "Panel_setCursorToSelection\nPanel.c:78:6\n0 bytes (static)" }
+node: { title: "Panel_setSelectionColor" label: "Panel_setSelectionColor\nPanel.c:83:6\n0 bytes (static)" }
+node: { title: "Panel_setHeader" label: "Panel_setHeader\nPanel.c:87:13\n32 bytes (static)" }
+node: { title: "RichString_writeWide" label: "RichString_writeWide\nRichString.h:71:5" shape : ellipse }
+edge: { sourcename: "Panel_setHeader" targetname: "RichString_writeWide" label: "Panel.c:88:4" }
+node: { title: "Panel_move" label: "Panel_move\nPanel.c:92:6\n0 bytes (static)" }
+node: { title: "Panel_resize" label: "Panel_resize\nPanel.c:100:6\n0 bytes (static)" }
+node: { title: "Panel_prune" label: "Panel_prune\nPanel.c:108:6\n32 bytes (static)" }
+node: { title: "Vector_prune" label: "Vector_prune\nVector.h:37:6" shape : ellipse }
+edge: { sourcename: "Panel_prune" targetname: "Vector_prune" label: "Panel.c:111:4" }
+node: { title: "Panel_add" label: "Panel_add\nPanel.c:118:6\n32 bytes (static)" }
+node: { title: "Vector_add" label: "Vector_add\nVector.h:93:6" shape : ellipse }
+edge: { sourcename: "Panel_add" targetname: "Vector_add" label: "Panel.c:121:4" }
+node: { title: "Panel_insert" label: "Panel_insert\nPanel.c:125:6\n32 bytes (static)" }
+node: { title: "Vector_insert" label: "Vector_insert\nVector.h:46:6" shape : ellipse }
+edge: { sourcename: "Panel_insert" targetname: "Vector_insert" label: "Panel.c:128:4" }
+node: { title: "Panel_set" label: "Panel_set\nPanel.c:132:6\n0 bytes (static)" }
+node: { title: "Vector_set" label: "Vector_set\nVector.h:65:6" shape : ellipse }
+edge: { sourcename: "Panel_set" targetname: "Vector_set" label: "Panel.c:135:4" }
+node: { title: "Panel_get" label: "Panel_get\nPanel.c:138:9\n0 bytes (static)" }
+node: { title: "Panel_remove" label: "Panel_remove\nPanel.c:144:9\n32 bytes (static)" }
+node: { title: "Vector_remove" label: "Vector_remove\nVector.h:50:9" shape : ellipse }
+edge: { sourcename: "Panel_remove" targetname: "Vector_remove" label: "Panel.c:148:22" }
+node: { title: "Panel_getSelected" label: "Panel_getSelected\nPanel.c:156:9\n0 bytes (static)" }
+node: { title: "Panel_moveSelectedUp" label: "Panel_moveSelectedUp\nPanel.c:165:6\n32 bytes (static)" }
+node: { title: "Vector_moveUp" label: "Vector_moveUp\nVector.h:61:6" shape : ellipse }
+edge: { sourcename: "Panel_moveSelectedUp" targetname: "Vector_moveUp" label: "Panel.c:168:4" }
+node: { title: "Panel_moveSelectedDown" label: "Panel_moveSelectedDown\nPanel.c:174:6\n32 bytes (static)" }
+node: { title: "Vector_moveDown" label: "Vector_moveDown\nVector.h:63:6" shape : ellipse }
+edge: { sourcename: "Panel_moveSelectedDown" targetname: "Vector_moveDown" label: "Panel.c:177:4" }
+node: { title: "Panel_getSelectedIndex" label: "Panel_getSelectedIndex\nPanel.c:183:5\n0 bytes (static)" }
+node: { title: "Panel_size" label: "Panel_size\nPanel.c:189:5\n0 bytes (static)" }
+node: { title: "Panel_setSelected" label: "Panel_setSelected\nPanel.c:195:6\n0 bytes (static)" }
+edge: { sourcename: "Panel_setSelected" targetname: "__indirect_call" label: "Panel.c:207:7" }
+node: { title: "Panel_splice" label: "Panel_splice\nPanel.c:211:6\n32 bytes (static)" }
+node: { title: "Vector_splice" label: "Vector_splice\nVector.h:97:6" shape : ellipse }
+edge: { sourcename: "Panel_splice" targetname: "Vector_splice" label: "Panel.c:215:4" }
+node: { title: "Panel_draw" label: "Panel_draw\nPanel.c:219:6\n19856 bytes (static)" }
+edge: { sourcename: "Panel_draw" targetname: "__indirect_call" label: "Panel.c:236:10" }
+node: { title: "RichString_setAttr" label: "RichString_setAttr\nRichString.h:58:6" shape : ellipse }
+edge: { sourcename: "Panel_draw" targetname: "RichString_setAttr" label: "Panel.c:238:10" }
+node: { title: "wattrset" label: "wattrset\n/usr/include/curses.h:787:28" shape : ellipse }
+edge: { sourcename: "Panel_draw" targetname: "wattrset" label: "Panel.c:242:7" }
+node: { title: "wmove" label: "wmove\n/usr/include/curses.h:819:28" shape : ellipse }
+edge: { sourcename: "Panel_draw" targetname: "wmove" label: "Panel.c:243:7" }
+node: { title: "whline" label: "whline\n/usr/include/curses.h:808:28" shape : ellipse }
+edge: { sourcename: "Panel_draw" targetname: "whline" label: "Panel.c:243:7" }
+edge: { sourcename: "Panel_draw" targetname: "wmove" label: "Panel.c:245:10" }
+node: { title: "wadd_wchnstr" label: "wadd_wchnstr\n/usr/include/curses.h:1752:28" shape : ellipse }
+edge: { sourcename: "Panel_draw" targetname: "wadd_wchnstr" label: "Panel.c:245:10" }
+edge: { sourcename: "Panel_draw" targetname: "wattrset" label: "Panel.c:248:7" }
+edge: { sourcename: "Panel_draw" targetname: "__indirect_call" label: "Panel.c:282:10" }
+edge: { sourcename: "Panel_draw" targetname: "wattrset" label: "Panel.c:289:13" }
+edge: { sourcename: "Panel_draw" targetname: "RichString_setAttr" label: "Panel.c:290:13" }
+edge: { sourcename: "Panel_draw" targetname: "wmove" label: "Panel.c:293:10" }
+edge: { sourcename: "Panel_draw" targetname: "whline" label: "Panel.c:293:10" }
+edge: { sourcename: "Panel_draw" targetname: "wmove" label: "Panel.c:295:13" }
+edge: { sourcename: "Panel_draw" targetname: "wadd_wchnstr" label: "Panel.c:295:13" }
+edge: { sourcename: "Panel_draw" targetname: "wattrset" label: "Panel.c:297:13" }
+edge: { sourcename: "Panel_draw" targetname: "RichString_delete" label: "Panel.c:298:10" }
+edge: { sourcename: "Panel_draw" targetname: "wmove" label: "Panel.c:302:10" }
+edge: { sourcename: "Panel_draw" targetname: "whline" label: "Panel.c:302:10" }
+edge: { sourcename: "Panel_draw" targetname: "__indirect_call" label: "Panel.c:309:7" }
+edge: { sourcename: "Panel_draw" targetname: "__indirect_call" label: "Panel.c:313:7" }
+edge: { sourcename: "Panel_draw" targetname: "wmove" label: "Panel.c:316:7" }
+edge: { sourcename: "Panel_draw" targetname: "whline" label: "Panel.c:316:7" }
+edge: { sourcename: "Panel_draw" targetname: "wmove" label: "Panel.c:318:10" }
+edge: { sourcename: "Panel_draw" targetname: "wadd_wchnstr" label: "Panel.c:318:10" }
+edge: { sourcename: "Panel_draw" targetname: "wattrset" label: "Panel.c:320:7" }
+edge: { sourcename: "Panel_draw" targetname: "wmove" label: "Panel.c:321:7" }
+edge: { sourcename: "Panel_draw" targetname: "whline" label: "Panel.c:321:7" }
+edge: { sourcename: "Panel_draw" targetname: "RichString_setAttr" label: "Panel.c:322:7" }
+edge: { sourcename: "Panel_draw" targetname: "wmove" label: "Panel.c:324:10" }
+edge: { sourcename: "Panel_draw" targetname: "wadd_wchnstr" label: "Panel.c:324:10" }
+edge: { sourcename: "Panel_draw" targetname: "wattrset" label: "Panel.c:326:7" }
+edge: { sourcename: "Panel_draw" targetname: "RichString_delete" label: "Panel.c:327:7" }
+edge: { sourcename: "Panel_draw" targetname: "RichString_delete" label: "Panel.c:328:7" }
+edge: { sourcename: "Panel_draw" targetname: "__indirect_call" label: "Panel.c:333:10" }
+node: { title: "FunctionBar_draw" label: "FunctionBar_draw\nFunctionBar.h:32:5" shape : ellipse }
+edge: { sourcename: "Panel_draw" targetname: "FunctionBar_draw" label: "Panel.c:335:10" }
+node: { title: "Panel_onKey" label: "Panel_onKey\nPanel.c:347:6\n0 bytes (static)" }
+node: { title: "Panel_getCh" label: "Panel_getCh\nPanel.c:500:5\n32 bytes (static)" }
+edge: { sourcename: "Panel_getCh" targetname: "wmove" label: "Panel.c:502:7" }
+node: { title: "curs_set" label: "curs_set\n/usr/include/curses.h:592:28" shape : ellipse }
+edge: { sourcename: "Panel_getCh" targetname: "curs_set" label: "Panel.c:503:7" }
+edge: { sourcename: "Panel_getCh" targetname: "curs_set" label: "Panel.c:505:7" }
+node: { title: "set_escdelay" label: "set_escdelay\n/usr/include/curses.h:900:28" shape : ellipse }
+edge: { sourcename: "Panel_getCh" targetname: "set_escdelay" label: "Panel.c:508:4" }
+node: { title: "wgetch" label: "wgetch\n/usr/include/curses.h:805:28" shape : ellipse }
+edge: { sourcename: "Panel_getCh" targetname: "wgetch" label: "Panel.c:510:11" }
+}

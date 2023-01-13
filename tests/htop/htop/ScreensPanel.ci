@@ -1,0 +1,113 @@
+graph: { title: "ScreensPanel.c"
+node: { title: "ScreensPanel.c:ScreenListItem_delete" label: "ScreenListItem_delete\nScreensPanel.c:23:13\n32 bytes (static)" }
+node: { title: "ScreenSettings_delete" label: "ScreenSettings_delete\nSettings.h:123:6" shape : ellipse }
+edge: { sourcename: "ScreensPanel.c:ScreenListItem_delete" targetname: "ScreenSettings_delete" label: "ScreensPanel.c:26:7" }
+node: { title: "ListItem_delete" label: "ListItem_delete\nListItem.h:24:6" shape : ellipse }
+edge: { sourcename: "ScreensPanel.c:ScreenListItem_delete" targetname: "ListItem_delete" label: "ScreensPanel.c:28:4" }
+node: { title: "ScreensPanel.c:startRenaming" label: "startRenaming\nScreensPanel.c:122:13\n48 bytes (static)" }
+node: { title: "Panel_getSelected" label: "Panel_getSelected\nPanel.h:121:9" shape : ellipse }
+edge: { sourcename: "ScreensPanel.c:startRenaming" targetname: "Panel_getSelected" label: "ScreensPanel.c:125:33" }
+node: { title: "strncpy" label: "strncpy\n/usr/include/string.h:125:14" shape : ellipse }
+edge: { sourcename: "ScreensPanel.c:startRenaming" targetname: "strncpy" label: "ScreensPanel.c:132:4" }
+node: { title: "strlen" label: "strlen\n/usr/include/string.h:385:15" shape : ellipse }
+edge: { sourcename: "ScreensPanel.c:startRenaming" targetname: "strlen" label: "ScreensPanel.c:134:19" }
+node: { title: "Panel_setSelectionColor" label: "Panel_setSelectionColor\nPanel.h:101:6" shape : ellipse }
+edge: { sourcename: "ScreensPanel.c:startRenaming" targetname: "Panel_setSelectionColor" label: "ScreensPanel.c:136:4" }
+edge: { sourcename: "ScreensPanel.c:startRenaming" targetname: "strlen" label: "ScreensPanel.c:137:25" }
+node: { title: "Panel_setCursorToSelection" label: "Panel_setCursorToSelection\nPanel.h:99:6" shape : ellipse }
+edge: { sourcename: "ScreensPanel.c:startRenaming" targetname: "Panel_setCursorToSelection" label: "ScreensPanel.c:138:4" }
+node: { title: "ScreensPanel.c:ScreensPanel_delete" label: "ScreensPanel_delete\nScreensPanel.c:47:13\n48 bytes (static)" }
+node: { title: "Panel_size" label: "Panel_size\nPanel.h:129:5" shape : ellipse }
+edge: { sourcename: "ScreensPanel.c:ScreensPanel_delete" targetname: "Panel_size" label: "ScreensPanel.c:52:12" }
+node: { title: "Panel_get" label: "Panel_get\nPanel.h:117:9" shape : ellipse }
+edge: { sourcename: "ScreensPanel.c:ScreensPanel_delete" targetname: "Panel_get" label: "ScreensPanel.c:54:48" }
+node: { title: "Panel_done" label: "Panel_done\nPanel.h:97:6" shape : ellipse }
+edge: { sourcename: "ScreensPanel.c:ScreensPanel_delete" targetname: "Panel_done" label: "ScreensPanel.c:62:4" }
+node: { title: "free" label: "free\n/usr/include/stdlib.h:565:13" shape : ellipse }
+edge: { sourcename: "ScreensPanel.c:ScreensPanel_delete" targetname: "free" label: "ScreensPanel.c:63:4" }
+node: { title: "ScreenListItem_new" label: "ScreenListItem_new\nScreensPanel.c:38:17\n32 bytes (static)" }
+node: { title: "xMalloc" label: "xMalloc\nXUtils.h:23:7" shape : ellipse }
+edge: { sourcename: "ScreenListItem_new" targetname: "xMalloc" label: "ScreensPanel.c:39:27" }
+node: { title: "ListItem_init" label: "ListItem_init\nListItem.h:28:6" shape : ellipse }
+edge: { sourcename: "ScreenListItem_new" targetname: "ListItem_init" label: "ScreensPanel.c:40:4" }
+node: { title: "ScreensPanel_new" label: "ScreensPanel_new\nScreensPanel.c:303:15\n80 bytes (static)" }
+edge: { sourcename: "ScreensPanel_new" targetname: "xMalloc" label: "ScreensPanel.c:304:25" }
+node: { title: "FunctionBar_new" label: "FunctionBar_new\nFunctionBar.h:26:14" shape : ellipse }
+edge: { sourcename: "ScreensPanel_new" targetname: "FunctionBar_new" label: "ScreensPanel.c:307:25" }
+node: { title: "Panel_init" label: "Panel_init\nPanel.h:95:6" shape : ellipse }
+edge: { sourcename: "ScreensPanel_new" targetname: "Panel_init" label: "ScreensPanel.c:308:4" }
+node: { title: "ColumnsPanel_new" label: "ColumnsPanel_new\nColumnsPanel.h:26:15" shape : ellipse }
+edge: { sourcename: "ScreensPanel_new" targetname: "ColumnsPanel_new" label: "ScreensPanel.c:311:20" }
+node: { title: "Panel_setHeader" label: "Panel_setHeader\nPanel.h:103:6" shape : ellipse }
+edge: { sourcename: "ScreensPanel_new" targetname: "Panel_setHeader" label: "ScreensPanel.c:316:4" }
+edge: { sourcename: "ScreensPanel_new" targetname: "xMalloc" label: "ScreensPanel.c:39:27" }
+edge: { sourcename: "ScreensPanel_new" targetname: "ListItem_init" label: "ScreensPanel.c:40:4" }
+node: { title: "Panel_add" label: "Panel_add\nPanel.h:111:6" shape : ellipse }
+edge: { sourcename: "ScreensPanel_new" targetname: "Panel_add" label: "ScreensPanel.c:321:7" }
+node: { title: "ScreensPanel_update" label: "ScreensPanel_update\nScreensPanel.c:326:6\n64 bytes (static)" }
+edge: { sourcename: "ScreensPanel_update" targetname: "Panel_size" label: "ScreensPanel.c:328:15" }
+node: { title: "xReallocArray" label: "xReallocArray\nXUtils.h:31:7" shape : ellipse }
+edge: { sourcename: "ScreensPanel_update" targetname: "xReallocArray" label: "ScreensPanel.c:331:30" }
+edge: { sourcename: "ScreensPanel_update" targetname: "Panel_get" label: "ScreensPanel.c:333:48" }
+edge: { sourcename: "ScreensPanel_update" targetname: "free" label: "ScreensPanel.c:335:7" }
+node: { title: "xStrdup" label: "xStrdup\nXUtils.h:68:7" shape : ellipse }
+edge: { sourcename: "ScreensPanel_update" targetname: "xStrdup" label: "ScreensPanel.c:337:18" }
+node: { title: "ScreensPanel.c:ScreensPanel_eventHandler" label: "ScreensPanel_eventHandler\nScreensPanel.c:285:22\n96 bytes (static)" }
+edge: { sourcename: "ScreensPanel.c:ScreensPanel_eventHandler" targetname: "strlen" label: "ScreensPanel.c:73:31" }
+edge: { sourcename: "ScreensPanel.c:ScreensPanel_eventHandler" targetname: "Panel_setCursorToSelection" label: "ScreensPanel.c:74:10" }
+edge: { sourcename: "ScreensPanel.c:ScreensPanel_eventHandler" targetname: "strlen" label: "ScreensPanel.c:84:37" }
+edge: { sourcename: "ScreensPanel.c:ScreensPanel_eventHandler" targetname: "Panel_setCursorToSelection" label: "ScreensPanel.c:85:16" }
+edge: { sourcename: "ScreensPanel.c:ScreensPanel_eventHandler" targetname: "Panel_getSelected" label: "ScreensPanel.c:93:42" }
+edge: { sourcename: "ScreensPanel.c:ScreensPanel_eventHandler" targetname: "free" label: "ScreensPanel.c:97:13" }
+edge: { sourcename: "ScreensPanel.c:ScreensPanel_eventHandler" targetname: "xStrdup" label: "ScreensPanel.c:98:27" }
+edge: { sourcename: "ScreensPanel.c:ScreensPanel_eventHandler" targetname: "Panel_setSelectionColor" label: "ScreensPanel.c:101:13" }
+edge: { sourcename: "ScreensPanel.c:ScreensPanel_eventHandler" targetname: "ScreensPanel_update" label: "ScreensPanel.c:102:13" }
+edge: { sourcename: "ScreensPanel.c:ScreensPanel_eventHandler" targetname: "Panel_getSelected" label: "ScreensPanel.c:107:42" }
+edge: { sourcename: "ScreensPanel.c:ScreensPanel_eventHandler" targetname: "Panel_setSelectionColor" label: "ScreensPanel.c:114:13" }
+node: { title: "Panel_getSelectedIndex" label: "Panel_getSelectedIndex\nPanel.h:127:5" shape : ellipse }
+edge: { sourcename: "ScreensPanel.c:ScreensPanel_eventHandler" targetname: "Panel_getSelectedIndex" label: "ScreensPanel.c:176:19" }
+edge: { sourcename: "ScreensPanel.c:ScreensPanel_eventHandler" targetname: "Panel_getSelected" label: "ScreensPanel.c:177:49" }
+edge: { sourcename: "ScreensPanel.c:ScreensPanel_eventHandler" targetname: "Panel_setSelectionColor" label: "ScreensPanel.c:188:10" }
+edge: { sourcename: "ScreensPanel.c:ScreensPanel_eventHandler" targetname: "Panel_getSelected" label: "ScreensPanel.c:189:39" }
+node: { title: "Panel_onKey" label: "Panel_onKey\nPanel.h:137:6" shape : ellipse }
+edge: { sourcename: "ScreensPanel.c:ScreensPanel_eventHandler" targetname: "Panel_onKey" label: "ScreensPanel.c:202:10" }
+edge: { sourcename: "ScreensPanel.c:ScreensPanel_eventHandler" targetname: "ScreensPanel.c:startRenaming" label: "ScreensPanel.c:208:10" }
+node: { title: "Settings_newScreen" label: "Settings_newScreen\nSettings.h:121:17" shape : ellipse }
+edge: { sourcename: "ScreensPanel.c:ScreensPanel_eventHandler" targetname: "Settings_newScreen" label: "ScreensPanel.c:166:25" }
+edge: { sourcename: "ScreensPanel.c:ScreensPanel_eventHandler" targetname: "xMalloc" label: "ScreensPanel.c:39:27" }
+edge: { sourcename: "ScreensPanel.c:ScreensPanel_eventHandler" targetname: "ListItem_init" label: "ScreensPanel.c:40:4" }
+edge: { sourcename: "ScreensPanel.c:ScreensPanel_eventHandler" targetname: "Panel_getSelectedIndex" label: "ScreensPanel.c:168:14" }
+node: { title: "Panel_insert" label: "Panel_insert\nPanel.h:113:6" shape : ellipse }
+edge: { sourcename: "ScreensPanel.c:ScreensPanel_eventHandler" targetname: "Panel_insert" label: "ScreensPanel.c:169:4" }
+node: { title: "Panel_setSelected" label: "Panel_setSelected\nPanel.h:131:6" shape : ellipse }
+edge: { sourcename: "ScreensPanel.c:ScreensPanel_eventHandler" targetname: "Panel_setSelected" label: "ScreensPanel.c:170:4" }
+edge: { sourcename: "ScreensPanel.c:ScreensPanel_eventHandler" targetname: "ScreensPanel.c:startRenaming" label: "ScreensPanel.c:216:10" }
+edge: { sourcename: "ScreensPanel.c:ScreensPanel_eventHandler" targetname: "Panel_onKey" label: "ScreensPanel.c:224:13" }
+node: { title: "Panel_moveSelectedUp" label: "Panel_moveSelectedUp\nPanel.h:123:6" shape : ellipse }
+edge: { sourcename: "ScreensPanel.c:ScreensPanel_eventHandler" targetname: "Panel_moveSelectedUp" label: "ScreensPanel.c:233:10" }
+edge: { sourcename: "ScreensPanel.c:ScreensPanel_eventHandler" targetname: "Panel_onKey" label: "ScreensPanel.c:241:13" }
+node: { title: "Panel_moveSelectedDown" label: "Panel_moveSelectedDown\nPanel.h:125:6" shape : ellipse }
+edge: { sourcename: "ScreensPanel.c:ScreensPanel_eventHandler" targetname: "Panel_moveSelectedDown" label: "ScreensPanel.c:250:10" }
+edge: { sourcename: "ScreensPanel.c:ScreensPanel_eventHandler" targetname: "Panel_size" label: "ScreensPanel.c:258:14" }
+node: { title: "Panel_remove" label: "Panel_remove\nPanel.h:119:9" shape : ellipse }
+edge: { sourcename: "ScreensPanel.c:ScreensPanel_eventHandler" targetname: "Panel_remove" label: "ScreensPanel.c:259:13" }
+node: { title: "__ctype_b_loc" label: "__ctype_b_loc\n/usr/include/ctype.h:79:35" shape : ellipse }
+edge: { sourcename: "ScreensPanel.c:ScreensPanel_eventHandler" targetname: "__ctype_b_loc" label: "ScreensPanel.c:266:26" }
+node: { title: "Panel_selectByTyping" label: "Panel_selectByTyping\nPanel.h:139:15" shape : ellipse }
+edge: { sourcename: "ScreensPanel.c:ScreensPanel_eventHandler" targetname: "Panel_selectByTyping" label: "ScreensPanel.c:267:22" }
+edge: { sourcename: "ScreensPanel.c:ScreensPanel_eventHandler" targetname: "Panel_getSelected" label: "ScreensPanel.c:273:49" }
+node: { title: "ColumnsPanel_fill" label: "ColumnsPanel_fill\nColumnsPanel.h:28:6" shape : ellipse }
+edge: { sourcename: "ScreensPanel.c:ScreensPanel_eventHandler" targetname: "ColumnsPanel_fill" label: "ScreensPanel.c:275:7" }
+edge: { sourcename: "ScreensPanel.c:ScreensPanel_eventHandler" targetname: "Panel_size" label: "ScreensPanel.c:144:12" }
+edge: { sourcename: "ScreensPanel.c:ScreensPanel_eventHandler" targetname: "free" label: "ScreensPanel.c:145:4" }
+node: { title: "xMallocArray" label: "xMallocArray\nXUtils.h:25:7" shape : ellipse }
+edge: { sourcename: "ScreensPanel.c:ScreensPanel_eventHandler" targetname: "xMallocArray" label: "ScreensPanel.c:146:30" }
+edge: { sourcename: "ScreensPanel.c:ScreensPanel_eventHandler" targetname: "Panel_get" label: "ScreensPanel.c:149:48" }
+edge: { sourcename: "ScreensPanel.c:ScreensPanel_eventHandler" targetname: "ScreensPanel_update" label: "ScreensPanel.c:281:7" }
+edge: { sourcename: "ScreensPanel.c:ScreensPanel_eventHandler" targetname: "ColumnsPanel_fill" label: "ScreensPanel.c:275:7" }
+edge: { sourcename: "ScreensPanel.c:ScreensPanel_eventHandler" targetname: "Panel_getSelected" label: "ScreensPanel.c:273:49" }
+edge: { sourcename: "ScreensPanel.c:ScreensPanel_eventHandler" targetname: "ColumnsPanel_fill" label: "ScreensPanel.c:275:7" }
+edge: { sourcename: "ScreensPanel.c:ScreensPanel_eventHandler" targetname: "Panel_getSelected" label: "ScreensPanel.c:273:49" }
+edge: { sourcename: "ScreensPanel.c:ScreensPanel_eventHandler" targetname: "Panel_getSelected" label: "ScreensPanel.c:273:49" }
+edge: { sourcename: "ScreensPanel.c:ScreensPanel_eventHandler" targetname: "Panel_getSelected" label: "ScreensPanel.c:273:49" }
+}

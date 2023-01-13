@@ -1,0 +1,436 @@
+graph: { title: "linux/LinuxProcessList.c"
+node: { title: "linux/LinuxProcessList.c:scanCPUFrequencyFromCPUinfo" label: "scanCPUFrequencyFromCPUinfo\nlinux/LinuxProcessList.c:2192:13\n4208 bytes (static)" }
+node: { title: "fopen" label: "fopen\n/usr/include/stdio.h:246:14" shape : ellipse }
+edge: { sourcename: "linux/LinuxProcessList.c:scanCPUFrequencyFromCPUinfo" targetname: "fopen" label: "linux/LinuxProcessList.c:2193:17" }
+node: { title: "fgets" label: "fgets\n/usr/include/stdio.h:564:14" shape : ellipse }
+edge: { sourcename: "linux/LinuxProcessList.c:scanCPUFrequencyFromCPUinfo" targetname: "fgets" label: "linux/LinuxProcessList.c:2206:11" }
+node: { title: "*__isoc99_sscanf" label: "sscanf\n/usr/include/stdio.h:412:12" shape : ellipse }
+edge: { sourcename: "linux/LinuxProcessList.c:scanCPUFrequencyFromCPUinfo" targetname: "*__isoc99_sscanf" label: "linux/LinuxProcessList.c:2209:11" }
+edge: { sourcename: "linux/LinuxProcessList.c:scanCPUFrequencyFromCPUinfo" targetname: "*__isoc99_sscanf" label: "linux/LinuxProcessList.c:2212:11" }
+edge: { sourcename: "linux/LinuxProcessList.c:scanCPUFrequencyFromCPUinfo" targetname: "*__isoc99_sscanf" label: "linux/LinuxProcessList.c:2213:11" }
+node: { title: "feof" label: "feof\n/usr/include/stdio.h:759:12" shape : ellipse }
+edge: { sourcename: "linux/LinuxProcessList.c:scanCPUFrequencyFromCPUinfo" targetname: "feof" label: "linux/LinuxProcessList.c:2202:12" }
+node: { title: "fclose" label: "fclose\n/usr/include/stdio.h:213:12" shape : ellipse }
+edge: { sourcename: "linux/LinuxProcessList.c:scanCPUFrequencyFromCPUinfo" targetname: "fclose" label: "linux/LinuxProcessList.c:2230:4" }
+node: { title: "linux/LinuxProcessList.c:LinuxProcessList_readCwd" label: "LinuxProcessList_readCwd\nlinux/LinuxProcessList.c:1132:13\n4160 bytes (static)" }
+node: { title: "memset" label: "__builtin_memset\n<built-in>" shape : ellipse }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_readCwd" targetname: "memset" }
+node: { title: "readlinkat" label: "readlinkat\n/usr/include/unistd.h:819:16" shape : ellipse }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_readCwd" targetname: "readlinkat" label: "linux/LinuxProcessList.c:1136:16" }
+node: { title: "free" label: "free\n/usr/include/stdlib.h:565:13" shape : ellipse }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_readCwd" targetname: "free" label: "linux/LinuxProcessList.c:1142:7" }
+node: { title: "strcmp" label: "strcmp\n/usr/include/string.h:137:12" shape : ellipse }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_readCwd" targetname: "strcmp" label: "./XUtils.h:46:11" }
+node: { title: "free_and_xStrdup" label: "free_and_xStrdup\n./XUtils.h:69:6" shape : ellipse }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_readCwd" targetname: "free_and_xStrdup" label: "linux/LinuxProcessList.c:1152:4" }
+node: { title: "linux/LinuxProcessList.c:LinuxProcessList_readCmdlineFile" label: "LinuxProcessList_readCmdlineFile\nlinux/LinuxProcessList.c:1236:13\n4352 bytes (static)" }
+node: { title: "xReadfileat" label: "xReadfileat\n./XUtils.h:74:9" shape : ellipse }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_readCmdlineFile" targetname: "xReadfileat" label: "linux/LinuxProcessList.c:1238:22" }
+node: { title: "Compat_faccessat" label: "Compat_faccessat\n./Compat.h:18:5" shape : ellipse }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_readCmdlineFile" targetname: "Compat_faccessat" label: "linux/LinuxProcessList.c:1296:11" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_readCmdlineFile" targetname: "Compat_faccessat" label: "linux/LinuxProcessList.c:1310:32" }
+node: { title: "Process_updateCmdline" label: "Process_updateCmdline\n./Process.h:404:6" shape : ellipse }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_readCmdlineFile" targetname: "Process_updateCmdline" label: "linux/LinuxProcessList.c:1359:4" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_readCmdlineFile" targetname: "xReadfileat" label: "linux/LinuxProcessList.c:1362:19" }
+node: { title: "Process_updateComm" label: "Process_updateComm\n./Process.h:403:6" shape : ellipse }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_readCmdlineFile" targetname: "Process_updateComm" label: "linux/LinuxProcessList.c:1364:7" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_readCmdlineFile" targetname: "Process_updateComm" label: "linux/LinuxProcessList.c:1366:7" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_readCmdlineFile" targetname: "readlinkat" label: "linux/LinuxProcessList.c:1373:14" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_readCmdlineFile" targetname: "strcmp" label: "./XUtils.h:46:11" }
+node: { title: "strlen" label: "strlen\n/usr/include/string.h:385:15" shape : ellipse }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_readCmdlineFile" targetname: "strlen" label: "linux/LinuxProcessList.c:1385:37" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_readCmdlineFile" targetname: "strcmp" label: "./XUtils.h:46:11" }
+node: { title: "Process_updateExe" label: "Process_updateExe\n./Process.h:405:6" shape : ellipse }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_readCmdlineFile" targetname: "Process_updateExe" label: "linux/LinuxProcessList.c:1399:10" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_readCmdlineFile" targetname: "Process_updateExe" label: "linux/LinuxProcessList.c:1402:7" }
+node: { title: "linux/LinuxProcessList.c:sortTtyDrivers" label: "sortTtyDrivers\nlinux/LinuxProcessList.c:90:12\n0 bytes (static)" }
+node: { title: "linux/LinuxProcessList.c:LinuxProcessList_calcLibSize_helper" label: "LinuxProcessList_calcLibSize_helper\nlinux/LinuxProcessList.c:618:13\n0 bytes (static)" }
+node: { title: "linux/LinuxProcessList.c:LinuxProcessList_readStatFile.constprop.0" label: "LinuxProcessList_readStatFile.constprop\nlinux/LinuxProcessList.c:370:13\n2112 bytes (static)" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_readStatFile.constprop.0" targetname: "xReadfileat" label: "linux/LinuxProcessList.c:374:16" }
+node: { title: "strchr" label: "strchr\n/usr/include/string.h:226:14" shape : ellipse }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_readStatFile.constprop.0" targetname: "strchr" label: "linux/LinuxProcessList.c:380:21" }
+node: { title: "strrchr" label: "strrchr\n/usr/include/string.h:253:14" shape : ellipse }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_readStatFile.constprop.0" targetname: "strrchr" label: "linux/LinuxProcessList.c:386:16" }
+node: { title: "String_safeStrncpy" label: "String_safeStrncpy\n./XUtils.h:60:8" shape : ellipse }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_readStatFile.constprop.0" targetname: "String_safeStrncpy" label: "linux/LinuxProcessList.c:390:4" }
+node: { title: "strtol" label: "strtol\n/usr/include/stdlib.h:176:17" shape : ellipse }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_readStatFile.constprop.0" targetname: "strtol" label: "linux/LinuxProcessList.c:399:20" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_readStatFile.constprop.0" targetname: "strtol" label: "linux/LinuxProcessList.c:403:20" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_readStatFile.constprop.0" targetname: "strtol" label: "linux/LinuxProcessList.c:407:23" }
+node: { title: "strtoul" label: "strtoul\n/usr/include/stdlib.h:180:26" shape : ellipse }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_readStatFile.constprop.0" targetname: "strtoul" label: "linux/LinuxProcessList.c:411:22" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_readStatFile.constprop.0" targetname: "strtol" label: "linux/LinuxProcessList.c:415:21" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_readStatFile.constprop.0" targetname: "strtoul" label: "linux/LinuxProcessList.c:419:16" }
+node: { title: "strtoull" label: "strtoull\n/usr/include/stdlib.h:205:31" shape : ellipse }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_readStatFile.constprop.0" targetname: "strtoull" label: "linux/LinuxProcessList.c:423:22" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_readStatFile.constprop.0" targetname: "strtoull" label: "linux/LinuxProcessList.c:427:18" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_readStatFile.constprop.0" targetname: "strtoull" label: "linux/LinuxProcessList.c:431:22" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_readStatFile.constprop.0" targetname: "strtoull" label: "linux/LinuxProcessList.c:435:18" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_readStatFile.constprop.0" targetname: "strtoull" label: "linux/LinuxProcessList.c:439:16" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_readStatFile.constprop.0" targetname: "strtoull" label: "linux/LinuxProcessList.c:443:16" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_readStatFile.constprop.0" targetname: "strtoull" label: "linux/LinuxProcessList.c:447:17" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_readStatFile.constprop.0" targetname: "strtoull" label: "linux/LinuxProcessList.c:451:17" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_readStatFile.constprop.0" targetname: "strtol" label: "linux/LinuxProcessList.c:455:24" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_readStatFile.constprop.0" targetname: "strtol" label: "linux/LinuxProcessList.c:459:20" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_readStatFile.constprop.0" targetname: "strtol" label: "linux/LinuxProcessList.c:463:20" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_readStatFile.constprop.0" targetname: "strchr" label: "linux/LinuxProcessList.c:467:15" }
+node: { title: "strtoll" label: "strtoll\n/usr/include/stdlib.h:200:22" shape : ellipse }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_readStatFile.constprop.0" targetname: "strtoll" label: "linux/LinuxProcessList.c:471:70" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_readStatFile.constprop.0" targetname: "strchr" label: "linux/LinuxProcessList.c:473:18" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_readStatFile.constprop.0" targetname: "strchr" label: "linux/LinuxProcessList.c:479:18" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_readStatFile.constprop.0" targetname: "strtol" label: "linux/LinuxProcessList.c:485:25" }
+node: { title: "linux/LinuxProcessList.c:scanAvailableCPUsFromCPUinfo" label: "scanAvailableCPUsFromCPUinfo\nlinux/LinuxProcessList.c:170:21\n4144 bytes (static)" }
+edge: { sourcename: "linux/LinuxProcessList.c:scanAvailableCPUsFromCPUinfo" targetname: "fopen" label: "linux/LinuxProcessList.c:171:17" }
+edge: { sourcename: "linux/LinuxProcessList.c:scanAvailableCPUsFromCPUinfo" targetname: "fgets" label: "linux/LinuxProcessList.c:180:11" }
+edge: { sourcename: "linux/LinuxProcessList.c:scanAvailableCPUsFromCPUinfo" targetname: "feof" label: "linux/LinuxProcessList.c:177:12" }
+edge: { sourcename: "linux/LinuxProcessList.c:scanAvailableCPUsFromCPUinfo" targetname: "fclose" label: "linux/LinuxProcessList.c:187:4" }
+node: { title: "linux/LinuxProcessList.c:LinuxProcessList_updateCPUcount" label: "LinuxProcessList_updateCPUcount\nlinux/LinuxProcessList.c:192:13\n128 bytes (static)" }
+node: { title: "xCalloc" label: "xCalloc\n./XUtils.h:27:7" shape : ellipse }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_updateCPUcount" targetname: "xCalloc" label: "linux/LinuxProcessList.c:202:23" }
+node: { title: "opendir" label: "opendir\n/usr/include/dirent.h:134:13" shape : ellipse }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_updateCPUcount" targetname: "opendir" label: "linux/LinuxProcessList.c:209:15" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_updateCPUcount" targetname: "strtoul" label: "linux/LinuxProcessList.c:224:30" }
+node: { title: "dirfd" label: "dirfd\n/usr/include/dirent.h:224:12" shape : ellipse }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_updateCPUcount" targetname: "dirfd" label: "linux/LinuxProcessList.c:229:22" }
+node: { title: "openat" label: "openat\n/usr/include/fcntl.h:192:12" shape : ellipse }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_updateCPUcount" targetname: "openat" label: "linux/LinuxProcessList.c:229:22" }
+node: { title: "xReallocArrayZero" label: "xReallocArrayZero\n./XUtils.h:33:7" shape : ellipse }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_updateCPUcount" targetname: "xReallocArrayZero" label: "linux/LinuxProcessList.c:242:26" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_updateCPUcount" targetname: "xReadfileat" label: "linux/LinuxProcessList.c:248:21" }
+node: { title: "close" label: "close\n/usr/include/unistd.h:353:12" shape : ellipse }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_updateCPUcount" targetname: "close" label: "./Compat.h:34:4" }
+node: { title: "readdir" label: "readdir\n/usr/include/dirent.h:162:23" shape : ellipse }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_updateCPUcount" targetname: "readdir" label: "linux/LinuxProcessList.c:216:20" }
+node: { title: "closedir" label: "closedir\n/usr/include/dirent.h:149:12" shape : ellipse }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_updateCPUcount" targetname: "closedir" label: "linux/LinuxProcessList.c:260:4" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_updateCPUcount" targetname: "linux/LinuxProcessList.c:scanAvailableCPUsFromCPUinfo" label: "linux/LinuxProcessList.c:269:31" }
+node: { title: "linux/LinuxProcessList.c:LinuxProcessList_scanCPUTime" label: "LinuxProcessList_scanCPUTime\nlinux/LinuxProcessList.c:2028:22\n4368 bytes (static)" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_scanCPUTime" targetname: "linux/LinuxProcessList.c:LinuxProcessList_updateCPUcount" label: "linux/LinuxProcessList.c:2031:4" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_scanCPUTime" targetname: "fopen" label: "linux/LinuxProcessList.c:2033:17" }
+node: { title: "CRT_fatalError" label: "CRT_fatalError\n./CRT.h:151:6" shape : ellipse }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_scanCPUTime" targetname: "CRT_fatalError" label: "linux/LinuxProcessList.c:2035:7" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_scanCPUTime" targetname: "fgets" label: "linux/LinuxProcessList.c:2045:24" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_scanCPUTime" targetname: "*__isoc99_sscanf" label: "linux/LinuxProcessList.c:2058:17" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_scanCPUTime" targetname: "*__isoc99_sscanf" label: "linux/LinuxProcessList.c:2062:17" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_scanCPUTime" targetname: "strtoul" label: "linux/LinuxProcessList.c:2119:32" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_scanCPUTime" targetname: "fgets" label: "linux/LinuxProcessList.c:2117:11" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_scanCPUTime" targetname: "fclose" label: "linux/LinuxProcessList.c:2124:4" }
+node: { title: "linux/LinuxProcessList.c:LinuxProcessList_readOomData" label: "LinuxProcessList_readOomData\nlinux/LinuxProcessList.c:1043:13\n4160 bytes (static)" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_readOomData" targetname: "openat" label: "./Compat.h:38:11" }
+node: { title: "fdopen" label: "fdopen\n/usr/include/stdio.h:279:14" shape : ellipse }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_readOomData" targetname: "fdopen" label: "linux/LinuxProcessList.c:83:19" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_readOomData" targetname: "close" label: "linux/LinuxProcessList.c:85:7" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_readOomData" targetname: "*__isoc99_sscanf" label: "linux/LinuxProcessList.c:1051:16" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_readOomData" targetname: "fclose" label: "linux/LinuxProcessList.c:1056:4" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_readOomData" targetname: "fgets" label: "linux/LinuxProcessList.c:1049:8" }
+node: { title: "linux/LinuxProcessList.c:LinuxProcessList_readSecattrData" label: "LinuxProcessList_readSecattrData\nlinux/LinuxProcessList.c:1103:13\n4160 bytes (static)" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_readSecattrData" targetname: "openat" label: "./Compat.h:38:11" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_readSecattrData" targetname: "fdopen" label: "linux/LinuxProcessList.c:83:19" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_readSecattrData" targetname: "close" label: "linux/LinuxProcessList.c:85:7" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_readSecattrData" targetname: "free" label: "linux/LinuxProcessList.c:1106:7" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_readSecattrData" targetname: "free" label: "linux/LinuxProcessList.c:1115:7" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_readSecattrData" targetname: "strchr" label: "linux/LinuxProcessList.c:1119:20" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_readSecattrData" targetname: "strlen" label: "linux/LinuxProcessList.c:1124:4" }
+node: { title: "Process_updateFieldWidth" label: "Process_updateFieldWidth\n./Process.h:414:6" shape : ellipse }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_readSecattrData" targetname: "Process_updateFieldWidth" label: "linux/LinuxProcessList.c:1124:4" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_readSecattrData" targetname: "strcmp" label: "./XUtils.h:46:11" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_readSecattrData" targetname: "free_and_xStrdup" label: "linux/LinuxProcessList.c:1129:4" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_readSecattrData" targetname: "fgets" label: "linux/LinuxProcessList.c:1112:22" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_readSecattrData" targetname: "fclose" label: "linux/LinuxProcessList.c:1113:4" }
+node: { title: "linux/LinuxProcessList.c:LinuxProcessList_readCtxtData" label: "LinuxProcessList_readCtxtData\nlinux/LinuxProcessList.c:1076:13\n4224 bytes (static)" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_readCtxtData" targetname: "openat" label: "./Compat.h:38:11" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_readCtxtData" targetname: "fdopen" label: "linux/LinuxProcessList.c:83:19" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_readCtxtData" targetname: "close" label: "linux/LinuxProcessList.c:85:7" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_readCtxtData" targetname: "*__isoc99_sscanf" label: "linux/LinuxProcessList.c:1086:19" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_readCtxtData" targetname: "*__isoc99_sscanf" label: "linux/LinuxProcessList.c:1092:19" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_readCtxtData" targetname: "fgets" label: "linux/LinuxProcessList.c:1083:11" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_readCtxtData" targetname: "fclose" label: "linux/LinuxProcessList.c:1098:4" }
+node: { title: "linux/LinuxProcessList.c:LinuxProcessList_checkPidNamespace" label: "LinuxProcessList_checkPidNamespace\nlinux/LinuxProcessList.c:767:13\n4176 bytes (static)" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_checkPidNamespace" targetname: "openat" label: "./Compat.h:38:11" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_checkPidNamespace" targetname: "fdopen" label: "linux/LinuxProcessList.c:83:19" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_checkPidNamespace" targetname: "close" label: "linux/LinuxProcessList.c:85:7" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_checkPidNamespace" targetname: "fgets" label: "linux/LinuxProcessList.c:774:11" }
+node: { title: "__ctype_b_loc" label: "__ctype_b_loc\n/usr/include/ctype.h:79:35" shape : ellipse }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_checkPidNamespace" targetname: "__ctype_b_loc" label: "linux/LinuxProcessList.c:782:39" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_checkPidNamespace" targetname: "fclose" label: "linux/LinuxProcessList.c:800:4" }
+node: { title: "linux/LinuxProcessList.c:LinuxProcessList_readCGroupFile" label: "LinuxProcessList_readCGroupFile\nlinux/LinuxProcessList.c:939:13\n8288 bytes (static)" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_readCGroupFile" targetname: "openat" label: "./Compat.h:38:11" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_readCGroupFile" targetname: "fdopen" label: "linux/LinuxProcessList.c:83:19" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_readCGroupFile" targetname: "close" label: "linux/LinuxProcessList.c:85:7" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_readCGroupFile" targetname: "free" label: "linux/LinuxProcessList.c:943:10" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_readCGroupFile" targetname: "free" label: "linux/LinuxProcessList.c:947:10" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_readCGroupFile" targetname: "fgets" label: "linux/LinuxProcessList.c:958:24" }
+node: { title: "strchrnul" label: "strchrnul\n/usr/include/string.h:266:14" shape : ellipse }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_readCGroupFile" targetname: "strchrnul" label: "linux/LinuxProcessList.c:964:18" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_readCGroupFile" targetname: "strchrnul" label: "linux/LinuxProcessList.c:964:18" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_readCGroupFile" targetname: "strchrnul" label: "linux/LinuxProcessList.c:970:19" }
+node: { title: "snprintf" label: "snprintf\n/usr/include/stdio.h:354:12" shape : ellipse }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_readCGroupFile" targetname: "snprintf" label: "linux/LinuxProcessList.c:978:19" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_readCGroupFile" targetname: "feof" label: "linux/LinuxProcessList.c:956:12" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_readCGroupFile" targetname: "fclose" label: "linux/LinuxProcessList.c:981:4" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_readCGroupFile" targetname: "strcmp" label: "./XUtils.h:46:11" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_readCGroupFile" targetname: "strlen" label: "linux/LinuxProcessList.c:985:4" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_readCGroupFile" targetname: "strlen" label: "linux/LinuxProcessList.c:990:10" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_readCGroupFile" targetname: "Process_updateFieldWidth" label: "linux/LinuxProcessList.c:990:10" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_readCGroupFile" targetname: "strlen" label: "linux/LinuxProcessList.c:993:10" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_readCGroupFile" targetname: "Process_updateFieldWidth" label: "linux/LinuxProcessList.c:993:10" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_readCGroupFile" targetname: "strlen" label: "linux/LinuxProcessList.c:1000:7" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_readCGroupFile" targetname: "Process_updateFieldWidth" label: "linux/LinuxProcessList.c:1000:7" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_readCGroupFile" targetname: "free_and_xStrdup" label: "linux/LinuxProcessList.c:1001:7" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_readCGroupFile" targetname: "free" label: "linux/LinuxProcessList.c:1002:7" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_readCGroupFile" targetname: "strlen" label: "linux/LinuxProcessList.c:1005:7" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_readCGroupFile" targetname: "Process_updateFieldWidth" label: "linux/LinuxProcessList.c:1005:7" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_readCGroupFile" targetname: "free" label: "linux/LinuxProcessList.c:1006:7" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_readCGroupFile" targetname: "Process_updateFieldWidth" label: "linux/LinuxProcessList.c:985:4" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_readCGroupFile" targetname: "free_and_xStrdup" label: "linux/LinuxProcessList.c:986:4" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_readCGroupFile" targetname: "strlen" label: "linux/LinuxProcessList.c:985:4" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_readCGroupFile" targetname: "Process_updateFieldWidth" label: "linux/LinuxProcessList.c:985:4" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_readCGroupFile" targetname: "free_and_xStrdup" label: "linux/LinuxProcessList.c:986:4" }
+node: { title: "CGroup_filterName" label: "CGroup_filterName\n./linux/CGroupUtils.h:14:7" shape : ellipse }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_readCGroupFile" targetname: "CGroup_filterName" label: "linux/LinuxProcessList.c:998:25" }
+node: { title: "linux/LinuxProcessList.c:LinuxProcessList_recurseProcTree.isra.0" label: "LinuxProcessList_recurseProcTree.isra\nlinux/LinuxProcessList.c:1477:13\n1440 bytes (static)" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_recurseProcTree.isra.0" targetname: "openat" label: "linux/LinuxProcessList.c:1484:16" }
+node: { title: "fdopendir" label: "fdopendir\n/usr/include/dirent.h:141:13" shape : ellipse }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_recurseProcTree.isra.0" targetname: "fdopendir" label: "linux/LinuxProcessList.c:1487:15" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_recurseProcTree.isra.0" targetname: "close" label: "./Compat.h:34:4" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_recurseProcTree.isra.0" targetname: "strtoul" label: "linux/LinuxProcessList.c:1525:36" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_recurseProcTree.isra.0" targetname: "linux/LinuxProcessList.c:LinuxProcessList_recurseProcTree.isra.0" label: "linux/LinuxProcessList.c:1551:7" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_recurseProcTree.isra.0" targetname: "linux/LinuxProcessList.c:LinuxProcessList_readCGroupFile" label: "linux/LinuxProcessList.c:1554:10" }
+node: { title: "strncmp" label: "strncmp\n/usr/include/string.h:140:12" shape : ellipse }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_recurseProcTree.isra.0" targetname: "strncmp" label: "./XUtils.h:40:11" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_recurseProcTree.isra.0" targetname: "strncmp" label: "./XUtils.h:40:11" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_recurseProcTree.isra.0" targetname: "linux/LinuxProcessList.c:LinuxProcessList_checkPidNamespace" label: "linux/LinuxProcessList.c:1556:18" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_recurseProcTree.isra.0" targetname: "close" label: "./Compat.h:34:4" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_recurseProcTree.isra.0" targetname: "close" label: "./Compat.h:34:4" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_recurseProcTree.isra.0" targetname: "close" label: "./Compat.h:34:4" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_recurseProcTree.isra.0" targetname: "xReadfileat" label: "linux/LinuxProcessList.c:515:16" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_recurseProcTree.isra.0" targetname: "strncmp" label: "./XUtils.h:40:11" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_recurseProcTree.isra.0" targetname: "strtoull" label: "linux/LinuxProcessList.c:540:33" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_recurseProcTree.isra.0" targetname: "strncmp" label: "./XUtils.h:40:11" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_recurseProcTree.isra.0" targetname: "strtoull" label: "linux/LinuxProcessList.c:542:38" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_recurseProcTree.isra.0" targetname: "strncmp" label: "./XUtils.h:40:11" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_recurseProcTree.isra.0" targetname: "strtoull" label: "linux/LinuxProcessList.c:548:33" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_recurseProcTree.isra.0" targetname: "strncmp" label: "./XUtils.h:40:11" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_recurseProcTree.isra.0" targetname: "strtoull" label: "linux/LinuxProcessList.c:550:39" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_recurseProcTree.isra.0" targetname: "strncmp" label: "./XUtils.h:40:11" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_recurseProcTree.isra.0" targetname: "strtoull" label: "linux/LinuxProcessList.c:556:33" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_recurseProcTree.isra.0" targetname: "strncmp" label: "./XUtils.h:40:11" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_recurseProcTree.isra.0" targetname: "strtoull" label: "linux/LinuxProcessList.c:558:33" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_recurseProcTree.isra.0" targetname: "strncmp" label: "./XUtils.h:40:11" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_recurseProcTree.isra.0" targetname: "strtoull" label: "linux/LinuxProcessList.c:563:49" }
+node: { title: "strsep" label: "strsep\n/usr/include/string.h:440:14" shape : ellipse }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_recurseProcTree.isra.0" targetname: "strsep" label: "linux/LinuxProcessList.c:536:19" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_recurseProcTree.isra.0" targetname: "openat" label: "./Compat.h:38:11" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_recurseProcTree.isra.0" targetname: "fdopen" label: "linux/LinuxProcessList.c:83:19" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_recurseProcTree.isra.0" targetname: "close" label: "linux/LinuxProcessList.c:85:7" }
+node: { title: "rand" label: "rand\n/usr/include/stdlib.h:453:12" shape : ellipse }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_recurseProcTree.isra.0" targetname: "rand" label: "linux/LinuxProcessList.c:1606:43" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_recurseProcTree.isra.0" targetname: "openat" label: "./Compat.h:38:11" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_recurseProcTree.isra.0" targetname: "fdopen" label: "linux/LinuxProcessList.c:83:19" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_recurseProcTree.isra.0" targetname: "close" label: "linux/LinuxProcessList.c:85:7" }
+node: { title: "Hashtable_new" label: "Hashtable_new\n./Hashtable.h:26:12" shape : ellipse }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_recurseProcTree.isra.0" targetname: "Hashtable_new" label: "linux/LinuxProcessList.c:644:12" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_recurseProcTree.isra.0" targetname: "strchr" label: "linux/LinuxProcessList.c:656:12" }
+node: { title: "Hashtable_get" label: "Hashtable_get\n./Hashtable.h:38:7" shape : ellipse }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_recurseProcTree.isra.0" targetname: "Hashtable_get" label: "linux/LinuxProcessList.c:697:33" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_recurseProcTree.isra.0" targetname: "xCalloc" label: "linux/LinuxProcessList.c:699:23" }
+node: { title: "Hashtable_put" label: "Hashtable_put\n./Hashtable.h:34:6" shape : ellipse }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_recurseProcTree.isra.0" targetname: "Hashtable_put" label: "linux/LinuxProcessList.c:700:13" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_recurseProcTree.isra.0" targetname: "strncmp" label: "./XUtils.h:40:11" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_recurseProcTree.isra.0" targetname: "strcmp" label: "./XUtils.h:46:11" }
+node: { title: "strstr" label: "strstr\n/usr/include/string.h:330:14" shape : ellipse }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_recurseProcTree.isra.0" targetname: "strstr" label: "linux/LinuxProcessList.c:722:14" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_recurseProcTree.isra.0" targetname: "fgets" label: "linux/LinuxProcessList.c:647:11" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_recurseProcTree.isra.0" targetname: "fclose" label: "linux/LinuxProcessList.c:730:4" }
+node: { title: "Hashtable_foreach" label: "Hashtable_foreach\n./Hashtable.h:40:6" shape : ellipse }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_recurseProcTree.isra.0" targetname: "Hashtable_foreach" label: "linux/LinuxProcessList.c:734:7" }
+node: { title: "Hashtable_delete" label: "Hashtable_delete\n./Hashtable.h:28:6" shape : ellipse }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_recurseProcTree.isra.0" targetname: "Hashtable_delete" label: "linux/LinuxProcessList.c:736:7" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_recurseProcTree.isra.0" targetname: "openat" label: "./Compat.h:38:11" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_recurseProcTree.isra.0" targetname: "fdopen" label: "linux/LinuxProcessList.c:83:19" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_recurseProcTree.isra.0" targetname: "close" label: "linux/LinuxProcessList.c:85:7" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_recurseProcTree.isra.0" targetname: "strchr" label: "linux/LinuxProcessList.c:817:12" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_recurseProcTree.isra.0" targetname: "strchr" label: "linux/LinuxProcessList.c:820:17" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_recurseProcTree.isra.0" targetname: "fgets" label: "linux/LinuxProcessList.c:819:17" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_recurseProcTree.isra.0" targetname: "strtol" label: "linux/LinuxProcessList.c:828:28" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_recurseProcTree.isra.0" targetname: "strtol" label: "linux/LinuxProcessList.c:830:29" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_recurseProcTree.isra.0" targetname: "strtol" label: "linux/LinuxProcessList.c:832:30" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_recurseProcTree.isra.0" targetname: "fgets" label: "linux/LinuxProcessList.c:816:11" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_recurseProcTree.isra.0" targetname: "fclose" label: "linux/LinuxProcessList.c:836:4" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_recurseProcTree.isra.0" targetname: "linux/LinuxProcessList.c:LinuxProcessList_readStatFile.constprop.0" label: "linux/LinuxProcessList.c:1640:12" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_recurseProcTree.isra.0" targetname: "free" label: "linux/LinuxProcessList.c:1648:10" }
+node: { title: "xAsprintf" label: "xAsprintf\n./XUtils.h:63:5" shape : ellipse }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_recurseProcTree.isra.0" targetname: "xAsprintf" label: "linux/LinuxProcessList.c:1432:10" }
+node: { title: "__xstat" label: "__xstat\n/usr/include/aarch64-linux-gnu/sys/stat.h:397:12" shape : ellipse }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_recurseProcTree.isra.0" targetname: "__xstat" label: "/usr/include/aarch64-linux-gnu/sys/stat.h:455:10" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_recurseProcTree.isra.0" targetname: "free" label: "linux/LinuxProcessList.c:1437:10" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_recurseProcTree.isra.0" targetname: "xAsprintf" label: "linux/LinuxProcessList.c:1439:10" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_recurseProcTree.isra.0" targetname: "__xstat" label: "/usr/include/aarch64-linux-gnu/sys/stat.h:455:10" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_recurseProcTree.isra.0" targetname: "free" label: "linux/LinuxProcessList.c:1444:10" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_recurseProcTree.isra.0" targetname: "__xstat" label: "/usr/include/aarch64-linux-gnu/sys/stat.h:455:10" }
+node: { title: "xStrdup" label: "xStrdup\n./XUtils.h:68:7" shape : ellipse }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_recurseProcTree.isra.0" targetname: "xStrdup" label: "linux/LinuxProcessList.c:1454:17" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_recurseProcTree.isra.0" targetname: "xAsprintf" label: "linux/LinuxProcessList.c:1458:4" }
+node: { title: "LinuxProcess_updateIOPriority" label: "LinuxProcess_updateIOPriority\n./linux/LinuxProcess.h:125:12" shape : ellipse }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_recurseProcTree.isra.0" targetname: "LinuxProcess_updateIOPriority" label: "linux/LinuxProcessList.c:1653:10" }
+node: { title: "Process_updateCPUFieldWidths" label: "Process_updateCPUFieldWidths\n./Process.h:415:6" shape : ellipse }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_recurseProcTree.isra.0" targetname: "Process_updateCPUFieldWidths" label: "linux/LinuxProcessList.c:1660:7" }
+node: { title: "__fxstat" label: "__fxstat\n/usr/include/aarch64-linux-gnu/sys/stat.h:395:12" shape : ellipse }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_recurseProcTree.isra.0" targetname: "__fxstat" label: "/usr/include/aarch64-linux-gnu/sys/stat.h:469:10" }
+node: { title: "UsersTable_getRef" label: "UsersTable_getRef\n./UsersTable.h:21:7" shape : ellipse }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_recurseProcTree.isra.0" targetname: "UsersTable_getRef" label: "linux/LinuxProcessList.c:507:23" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_recurseProcTree.isra.0" targetname: "Process_updateCmdline" label: "linux/LinuxProcessList.c:1680:13" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_recurseProcTree.isra.0" targetname: "linux/LinuxProcessList.c:LinuxProcessList_readCmdlineFile" label: "linux/LinuxProcessList.c:1681:22" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_recurseProcTree.isra.0" targetname: "strlen" label: "linux/LinuxProcessList.c:1682:57" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_recurseProcTree.isra.0" targetname: "Process_updateCmdline" label: "linux/LinuxProcessList.c:1682:13" }
+node: { title: "Process_fillStarttimeBuffer" label: "Process_fillStarttimeBuffer\n./Process.h:367:6" shape : ellipse }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_recurseProcTree.isra.0" targetname: "Process_fillStarttimeBuffer" label: "linux/LinuxProcessList.c:1685:10" }
+node: { title: "ProcessList_add" label: "ProcessList_add\n./ProcessList.h:107:6" shape : ellipse }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_recurseProcTree.isra.0" targetname: "ProcessList_add" label: "linux/LinuxProcessList.c:1687:10" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_recurseProcTree.isra.0" targetname: "Process_updateCmdline" label: "linux/LinuxProcessList.c:1691:16" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_recurseProcTree.isra.0" targetname: "linux/LinuxProcessList.c:LinuxProcessList_readCmdlineFile" label: "linux/LinuxProcessList.c:1692:25" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_recurseProcTree.isra.0" targetname: "strlen" label: "linux/LinuxProcessList.c:1693:60" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_recurseProcTree.isra.0" targetname: "Process_updateCmdline" label: "linux/LinuxProcessList.c:1693:16" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_recurseProcTree.isra.0" targetname: "linux/LinuxProcessList.c:LinuxProcessList_readOomData" label: "linux/LinuxProcessList.c:1705:10" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_recurseProcTree.isra.0" targetname: "linux/LinuxProcessList.c:LinuxProcessList_readCtxtData" label: "linux/LinuxProcessList.c:1709:10" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_recurseProcTree.isra.0" targetname: "linux/LinuxProcessList.c:LinuxProcessList_readSecattrData" label: "linux/LinuxProcessList.c:1713:10" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_recurseProcTree.isra.0" targetname: "linux/LinuxProcessList.c:LinuxProcessList_readCwd" label: "linux/LinuxProcessList.c:1717:10" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_recurseProcTree.isra.0" targetname: "xReadfileat" label: "linux/LinuxProcessList.c:1063:22" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_recurseProcTree.isra.0" targetname: "*__isoc99_sscanf" label: "linux/LinuxProcessList.c:1069:13" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_recurseProcTree.isra.0" targetname: "strlen" label: "linux/LinuxProcessList.c:1726:54" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_recurseProcTree.isra.0" targetname: "Process_updateCmdline" label: "linux/LinuxProcessList.c:1726:10" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_recurseProcTree.isra.0" targetname: "close" label: "./Compat.h:34:4" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_recurseProcTree.isra.0" targetname: "close" label: "linux/LinuxProcessList.c:1750:13" }
+node: { title: "Process_delete" label: "Process_delete\n./linux/LinuxProcess.h:123:6" shape : ellipse }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_recurseProcTree.isra.0" targetname: "Process_delete" label: "linux/LinuxProcessList.c:1761:13" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_recurseProcTree.isra.0" targetname: "readdir" label: "linux/LinuxProcessList.c:1502:20" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_recurseProcTree.isra.0" targetname: "closedir" label: "linux/LinuxProcessList.c:1765:4" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_recurseProcTree.isra.0" targetname: "fclose" label: "linux/LinuxProcessList.c:730:4" }
+node: { title: "*__isoc99_fscanf" label: "fscanf\n/usr/include/stdio.h:407:12" shape : ellipse }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_recurseProcTree.isra.0" targetname: "*__isoc99_fscanf" label: "linux/LinuxProcessList.c:749:12" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_recurseProcTree.isra.0" targetname: "fclose" label: "linux/LinuxProcessList.c:757:4" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_recurseProcTree.isra.0" targetname: "linux/LinuxProcessList.c:LinuxProcessList_readCGroupFile" label: "linux/LinuxProcessList.c:1554:10" }
+node: { title: "ProcessList_getProcess" label: "ProcessList_getProcess\n./ProcessList.h:119:10" shape : ellipse }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_recurseProcTree.isra.0" targetname: "ProcessList_getProcess" label: "linux/LinuxProcessList.c:1545:23" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_recurseProcTree.isra.0" targetname: "openat" label: "linux/LinuxProcessList.c:1536:20" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_recurseProcTree.isra.0" targetname: "ProcessList_getProcess" label: "linux/LinuxProcessList.c:1545:23" }
+edge: { sourcename: "linux/LinuxProcessList.c:LinuxProcessList_recurseProcTree.isra.0" targetname: "openat" label: "linux/LinuxProcessList.c:1536:20" }
+node: { title: "ProcessList_new" label: "ProcessList_new\nlinux/LinuxProcessList.c:284:14\n16480 bytes (static)" }
+edge: { sourcename: "ProcessList_new" targetname: "xCalloc" label: "linux/LinuxProcessList.c:285:29" }
+node: { title: "ProcessList_init" label: "ProcessList_init\n./ProcessList.h:99:14" shape : ellipse }
+edge: { sourcename: "ProcessList_new" targetname: "ProcessList_init" label: "linux/LinuxProcessList.c:288:4" }
+node: { title: "xReadfile" label: "xReadfile\n./XUtils.h:73:9" shape : ellipse }
+edge: { sourcename: "ProcessList_new" targetname: "xReadfile" label: "linux/LinuxProcessList.c:105:16" }
+node: { title: "xMallocArray" label: "xMallocArray\n./XUtils.h:25:7" shape : ellipse }
+edge: { sourcename: "ProcessList_new" targetname: "xMallocArray" label: "linux/LinuxProcessList.c:111:17" }
+edge: { sourcename: "ProcessList_new" targetname: "strchr" label: "linux/LinuxProcessList.c:114:12" }
+edge: { sourcename: "ProcessList_new" targetname: "strchr" label: "linux/LinuxProcessList.c:117:12" }
+edge: { sourcename: "ProcessList_new" targetname: "xStrdup" label: "linux/LinuxProcessList.c:119:37" }
+edge: { sourcename: "ProcessList_new" targetname: "strchr" label: "linux/LinuxProcessList.c:122:12" }
+edge: { sourcename: "ProcessList_new" targetname: "strtol" label: "/usr/include/stdlib.h:363:16" }
+edge: { sourcename: "ProcessList_new" targetname: "strtol" label: "/usr/include/stdlib.h:363:16" }
+edge: { sourcename: "ProcessList_new" targetname: "strchr" label: "linux/LinuxProcessList.c:132:15" }
+edge: { sourcename: "ProcessList_new" targetname: "strtol" label: "/usr/include/stdlib.h:363:16" }
+edge: { sourcename: "ProcessList_new" targetname: "strtol" label: "/usr/include/stdlib.h:363:16" }
+edge: { sourcename: "ProcessList_new" targetname: "strtol" label: "/usr/include/stdlib.h:363:16" }
+edge: { sourcename: "ProcessList_new" targetname: "strchr" label: "linux/LinuxProcessList.c:140:12" }
+node: { title: "xReallocArray" label: "xReallocArray\n./XUtils.h:31:7" shape : ellipse }
+edge: { sourcename: "ProcessList_new" targetname: "xReallocArray" label: "linux/LinuxProcessList.c:145:23" }
+node: { title: "xRealloc" label: "xRealloc\n./XUtils.h:29:7" shape : ellipse }
+edge: { sourcename: "ProcessList_new" targetname: "xRealloc" label: "linux/LinuxProcessList.c:149:17" }
+node: { title: "qsort" label: "qsort\n/usr/include/stdlib.h:830:13" shape : ellipse }
+edge: { sourcename: "ProcessList_new" targetname: "qsort" label: "linux/LinuxProcessList.c:151:4" }
+node: { title: "sysconf" label: "sysconf\n/usr/include/unistd.h:619:17" shape : ellipse }
+edge: { sourcename: "ProcessList_new" targetname: "sysconf" label: "linux/LinuxProcessList.c:292:15" }
+edge: { sourcename: "ProcessList_new" targetname: "CRT_fatalError" label: "linux/LinuxProcessList.c:294:7" }
+edge: { sourcename: "ProcessList_new" targetname: "sysconf" label: "linux/LinuxProcessList.c:298:12" }
+edge: { sourcename: "ProcessList_new" targetname: "CRT_fatalError" label: "linux/LinuxProcessList.c:300:7" }
+node: { title: "access" label: "access\n/usr/include/unistd.h:287:12" shape : ellipse }
+edge: { sourcename: "ProcessList_new" targetname: "access" label: "linux/LinuxProcessList.c:303:29" }
+edge: { sourcename: "ProcessList_new" targetname: "fopen" label: "linux/LinuxProcessList.c:306:21" }
+edge: { sourcename: "ProcessList_new" targetname: "CRT_fatalError" label: "linux/LinuxProcessList.c:308:7" }
+edge: { sourcename: "ProcessList_new" targetname: "fgets" label: "linux/LinuxProcessList.c:311:11" }
+edge: { sourcename: "ProcessList_new" targetname: "*__isoc99_sscanf" label: "linux/LinuxProcessList.c:315:11" }
+edge: { sourcename: "ProcessList_new" targetname: "CRT_fatalError" label: "linux/LinuxProcessList.c:317:7" }
+edge: { sourcename: "ProcessList_new" targetname: "fclose" label: "linux/LinuxProcessList.c:320:4" }
+edge: { sourcename: "ProcessList_new" targetname: "CRT_fatalError" label: "linux/LinuxProcessList.c:323:7" }
+edge: { sourcename: "ProcessList_new" targetname: "linux/LinuxProcessList.c:LinuxProcessList_updateCPUcount" label: "linux/LinuxProcessList.c:326:4" }
+node: { title: "ProcessList_delete" label: "ProcessList_delete\nlinux/LinuxProcessList.c:331:6\n32 bytes (static)" }
+node: { title: "ProcessList_done" label: "ProcessList_done\n./ProcessList.h:101:6" shape : ellipse }
+edge: { sourcename: "ProcessList_delete" targetname: "ProcessList_done" label: "linux/LinuxProcessList.c:333:4" }
+edge: { sourcename: "ProcessList_delete" targetname: "free" label: "linux/LinuxProcessList.c:334:4" }
+edge: { sourcename: "ProcessList_delete" targetname: "free" label: "linux/LinuxProcessList.c:337:10" }
+edge: { sourcename: "ProcessList_delete" targetname: "free" label: "linux/LinuxProcessList.c:339:7" }
+edge: { sourcename: "ProcessList_delete" targetname: "free" label: "linux/LinuxProcessList.c:347:4" }
+node: { title: "ProcessList_goThroughEntries" label: "ProcessList_goThroughEntries\nlinux/LinuxProcessList.c:2251:6\n400 bytes (static)" }
+edge: { sourcename: "ProcessList_goThroughEntries" targetname: "fopen" label: "linux/LinuxProcessList.c:1781:17" }
+edge: { sourcename: "ProcessList_goThroughEntries" targetname: "CRT_fatalError" label: "linux/LinuxProcessList.c:1783:7" }
+edge: { sourcename: "ProcessList_goThroughEntries" targetname: "*__isoc99_sscanf" label: "linux/LinuxProcessList.c:1799:10" }
+edge: { sourcename: "ProcessList_goThroughEntries" targetname: "*__isoc99_sscanf" label: "linux/LinuxProcessList.c:1800:10" }
+edge: { sourcename: "ProcessList_goThroughEntries" targetname: "*__isoc99_sscanf" label: "linux/LinuxProcessList.c:1801:10" }
+edge: { sourcename: "ProcessList_goThroughEntries" targetname: "*__isoc99_sscanf" label: "linux/LinuxProcessList.c:1804:10" }
+edge: { sourcename: "ProcessList_goThroughEntries" targetname: "*__isoc99_sscanf" label: "linux/LinuxProcessList.c:1807:10" }
+edge: { sourcename: "ProcessList_goThroughEntries" targetname: "*__isoc99_sscanf" label: "linux/LinuxProcessList.c:1812:13" }
+edge: { sourcename: "ProcessList_goThroughEntries" targetname: "*__isoc99_sscanf" label: "linux/LinuxProcessList.c:1815:13" }
+edge: { sourcename: "ProcessList_goThroughEntries" targetname: "*__isoc99_sscanf" label: "linux/LinuxProcessList.c:1816:13" }
+edge: { sourcename: "ProcessList_goThroughEntries" targetname: "*__isoc99_sscanf" label: "linux/LinuxProcessList.c:1817:13" }
+edge: { sourcename: "ProcessList_goThroughEntries" targetname: "*__isoc99_sscanf" label: "linux/LinuxProcessList.c:1820:13" }
+edge: { sourcename: "ProcessList_goThroughEntries" targetname: "fgets" label: "linux/LinuxProcessList.c:1786:11" }
+edge: { sourcename: "ProcessList_goThroughEntries" targetname: "fclose" label: "linux/LinuxProcessList.c:1829:4" }
+edge: { sourcename: "ProcessList_goThroughEntries" targetname: "opendir" label: "linux/LinuxProcessList.c:1857:15" }
+edge: { sourcename: "ProcessList_goThroughEntries" targetname: "strncmp" label: "./XUtils.h:40:11" }
+edge: { sourcename: "ProcessList_goThroughEntries" targetname: "strtoul" label: "linux/LinuxProcessList.c:1873:40" }
+node: { title: "xSnprintf" label: "xSnprintf\n./XUtils.h:66:5" shape : ellipse }
+edge: { sourcename: "ProcessList_goThroughEntries" targetname: "xSnprintf" label: "linux/LinuxProcessList.c:1881:7" }
+edge: { sourcename: "ProcessList_goThroughEntries" targetname: "xReadfile" label: "linux/LinuxProcessList.c:1882:11" }
+edge: { sourcename: "ProcessList_goThroughEntries" targetname: "strtoull" label: "linux/LinuxProcessList.c:1886:24" }
+edge: { sourcename: "ProcessList_goThroughEntries" targetname: "xSnprintf" label: "linux/LinuxProcessList.c:1890:7" }
+edge: { sourcename: "ProcessList_goThroughEntries" targetname: "xReadfile" label: "linux/LinuxProcessList.c:1891:11" }
+edge: { sourcename: "ProcessList_goThroughEntries" targetname: "strtoull" label: "linux/LinuxProcessList.c:1895:23" }
+node: { title: "ffsl" label: "ffsl\n/usr/include/strings.h:110:12" shape : ellipse }
+edge: { sourcename: "ProcessList_goThroughEntries" targetname: "ffsl" label: "linux/LinuxProcessList.c:1897:19" }
+edge: { sourcename: "ProcessList_goThroughEntries" targetname: "readdir" label: "linux/LinuxProcessList.c:1862:20" }
+edge: { sourcename: "ProcessList_goThroughEntries" targetname: "closedir" label: "linux/LinuxProcessList.c:1904:4" }
+edge: { sourcename: "ProcessList_goThroughEntries" targetname: "fopen" label: "linux/LinuxProcessList.c:1960:17" }
+edge: { sourcename: "ProcessList_goThroughEntries" targetname: "*__isoc99_sscanf" label: "linux/LinuxProcessList.c:1980:10" }
+edge: { sourcename: "ProcessList_goThroughEntries" targetname: "*__isoc99_sscanf" label: "linux/LinuxProcessList.c:1981:10" }
+edge: { sourcename: "ProcessList_goThroughEntries" targetname: "*__isoc99_sscanf" label: "linux/LinuxProcessList.c:1982:10" }
+edge: { sourcename: "ProcessList_goThroughEntries" targetname: "*__isoc99_sscanf" label: "linux/LinuxProcessList.c:1985:10" }
+edge: { sourcename: "ProcessList_goThroughEntries" targetname: "*__isoc99_sscanf" label: "linux/LinuxProcessList.c:1988:10" }
+edge: { sourcename: "ProcessList_goThroughEntries" targetname: "*__isoc99_sscanf" label: "linux/LinuxProcessList.c:1991:10" }
+edge: { sourcename: "ProcessList_goThroughEntries" targetname: "*__isoc99_sscanf" label: "linux/LinuxProcessList.c:1994:10" }
+edge: { sourcename: "ProcessList_goThroughEntries" targetname: "*__isoc99_sscanf" label: "linux/LinuxProcessList.c:1995:10" }
+edge: { sourcename: "ProcessList_goThroughEntries" targetname: "*__isoc99_sscanf" label: "linux/LinuxProcessList.c:1998:10" }
+edge: { sourcename: "ProcessList_goThroughEntries" targetname: "*__isoc99_sscanf" label: "linux/LinuxProcessList.c:2001:10" }
+edge: { sourcename: "ProcessList_goThroughEntries" targetname: "*__isoc99_sscanf" label: "linux/LinuxProcessList.c:2004:10" }
+edge: { sourcename: "ProcessList_goThroughEntries" targetname: "*__isoc99_sscanf" label: "linux/LinuxProcessList.c:2005:10" }
+edge: { sourcename: "ProcessList_goThroughEntries" targetname: "fgets" label: "linux/LinuxProcessList.c:1966:11" }
+edge: { sourcename: "ProcessList_goThroughEntries" targetname: "fclose" label: "linux/LinuxProcessList.c:2011:4" }
+edge: { sourcename: "ProcessList_goThroughEntries" targetname: "xSnprintf" label: "linux/LinuxProcessList.c:1917:7" }
+edge: { sourcename: "ProcessList_goThroughEntries" targetname: "xSnprintf" label: "linux/LinuxProcessList.c:1918:7" }
+edge: { sourcename: "ProcessList_goThroughEntries" targetname: "fopen" label: "linux/LinuxProcessList.c:1920:29" }
+edge: { sourcename: "ProcessList_goThroughEntries" targetname: "fopen" label: "linux/LinuxProcessList.c:1921:28" }
+edge: { sourcename: "ProcessList_goThroughEntries" targetname: "fclose" label: "linux/LinuxProcessList.c:1924:13" }
+edge: { sourcename: "ProcessList_goThroughEntries" targetname: "fclose" label: "linux/LinuxProcessList.c:1927:13" }
+edge: { sourcename: "ProcessList_goThroughEntries" targetname: "*__isoc99_fscanf" label: "linux/LinuxProcessList.c:1935:12" }
+edge: { sourcename: "ProcessList_goThroughEntries" targetname: "fclose" label: "linux/LinuxProcessList.c:1937:10" }
+edge: { sourcename: "ProcessList_goThroughEntries" targetname: "fclose" label: "linux/LinuxProcessList.c:1938:10" }
+edge: { sourcename: "ProcessList_goThroughEntries" targetname: "*__isoc99_fscanf" label: "linux/LinuxProcessList.c:1936:12" }
+edge: { sourcename: "ProcessList_goThroughEntries" targetname: "fclose" label: "linux/LinuxProcessList.c:1946:7" }
+edge: { sourcename: "ProcessList_goThroughEntries" targetname: "fclose" label: "linux/LinuxProcessList.c:1947:7" }
+edge: { sourcename: "ProcessList_goThroughEntries" targetname: "linux/LinuxProcessList.c:LinuxProcessList_scanCPUTime" label: "linux/LinuxProcessList.c:2260:20" }
+edge: { sourcename: "ProcessList_goThroughEntries" targetname: "xSnprintf" label: "linux/LinuxProcessList.c:2153:7" }
+node: { title: "clock_gettime" label: "clock_gettime\n/usr/include/time.h:213:12" shape : ellipse }
+edge: { sourcename: "ProcessList_goThroughEntries" targetname: "clock_gettime" label: "linux/LinuxProcessList.c:2157:10" }
+edge: { sourcename: "ProcessList_goThroughEntries" targetname: "fopen" label: "linux/LinuxProcessList.c:2159:20" }
+node: { title: "__errno_location" label: "__errno_location\n/usr/include/errno.h:37:13" shape : ellipse }
+edge: { sourcename: "ProcessList_goThroughEntries" targetname: "__errno_location" label: "linux/LinuxProcessList.c:2161:18" }
+edge: { sourcename: "ProcessList_goThroughEntries" targetname: "*__isoc99_fscanf" label: "linux/LinuxProcessList.c:2164:11" }
+edge: { sourcename: "ProcessList_goThroughEntries" targetname: "fclose" label: "linux/LinuxProcessList.c:2172:7" }
+edge: { sourcename: "ProcessList_goThroughEntries" targetname: "clock_gettime" label: "linux/LinuxProcessList.c:2176:10" }
+edge: { sourcename: "ProcessList_goThroughEntries" targetname: "linux/LinuxProcessList.c:scanCPUFrequencyFromCPUinfo" label: "linux/LinuxProcessList.c:2248:4" }
+node: { title: "LinuxProcess_isAutogroupEnabled" label: "LinuxProcess_isAutogroupEnabled\n./linux/LinuxProcess.h:129:6" shape : ellipse }
+edge: { sourcename: "ProcessList_goThroughEntries" targetname: "LinuxProcess_isAutogroupEnabled" label: "linux/LinuxProcessList.c:2281:29" }
+edge: { sourcename: "ProcessList_goThroughEntries" targetname: "linux/LinuxProcessList.c:LinuxProcessList_recurseProcTree.isra.0" label: "linux/LinuxProcessList.c:2294:4" }
+node: { title: "ProcessList_isCPUonline" label: "ProcessList_isCPUonline\nlinux/LinuxProcessList.c:2297:6\n0 bytes (static)" }
+}

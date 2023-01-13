@@ -1,0 +1,143 @@
+graph: { title: "CommandLine.c"
+node: { title: "CommandLine_run" label: "CommandLine_run\nCommandLine.c:301:5\n688 bytes (static)" }
+node: { title: "getenv" label: "getenv\n/usr/include/stdlib.h:634:14" shape : ellipse }
+edge: { sourcename: "CommandLine_run" targetname: "getenv" label: "CommandLine.c:305:20" }
+edge: { sourcename: "CommandLine_run" targetname: "getenv" label: "CommandLine.c:305:55" }
+node: { title: "setlocale" label: "setlocale\n/usr/include/locale.h:122:14" shape : ellipse }
+edge: { sourcename: "CommandLine_run" targetname: "setlocale" label: "CommandLine.c:306:7" }
+edge: { sourcename: "CommandLine_run" targetname: "setlocale" label: "CommandLine.c:308:7" }
+node: { title: "memcpy" label: "__builtin_memcpy\n<built-in>" shape : ellipse }
+edge: { sourcename: "CommandLine_run" targetname: "memcpy" }
+node: { title: "printf" label: "printf\n/usr/include/stdio.h:332:12" shape : ellipse }
+edge: { sourcename: "CommandLine_run" targetname: "printf" label: "CommandLine.c:49:4" }
+node: { title: "puts" label: "__builtin_puts\n<built-in>" shape : ellipse }
+edge: { sourcename: "CommandLine_run" targetname: "puts" label: "CommandLine.c:58:4" }
+edge: { sourcename: "CommandLine_run" targetname: "puts" label: "CommandLine.c:60:4" }
+node: { title: "Platform_longOptionsUsage" label: "Platform_longOptionsUsage\n./linux/Platform.h:103:6" shape : ellipse }
+edge: { sourcename: "CommandLine_run" targetname: "Platform_longOptionsUsage" label: "CommandLine.c:67:4" }
+edge: { sourcename: "CommandLine_run" targetname: "printf" label: "CommandLine.c:68:4" }
+edge: { sourcename: "CommandLine_run" targetname: "printf" label: "CommandLine.c:45:4" }
+node: { title: "strcmp" label: "strcmp\n/usr/include/string.h:137:12" shape : ellipse }
+edge: { sourcename: "CommandLine_run" targetname: "strcmp" label: "XUtils.h:46:11" }
+edge: { sourcename: "CommandLine_run" targetname: "printf" label: "CommandLine.c:150:22" }
+edge: { sourcename: "CommandLine_run" targetname: "strcmp" label: "XUtils.h:46:11" }
+node: { title: "*__isoc99_sscanf" label: "sscanf\n/usr/include/stdio.h:412:12" shape : ellipse }
+edge: { sourcename: "CommandLine_run" targetname: "*__isoc99_sscanf" label: "CommandLine.c:169:17" }
+node: { title: "fprintf" label: "fprintf\n/usr/include/stdio.h:326:12" shape : ellipse }
+edge: { sourcename: "CommandLine_run" targetname: "fprintf" label: "CommandLine.c:175:16" }
+node: { title: "geteuid" label: "geteuid\n/usr/include/unistd.h:678:16" shape : ellipse }
+edge: { sourcename: "CommandLine_run" targetname: "geteuid" label: "CommandLine.c:188:32" }
+node: { title: "__ctype_b_loc" label: "__ctype_b_loc\n/usr/include/ctype.h:79:35" shape : ellipse }
+edge: { sourcename: "CommandLine_run" targetname: "__ctype_b_loc" label: "CommandLine.c:191:24" }
+edge: { sourcename: "CommandLine_run" targetname: "fprintf" label: "CommandLine.c:192:22" }
+node: { title: "strtol" label: "strtol\n/usr/include/stdlib.h:176:17" shape : ellipse }
+edge: { sourcename: "CommandLine_run" targetname: "strtol" label: "/usr/include/stdlib.h:368:10" }
+node: { title: "xStrdup" label: "xStrdup\nXUtils.h:68:7" shape : ellipse }
+edge: { sourcename: "CommandLine_run" targetname: "xStrdup" label: "CommandLine.c:215:29" }
+node: { title: "strtok_r" label: "strtok_r\n/usr/include/string.h:346:14" shape : ellipse }
+edge: { sourcename: "CommandLine_run" targetname: "strtok_r" label: "CommandLine.c:217:31" }
+node: { title: "Hashtable_new" label: "Hashtable_new\nHashtable.h:26:12" shape : ellipse }
+edge: { sourcename: "CommandLine_run" targetname: "Hashtable_new" label: "CommandLine.c:220:38" }
+node: { title: "free" label: "free\n/usr/include/stdlib.h:565:13" shape : ellipse }
+edge: { sourcename: "CommandLine_run" targetname: "free" label: "CommandLine.c:229:13" }
+edge: { sourcename: "CommandLine_run" targetname: "strtol" label: "/usr/include/stdlib.h:363:16" }
+node: { title: "Hashtable_put" label: "Hashtable_put\nHashtable.h:34:6" shape : ellipse }
+edge: { sourcename: "CommandLine_run" targetname: "Hashtable_put" label: "CommandLine.c:226:16" }
+edge: { sourcename: "CommandLine_run" targetname: "strtok_r" label: "CommandLine.c:227:22" }
+node: { title: "free_and_xStrdup" label: "free_and_xStrdup\nXUtils.h:69:6" shape : ellipse }
+edge: { sourcename: "CommandLine_run" targetname: "free_and_xStrdup" label: "CommandLine.c:235:13" }
+edge: { sourcename: "CommandLine_run" targetname: "fprintf" label: "CommandLine.c:249:19" }
+node: { title: "Platform_getLongOption" label: "Platform_getLongOption\n./linux/Platform.h:105:19" shape : ellipse }
+edge: { sourcename: "CommandLine_run" targetname: "Platform_getLongOption" label: "CommandLine.c:262:27" }
+node: { title: "getopt_long" label: "getopt_long\n/usr/include/aarch64-linux-gnu/bits/getopt_ext.h:66:12" shape : ellipse }
+edge: { sourcename: "CommandLine_run" targetname: "getopt_long" label: "CommandLine.c:133:18" }
+node: { title: "fwrite" label: "__builtin_fwrite\n<built-in>" shape : ellipse }
+edge: { sourcename: "CommandLine_run" targetname: "fwrite" label: "CommandLine.c:270:7" }
+node: { title: "fputc" label: "__builtin_fputc\n<built-in>" shape : ellipse }
+edge: { sourcename: "CommandLine_run" targetname: "fputc" label: "CommandLine.c:273:7" }
+edge: { sourcename: "CommandLine_run" targetname: "fprintf" label: "CommandLine.c:272:10" }
+node: { title: "Settings_enableReadonly" label: "Settings_enableReadonly\nSettings.h:129:6" shape : ellipse }
+edge: { sourcename: "CommandLine_run" targetname: "Settings_enableReadonly" label: "CommandLine.c:317:7" }
+node: { title: "Platform_init" label: "Platform_init\n./linux/Platform.h:51:6" shape : ellipse }
+edge: { sourcename: "CommandLine_run" targetname: "Platform_init" label: "CommandLine.c:319:9" }
+node: { title: "Process_setupColumnWidths" label: "Process_setupColumnWidths\nProcess.h:347:6" shape : ellipse }
+edge: { sourcename: "CommandLine_run" targetname: "Process_setupColumnWidths" label: "CommandLine.c:322:4" }
+node: { title: "UsersTable_new" label: "UsersTable_new\nUsersTable.h:17:13" shape : ellipse }
+edge: { sourcename: "CommandLine_run" targetname: "UsersTable_new" label: "CommandLine.c:324:21" }
+node: { title: "DynamicColumns_new" label: "DynamicColumns_new\nDynamicColumn.h:22:12" shape : ellipse }
+edge: { sourcename: "CommandLine_run" targetname: "DynamicColumns_new" label: "CommandLine.c:325:20" }
+node: { title: "DynamicMeters_new" label: "DynamicMeters_new\nDynamicMeter.h:18:12" shape : ellipse }
+edge: { sourcename: "CommandLine_run" targetname: "DynamicMeters_new" label: "CommandLine.c:326:20" }
+edge: { sourcename: "CommandLine_run" targetname: "Hashtable_new" label: "CommandLine.c:328:12" }
+node: { title: "ProcessList_new" label: "ProcessList_new\nProcessList.h:93:14" shape : ellipse }
+edge: { sourcename: "CommandLine_run" targetname: "ProcessList_new" label: "CommandLine.c:330:22" }
+node: { title: "Settings_new" label: "Settings_new\nSettings.h:119:11" shape : ellipse }
+edge: { sourcename: "CommandLine_run" targetname: "Settings_new" label: "CommandLine.c:332:25" }
+node: { title: "Header_new" label: "Header_new\nHeader.h:28:9" shape : ellipse }
+edge: { sourcename: "CommandLine_run" targetname: "Header_new" label: "CommandLine.c:335:21" }
+node: { title: "Header_populateFromSettings" label: "Header_populateFromSettings\nHeader.h:34:6" shape : ellipse }
+edge: { sourcename: "CommandLine_run" targetname: "Header_populateFromSettings" label: "CommandLine.c:337:4" }
+node: { title: "ScreenSettings_setSortKey" label: "ScreenSettings_setSortKey\nSettings.h:127:6" shape : ellipse }
+edge: { sourcename: "CommandLine_run" targetname: "ScreenSettings_setSortKey" label: "CommandLine.c:359:7" }
+node: { title: "CRT_init" label: "CRT_init\nCRT.h:194:6" shape : ellipse }
+edge: { sourcename: "CommandLine_run" targetname: "CRT_init" label: "CommandLine.c:362:4" }
+node: { title: "MainPanel_new" label: "MainPanel_new\nMainPanel.h:44:12" shape : ellipse }
+edge: { sourcename: "CommandLine_run" targetname: "MainPanel_new" label: "CommandLine.c:364:23" }
+node: { title: "ProcessList_setPanel" label: "ProcessList_setPanel\nProcessList.h:103:6" shape : ellipse }
+edge: { sourcename: "CommandLine_run" targetname: "ProcessList_setPanel" label: "CommandLine.c:365:4" }
+node: { title: "MainPanel_updateLabels" label: "MainPanel_updateLabels\nMainPanel.h:36:6" shape : ellipse }
+edge: { sourcename: "CommandLine_run" targetname: "MainPanel_updateLabels" label: "CommandLine.c:367:4" }
+node: { title: "MainPanel_setState" label: "MainPanel_setState\nMainPanel.h:46:6" shape : ellipse }
+edge: { sourcename: "CommandLine_run" targetname: "MainPanel_setState" label: "CommandLine.c:380:4" }
+node: { title: "IncSet_setFilter" label: "IncSet_setFilter\nIncSet.h:45:6" shape : ellipse }
+edge: { sourcename: "CommandLine_run" targetname: "IncSet_setFilter" label: "CommandLine.c:294:4" }
+edge: { sourcename: "CommandLine_run" targetname: "free" label: "CommandLine.c:297:4" }
+node: { title: "ScreenManager_new" label: "ScreenManager_new\nScreenManager.h:33:16" shape : ellipse }
+edge: { sourcename: "CommandLine_run" targetname: "ScreenManager_new" label: "CommandLine.c:384:25" }
+node: { title: "ScreenManager_add" label: "ScreenManager_add\nScreenManager.h:39:6" shape : ellipse }
+edge: { sourcename: "CommandLine_run" targetname: "ScreenManager_add" label: "CommandLine.c:385:4" }
+node: { title: "ProcessList_scan" label: "ProcessList_scan\nProcessList.h:121:6" shape : ellipse }
+edge: { sourcename: "CommandLine_run" targetname: "ProcessList_scan" label: "CommandLine.c:387:4" }
+node: { title: "nanosleep" label: "nanosleep\n/usr/include/time.h:205:12" shape : ellipse }
+edge: { sourcename: "CommandLine_run" targetname: "nanosleep" label: "CommandLine.c:285:11" }
+node: { title: "Generic_gettime_realtime" label: "Generic_gettime_realtime\n./generic/gettime.h:14:6" shape : ellipse }
+edge: { sourcename: "CommandLine_run" targetname: "Generic_gettime_realtime" label: "./linux/Platform.h:108:4" }
+edge: { sourcename: "CommandLine_run" targetname: "ProcessList_scan" label: "CommandLine.c:389:4" }
+node: { title: "ProcessList_collapseAllBranches" label: "ProcessList_collapseAllBranches\nProcessList.h:115:6" shape : ellipse }
+edge: { sourcename: "CommandLine_run" targetname: "ProcessList_collapseAllBranches" label: "CommandLine.c:392:7" }
+node: { title: "ScreenManager_run" label: "ScreenManager_run\nScreenManager.h:47:6" shape : ellipse }
+edge: { sourcename: "CommandLine_run" targetname: "ScreenManager_run" label: "CommandLine.c:394:4" }
+node: { title: "Platform_done" label: "Platform_done\n./linux/Platform.h:52:6" shape : ellipse }
+edge: { sourcename: "CommandLine_run" targetname: "Platform_done" label: "CommandLine.c:396:4" }
+node: { title: "CRT_done" label: "CRT_done\nCRT.h:196:6" shape : ellipse }
+edge: { sourcename: "CommandLine_run" targetname: "CRT_done" label: "CommandLine.c:398:4" }
+node: { title: "Settings_write" label: "Settings_write\nSettings.h:117:5" shape : ellipse }
+edge: { sourcename: "CommandLine_run" targetname: "Settings_write" label: "CommandLine.c:401:15" }
+node: { title: "strerror" label: "strerror\n/usr/include/string.h:397:14" shape : ellipse }
+edge: { sourcename: "CommandLine_run" targetname: "strerror" label: "CommandLine.c:403:10" }
+edge: { sourcename: "CommandLine_run" targetname: "fprintf" label: "CommandLine.c:403:10" }
+node: { title: "Header_delete" label: "Header_delete\nHeader.h:30:6" shape : ellipse }
+edge: { sourcename: "CommandLine_run" targetname: "Header_delete" label: "CommandLine.c:406:4" }
+node: { title: "ProcessList_delete" label: "ProcessList_delete\nProcessList.h:94:6" shape : ellipse }
+edge: { sourcename: "CommandLine_run" targetname: "ProcessList_delete" label: "CommandLine.c:407:4" }
+node: { title: "ScreenManager_delete" label: "ScreenManager_delete\nScreenManager.h:35:6" shape : ellipse }
+edge: { sourcename: "CommandLine_run" targetname: "ScreenManager_delete" label: "CommandLine.c:409:4" }
+node: { title: "MetersPanel_cleanup" label: "MetersPanel_cleanup\nMetersPanel.h:32:6" shape : ellipse }
+edge: { sourcename: "CommandLine_run" targetname: "MetersPanel_cleanup" label: "CommandLine.c:410:4" }
+node: { title: "UsersTable_delete" label: "UsersTable_delete\nUsersTable.h:19:6" shape : ellipse }
+edge: { sourcename: "CommandLine_run" targetname: "UsersTable_delete" label: "CommandLine.c:412:4" }
+node: { title: "Hashtable_delete" label: "Hashtable_delete\nHashtable.h:28:6" shape : ellipse }
+edge: { sourcename: "CommandLine_run" targetname: "Hashtable_delete" label: "CommandLine.c:415:7" }
+node: { title: "CRT_resetSignalHandlers" label: "CRT_resetSignalHandlers\nCRT.h:198:6" shape : ellipse }
+edge: { sourcename: "CommandLine_run" targetname: "CRT_resetSignalHandlers" label: "CommandLine.c:417:4" }
+node: { title: "Settings_delete" label: "Settings_delete\nSettings.h:115:6" shape : ellipse }
+edge: { sourcename: "CommandLine_run" targetname: "Settings_delete" label: "CommandLine.c:420:4" }
+node: { title: "DynamicColumns_delete" label: "DynamicColumns_delete\nDynamicColumn.h:24:6" shape : ellipse }
+edge: { sourcename: "CommandLine_run" targetname: "DynamicColumns_delete" label: "CommandLine.c:421:4" }
+node: { title: "DynamicMeters_delete" label: "DynamicMeters_delete\nDynamicMeter.h:20:6" shape : ellipse }
+edge: { sourcename: "CommandLine_run" targetname: "DynamicMeters_delete" label: "CommandLine.c:422:4" }
+edge: { sourcename: "CommandLine_run" targetname: "*__isoc99_sscanf" label: "CommandLine.c:245:20" }
+node: { title: "Action_setUserOnly" label: "Action_setUserOnly\nAction.h:57:6" shape : ellipse }
+edge: { sourcename: "CommandLine_run" targetname: "Action_setUserOnly" label: "CommandLine.c:189:25" }
+edge: { sourcename: "CommandLine_run" targetname: "fprintf" label: "CommandLine.c:164:16" }
+}

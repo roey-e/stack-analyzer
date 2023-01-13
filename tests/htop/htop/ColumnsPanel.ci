@@ -1,0 +1,52 @@
+graph: { title: "ColumnsPanel.c"
+node: { title: "ColumnsPanel.c:ColumnsPanel_delete" label: "ColumnsPanel_delete\nColumnsPanel.c:27:13\n32 bytes (static)" }
+node: { title: "Panel_done" label: "Panel_done\nPanel.h:97:6" shape : ellipse }
+edge: { sourcename: "ColumnsPanel.c:ColumnsPanel_delete" targetname: "Panel_done" label: "ColumnsPanel.c:30:4" }
+node: { title: "free" label: "free\n/usr/include/stdlib.h:565:13" shape : ellipse }
+edge: { sourcename: "ColumnsPanel.c:ColumnsPanel_delete" targetname: "free" label: "ColumnsPanel.c:31:4" }
+node: { title: "ColumnsPanel_fill" label: "ColumnsPanel_fill\nColumnsPanel.c:141:6\n80 bytes (static)" }
+node: { title: "Panel_prune" label: "Panel_prune\nPanel.h:109:6" shape : ellipse }
+edge: { sourcename: "ColumnsPanel_fill" targetname: "Panel_prune" label: "ColumnsPanel.c:143:4" }
+node: { title: "Hashtable_get" label: "Hashtable_get\nHashtable.h:38:7" shape : ellipse }
+edge: { sourcename: "ColumnsPanel_fill" targetname: "Hashtable_get" label: "ColumnsPanel.c:126:37" }
+node: { title: "ListItem_new" label: "ListItem_new\nListItem.h:30:11" shape : ellipse }
+edge: { sourcename: "ColumnsPanel_fill" targetname: "ListItem_new" label: "ColumnsPanel.c:138:31" }
+node: { title: "Panel_add" label: "Panel_add\nPanel.h:111:6" shape : ellipse }
+edge: { sourcename: "ColumnsPanel_fill" targetname: "Panel_add" label: "ColumnsPanel.c:138:4" }
+node: { title: "ColumnsPanel_new" label: "ColumnsPanel_new\nColumnsPanel.c:149:15\n48 bytes (static)" }
+node: { title: "xMalloc" label: "xMalloc\nXUtils.h:23:7" shape : ellipse }
+edge: { sourcename: "ColumnsPanel_new" targetname: "xMalloc" label: "ColumnsPanel.c:150:25" }
+node: { title: "FunctionBar_new" label: "FunctionBar_new\nFunctionBar.h:26:14" shape : ellipse }
+edge: { sourcename: "ColumnsPanel_new" targetname: "FunctionBar_new" label: "ColumnsPanel.c:152:25" }
+node: { title: "Panel_init" label: "Panel_init\nPanel.h:95:6" shape : ellipse }
+edge: { sourcename: "ColumnsPanel_new" targetname: "Panel_init" label: "ColumnsPanel.c:153:4" }
+node: { title: "Panel_setHeader" label: "Panel_setHeader\nPanel.h:103:6" shape : ellipse }
+edge: { sourcename: "ColumnsPanel_new" targetname: "Panel_setHeader" label: "ColumnsPanel.c:158:4" }
+edge: { sourcename: "ColumnsPanel_new" targetname: "ColumnsPanel_fill" label: "ColumnsPanel.c:160:4" }
+node: { title: "ColumnsPanel_update" label: "ColumnsPanel_update\nColumnsPanel.c:165:6\n64 bytes (static)" }
+node: { title: "Panel_size" label: "Panel_size\nPanel.h:129:5" shape : ellipse }
+edge: { sourcename: "ColumnsPanel_update" targetname: "Panel_size" label: "ColumnsPanel.c:167:15" }
+node: { title: "xRealloc" label: "xRealloc\nXUtils.h:29:7" shape : ellipse }
+edge: { sourcename: "ColumnsPanel_update" targetname: "xRealloc" label: "ColumnsPanel.c:169:23" }
+node: { title: "Panel_get" label: "Panel_get\nPanel.h:117:9" shape : ellipse }
+edge: { sourcename: "ColumnsPanel_update" targetname: "Panel_get" label: "ColumnsPanel.c:172:30" }
+node: { title: "ColumnsPanel.c:ColumnsPanel_eventHandler" label: "ColumnsPanel_eventHandler\nColumnsPanel.c:34:22\n48 bytes (static)" }
+node: { title: "Panel_getSelectedIndex" label: "Panel_getSelectedIndex\nPanel.h:127:5" shape : ellipse }
+edge: { sourcename: "ColumnsPanel.c:ColumnsPanel_eventHandler" targetname: "Panel_getSelectedIndex" label: "ColumnsPanel.c:37:19" }
+edge: { sourcename: "ColumnsPanel.c:ColumnsPanel_eventHandler" targetname: "Panel_size" label: "ColumnsPanel.c:39:15" }
+node: { title: "Panel_setSelectionColor" label: "Panel_setSelectionColor\nPanel.h:101:6" shape : ellipse }
+edge: { sourcename: "ColumnsPanel.c:ColumnsPanel_eventHandler" targetname: "Panel_setSelectionColor" label: "ColumnsPanel.c:50:13" }
+node: { title: "Panel_getSelected" label: "Panel_getSelected\nPanel.h:121:9" shape : ellipse }
+edge: { sourcename: "ColumnsPanel.c:ColumnsPanel_eventHandler" targetname: "Panel_getSelected" label: "ColumnsPanel.c:51:50" }
+node: { title: "Panel_moveSelectedUp" label: "Panel_moveSelectedUp\nPanel.h:123:6" shape : ellipse }
+edge: { sourcename: "ColumnsPanel.c:ColumnsPanel_eventHandler" targetname: "Panel_moveSelectedUp" label: "ColumnsPanel.c:70:13" }
+node: { title: "Panel_moveSelectedDown" label: "Panel_moveSelectedDown\nPanel.h:125:6" shape : ellipse }
+edge: { sourcename: "ColumnsPanel.c:ColumnsPanel_eventHandler" targetname: "Panel_moveSelectedDown" label: "ColumnsPanel.c:86:13" }
+node: { title: "Panel_remove" label: "Panel_remove\nPanel.h:119:9" shape : ellipse }
+edge: { sourcename: "ColumnsPanel.c:ColumnsPanel_eventHandler" targetname: "Panel_remove" label: "ColumnsPanel.c:94:13" }
+node: { title: "__ctype_b_loc" label: "__ctype_b_loc\n/usr/include/ctype.h:79:35" shape : ellipse }
+edge: { sourcename: "ColumnsPanel.c:ColumnsPanel_eventHandler" targetname: "__ctype_b_loc" label: "ColumnsPanel.c:101:36" }
+node: { title: "Panel_selectByTyping" label: "Panel_selectByTyping\nPanel.h:139:15" shape : ellipse }
+edge: { sourcename: "ColumnsPanel.c:ColumnsPanel_eventHandler" targetname: "Panel_selectByTyping" label: "ColumnsPanel.c:102:22" }
+edge: { sourcename: "ColumnsPanel.c:ColumnsPanel_eventHandler" targetname: "ColumnsPanel_update" label: "ColumnsPanel.c:109:7" }
+}

@@ -1,0 +1,30 @@
+graph: { title: "NetworkIOMeter.c"
+node: { title: "NetworkIOMeter.c:NetworkIOMeter_updateValues" label: "NetworkIOMeter_updateValues\nNetworkIOMeter.c:28:13\n112 bytes (static)" }
+node: { title: "Platform_getNetworkIO" label: "Platform_getNetworkIO\n./linux/Platform.h:84:6" shape : ellipse }
+edge: { sourcename: "NetworkIOMeter.c:NetworkIOMeter_updateValues" targetname: "Platform_getNetworkIO" label: "NetworkIOMeter.c:43:12" }
+node: { title: "xSnprintf" label: "xSnprintf\nXUtils.h:66:5" shape : ellipse }
+edge: { sourcename: "NetworkIOMeter.c:NetworkIOMeter_updateValues" targetname: "xSnprintf" label: "NetworkIOMeter.c:56:10" }
+edge: { sourcename: "NetworkIOMeter.c:NetworkIOMeter_updateValues" targetname: "xSnprintf" label: "NetworkIOMeter.c:100:7" }
+edge: { sourcename: "NetworkIOMeter.c:NetworkIOMeter_updateValues" targetname: "xSnprintf" label: "NetworkIOMeter.c:104:7" }
+node: { title: "Meter_humanUnit" label: "Meter_humanUnit\nMeter.h:148:5" shape : ellipse }
+edge: { sourcename: "NetworkIOMeter.c:NetworkIOMeter_updateValues" targetname: "Meter_humanUnit" label: "NetworkIOMeter.c:115:4" }
+edge: { sourcename: "NetworkIOMeter.c:NetworkIOMeter_updateValues" targetname: "Meter_humanUnit" label: "NetworkIOMeter.c:116:4" }
+edge: { sourcename: "NetworkIOMeter.c:NetworkIOMeter_updateValues" targetname: "xSnprintf" label: "NetworkIOMeter.c:117:4" }
+node: { title: "NetworkIOMeter.c:NetworkIOMeter_display" label: "NetworkIOMeter_display\nNetworkIOMeter.c:121:13\n128 bytes (static)" }
+node: { title: "RichString_writeAscii" label: "RichString_writeAscii\nRichString.h:77:5" shape : ellipse }
+edge: { sourcename: "NetworkIOMeter.c:NetworkIOMeter_display" targetname: "RichString_writeAscii" label: "NetworkIOMeter.c:124:7" }
+edge: { sourcename: "NetworkIOMeter.c:NetworkIOMeter_display" targetname: "RichString_writeAscii" label: "NetworkIOMeter.c:127:7" }
+edge: { sourcename: "NetworkIOMeter.c:NetworkIOMeter_display" targetname: "RichString_writeAscii" label: "NetworkIOMeter.c:130:7" }
+edge: { sourcename: "NetworkIOMeter.c:NetworkIOMeter_display" targetname: "RichString_writeAscii" label: "NetworkIOMeter.c:139:4" }
+edge: { sourcename: "NetworkIOMeter.c:NetworkIOMeter_display" targetname: "Meter_humanUnit" label: "NetworkIOMeter.c:140:4" }
+node: { title: "RichString_appendAscii" label: "RichString_appendAscii\nRichString.h:73:5" shape : ellipse }
+edge: { sourcename: "NetworkIOMeter.c:NetworkIOMeter_display" targetname: "RichString_appendAscii" label: "NetworkIOMeter.c:141:4" }
+edge: { sourcename: "NetworkIOMeter.c:NetworkIOMeter_display" targetname: "RichString_appendAscii" label: "NetworkIOMeter.c:142:4" }
+edge: { sourcename: "NetworkIOMeter.c:NetworkIOMeter_display" targetname: "RichString_appendAscii" label: "NetworkIOMeter.c:144:4" }
+edge: { sourcename: "NetworkIOMeter.c:NetworkIOMeter_display" targetname: "Meter_humanUnit" label: "NetworkIOMeter.c:145:4" }
+edge: { sourcename: "NetworkIOMeter.c:NetworkIOMeter_display" targetname: "RichString_appendAscii" label: "NetworkIOMeter.c:146:4" }
+edge: { sourcename: "NetworkIOMeter.c:NetworkIOMeter_display" targetname: "RichString_appendAscii" label: "NetworkIOMeter.c:147:4" }
+edge: { sourcename: "NetworkIOMeter.c:NetworkIOMeter_display" targetname: "xSnprintf" label: "NetworkIOMeter.c:149:10" }
+node: { title: "RichString_appendnAscii" label: "RichString_appendnAscii\nRichString.h:75:5" shape : ellipse }
+edge: { sourcename: "NetworkIOMeter.c:NetworkIOMeter_display" targetname: "RichString_appendnAscii" label: "NetworkIOMeter.c:150:4" }
+}

@@ -1,0 +1,21 @@
+graph: { title: "LoadAverageMeter.c"
+node: { title: "LoadAverageMeter.c:LoadAverageMeter_updateValues" label: "LoadAverageMeter_updateValues\nLoadAverageMeter.c:40:13\n32 bytes (static)" }
+node: { title: "Platform_getLoadAverage" label: "Platform_getLoadAverage\n./linux/Platform.h:60:6" shape : ellipse }
+edge: { sourcename: "LoadAverageMeter.c:LoadAverageMeter_updateValues" targetname: "Platform_getLoadAverage" label: "LoadAverageMeter.c:41:4" }
+node: { title: "xSnprintf" label: "xSnprintf\nXUtils.h:66:5" shape : ellipse }
+edge: { sourcename: "LoadAverageMeter.c:LoadAverageMeter_updateValues" targetname: "xSnprintf" label: "LoadAverageMeter.c:58:4" }
+node: { title: "LoadAverageMeter.c:LoadMeter_updateValues" label: "LoadMeter_updateValues\nLoadAverageMeter.c:74:13\n48 bytes (static)" }
+edge: { sourcename: "LoadAverageMeter.c:LoadMeter_updateValues" targetname: "Platform_getLoadAverage" label: "LoadAverageMeter.c:76:4" }
+edge: { sourcename: "LoadAverageMeter.c:LoadMeter_updateValues" targetname: "xSnprintf" label: "LoadAverageMeter.c:90:4" }
+node: { title: "LoadAverageMeter.c:LoadAverageMeter_display" label: "LoadAverageMeter_display\nLoadAverageMeter.c:61:13\n96 bytes (static)" }
+edge: { sourcename: "LoadAverageMeter.c:LoadAverageMeter_display" targetname: "xSnprintf" label: "LoadAverageMeter.c:66:10" }
+node: { title: "RichString_appendnAscii" label: "RichString_appendnAscii\nRichString.h:75:5" shape : ellipse }
+edge: { sourcename: "LoadAverageMeter.c:LoadAverageMeter_display" targetname: "RichString_appendnAscii" label: "LoadAverageMeter.c:67:4" }
+edge: { sourcename: "LoadAverageMeter.c:LoadAverageMeter_display" targetname: "xSnprintf" label: "LoadAverageMeter.c:68:10" }
+edge: { sourcename: "LoadAverageMeter.c:LoadAverageMeter_display" targetname: "RichString_appendnAscii" label: "LoadAverageMeter.c:69:4" }
+edge: { sourcename: "LoadAverageMeter.c:LoadAverageMeter_display" targetname: "xSnprintf" label: "LoadAverageMeter.c:70:10" }
+edge: { sourcename: "LoadAverageMeter.c:LoadAverageMeter_display" targetname: "RichString_appendnAscii" label: "LoadAverageMeter.c:71:4" }
+node: { title: "LoadAverageMeter.c:LoadMeter_display" label: "LoadMeter_display\nLoadAverageMeter.c:93:13\n64 bytes (static)" }
+edge: { sourcename: "LoadAverageMeter.c:LoadMeter_display" targetname: "xSnprintf" label: "LoadAverageMeter.c:98:10" }
+edge: { sourcename: "LoadAverageMeter.c:LoadMeter_display" targetname: "RichString_appendnAscii" label: "LoadAverageMeter.c:99:4" }
+}

@@ -1,0 +1,35 @@
+graph: { title: "linux/IOPriorityPanel.c"
+node: { title: "IOPriorityPanel_new" label: "IOPriorityPanel_new\nlinux/IOPriorityPanel.c:20:8\n176 bytes (static)" }
+node: { title: "FunctionBar_newEnterEsc" label: "FunctionBar_newEnterEsc\n./FunctionBar.h:24:14" shape : ellipse }
+edge: { sourcename: "IOPriorityPanel_new" targetname: "FunctionBar_newEnterEsc" label: "linux/IOPriorityPanel.c:21:18" }
+node: { title: "Panel_new" label: "Panel_new\n./Panel.h:91:8" shape : ellipse }
+edge: { sourcename: "IOPriorityPanel_new" targetname: "Panel_new" label: "linux/IOPriorityPanel.c:21:18" }
+node: { title: "Panel_setHeader" label: "Panel_setHeader\n./Panel.h:103:6" shape : ellipse }
+edge: { sourcename: "IOPriorityPanel_new" targetname: "Panel_setHeader" label: "linux/IOPriorityPanel.c:23:4" }
+node: { title: "ListItem_new" label: "ListItem_new\n./ListItem.h:30:11" shape : ellipse }
+edge: { sourcename: "IOPriorityPanel_new" targetname: "ListItem_new" label: "linux/IOPriorityPanel.c:24:30" }
+node: { title: "Panel_add" label: "Panel_add\n./Panel.h:111:6" shape : ellipse }
+edge: { sourcename: "IOPriorityPanel_new" targetname: "Panel_add" label: "linux/IOPriorityPanel.c:24:4" }
+node: { title: "Panel_setSelected" label: "Panel_setSelected\n./Panel.h:131:6" shape : ellipse }
+edge: { sourcename: "IOPriorityPanel_new" targetname: "Panel_setSelected" label: "linux/IOPriorityPanel.c:26:7" }
+node: { title: "xSnprintf" label: "xSnprintf\n./XUtils.h:66:5" shape : ellipse }
+edge: { sourcename: "IOPriorityPanel_new" targetname: "xSnprintf" label: "linux/IOPriorityPanel.c:39:10" }
+edge: { sourcename: "IOPriorityPanel_new" targetname: "ListItem_new" label: "linux/IOPriorityPanel.c:41:36" }
+edge: { sourcename: "IOPriorityPanel_new" targetname: "Panel_add" label: "linux/IOPriorityPanel.c:41:10" }
+node: { title: "Panel_size" label: "Panel_size\n./Panel.h:129:5" shape : ellipse }
+edge: { sourcename: "IOPriorityPanel_new" targetname: "Panel_size" label: "linux/IOPriorityPanel.c:43:37" }
+edge: { sourcename: "IOPriorityPanel_new" targetname: "Panel_setSelected" label: "linux/IOPriorityPanel.c:43:13" }
+edge: { sourcename: "IOPriorityPanel_new" targetname: "ListItem_new" label: "linux/IOPriorityPanel.c:47:30" }
+edge: { sourcename: "IOPriorityPanel_new" targetname: "Panel_add" label: "linux/IOPriorityPanel.c:47:4" }
+edge: { sourcename: "IOPriorityPanel_new" targetname: "Panel_size" label: "linux/IOPriorityPanel.c:49:31" }
+edge: { sourcename: "IOPriorityPanel_new" targetname: "Panel_setSelected" label: "linux/IOPriorityPanel.c:49:7" }
+edge: { sourcename: "IOPriorityPanel_new" targetname: "xSnprintf" label: "linux/IOPriorityPanel.c:39:10" }
+edge: { sourcename: "IOPriorityPanel_new" targetname: "ListItem_new" label: "linux/IOPriorityPanel.c:41:36" }
+edge: { sourcename: "IOPriorityPanel_new" targetname: "Panel_add" label: "linux/IOPriorityPanel.c:41:10" }
+edge: { sourcename: "IOPriorityPanel_new" targetname: "xSnprintf" label: "linux/IOPriorityPanel.c:39:10" }
+edge: { sourcename: "IOPriorityPanel_new" targetname: "ListItem_new" label: "linux/IOPriorityPanel.c:41:36" }
+edge: { sourcename: "IOPriorityPanel_new" targetname: "Panel_add" label: "linux/IOPriorityPanel.c:41:10" }
+node: { title: "IOPriorityPanel_getIOPriority" label: "IOPriorityPanel_getIOPriority\nlinux/IOPriorityPanel.c:54:12\n16 bytes (static)" }
+node: { title: "Panel_getSelected" label: "Panel_getSelected\n./Panel.h:121:9" shape : ellipse }
+edge: { sourcename: "IOPriorityPanel_getIOPriority" targetname: "Panel_getSelected" label: "linux/IOPriorityPanel.c:55:43" }
+}

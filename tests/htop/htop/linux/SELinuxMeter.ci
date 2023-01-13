@@ -1,0 +1,15 @@
+graph: { title: "linux/SELinuxMeter.c"
+node: { title: "linux/SELinuxMeter.c:SELinuxMeter_updateValues" label: "SELinuxMeter_updateValues\nlinux/SELinuxMeter.c:72:13\n288 bytes (static)" }
+node: { title: "statfs" label: "statfs\n/usr/include/aarch64-linux-gnu/sys/statfs.h:31:12" shape : ellipse }
+edge: { sourcename: "linux/SELinuxMeter.c:SELinuxMeter_updateValues" targetname: "statfs" label: "linux/SELinuxMeter.c:32:12" }
+node: { title: "statvfs" label: "statvfs\n/usr/include/aarch64-linux-gnu/sys/statvfs.h:51:12" shape : ellipse }
+edge: { sourcename: "linux/SELinuxMeter.c:SELinuxMeter_updateValues" targetname: "statvfs" label: "linux/SELinuxMeter.c:42:8" }
+node: { title: "access" label: "access\n/usr/include/unistd.h:287:12" shape : ellipse }
+edge: { sourcename: "linux/SELinuxMeter.c:SELinuxMeter_updateValues" targetname: "access" label: "linux/SELinuxMeter.c:51:38" }
+node: { title: "*__isoc99_sscanf" label: "sscanf\n/usr/include/stdio.h:412:12" shape : ellipse }
+edge: { sourcename: "linux/SELinuxMeter.c:SELinuxMeter_updateValues" targetname: "*__isoc99_sscanf" label: "linux/SELinuxMeter.c:65:8" }
+node: { title: "xSnprintf" label: "xSnprintf\n./XUtils.h:66:5" shape : ellipse }
+edge: { sourcename: "linux/SELinuxMeter.c:SELinuxMeter_updateValues" targetname: "xSnprintf" label: "linux/SELinuxMeter.c:76:4" }
+node: { title: "xReadfile" label: "xReadfile\n./XUtils.h:73:9" shape : ellipse }
+edge: { sourcename: "linux/SELinuxMeter.c:SELinuxMeter_updateValues" targetname: "xReadfile" label: "linux/SELinuxMeter.c:60:16" }
+}

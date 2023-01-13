@@ -1,0 +1,29 @@
+graph: { title: "MemoryMeter.c"
+node: { title: "MemoryMeter.c:MemoryMeter_updateValues" label: "MemoryMeter_updateValues\nMemoryMeter.c:26:13\n32 bytes (static)" }
+node: { title: "Platform_setMemoryValues" label: "Platform_setMemoryValues\n./linux/Platform.h:66:6" shape : ellipse }
+edge: { sourcename: "MemoryMeter.c:MemoryMeter_updateValues" targetname: "Platform_setMemoryValues" label: "MemoryMeter.c:34:4" }
+node: { title: "Meter_humanUnit" label: "Meter_humanUnit\nMeter.h:148:5" shape : ellipse }
+edge: { sourcename: "MemoryMeter.c:MemoryMeter_updateValues" targetname: "Meter_humanUnit" label: "MemoryMeter.c:39:14" }
+edge: { sourcename: "MemoryMeter.c:MemoryMeter_updateValues" targetname: "Meter_humanUnit" label: "MemoryMeter.c:44:4" }
+node: { title: "MemoryMeter.c:MemoryMeter_display" label: "MemoryMeter_display\nMemoryMeter.c:47:13\n128 bytes (static)" }
+node: { title: "RichString_writeAscii" label: "RichString_writeAscii\nRichString.h:77:5" shape : ellipse }
+edge: { sourcename: "MemoryMeter.c:MemoryMeter_display" targetname: "RichString_writeAscii" label: "MemoryMeter.c:51:4" }
+edge: { sourcename: "MemoryMeter.c:MemoryMeter_display" targetname: "Meter_humanUnit" label: "MemoryMeter.c:52:4" }
+node: { title: "RichString_appendAscii" label: "RichString_appendAscii\nRichString.h:73:5" shape : ellipse }
+edge: { sourcename: "MemoryMeter.c:MemoryMeter_display" targetname: "RichString_appendAscii" label: "MemoryMeter.c:53:4" }
+edge: { sourcename: "MemoryMeter.c:MemoryMeter_display" targetname: "Meter_humanUnit" label: "MemoryMeter.c:55:4" }
+edge: { sourcename: "MemoryMeter.c:MemoryMeter_display" targetname: "RichString_appendAscii" label: "MemoryMeter.c:56:4" }
+edge: { sourcename: "MemoryMeter.c:MemoryMeter_display" targetname: "RichString_appendAscii" label: "MemoryMeter.c:57:4" }
+edge: { sourcename: "MemoryMeter.c:MemoryMeter_display" targetname: "Meter_humanUnit" label: "MemoryMeter.c:59:4" }
+edge: { sourcename: "MemoryMeter.c:MemoryMeter_display" targetname: "RichString_appendAscii" label: "MemoryMeter.c:60:4" }
+edge: { sourcename: "MemoryMeter.c:MemoryMeter_display" targetname: "RichString_appendAscii" label: "MemoryMeter.c:61:4" }
+edge: { sourcename: "MemoryMeter.c:MemoryMeter_display" targetname: "Meter_humanUnit" label: "MemoryMeter.c:65:7" }
+edge: { sourcename: "MemoryMeter.c:MemoryMeter_display" targetname: "RichString_appendAscii" label: "MemoryMeter.c:66:7" }
+edge: { sourcename: "MemoryMeter.c:MemoryMeter_display" targetname: "RichString_appendAscii" label: "MemoryMeter.c:67:7" }
+edge: { sourcename: "MemoryMeter.c:MemoryMeter_display" targetname: "Meter_humanUnit" label: "MemoryMeter.c:70:4" }
+edge: { sourcename: "MemoryMeter.c:MemoryMeter_display" targetname: "RichString_appendAscii" label: "MemoryMeter.c:71:4" }
+edge: { sourcename: "MemoryMeter.c:MemoryMeter_display" targetname: "RichString_appendAscii" label: "MemoryMeter.c:72:4" }
+edge: { sourcename: "MemoryMeter.c:MemoryMeter_display" targetname: "Meter_humanUnit" label: "MemoryMeter.c:76:7" }
+edge: { sourcename: "MemoryMeter.c:MemoryMeter_display" targetname: "RichString_appendAscii" label: "MemoryMeter.c:77:7" }
+edge: { sourcename: "MemoryMeter.c:MemoryMeter_display" targetname: "RichString_appendAscii" label: "MemoryMeter.c:78:7" }
+}

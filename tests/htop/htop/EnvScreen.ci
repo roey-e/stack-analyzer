@@ -1,0 +1,36 @@
+graph: { title: "EnvScreen.c"
+node: { title: "EnvScreen_delete" label: "EnvScreen_delete\nEnvScreen.c:22:6\n16 bytes (static)" }
+node: { title: "InfoScreen_done" label: "InfoScreen_done\nInfoScreen.h:44:13" shape : ellipse }
+edge: { sourcename: "EnvScreen_delete" targetname: "InfoScreen_done" label: "EnvScreen.c:23:9" }
+node: { title: "free" label: "free\n/usr/include/stdlib.h:565:13" shape : ellipse }
+edge: { sourcename: "EnvScreen_delete" targetname: "free" label: "EnvScreen.c:23:4" }
+node: { title: "EnvScreen.c:EnvScreen_draw" label: "EnvScreen_draw\nEnvScreen.c:26:13\n32 bytes (static)" }
+node: { title: "Process_getCommand" label: "Process_getCommand\nProcess.h:401:13" shape : ellipse }
+edge: { sourcename: "EnvScreen.c:EnvScreen_draw" targetname: "Process_getCommand" label: "EnvScreen.c:27:4" }
+node: { title: "InfoScreen_drawTitled" label: "InfoScreen_drawTitled\nInfoScreen.h:47:6" shape : ellipse }
+edge: { sourcename: "EnvScreen.c:EnvScreen_draw" targetname: "InfoScreen_drawTitled" label: "EnvScreen.c:27:4" }
+node: { title: "EnvScreen.c:EnvScreen_scan" label: "EnvScreen_scan\nEnvScreen.c:30:13\n64 bytes (static)" }
+node: { title: "Panel_getSelectedIndex" label: "Panel_getSelectedIndex\nPanel.h:127:5" shape : ellipse }
+edge: { sourcename: "EnvScreen.c:EnvScreen_scan" targetname: "Panel_getSelectedIndex" label: "EnvScreen.c:32:14" }
+edge: { sourcename: "EnvScreen.c:EnvScreen_scan" targetname: "Panel_getSelectedIndex" label: "EnvScreen.c:32:14" }
+node: { title: "Panel_prune" label: "Panel_prune\nPanel.h:109:6" shape : ellipse }
+edge: { sourcename: "EnvScreen.c:EnvScreen_scan" targetname: "Panel_prune" label: "EnvScreen.c:34:4" }
+node: { title: "Platform_getProcessEnv" label: "Platform_getProcessEnv\n./linux/Platform.h:76:7" shape : ellipse }
+edge: { sourcename: "EnvScreen.c:EnvScreen_scan" targetname: "Platform_getProcessEnv" label: "EnvScreen.c:36:16" }
+node: { title: "InfoScreen_addLine" label: "InfoScreen_addLine\nInfoScreen.h:49:6" shape : ellipse }
+edge: { sourcename: "EnvScreen.c:EnvScreen_scan" targetname: "InfoScreen_addLine" label: "EnvScreen.c:39:10" }
+node: { title: "strlen" label: "__builtin_strlen\n<built-in>" shape : ellipse }
+edge: { sourcename: "EnvScreen.c:EnvScreen_scan" targetname: "strlen" label: "EnvScreen.c:38:41" }
+edge: { sourcename: "EnvScreen.c:EnvScreen_scan" targetname: "free" label: "EnvScreen.c:40:7" }
+edge: { sourcename: "EnvScreen.c:EnvScreen_scan" targetname: "InfoScreen_addLine" label: "EnvScreen.c:43:7" }
+node: { title: "Vector_insertionSort" label: "Vector_insertionSort\nVector.h:44:6" shape : ellipse }
+edge: { sourcename: "EnvScreen.c:EnvScreen_scan" targetname: "Vector_insertionSort" label: "EnvScreen.c:46:4" }
+edge: { sourcename: "EnvScreen.c:EnvScreen_scan" targetname: "Vector_insertionSort" label: "EnvScreen.c:47:4" }
+node: { title: "Panel_setSelected" label: "Panel_setSelected\nPanel.h:131:6" shape : ellipse }
+edge: { sourcename: "EnvScreen.c:EnvScreen_scan" targetname: "Panel_setSelected" label: "EnvScreen.c:48:4" }
+node: { title: "EnvScreen_new" label: "EnvScreen_new\nEnvScreen.c:16:12\n32 bytes (static)" }
+node: { title: "xMalloc" label: "xMalloc\nXUtils.h:23:7" shape : ellipse }
+edge: { sourcename: "EnvScreen_new" targetname: "xMalloc" label: "EnvScreen.c:17:22" }
+node: { title: "InfoScreen_init" label: "InfoScreen_init\nInfoScreen.h:42:13" shape : ellipse }
+edge: { sourcename: "EnvScreen_new" targetname: "InfoScreen_init" label: "EnvScreen.c:19:24" }
+}

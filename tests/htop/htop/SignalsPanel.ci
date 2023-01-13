@@ -1,0 +1,26 @@
+graph: { title: "SignalsPanel.c"
+node: { title: "SignalsPanel_new" label: "SignalsPanel_new\nSignalsPanel.c:21:8\n80 bytes (static)" }
+node: { title: "FunctionBar_newEnterEsc" label: "FunctionBar_newEnterEsc\nFunctionBar.h:24:14" shape : ellipse }
+edge: { sourcename: "SignalsPanel_new" targetname: "FunctionBar_newEnterEsc" label: "SignalsPanel.c:22:18" }
+node: { title: "Panel_new" label: "Panel_new\nPanel.h:91:8" shape : ellipse }
+edge: { sourcename: "SignalsPanel_new" targetname: "Panel_new" label: "SignalsPanel.c:22:18" }
+node: { title: "ListItem_new" label: "ListItem_new\nListItem.h:30:11" shape : ellipse }
+edge: { sourcename: "SignalsPanel_new" targetname: "ListItem_new" label: "SignalsPanel.c:26:36" }
+node: { title: "Panel_set" label: "Panel_set\nPanel.h:115:6" shape : ellipse }
+edge: { sourcename: "SignalsPanel_new" targetname: "Panel_set" label: "SignalsPanel.c:26:7" }
+node: { title: "__libc_current_sigrtmax" label: "__libc_current_sigrtmax\n/usr/include/signal.h:368:12" shape : ellipse }
+edge: { sourcename: "SignalsPanel_new" targetname: "__libc_current_sigrtmax" label: "SignalsPanel.c:33:8" }
+node: { title: "__libc_current_sigrtmin" label: "__libc_current_sigrtmin\n/usr/include/signal.h:366:12" shape : ellipse }
+edge: { sourcename: "SignalsPanel_new" targetname: "__libc_current_sigrtmin" label: "SignalsPanel.c:33:19" }
+node: { title: "Panel_setHeader" label: "Panel_setHeader\nPanel.h:103:6" shape : ellipse }
+edge: { sourcename: "SignalsPanel_new" targetname: "Panel_setHeader" label: "SignalsPanel.c:45:4" }
+node: { title: "Panel_setSelected" label: "Panel_setSelected\nPanel.h:131:6" shape : ellipse }
+edge: { sourcename: "SignalsPanel_new" targetname: "Panel_setSelected" label: "SignalsPanel.c:46:4" }
+edge: { sourcename: "SignalsPanel_new" targetname: "__libc_current_sigrtmin" label: "SignalsPanel.c:35:22" }
+edge: { sourcename: "SignalsPanel_new" targetname: "__libc_current_sigrtmin" label: "SignalsPanel.c:36:24" }
+node: { title: "xSnprintf" label: "xSnprintf\nXUtils.h:66:5" shape : ellipse }
+edge: { sourcename: "SignalsPanel_new" targetname: "xSnprintf" label: "SignalsPanel.c:37:10" }
+edge: { sourcename: "SignalsPanel_new" targetname: "ListItem_new" label: "SignalsPanel.c:41:39" }
+edge: { sourcename: "SignalsPanel_new" targetname: "Panel_set" label: "SignalsPanel.c:41:10" }
+edge: { sourcename: "SignalsPanel_new" targetname: "__libc_current_sigrtmax" label: "SignalsPanel.c:35:39" }
+}

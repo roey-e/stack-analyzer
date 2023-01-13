@@ -1,0 +1,62 @@
+graph: { title: "AvailableMetersPanel.c"
+node: { title: "AvailableMetersPanel.c:AvailableMetersPanel_delete" label: "AvailableMetersPanel_delete\nAvailableMetersPanel.c:29:13\n32 bytes (static)" }
+node: { title: "Panel_done" label: "Panel_done\nPanel.h:97:6" shape : ellipse }
+edge: { sourcename: "AvailableMetersPanel.c:AvailableMetersPanel_delete" targetname: "Panel_done" label: "AvailableMetersPanel.c:32:4" }
+node: { title: "free" label: "free\n/usr/include/stdlib.h:565:13" shape : ellipse }
+edge: { sourcename: "AvailableMetersPanel.c:AvailableMetersPanel_delete" targetname: "free" label: "AvailableMetersPanel.c:33:4" }
+edge: { sourcename: "AvailableMetersPanel.c:AvailableMetersPanel_delete" targetname: "free" label: "AvailableMetersPanel.c:34:4" }
+node: { title: "AvailableMetersPanel.c:AvailableMetersPanel_addDynamicMeter" label: "AvailableMetersPanel_addDynamicMeter\nAvailableMetersPanel.c:119:13\n32 bytes (static)" }
+node: { title: "ListItem_new" label: "ListItem_new\nListItem.h:30:11" shape : ellipse }
+edge: { sourcename: "AvailableMetersPanel.c:AvailableMetersPanel_addDynamicMeter" targetname: "ListItem_new" label: "AvailableMetersPanel.c:126:37" }
+node: { title: "Panel_add" label: "Panel_add\nPanel.h:111:6" shape : ellipse }
+edge: { sourcename: "AvailableMetersPanel.c:AvailableMetersPanel_addDynamicMeter" targetname: "Panel_add" label: "AvailableMetersPanel.c:126:4" }
+node: { title: "AvailableMetersPanel.c:AvailableMetersPanel_eventHandler" label: "AvailableMetersPanel_eventHandler\nAvailableMetersPanel.c:44:22\n48 bytes (static)" }
+node: { title: "Panel_getSelected" label: "Panel_getSelected\nPanel.h:121:9" shape : ellipse }
+edge: { sourcename: "AvailableMetersPanel.c:AvailableMetersPanel_eventHandler" targetname: "Panel_getSelected" label: "AvailableMetersPanel.c:48:43" }
+node: { title: "Header_addMeterByClass" label: "Header_addMeterByClass\nHeader.h:38:8" shape : ellipse }
+edge: { sourcename: "AvailableMetersPanel.c:AvailableMetersPanel_eventHandler" targetname: "Header_addMeterByClass" label: "AvailableMetersPanel.c:38:25" }
+node: { title: "Meter_toListItem" label: "Meter_toListItem\nMeter.h:156:11" shape : ellipse }
+edge: { sourcename: "AvailableMetersPanel.c:AvailableMetersPanel_eventHandler" targetname: "Meter_toListItem" label: "AvailableMetersPanel.c:39:39" }
+edge: { sourcename: "AvailableMetersPanel.c:AvailableMetersPanel_eventHandler" targetname: "Panel_add" label: "AvailableMetersPanel.c:39:4" }
+node: { title: "Panel_size" label: "Panel_size\nPanel.h:129:5" shape : ellipse }
+edge: { sourcename: "AvailableMetersPanel.c:AvailableMetersPanel_eventHandler" targetname: "Panel_size" label: "AvailableMetersPanel.c:40:37" }
+node: { title: "Panel_setSelected" label: "Panel_setSelected\nPanel.h:131:6" shape : ellipse }
+edge: { sourcename: "AvailableMetersPanel.c:AvailableMetersPanel_eventHandler" targetname: "Panel_setSelected" label: "AvailableMetersPanel.c:40:4" }
+node: { title: "MetersPanel_setMoving" label: "MetersPanel_setMoving\nMetersPanel.h:34:6" shape : ellipse }
+edge: { sourcename: "AvailableMetersPanel.c:AvailableMetersPanel_eventHandler" targetname: "MetersPanel_setMoving" label: "AvailableMetersPanel.c:41:4" }
+edge: { sourcename: "AvailableMetersPanel.c:AvailableMetersPanel_eventHandler" targetname: "Header_addMeterByClass" label: "AvailableMetersPanel.c:38:25" }
+edge: { sourcename: "AvailableMetersPanel.c:AvailableMetersPanel_eventHandler" targetname: "Meter_toListItem" label: "AvailableMetersPanel.c:39:39" }
+edge: { sourcename: "AvailableMetersPanel.c:AvailableMetersPanel_eventHandler" targetname: "Panel_add" label: "AvailableMetersPanel.c:39:4" }
+edge: { sourcename: "AvailableMetersPanel.c:AvailableMetersPanel_eventHandler" targetname: "Panel_size" label: "AvailableMetersPanel.c:40:37" }
+edge: { sourcename: "AvailableMetersPanel.c:AvailableMetersPanel_eventHandler" targetname: "Panel_setSelected" label: "AvailableMetersPanel.c:40:4" }
+edge: { sourcename: "AvailableMetersPanel.c:AvailableMetersPanel_eventHandler" targetname: "MetersPanel_setMoving" label: "AvailableMetersPanel.c:41:4" }
+node: { title: "Header_calculateHeight" label: "Header_calculateHeight\nHeader.h:46:5" shape : ellipse }
+edge: { sourcename: "AvailableMetersPanel.c:AvailableMetersPanel_eventHandler" targetname: "Header_calculateHeight" label: "AvailableMetersPanel.c:83:7" }
+node: { title: "Header_updateData" label: "Header_updateData\nHeader.h:44:6" shape : ellipse }
+edge: { sourcename: "AvailableMetersPanel.c:AvailableMetersPanel_eventHandler" targetname: "Header_updateData" label: "AvailableMetersPanel.c:84:7" }
+node: { title: "Header_draw" label: "Header_draw\nHeader.h:42:6" shape : ellipse }
+edge: { sourcename: "AvailableMetersPanel.c:AvailableMetersPanel_eventHandler" targetname: "Header_draw" label: "AvailableMetersPanel.c:85:7" }
+node: { title: "ScreenManager_resize" label: "ScreenManager_resize\nScreenManager.h:45:6" shape : ellipse }
+edge: { sourcename: "AvailableMetersPanel.c:AvailableMetersPanel_eventHandler" targetname: "ScreenManager_resize" label: "AvailableMetersPanel.c:86:7" }
+node: { title: "AvailableMetersPanel_new" label: "AvailableMetersPanel_new\nAvailableMetersPanel.c:143:23\n144 bytes (static)" }
+node: { title: "xMalloc" label: "xMalloc\nXUtils.h:23:7" shape : ellipse }
+edge: { sourcename: "AvailableMetersPanel_new" targetname: "xMalloc" label: "AvailableMetersPanel.c:144:33" }
+node: { title: "FunctionBar_newEnterEsc" label: "FunctionBar_newEnterEsc\nFunctionBar.h:24:14" shape : ellipse }
+edge: { sourcename: "AvailableMetersPanel_new" targetname: "FunctionBar_newEnterEsc" label: "AvailableMetersPanel.c:146:25" }
+node: { title: "Panel_init" label: "Panel_init\nPanel.h:95:6" shape : ellipse }
+edge: { sourcename: "AvailableMetersPanel_new" targetname: "Panel_init" label: "AvailableMetersPanel.c:147:4" }
+node: { title: "Panel_setHeader" label: "Panel_setHeader\nPanel.h:103:6" shape : ellipse }
+edge: { sourcename: "AvailableMetersPanel_new" targetname: "Panel_setHeader" label: "AvailableMetersPanel.c:155:4" }
+node: { title: "Hashtable_foreach" label: "Hashtable_foreach\nHashtable.h:40:6" shape : ellipse }
+edge: { sourcename: "AvailableMetersPanel_new" targetname: "Hashtable_foreach" label: "AvailableMetersPanel.c:134:4" }
+edge: { sourcename: "AvailableMetersPanel_new" targetname: "ListItem_new" label: "AvailableMetersPanel.c:140:31" }
+edge: { sourcename: "AvailableMetersPanel_new" targetname: "Panel_add" label: "AvailableMetersPanel.c:140:4" }
+edge: { sourcename: "AvailableMetersPanel_new" targetname: "ListItem_new" label: "AvailableMetersPanel.c:102:34" }
+edge: { sourcename: "AvailableMetersPanel_new" targetname: "Panel_add" label: "AvailableMetersPanel.c:102:7" }
+node: { title: "xSnprintf" label: "xSnprintf\nXUtils.h:66:5" shape : ellipse }
+edge: { sourcename: "AvailableMetersPanel_new" targetname: "xSnprintf" label: "AvailableMetersPanel.c:105:10" }
+edge: { sourcename: "AvailableMetersPanel_new" targetname: "ListItem_new" label: "AvailableMetersPanel.c:106:37" }
+edge: { sourcename: "AvailableMetersPanel_new" targetname: "Panel_add" label: "AvailableMetersPanel.c:106:10" }
+edge: { sourcename: "AvailableMetersPanel_new" targetname: "ListItem_new" label: "AvailableMetersPanel.c:109:34" }
+edge: { sourcename: "AvailableMetersPanel_new" targetname: "Panel_add" label: "AvailableMetersPanel.c:109:7" }
+}

@@ -1,0 +1,364 @@
+graph: { title: "Settings.c"
+node: { title: "Settings.c:Settings_defaultMeters" label: "Settings_defaultMeters\nSettings.c:142:13\n96 bytes (static)" }
+node: { title: "free" label: "free\n/usr/include/stdlib.h:565:13" shape : ellipse }
+edge: { sourcename: "Settings.c:Settings_defaultMeters" targetname: "free" label: "Settings.c:154:4" }
+node: { title: "xCalloc" label: "xCalloc\nXUtils.h:27:7" shape : ellipse }
+edge: { sourcename: "Settings.c:Settings_defaultMeters" targetname: "xCalloc" label: "Settings.c:157:21" }
+edge: { sourcename: "Settings.c:Settings_defaultMeters" targetname: "xCalloc" label: "Settings.c:159:33" }
+edge: { sourcename: "Settings.c:Settings_defaultMeters" targetname: "xCalloc" label: "Settings.c:160:33" }
+edge: { sourcename: "Settings.c:Settings_defaultMeters" targetname: "xCalloc" label: "Settings.c:159:33" }
+edge: { sourcename: "Settings.c:Settings_defaultMeters" targetname: "xCalloc" label: "Settings.c:160:33" }
+node: { title: "String_freeArray" label: "String_freeArray\nXUtils.h:55:6" shape : ellipse }
+edge: { sourcename: "Settings.c:Settings_defaultMeters" targetname: "String_freeArray" label: "Settings.c:151:7" }
+edge: { sourcename: "Settings.c:Settings_defaultMeters" targetname: "free" label: "Settings.c:152:7" }
+node: { title: "xStrdup" label: "xStrdup\nXUtils.h:68:7" shape : ellipse }
+edge: { sourcename: "Settings.c:Settings_defaultMeters" targetname: "xStrdup" label: "Settings.c:168:36" }
+edge: { sourcename: "Settings.c:Settings_defaultMeters" targetname: "xStrdup" label: "Settings.c:171:36" }
+edge: { sourcename: "Settings.c:Settings_defaultMeters" targetname: "xStrdup" label: "Settings.c:173:36" }
+edge: { sourcename: "Settings.c:Settings_defaultMeters" targetname: "xStrdup" label: "Settings.c:176:36" }
+edge: { sourcename: "Settings.c:Settings_defaultMeters" targetname: "xStrdup" label: "Settings.c:178:36" }
+edge: { sourcename: "Settings.c:Settings_defaultMeters" targetname: "xStrdup" label: "Settings.c:181:36" }
+edge: { sourcename: "Settings.c:Settings_defaultMeters" targetname: "xStrdup" label: "Settings.c:183:36" }
+edge: { sourcename: "Settings.c:Settings_defaultMeters" targetname: "xStrdup" label: "Settings.c:186:36" }
+edge: { sourcename: "Settings.c:Settings_defaultMeters" targetname: "xStrdup" label: "Settings.c:188:36" }
+edge: { sourcename: "Settings.c:Settings_defaultMeters" targetname: "xStrdup" label: "Settings.c:191:36" }
+edge: { sourcename: "Settings.c:Settings_defaultMeters" targetname: "xStrdup" label: "Settings.c:194:33" }
+edge: { sourcename: "Settings.c:Settings_defaultMeters" targetname: "xStrdup" label: "Settings.c:196:33" }
+edge: { sourcename: "Settings.c:Settings_defaultMeters" targetname: "xStrdup" label: "Settings.c:198:33" }
+edge: { sourcename: "Settings.c:Settings_defaultMeters" targetname: "xStrdup" label: "Settings.c:200:33" }
+edge: { sourcename: "Settings.c:Settings_defaultMeters" targetname: "xStrdup" label: "Settings.c:202:33" }
+node: { title: "Settings.c:Settings_readMeters" label: "Settings_readMeters\nSettings.c:86:13\n48 bytes (static)" }
+node: { title: "String_trim" label: "String_trim\nXUtils.h:51:7" shape : ellipse }
+edge: { sourcename: "Settings.c:Settings_readMeters" targetname: "String_trim" label: "Settings.c:87:17" }
+node: { title: "String_split" label: "String_split\nXUtils.h:53:8" shape : ellipse }
+edge: { sourcename: "Settings.c:Settings_readMeters" targetname: "String_split" label: "Settings.c:88:17" }
+edge: { sourcename: "Settings.c:Settings_readMeters" targetname: "free" label: "Settings.c:89:4" }
+node: { title: "Settings.c:Settings_readMeterModes" label: "Settings_readMeterModes\nSettings.c:94:13\n64 bytes (static)" }
+edge: { sourcename: "Settings.c:Settings_readMeterModes" targetname: "String_trim" label: "Settings.c:95:17" }
+edge: { sourcename: "Settings.c:Settings_readMeterModes" targetname: "String_split" label: "Settings.c:96:17" }
+edge: { sourcename: "Settings.c:Settings_readMeterModes" targetname: "free" label: "Settings.c:97:4" }
+edge: { sourcename: "Settings.c:Settings_readMeterModes" targetname: "xCalloc" label: "Settings.c:104:23" }
+node: { title: "strtol" label: "strtol\n/usr/include/stdlib.h:176:17" shape : ellipse }
+edge: { sourcename: "Settings.c:Settings_readMeterModes" targetname: "strtol" label: "/usr/include/stdlib.h:363:16" }
+edge: { sourcename: "Settings.c:Settings_readMeterModes" targetname: "String_freeArray" label: "Settings.c:108:4" }
+node: { title: "Settings.c:toFieldIndex" label: "toFieldIndex\nSettings.c:216:12\n96 bytes (static)" }
+node: { title: "__ctype_b_loc" label: "__ctype_b_loc\n/usr/include/ctype.h:79:35" shape : ellipse }
+edge: { sourcename: "Settings.c:toFieldIndex" targetname: "__ctype_b_loc" label: "Settings.c:217:8" }
+edge: { sourcename: "Settings.c:toFieldIndex" targetname: "strtol" label: "/usr/include/stdlib.h:363:16" }
+node: { title: "DynamicColumn_lookup" label: "DynamicColumn_lookup\nDynamicColumn.h:28:22" shape : ellipse }
+edge: { sourcename: "Settings.c:toFieldIndex" targetname: "DynamicColumn_lookup" label: "Settings.c:210:37" }
+node: { title: "*__isoc99_sscanf" label: "sscanf\n/usr/include/stdio.h:412:12" shape : ellipse }
+edge: { sourcename: "Settings.c:toFieldIndex" targetname: "*__isoc99_sscanf" label: "Settings.c:226:11" }
+node: { title: "strrchr" label: "strrchr\n/usr/include/string.h:253:14" shape : ellipse }
+edge: { sourcename: "Settings.c:toFieldIndex" targetname: "strrchr" label: "Settings.c:228:21" }
+node: { title: "DynamicColumn_search" label: "DynamicColumn_search\nDynamicColumn.h:30:22" shape : ellipse }
+edge: { sourcename: "Settings.c:toFieldIndex" targetname: "DynamicColumn_search" label: "Settings.c:232:23" }
+node: { title: "strcmp" label: "strcmp\n/usr/include/string.h:137:12" shape : ellipse }
+edge: { sourcename: "Settings.c:toFieldIndex" targetname: "strcmp" label: "Settings.c:241:23" }
+node: { title: "Settings.c:ScreenSettings_readFields" label: "ScreenSettings_readFields\nSettings.c:248:13\n96 bytes (static)" }
+edge: { sourcename: "Settings.c:ScreenSettings_readFields" targetname: "String_trim" label: "Settings.c:249:17" }
+edge: { sourcename: "Settings.c:ScreenSettings_readFields" targetname: "String_split" label: "Settings.c:250:17" }
+edge: { sourcename: "Settings.c:ScreenSettings_readFields" targetname: "free" label: "Settings.c:251:4" }
+node: { title: "memset" label: "__builtin_memset\n<built-in>" shape : ellipse }
+edge: { sourcename: "Settings.c:ScreenSettings_readFields" targetname: "memset" }
+edge: { sourcename: "Settings.c:ScreenSettings_readFields" targetname: "String_freeArray" label: "Settings.c:269:4" }
+node: { title: "xRealloc" label: "xRealloc\nXUtils.h:29:7" shape : ellipse }
+edge: { sourcename: "Settings.c:ScreenSettings_readFields" targetname: "xRealloc" label: "Settings.c:260:23" }
+edge: { sourcename: "Settings.c:ScreenSettings_readFields" targetname: "Settings.c:toFieldIndex" label: "Settings.c:263:16" }
+node: { title: "Settings_delete" label: "Settings_delete\nSettings.c:70:6\n48 bytes (static)" }
+edge: { sourcename: "Settings_delete" targetname: "free" label: "Settings.c:71:4" }
+edge: { sourcename: "Settings_delete" targetname: "String_freeArray" label: "Settings.c:73:7" }
+edge: { sourcename: "Settings_delete" targetname: "free" label: "Settings.c:74:7" }
+edge: { sourcename: "Settings_delete" targetname: "free" label: "Settings.c:76:4" }
+edge: { sourcename: "Settings_delete" targetname: "free" label: "Settings.c:299:4" }
+edge: { sourcename: "Settings_delete" targetname: "free" label: "Settings.c:300:4" }
+edge: { sourcename: "Settings_delete" targetname: "free" label: "Settings.c:301:4" }
+edge: { sourcename: "Settings_delete" targetname: "free" label: "Settings.c:81:7" }
+edge: { sourcename: "Settings_delete" targetname: "free" label: "Settings.c:83:4" }
+node: { title: "Settings_newScreen" label: "Settings_newScreen\nSettings.c:272:17\n64 bytes (static)" }
+edge: { sourcename: "Settings_newScreen" targetname: "Settings.c:toFieldIndex" label: "Settings.c:273:38" }
+node: { title: "xMalloc" label: "xMalloc\nXUtils.h:23:7" shape : ellipse }
+edge: { sourcename: "Settings_newScreen" targetname: "xMalloc" label: "Settings.c:276:25" }
+edge: { sourcename: "Settings_newScreen" targetname: "xStrdup" label: "Settings.c:278:15" }
+edge: { sourcename: "Settings_newScreen" targetname: "xCalloc" label: "Settings.c:279:17" }
+edge: { sourcename: "Settings_newScreen" targetname: "Settings.c:ScreenSettings_readFields" label: "Settings.c:290:4" }
+edge: { sourcename: "Settings_newScreen" targetname: "xRealloc" label: "Settings.c:293:20" }
+edge: { sourcename: "Settings_newScreen" targetname: "xMalloc" label: "Settings.c:276:25" }
+edge: { sourcename: "Settings_newScreen" targetname: "xStrdup" label: "Settings.c:278:15" }
+edge: { sourcename: "Settings_newScreen" targetname: "xCalloc" label: "Settings.c:279:17" }
+node: { title: "Settings.c:Settings_read" label: "Settings_read\nSettings.c:314:13\n160 bytes (static)" }
+node: { title: "fopen" label: "fopen\n/usr/include/stdio.h:246:14" shape : ellipse }
+edge: { sourcename: "Settings.c:Settings_read" targetname: "fopen" label: "Settings.c:315:15" }
+node: { title: "String_readLine" label: "String_readLine\nXUtils.h:57:7" shape : ellipse }
+edge: { sourcename: "Settings.c:Settings_read" targetname: "String_readLine" label: "Settings.c:323:20" }
+edge: { sourcename: "Settings.c:Settings_read" targetname: "String_split" label: "Settings.c:329:23" }
+edge: { sourcename: "Settings.c:Settings_read" targetname: "free" label: "Settings.c:330:7" }
+edge: { sourcename: "Settings.c:Settings_read" targetname: "String_freeArray" label: "Settings.c:332:10" }
+edge: { sourcename: "Settings.c:Settings_read" targetname: "strcmp" label: "XUtils.h:46:11" }
+edge: { sourcename: "Settings.c:Settings_read" targetname: "strtol" label: "/usr/include/stdlib.h:363:16" }
+node: { title: "fprintf" label: "fprintf\n/usr/include/stdio.h:326:12" shape : ellipse }
+edge: { sourcename: "Settings.c:Settings_read" targetname: "fprintf" label: "Settings.c:339:13" }
+edge: { sourcename: "Settings.c:Settings_read" targetname: "fprintf" label: "Settings.c:340:13" }
+edge: { sourcename: "Settings.c:Settings_read" targetname: "fprintf" label: "Settings.c:341:13" }
+edge: { sourcename: "Settings.c:Settings_read" targetname: "String_freeArray" label: "Settings.c:342:13" }
+node: { title: "fclose" label: "fclose\n/usr/include/stdio.h:213:12" shape : ellipse }
+edge: { sourcename: "Settings.c:Settings_read" targetname: "fclose" label: "Settings.c:343:13" }
+edge: { sourcename: "Settings.c:Settings_read" targetname: "strcmp" label: "XUtils.h:46:11" }
+edge: { sourcename: "Settings.c:Settings_read" targetname: "Settings_newScreen" label: "Settings.c:309:7" }
+edge: { sourcename: "Settings.c:Settings_read" targetname: "Settings.c:ScreenSettings_readFields" label: "Settings.c:349:10" }
+edge: { sourcename: "Settings.c:Settings_read" targetname: "strcmp" label: "XUtils.h:46:11" }
+edge: { sourcename: "Settings.c:Settings_read" targetname: "Settings_newScreen" label: "Settings.c:309:7" }
+edge: { sourcename: "Settings.c:Settings_read" targetname: "strtol" label: "/usr/include/stdlib.h:363:16" }
+edge: { sourcename: "Settings.c:Settings_read" targetname: "strcmp" label: "XUtils.h:46:11" }
+edge: { sourcename: "Settings.c:Settings_read" targetname: "Settings_newScreen" label: "Settings.c:309:7" }
+edge: { sourcename: "Settings.c:Settings_read" targetname: "strtol" label: "/usr/include/stdlib.h:363:16" }
+edge: { sourcename: "Settings.c:Settings_read" targetname: "strcmp" label: "XUtils.h:46:11" }
+edge: { sourcename: "Settings.c:Settings_read" targetname: "Settings_newScreen" label: "Settings.c:309:7" }
+edge: { sourcename: "Settings.c:Settings_read" targetname: "strtol" label: "/usr/include/stdlib.h:363:16" }
+edge: { sourcename: "Settings.c:Settings_read" targetname: "strcmp" label: "XUtils.h:46:11" }
+edge: { sourcename: "Settings.c:Settings_read" targetname: "Settings_newScreen" label: "Settings.c:309:7" }
+edge: { sourcename: "Settings.c:Settings_read" targetname: "strtol" label: "/usr/include/stdlib.h:363:16" }
+edge: { sourcename: "Settings.c:Settings_read" targetname: "strcmp" label: "XUtils.h:46:11" }
+edge: { sourcename: "Settings.c:Settings_read" targetname: "Settings_newScreen" label: "Settings.c:309:7" }
+edge: { sourcename: "Settings.c:Settings_read" targetname: "strtol" label: "/usr/include/stdlib.h:363:16" }
+edge: { sourcename: "Settings.c:Settings_read" targetname: "strcmp" label: "XUtils.h:46:11" }
+edge: { sourcename: "Settings.c:Settings_read" targetname: "Settings_newScreen" label: "Settings.c:309:7" }
+edge: { sourcename: "Settings.c:Settings_read" targetname: "strtol" label: "/usr/include/stdlib.h:363:16" }
+edge: { sourcename: "Settings.c:Settings_read" targetname: "strcmp" label: "XUtils.h:46:11" }
+edge: { sourcename: "Settings.c:Settings_read" targetname: "Settings_newScreen" label: "Settings.c:309:7" }
+edge: { sourcename: "Settings.c:Settings_read" targetname: "strtol" label: "/usr/include/stdlib.h:363:16" }
+edge: { sourcename: "Settings.c:Settings_read" targetname: "strcmp" label: "XUtils.h:46:11" }
+edge: { sourcename: "Settings.c:Settings_read" targetname: "strtol" label: "/usr/include/stdlib.h:363:16" }
+edge: { sourcename: "Settings.c:Settings_read" targetname: "strcmp" label: "XUtils.h:46:11" }
+edge: { sourcename: "Settings.c:Settings_read" targetname: "strtol" label: "/usr/include/stdlib.h:363:16" }
+edge: { sourcename: "Settings.c:Settings_read" targetname: "strcmp" label: "XUtils.h:46:11" }
+edge: { sourcename: "Settings.c:Settings_read" targetname: "strtol" label: "/usr/include/stdlib.h:363:16" }
+edge: { sourcename: "Settings.c:Settings_read" targetname: "strcmp" label: "XUtils.h:46:11" }
+edge: { sourcename: "Settings.c:Settings_read" targetname: "strtol" label: "/usr/include/stdlib.h:363:16" }
+edge: { sourcename: "Settings.c:Settings_read" targetname: "strcmp" label: "XUtils.h:46:11" }
+edge: { sourcename: "Settings.c:Settings_read" targetname: "strtol" label: "/usr/include/stdlib.h:363:16" }
+edge: { sourcename: "Settings.c:Settings_read" targetname: "strcmp" label: "XUtils.h:46:11" }
+edge: { sourcename: "Settings.c:Settings_read" targetname: "strtol" label: "/usr/include/stdlib.h:363:16" }
+edge: { sourcename: "Settings.c:Settings_read" targetname: "strcmp" label: "XUtils.h:46:11" }
+edge: { sourcename: "Settings.c:Settings_read" targetname: "strtol" label: "/usr/include/stdlib.h:363:16" }
+edge: { sourcename: "Settings.c:Settings_read" targetname: "strcmp" label: "XUtils.h:46:11" }
+edge: { sourcename: "Settings.c:Settings_read" targetname: "strtol" label: "/usr/include/stdlib.h:363:16" }
+edge: { sourcename: "Settings.c:Settings_read" targetname: "strcmp" label: "XUtils.h:46:11" }
+edge: { sourcename: "Settings.c:Settings_read" targetname: "strtol" label: "/usr/include/stdlib.h:363:16" }
+edge: { sourcename: "Settings.c:Settings_read" targetname: "strcmp" label: "XUtils.h:46:11" }
+edge: { sourcename: "Settings.c:Settings_read" targetname: "strtol" label: "/usr/include/stdlib.h:363:16" }
+edge: { sourcename: "Settings.c:Settings_read" targetname: "strcmp" label: "XUtils.h:46:11" }
+edge: { sourcename: "Settings.c:Settings_read" targetname: "strtol" label: "/usr/include/stdlib.h:363:16" }
+edge: { sourcename: "Settings.c:Settings_read" targetname: "strcmp" label: "XUtils.h:46:11" }
+edge: { sourcename: "Settings.c:Settings_read" targetname: "strtol" label: "/usr/include/stdlib.h:363:16" }
+edge: { sourcename: "Settings.c:Settings_read" targetname: "strtol" label: "/usr/include/stdlib.h:363:16" }
+edge: { sourcename: "Settings.c:Settings_read" targetname: "strtol" label: "/usr/include/stdlib.h:363:16" }
+edge: { sourcename: "Settings.c:Settings_read" targetname: "strcmp" label: "XUtils.h:46:11" }
+edge: { sourcename: "Settings.c:Settings_read" targetname: "strtol" label: "/usr/include/stdlib.h:363:16" }
+edge: { sourcename: "Settings.c:Settings_read" targetname: "strcmp" label: "XUtils.h:46:11" }
+edge: { sourcename: "Settings.c:Settings_read" targetname: "strtol" label: "/usr/include/stdlib.h:363:16" }
+edge: { sourcename: "Settings.c:Settings_read" targetname: "strcmp" label: "XUtils.h:46:11" }
+edge: { sourcename: "Settings.c:Settings_read" targetname: "strtol" label: "/usr/include/stdlib.h:363:16" }
+edge: { sourcename: "Settings.c:Settings_read" targetname: "strcmp" label: "XUtils.h:46:11" }
+edge: { sourcename: "Settings.c:Settings_read" targetname: "strtol" label: "/usr/include/stdlib.h:363:16" }
+edge: { sourcename: "Settings.c:Settings_read" targetname: "strcmp" label: "XUtils.h:46:11" }
+edge: { sourcename: "Settings.c:Settings_read" targetname: "strtol" label: "/usr/include/stdlib.h:363:16" }
+edge: { sourcename: "Settings.c:Settings_read" targetname: "strcmp" label: "XUtils.h:46:11" }
+edge: { sourcename: "Settings.c:Settings_read" targetname: "strtol" label: "/usr/include/stdlib.h:363:16" }
+edge: { sourcename: "Settings.c:Settings_read" targetname: "strcmp" label: "XUtils.h:46:11" }
+edge: { sourcename: "Settings.c:Settings_read" targetname: "strtol" label: "/usr/include/stdlib.h:363:16" }
+edge: { sourcename: "Settings.c:Settings_read" targetname: "strcmp" label: "XUtils.h:46:11" }
+edge: { sourcename: "Settings.c:Settings_read" targetname: "strtol" label: "/usr/include/stdlib.h:363:16" }
+edge: { sourcename: "Settings.c:Settings_read" targetname: "strcmp" label: "XUtils.h:46:11" }
+edge: { sourcename: "Settings.c:Settings_read" targetname: "strtol" label: "/usr/include/stdlib.h:363:16" }
+edge: { sourcename: "Settings.c:Settings_read" targetname: "strcmp" label: "XUtils.h:46:11" }
+edge: { sourcename: "Settings.c:Settings_read" targetname: "strtol" label: "/usr/include/stdlib.h:363:16" }
+edge: { sourcename: "Settings.c:Settings_read" targetname: "strcmp" label: "XUtils.h:46:11" }
+edge: { sourcename: "Settings.c:Settings_read" targetname: "strtol" label: "/usr/include/stdlib.h:363:16" }
+edge: { sourcename: "Settings.c:Settings_read" targetname: "strcmp" label: "XUtils.h:46:11" }
+edge: { sourcename: "Settings.c:Settings_read" targetname: "strtol" label: "/usr/include/stdlib.h:363:16" }
+edge: { sourcename: "Settings.c:Settings_read" targetname: "strcmp" label: "XUtils.h:46:11" }
+edge: { sourcename: "Settings.c:Settings_read" targetname: "strtol" label: "/usr/include/stdlib.h:363:16" }
+edge: { sourcename: "Settings.c:Settings_read" targetname: "strcmp" label: "XUtils.h:46:11" }
+edge: { sourcename: "Settings.c:Settings_read" targetname: "strtol" label: "/usr/include/stdlib.h:363:16" }
+edge: { sourcename: "Settings.c:Settings_read" targetname: "strtol" label: "/usr/include/stdlib.h:363:16" }
+edge: { sourcename: "Settings.c:Settings_read" targetname: "strtol" label: "/usr/include/stdlib.h:363:16" }
+edge: { sourcename: "Settings.c:Settings_read" targetname: "strcmp" label: "XUtils.h:46:11" }
+edge: { sourcename: "Settings.c:Settings_read" targetname: "strtol" label: "/usr/include/stdlib.h:363:16" }
+edge: { sourcename: "Settings.c:Settings_read" targetname: "strcmp" label: "XUtils.h:46:11" }
+edge: { sourcename: "Settings.c:Settings_read" targetname: "strtol" label: "/usr/include/stdlib.h:363:16" }
+edge: { sourcename: "Settings.c:Settings_read" targetname: "strcmp" label: "XUtils.h:46:11" }
+edge: { sourcename: "Settings.c:Settings_read" targetname: "__ctype_b_loc" label: "Settings.c:450:26" }
+edge: { sourcename: "Settings.c:Settings_read" targetname: "strtol" label: "/usr/include/stdlib.h:363:16" }
+edge: { sourcename: "Settings.c:Settings_read" targetname: "strcmp" label: "XUtils.h:46:11" }
+edge: { sourcename: "Settings.c:Settings_read" targetname: "free" label: "Settings.c:453:10" }
+edge: { sourcename: "Settings.c:Settings_read" targetname: "xCalloc" label: "Settings.c:454:27" }
+edge: { sourcename: "Settings.c:Settings_read" targetname: "strcmp" label: "XUtils.h:46:11" }
+edge: { sourcename: "Settings.c:Settings_read" targetname: "Settings.c:Settings_readMeters" label: "Settings.c:456:10" }
+edge: { sourcename: "Settings.c:Settings_read" targetname: "strcmp" label: "XUtils.h:46:11" }
+edge: { sourcename: "Settings.c:Settings_read" targetname: "Settings.c:Settings_readMeters" label: "Settings.c:459:10" }
+edge: { sourcename: "Settings.c:Settings_read" targetname: "strcmp" label: "XUtils.h:46:11" }
+edge: { sourcename: "Settings.c:Settings_read" targetname: "Settings.c:Settings_readMeterModes" label: "Settings.c:462:10" }
+edge: { sourcename: "Settings.c:Settings_read" targetname: "strcmp" label: "XUtils.h:46:11" }
+edge: { sourcename: "Settings.c:Settings_read" targetname: "Settings.c:Settings_readMeterModes" label: "Settings.c:465:10" }
+node: { title: "strncmp" label: "strncmp\n/usr/include/string.h:140:12" shape : ellipse }
+edge: { sourcename: "Settings.c:Settings_read" targetname: "strncmp" label: "XUtils.h:40:11" }
+edge: { sourcename: "Settings.c:Settings_read" targetname: "strtol" label: "/usr/include/stdlib.h:363:16" }
+edge: { sourcename: "Settings.c:Settings_read" targetname: "Settings.c:Settings_readMeters" label: "Settings.c:468:10" }
+edge: { sourcename: "Settings.c:Settings_read" targetname: "strncmp" label: "XUtils.h:40:11" }
+edge: { sourcename: "Settings.c:Settings_read" targetname: "strtol" label: "/usr/include/stdlib.h:363:16" }
+edge: { sourcename: "Settings.c:Settings_read" targetname: "Settings.c:Settings_readMeterModes" label: "Settings.c:471:10" }
+edge: { sourcename: "Settings.c:Settings_read" targetname: "strcmp" label: "XUtils.h:46:11" }
+edge: { sourcename: "Settings.c:Settings_read" targetname: "strtol" label: "/usr/include/stdlib.h:363:16" }
+edge: { sourcename: "Settings.c:Settings_read" targetname: "strncmp" label: "Settings.c:479:18" }
+edge: { sourcename: "Settings.c:Settings_read" targetname: "Settings_newScreen" label: "Settings.c:480:19" }
+edge: { sourcename: "Settings.c:Settings_read" targetname: "strcmp" label: "XUtils.h:46:11" }
+edge: { sourcename: "Settings.c:Settings_read" targetname: "Settings.c:toFieldIndex" label: "Settings.c:483:23" }
+edge: { sourcename: "Settings.c:Settings_read" targetname: "strcmp" label: "XUtils.h:46:11" }
+edge: { sourcename: "Settings.c:Settings_read" targetname: "Settings.c:toFieldIndex" label: "Settings.c:488:23" }
+edge: { sourcename: "Settings.c:Settings_read" targetname: "strcmp" label: "XUtils.h:46:11" }
+edge: { sourcename: "Settings.c:Settings_read" targetname: "strtol" label: "/usr/include/stdlib.h:363:16" }
+edge: { sourcename: "Settings.c:Settings_read" targetname: "strcmp" label: "XUtils.h:46:11" }
+edge: { sourcename: "Settings.c:Settings_read" targetname: "strtol" label: "/usr/include/stdlib.h:363:16" }
+edge: { sourcename: "Settings.c:Settings_read" targetname: "strcmp" label: "XUtils.h:46:11" }
+edge: { sourcename: "Settings.c:Settings_read" targetname: "strtol" label: "/usr/include/stdlib.h:363:16" }
+edge: { sourcename: "Settings.c:Settings_read" targetname: "strcmp" label: "XUtils.h:46:11" }
+edge: { sourcename: "Settings.c:Settings_read" targetname: "strtol" label: "/usr/include/stdlib.h:363:16" }
+edge: { sourcename: "Settings.c:Settings_read" targetname: "strcmp" label: "XUtils.h:46:11" }
+edge: { sourcename: "Settings.c:Settings_read" targetname: "strtol" label: "/usr/include/stdlib.h:363:16" }
+edge: { sourcename: "Settings.c:Settings_read" targetname: "String_freeArray" label: "Settings.c:507:7" }
+edge: { sourcename: "Settings.c:Settings_read" targetname: "fclose" label: "Settings.c:509:4" }
+edge: { sourcename: "Settings.c:Settings_read" targetname: "Settings.c:Settings_defaultMeters" label: "Settings.c:511:7" }
+edge: { sourcename: "Settings.c:Settings_read" targetname: "Settings_newScreen" label: "Settings.c:309:7" }
+edge: { sourcename: "Settings.c:Settings_read" targetname: "strcmp" label: "XUtils.h:46:11" }
+node: { title: "ScreenSettings_delete" label: "ScreenSettings_delete\nSettings.c:298:6\n32 bytes (static)" }
+edge: { sourcename: "ScreenSettings_delete" targetname: "free" label: "Settings.c:299:4" }
+edge: { sourcename: "ScreenSettings_delete" targetname: "free" label: "Settings.c:300:4" }
+edge: { sourcename: "ScreenSettings_delete" targetname: "free" label: "Settings.c:301:4" }
+node: { title: "Settings_write" label: "Settings_write\nSettings.c:557:5\n128 bytes (static)" }
+edge: { sourcename: "Settings_write" targetname: "fopen" label: "Settings.c:564:12" }
+node: { title: "__errno_location" label: "__errno_location\n/usr/include/errno.h:37:13" shape : ellipse }
+edge: { sourcename: "Settings_write" targetname: "__errno_location" label: "Settings.c:566:18" }
+edge: { sourcename: "Settings_write" targetname: "fprintf" label: "Settings.c:579:4" }
+edge: { sourcename: "Settings_write" targetname: "fprintf" label: "Settings.c:580:4" }
+node: { title: "fwrite" label: "__builtin_fwrite\n<built-in>" shape : ellipse }
+edge: { sourcename: "Settings_write" targetname: "fwrite" label: "Settings.c:581:4" }
+node: { title: "fputc" label: "fputc\n/usr/include/stdio.h:521:12" shape : ellipse }
+edge: { sourcename: "Settings_write" targetname: "fputc" label: "Settings.c:532:4" }
+edge: { sourcename: "Settings_write" targetname: "fprintf" label: "Settings.c:582:4" }
+edge: { sourcename: "Settings_write" targetname: "fprintf" label: "Settings.c:583:4" }
+edge: { sourcename: "Settings_write" targetname: "fprintf" label: "Settings.c:584:4" }
+edge: { sourcename: "Settings_write" targetname: "fprintf" label: "Settings.c:585:4" }
+edge: { sourcename: "Settings_write" targetname: "fprintf" label: "Settings.c:586:4" }
+edge: { sourcename: "Settings_write" targetname: "fprintf" label: "Settings.c:587:4" }
+edge: { sourcename: "Settings_write" targetname: "fprintf" label: "Settings.c:588:4" }
+edge: { sourcename: "Settings_write" targetname: "fprintf" label: "Settings.c:589:4" }
+edge: { sourcename: "Settings_write" targetname: "fprintf" label: "Settings.c:590:4" }
+edge: { sourcename: "Settings_write" targetname: "fprintf" label: "Settings.c:591:4" }
+edge: { sourcename: "Settings_write" targetname: "fprintf" label: "Settings.c:592:4" }
+edge: { sourcename: "Settings_write" targetname: "fprintf" label: "Settings.c:593:4" }
+edge: { sourcename: "Settings_write" targetname: "fprintf" label: "Settings.c:594:4" }
+edge: { sourcename: "Settings_write" targetname: "fprintf" label: "Settings.c:595:4" }
+edge: { sourcename: "Settings_write" targetname: "fprintf" label: "Settings.c:596:4" }
+edge: { sourcename: "Settings_write" targetname: "fprintf" label: "Settings.c:597:4" }
+edge: { sourcename: "Settings_write" targetname: "fprintf" label: "Settings.c:598:4" }
+edge: { sourcename: "Settings_write" targetname: "fprintf" label: "Settings.c:599:4" }
+edge: { sourcename: "Settings_write" targetname: "fprintf" label: "Settings.c:600:4" }
+edge: { sourcename: "Settings_write" targetname: "fprintf" label: "Settings.c:601:4" }
+edge: { sourcename: "Settings_write" targetname: "fprintf" label: "Settings.c:602:4" }
+edge: { sourcename: "Settings_write" targetname: "fprintf" label: "Settings.c:607:4" }
+edge: { sourcename: "Settings_write" targetname: "fprintf" label: "Settings.c:608:4" }
+edge: { sourcename: "Settings_write" targetname: "fprintf" label: "Settings.c:609:4" }
+edge: { sourcename: "Settings_write" targetname: "fprintf" label: "Settings.c:611:4" }
+edge: { sourcename: "Settings_write" targetname: "fprintf" label: "Settings.c:613:4" }
+edge: { sourcename: "Settings_write" targetname: "fprintf" label: "Settings.c:614:4" }
+edge: { sourcename: "Settings_write" targetname: "fprintf" label: "Settings.c:619:4" }
+edge: { sourcename: "Settings_write" targetname: "fprintf" label: "Settings.c:528:10" }
+edge: { sourcename: "Settings_write" targetname: "fprintf" label: "Settings.c:628:4" }
+edge: { sourcename: "Settings_write" targetname: "fprintf" label: "Settings.c:630:4" }
+edge: { sourcename: "Settings_write" targetname: "fprintf" label: "Settings.c:631:4" }
+edge: { sourcename: "Settings_write" targetname: "fprintf" label: "Settings.c:632:4" }
+edge: { sourcename: "Settings_write" targetname: "fprintf" label: "Settings.c:633:4" }
+edge: { sourcename: "Settings_write" targetname: "fprintf" label: "Settings.c:634:4" }
+edge: { sourcename: "Settings_write" targetname: "fprintf" label: "Settings.c:635:4" }
+edge: { sourcename: "Settings_write" targetname: "fprintf" label: "Settings.c:621:7" }
+edge: { sourcename: "Settings_write" targetname: "fputc" label: "Settings.c:541:4" }
+edge: { sourcename: "Settings_write" targetname: "fprintf" label: "Settings.c:623:7" }
+edge: { sourcename: "Settings_write" targetname: "fprintf" label: "Settings.c:538:7" }
+edge: { sourcename: "Settings_write" targetname: "fputc" label: "Settings.c:554:4" }
+edge: { sourcename: "Settings_write" targetname: "fprintf" label: "Settings.c:551:7" }
+edge: { sourcename: "Settings_write" targetname: "fprintf" label: "Settings.c:639:7" }
+edge: { sourcename: "Settings_write" targetname: "fputc" label: "Settings.c:532:4" }
+edge: { sourcename: "Settings_write" targetname: "fprintf" label: "Settings.c:522:10" }
+edge: { sourcename: "Settings_write" targetname: "DynamicColumn_lookup" label: "Settings.c:210:37" }
+edge: { sourcename: "Settings_write" targetname: "fprintf" label: "Settings.c:525:10" }
+edge: { sourcename: "Settings_write" targetname: "DynamicColumn_lookup" label: "Settings.c:210:37" }
+edge: { sourcename: "Settings_write" targetname: "fprintf" label: "Settings.c:641:7" }
+edge: { sourcename: "Settings_write" targetname: "DynamicColumn_lookup" label: "Settings.c:210:37" }
+edge: { sourcename: "Settings_write" targetname: "fprintf" label: "Settings.c:642:7" }
+edge: { sourcename: "Settings_write" targetname: "fprintf" label: "Settings.c:643:7" }
+edge: { sourcename: "Settings_write" targetname: "fprintf" label: "Settings.c:644:7" }
+edge: { sourcename: "Settings_write" targetname: "fprintf" label: "Settings.c:645:7" }
+edge: { sourcename: "Settings_write" targetname: "fprintf" label: "Settings.c:646:7" }
+edge: { sourcename: "Settings_write" targetname: "fprintf" label: "Settings.c:647:7" }
+node: { title: "ferror" label: "ferror\n/usr/include/stdio.h:761:12" shape : ellipse }
+edge: { sourcename: "Settings_write" targetname: "ferror" label: "Settings.c:658:8" }
+edge: { sourcename: "Settings_write" targetname: "fclose" label: "Settings.c:661:8" }
+edge: { sourcename: "Settings_write" targetname: "__errno_location" label: "Settings.c:566:18" }
+edge: { sourcename: "Settings_write" targetname: "__errno_location" label: "Settings.c:659:12" }
+edge: { sourcename: "Settings_write" targetname: "fclose" label: "Settings.c:661:8" }
+edge: { sourcename: "Settings_write" targetname: "fclose" label: "Settings.c:661:8" }
+edge: { sourcename: "Settings_write" targetname: "fwrite" label: "Settings.c:576:7" }
+edge: { sourcename: "Settings_write" targetname: "fwrite" label: "Settings.c:577:7" }
+node: { title: "Settings_new" label: "Settings_new\nSettings.c:667:11\n192 bytes (static)" }
+edge: { sourcename: "Settings_new" targetname: "xCalloc" label: "Settings.c:668:21" }
+edge: { sourcename: "Settings_new" targetname: "xCalloc" label: "Settings.c:672:21" }
+edge: { sourcename: "Settings_new" targetname: "xCalloc" label: "Settings.c:704:20" }
+node: { title: "getenv" label: "getenv\n/usr/include/stdlib.h:634:14" shape : ellipse }
+edge: { sourcename: "Settings_new" targetname: "getenv" label: "Settings.c:708:25" }
+edge: { sourcename: "Settings_new" targetname: "xStrdup" label: "Settings.c:710:24" }
+edge: { sourcename: "Settings_new" targetname: "getenv" label: "Settings.c:712:26" }
+node: { title: "getuid" label: "getuid\n/usr/include/unistd.h:675:16" shape : ellipse }
+edge: { sourcename: "Settings_new" targetname: "getuid" label: "Settings.c:714:36" }
+node: { title: "getpwuid" label: "getpwuid\n/usr/include/pwd.h:110:23" shape : ellipse }
+edge: { sourcename: "Settings_new" targetname: "getpwuid" label: "Settings.c:714:36" }
+edge: { sourcename: "Settings_new" targetname: "getenv" label: "Settings.c:717:35" }
+node: { title: "String_cat" label: "String_cat\nXUtils.h:49:7" shape : ellipse }
+edge: { sourcename: "Settings_new" targetname: "String_cat" label: "Settings.c:721:27" }
+edge: { sourcename: "Settings_new" targetname: "xStrdup" label: "Settings.c:722:22" }
+edge: { sourcename: "Settings_new" targetname: "String_cat" label: "Settings.c:723:20" }
+edge: { sourcename: "Settings_new" targetname: "String_cat" label: "Settings.c:725:27" }
+edge: { sourcename: "Settings_new" targetname: "String_cat" label: "Settings.c:726:22" }
+edge: { sourcename: "Settings_new" targetname: "String_cat" label: "Settings.c:727:20" }
+edge: { sourcename: "Settings_new" targetname: "String_cat" label: "Settings.c:729:23" }
+node: { title: "mkdir" label: "mkdir\n/usr/include/aarch64-linux-gnu/sys/stat.h:317:12" shape : ellipse }
+edge: { sourcename: "Settings_new" targetname: "mkdir" label: "Settings.c:730:14" }
+edge: { sourcename: "Settings_new" targetname: "mkdir" label: "Settings.c:731:14" }
+edge: { sourcename: "Settings_new" targetname: "free" label: "Settings.c:732:7" }
+edge: { sourcename: "Settings_new" targetname: "free" label: "Settings.c:733:7" }
+node: { title: "__lxstat" label: "__lxstat\n/usr/include/aarch64-linux-gnu/sys/stat.h:399:12" shape : ellipse }
+edge: { sourcename: "Settings_new" targetname: "__lxstat" label: "/usr/include/aarch64-linux-gnu/sys/stat.h:462:10" }
+edge: { sourcename: "Settings_new" targetname: "free" label: "Settings.c:737:10" }
+edge: { sourcename: "Settings_new" targetname: "Settings.c:Settings_read" label: "Settings.c:749:12" }
+edge: { sourcename: "Settings_new" targetname: "Settings_write" label: "Settings.c:752:14" }
+node: { title: "unlink" label: "unlink\n/usr/include/unistd.h:825:12" shape : ellipse }
+edge: { sourcename: "Settings_new" targetname: "unlink" label: "Settings.c:753:13" }
+edge: { sourcename: "Settings_new" targetname: "Settings.c:Settings_read" label: "Settings.c:759:12" }
+edge: { sourcename: "Settings_new" targetname: "Settings.c:Settings_read" label: "Settings.c:764:12" }
+edge: { sourcename: "Settings_new" targetname: "Settings.c:Settings_defaultMeters" label: "Settings.c:767:7" }
+edge: { sourcename: "Settings_new" targetname: "Settings_newScreen" label: "Settings.c:309:7" }
+edge: { sourcename: "Settings_new" targetname: "free" label: "Settings.c:756:7" }
+edge: { sourcename: "Settings_new" targetname: "free" label: "Settings.c:756:7" }
+node: { title: "ScreenSettings_invertSortOrder" label: "ScreenSettings_invertSortOrder\nSettings.c:779:6\n0 bytes (static)" }
+node: { title: "ScreenSettings_setSortKey" label: "ScreenSettings_setSortKey\nSettings.c:784:6\n0 bytes (static)" }
+node: { title: "Settings_enableReadonly" label: "Settings_enableReadonly\nSettings.c:797:6\n0 bytes (static)" }
+node: { title: "Settings_isReadonly" label: "Settings_isReadonly\nSettings.c:801:6\n0 bytes (static)" }
+node: { title: "Settings_setHeaderLayout" label: "Settings_setHeaderLayout\nSettings.c:805:6\n64 bytes (static)" }
+node: { title: "xReallocArray" label: "xReallocArray\nXUtils.h:31:7" shape : ellipse }
+edge: { sourcename: "Settings_setHeaderLayout" targetname: "xReallocArray" label: "Settings.c:810:24" }
+edge: { sourcename: "Settings_setHeaderLayout" targetname: "memset" }
+edge: { sourcename: "Settings_setHeaderLayout" targetname: "free" label: "Settings.c:816:16" }
+edge: { sourcename: "Settings_setHeaderLayout" targetname: "free" label: "Settings.c:817:13" }
+edge: { sourcename: "Settings_setHeaderLayout" targetname: "free" label: "Settings.c:819:10" }
+edge: { sourcename: "Settings_setHeaderLayout" targetname: "xReallocArray" label: "Settings.c:821:24" }
+}

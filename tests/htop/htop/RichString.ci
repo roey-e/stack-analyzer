@@ -1,0 +1,59 @@
+graph: { title: "RichString.c"
+node: { title: "RichString.c:RichString_setLen" label: "RichString_setLen\nRichString.c:40:13\n64 bytes (static)" }
+node: { title: "xMalloc" label: "xMalloc\nXUtils.h:23:7" shape : ellipse }
+edge: { sourcename: "RichString.c:RichString_setLen" targetname: "xMalloc" label: "RichString.c:23:24" }
+node: { title: "memcpy" label: "__builtin_memcpy\n<built-in>" shape : ellipse }
+edge: { sourcename: "RichString.c:RichString_setLen" targetname: "memcpy" }
+edge: { sourcename: "RichString.c:RichString_setLen" targetname: "memcpy" }
+node: { title: "free" label: "free\n/usr/include/stdlib.h:565:13" shape : ellipse }
+edge: { sourcename: "RichString.c:RichString_setLen" targetname: "free" label: "RichString.c:29:10" }
+node: { title: "xRealloc" label: "xRealloc\nXUtils.h:29:7" shape : ellipse }
+edge: { sourcename: "RichString.c:RichString_setLen" targetname: "xRealloc" label: "RichString.c:32:24" }
+node: { title: "RichString_rewind" label: "RichString_rewind\nRichString.c:49:6\n0 bytes (static)" }
+edge: { sourcename: "RichString_rewind" targetname: "RichString.c:RichString_setLen" label: "RichString.c:50:4" }
+node: { title: "RichString_appendnWideColumns" label: "RichString_appendnWideColumns\nRichString.c:70:5\n112 bytes (dynamic)" }
+node: { title: "mbstowcs" label: "mbstowcs\n/usr/include/stdlib.h:933:15" shape : ellipse }
+edge: { sourcename: "RichString_appendnWideColumns" targetname: "mbstowcs" label: "RichString.c:72:10" }
+edge: { sourcename: "RichString_appendnWideColumns" targetname: "RichString.c:RichString_setLen" label: "RichString.c:78:4" }
+node: { title: "iswprint" label: "iswprint\n/usr/include/aarch64-linux-gnu/bits/wctype-wchar.h:120:12" shape : ellipse }
+edge: { sourcename: "RichString_appendnWideColumns" targetname: "iswprint" label: "RichString.c:82:19" }
+node: { title: "wcwidth" label: "wcwidth\n/usr/include/wchar.h:367:12" shape : ellipse }
+edge: { sourcename: "RichString_appendnWideColumns" targetname: "wcwidth" label: "RichString.c:83:20" }
+edge: { sourcename: "RichString_appendnWideColumns" targetname: "RichString.c:RichString_setLen" label: "RichString.c:94:4" }
+node: { title: "RichString_setAttrn" label: "RichString_setAttrn\nRichString.c:110:13\n0 bytes (static)" }
+node: { title: "RichString_appendChr" label: "RichString_appendChr\nRichString.c:117:6\n64 bytes (static)" }
+edge: { sourcename: "RichString_appendChr" targetname: "RichString.c:RichString_setLen" label: "RichString.c:120:4" }
+node: { title: "RichString_findChar" label: "RichString_findChar\nRichString.c:126:5\n32 bytes (static)" }
+node: { title: "*btowc" label: "__btowc_alias\n/usr/include/wchar.h:316:15" shape : ellipse }
+edge: { sourcename: "RichString_findChar" targetname: "*btowc" label: "/usr/include/wchar.h:320:21" }
+node: { title: "RichString_delete" label: "RichString_delete\nRichString.c:188:6\n32 bytes (static)" }
+edge: { sourcename: "RichString_delete" targetname: "free" label: "RichString.c:190:7" }
+node: { title: "RichString_setAttr" label: "RichString_setAttr\nRichString.c:195:6\n0 bytes (static)" }
+node: { title: "RichString_appendWide" label: "RichString_appendWide\nRichString.c:199:5\n80 bytes (dynamic)" }
+node: { title: "strlen" label: "strlen\n/usr/include/string.h:385:15" shape : ellipse }
+edge: { sourcename: "RichString_appendWide" targetname: "strlen" label: "RichString.c:200:68" }
+edge: { sourcename: "RichString_appendWide" targetname: "mbstowcs" label: "RichString.c:57:10" }
+edge: { sourcename: "RichString_appendWide" targetname: "RichString.c:RichString_setLen" label: "RichString.c:62:4" }
+edge: { sourcename: "RichString_appendWide" targetname: "iswprint" label: "RichString.c:64:75" }
+node: { title: "RichString_appendnWide" label: "RichString_appendnWide\nRichString.c:203:5\n80 bytes (dynamic)" }
+edge: { sourcename: "RichString_appendnWide" targetname: "mbstowcs" label: "RichString.c:57:10" }
+edge: { sourcename: "RichString_appendnWide" targetname: "RichString.c:RichString_setLen" label: "RichString.c:62:4" }
+edge: { sourcename: "RichString_appendnWide" targetname: "iswprint" label: "RichString.c:64:75" }
+node: { title: "RichString_writeWide" label: "RichString_writeWide\nRichString.c:207:5\n80 bytes (dynamic)" }
+edge: { sourcename: "RichString_writeWide" targetname: "strlen" label: "RichString.c:208:58" }
+edge: { sourcename: "RichString_writeWide" targetname: "mbstowcs" label: "RichString.c:57:10" }
+edge: { sourcename: "RichString_writeWide" targetname: "RichString.c:RichString_setLen" label: "RichString.c:62:4" }
+edge: { sourcename: "RichString_writeWide" targetname: "iswprint" label: "RichString.c:64:75" }
+node: { title: "RichString_appendAscii" label: "RichString_appendAscii\nRichString.c:211:5\n64 bytes (static)" }
+edge: { sourcename: "RichString_appendAscii" targetname: "strlen" label: "RichString.c:212:69" }
+edge: { sourcename: "RichString_appendAscii" targetname: "RichString.c:RichString_setLen" label: "RichString.c:102:4" }
+node: { title: "__ctype_b_loc" label: "__ctype_b_loc\n/usr/include/ctype.h:79:35" shape : ellipse }
+edge: { sourcename: "RichString_appendAscii" targetname: "__ctype_b_loc" label: "RichString.c:104:75" }
+node: { title: "RichString_appendnAscii" label: "RichString_appendnAscii\nRichString.c:215:5\n64 bytes (static)" }
+edge: { sourcename: "RichString_appendnAscii" targetname: "RichString.c:RichString_setLen" label: "RichString.c:102:4" }
+edge: { sourcename: "RichString_appendnAscii" targetname: "__ctype_b_loc" label: "RichString.c:104:75" }
+node: { title: "RichString_writeAscii" label: "RichString_writeAscii\nRichString.c:219:5\n48 bytes (static)" }
+edge: { sourcename: "RichString_writeAscii" targetname: "strlen" label: "RichString.c:220:59" }
+edge: { sourcename: "RichString_writeAscii" targetname: "RichString.c:RichString_setLen" label: "RichString.c:102:4" }
+edge: { sourcename: "RichString_writeAscii" targetname: "__ctype_b_loc" label: "RichString.c:104:75" }
+}

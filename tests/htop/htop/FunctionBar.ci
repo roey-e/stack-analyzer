@@ -1,0 +1,62 @@
+graph: { title: "FunctionBar.c"
+node: { title: "FunctionBar_new" label: "FunctionBar_new\nFunctionBar.c:37:14\n64 bytes (static)" }
+node: { title: "xCalloc" label: "xCalloc\nXUtils.h:27:7" shape : ellipse }
+edge: { sourcename: "FunctionBar_new" targetname: "xCalloc" label: "FunctionBar.c:38:24" }
+edge: { sourcename: "FunctionBar_new" targetname: "xCalloc" label: "FunctionBar.c:39:22" }
+node: { title: "xStrdup" label: "xStrdup\nXUtils.h:68:7" shape : ellipse }
+edge: { sourcename: "FunctionBar_new" targetname: "xStrdup" label: "FunctionBar.c:44:28" }
+edge: { sourcename: "FunctionBar_new" targetname: "xCalloc" label: "FunctionBar.c:48:25" }
+edge: { sourcename: "FunctionBar_new" targetname: "xCalloc" label: "FunctionBar.c:49:22" }
+edge: { sourcename: "FunctionBar_new" targetname: "xStrdup" label: "FunctionBar.c:52:31" }
+node: { title: "FunctionBar_newEnterEsc" label: "FunctionBar_newEnterEsc\nFunctionBar.c:32:14\n48 bytes (static)" }
+edge: { sourcename: "FunctionBar_newEnterEsc" targetname: "FunctionBar_new" label: "FunctionBar.c:34:11" }
+node: { title: "FunctionBar_delete" label: "FunctionBar_delete\nFunctionBar.c:66:6\n32 bytes (static)" }
+node: { title: "free" label: "free\n/usr/include/stdlib.h:565:13" shape : ellipse }
+edge: { sourcename: "FunctionBar_delete" targetname: "free" label: "FunctionBar.c:68:7" }
+edge: { sourcename: "FunctionBar_delete" targetname: "free" label: "FunctionBar.c:70:4" }
+edge: { sourcename: "FunctionBar_delete" targetname: "free" label: "FunctionBar.c:75:7" }
+edge: { sourcename: "FunctionBar_delete" targetname: "free" label: "FunctionBar.c:76:7" }
+edge: { sourcename: "FunctionBar_delete" targetname: "free" label: "FunctionBar.c:73:10" }
+edge: { sourcename: "FunctionBar_delete" targetname: "free" label: "FunctionBar.c:78:4" }
+node: { title: "FunctionBar_setLabel" label: "FunctionBar_setLabel\nFunctionBar.c:81:6\n48 bytes (static)" }
+edge: { sourcename: "FunctionBar_setLabel" targetname: "free" label: "FunctionBar.c:84:10" }
+edge: { sourcename: "FunctionBar_setLabel" targetname: "xStrdup" label: "FunctionBar.c:85:31" }
+node: { title: "FunctionBar_drawExtra" label: "FunctionBar_drawExtra\nFunctionBar.c:95:5\n112 bytes (static)" }
+node: { title: "wattrset" label: "wattrset\n/usr/include/curses.h:787:28" shape : ellipse }
+edge: { sourcename: "FunctionBar_drawExtra" targetname: "wattrset" label: "FunctionBar.c:97:4" }
+node: { title: "wmove" label: "wmove\n/usr/include/curses.h:819:28" shape : ellipse }
+edge: { sourcename: "FunctionBar_drawExtra" targetname: "wmove" label: "FunctionBar.c:98:4" }
+node: { title: "whline" label: "whline\n/usr/include/curses.h:808:28" shape : ellipse }
+edge: { sourcename: "FunctionBar_drawExtra" targetname: "whline" label: "FunctionBar.c:98:4" }
+edge: { sourcename: "FunctionBar_drawExtra" targetname: "wattrset" label: "FunctionBar.c:101:7" }
+edge: { sourcename: "FunctionBar_drawExtra" targetname: "wmove" label: "FunctionBar.c:102:7" }
+node: { title: "waddnstr" label: "waddnstr\n/usr/include/curses.h:783:28" shape : ellipse }
+edge: { sourcename: "FunctionBar_drawExtra" targetname: "waddnstr" label: "FunctionBar.c:102:7" }
+node: { title: "strlen" label: "strlen\n/usr/include/string.h:385:15" shape : ellipse }
+edge: { sourcename: "FunctionBar_drawExtra" targetname: "strlen" label: "FunctionBar.c:103:12" }
+edge: { sourcename: "FunctionBar_drawExtra" targetname: "wattrset" label: "FunctionBar.c:104:7" }
+edge: { sourcename: "FunctionBar_drawExtra" targetname: "wmove" label: "FunctionBar.c:105:7" }
+edge: { sourcename: "FunctionBar_drawExtra" targetname: "waddnstr" label: "FunctionBar.c:105:7" }
+edge: { sourcename: "FunctionBar_drawExtra" targetname: "strlen" label: "FunctionBar.c:106:12" }
+edge: { sourcename: "FunctionBar_drawExtra" targetname: "wattrset" label: "FunctionBar.c:111:10" }
+edge: { sourcename: "FunctionBar_drawExtra" targetname: "wattrset" label: "FunctionBar.c:113:10" }
+edge: { sourcename: "FunctionBar_drawExtra" targetname: "wmove" label: "FunctionBar.c:115:7" }
+edge: { sourcename: "FunctionBar_drawExtra" targetname: "waddnstr" label: "FunctionBar.c:115:7" }
+edge: { sourcename: "FunctionBar_drawExtra" targetname: "strlen" label: "FunctionBar.c:116:12" }
+edge: { sourcename: "FunctionBar_drawExtra" targetname: "wattrset" label: "FunctionBar.c:120:4" }
+node: { title: "curs_set" label: "curs_set\n/usr/include/curses.h:592:28" shape : ellipse }
+edge: { sourcename: "FunctionBar_drawExtra" targetname: "curs_set" label: "FunctionBar.c:123:7" }
+edge: { sourcename: "FunctionBar_drawExtra" targetname: "curs_set" label: "FunctionBar.c:125:7" }
+node: { title: "FunctionBar_draw" label: "FunctionBar_draw\nFunctionBar.c:91:5\n0 bytes (static)" }
+edge: { sourcename: "FunctionBar_draw" targetname: "FunctionBar_drawExtra" label: "FunctionBar.c:92:11" }
+node: { title: "FunctionBar_append" label: "FunctionBar_append\nFunctionBar.c:133:6\n64 bytes (static)" }
+edge: { sourcename: "FunctionBar_append" targetname: "wattrset" label: "FunctionBar.c:135:7" }
+edge: { sourcename: "FunctionBar_append" targetname: "wattrset" label: "FunctionBar.c:137:7" }
+edge: { sourcename: "FunctionBar_append" targetname: "wmove" label: "FunctionBar.c:139:4" }
+edge: { sourcename: "FunctionBar_append" targetname: "waddnstr" label: "FunctionBar.c:139:4" }
+edge: { sourcename: "FunctionBar_append" targetname: "wattrset" label: "FunctionBar.c:140:4" }
+edge: { sourcename: "FunctionBar_append" targetname: "strlen" label: "FunctionBar.c:142:18" }
+node: { title: "FunctionBar_synthesizeEvent" label: "FunctionBar_synthesizeEvent\nFunctionBar.c:145:5\n80 bytes (static)" }
+edge: { sourcename: "FunctionBar_synthesizeEvent" targetname: "strlen" label: "FunctionBar.c:148:12" }
+edge: { sourcename: "FunctionBar_synthesizeEvent" targetname: "strlen" label: "FunctionBar.c:149:12" }
+}

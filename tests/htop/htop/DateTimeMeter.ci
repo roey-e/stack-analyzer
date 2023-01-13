@@ -1,0 +1,7 @@
+graph: { title: "DateTimeMeter.c"
+node: { title: "DateTimeMeter.c:DateTimeMeter_updateValues" label: "DateTimeMeter_updateValues\nDateTimeMeter.c:24:13\n96 bytes (static)" }
+node: { title: "localtime_r" label: "localtime_r\n/usr/include/time.h:133:19" shape : ellipse }
+edge: { sourcename: "DateTimeMeter.c:DateTimeMeter_updateValues" targetname: "localtime_r" label: "DateTimeMeter.c:28:26" }
+node: { title: "strftime" label: "strftime\n/usr/include/time.h:88:15" shape : ellipse }
+edge: { sourcename: "DateTimeMeter.c:DateTimeMeter_updateValues" targetname: "strftime" label: "DateTimeMeter.c:36:4" }
+}

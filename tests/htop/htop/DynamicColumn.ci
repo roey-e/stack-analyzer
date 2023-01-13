@@ -1,0 +1,17 @@
+graph: { title: "DynamicColumn.c"
+node: { title: "DynamicColumn.c:DynamicColumn_compare" label: "DynamicColumn_compare\nDynamicColumn.c:42:13\n48 bytes (static)" }
+node: { title: "strcmp" label: "strcmp\n/usr/include/string.h:137:12" shape : ellipse }
+edge: { sourcename: "DynamicColumn.c:DynamicColumn_compare" targetname: "strcmp" label: "XUtils.h:46:11" }
+node: { title: "DynamicColumns_new" label: "DynamicColumns_new\nDynamicColumn.c:21:12\n0 bytes (static)" }
+node: { title: "DynamicColumns_delete" label: "DynamicColumns_delete\nDynamicColumn.c:25:6\n0 bytes (static)" }
+node: { title: "Hashtable_delete" label: "Hashtable_delete\nHashtable.h:28:6" shape : ellipse }
+edge: { sourcename: "DynamicColumns_delete" targetname: "Hashtable_delete" label: "DynamicColumn.c:28:7" }
+node: { title: "DynamicColumn_init" label: "DynamicColumn_init\nDynamicColumn.c:32:13\n0 bytes (static)" }
+node: { title: "DynamicColumn_search" label: "DynamicColumn_search\nDynamicColumn.c:51:22\n64 bytes (static)" }
+node: { title: "Hashtable_foreach" label: "Hashtable_foreach\nHashtable.h:40:6" shape : ellipse }
+edge: { sourcename: "DynamicColumn_search" targetname: "Hashtable_foreach" label: "DynamicColumn.c:54:7" }
+node: { title: "DynamicColumn_lookup" label: "DynamicColumn_lookup\nDynamicColumn.c:60:22\n0 bytes (static)" }
+node: { title: "Hashtable_get" label: "Hashtable_get\nHashtable.h:38:7" shape : ellipse }
+edge: { sourcename: "DynamicColumn_lookup" targetname: "Hashtable_get" label: "DynamicColumn.c:61:34" }
+node: { title: "DynamicColumn_writeField" label: "DynamicColumn_writeField\nDynamicColumn.c:64:6\n0 bytes (static)" }
+}

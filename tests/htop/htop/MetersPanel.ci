@@ -1,0 +1,83 @@
+graph: { title: "MetersPanel.c"
+node: { title: "MetersPanel.c:MetersPanel_delete" label: "MetersPanel_delete\nMetersPanel.c:43:13\n32 bytes (static)" }
+node: { title: "Panel_done" label: "Panel_done\nPanel.h:97:6" shape : ellipse }
+edge: { sourcename: "MetersPanel.c:MetersPanel_delete" targetname: "Panel_done" label: "MetersPanel.c:46:4" }
+node: { title: "free" label: "free\n/usr/include/stdlib.h:565:13" shape : ellipse }
+edge: { sourcename: "MetersPanel.c:MetersPanel_delete" targetname: "free" label: "MetersPanel.c:47:4" }
+node: { title: "MetersPanel.c:MetersPanel_eventHandler" label: "MetersPanel_eventHandler\nMetersPanel.c:87:22\n64 bytes (static)" }
+node: { title: "Panel_getSelectedIndex" label: "Panel_getSelectedIndex\nPanel.h:127:5" shape : ellipse }
+edge: { sourcename: "MetersPanel.c:MetersPanel_eventHandler" targetname: "Panel_getSelectedIndex" label: "MetersPanel.c:90:19" }
+node: { title: "Panel_getSelected" label: "Panel_getSelected\nPanel.h:121:9" shape : ellipse }
+edge: { sourcename: "MetersPanel.c:MetersPanel_eventHandler" targetname: "Panel_getSelected" label: "MetersPanel.c:53:36" }
+node: { title: "Panel_setSelectionColor" label: "Panel_setSelectionColor\nPanel.h:101:6" shape : ellipse }
+edge: { sourcename: "MetersPanel.c:MetersPanel_eventHandler" targetname: "Panel_setSelectionColor" label: "MetersPanel.c:58:7" }
+edge: { sourcename: "MetersPanel.c:MetersPanel_eventHandler" targetname: "Panel_setSelectionColor" label: "MetersPanel.c:61:7" }
+node: { title: "Meter_setMode" label: "Meter_setMode\nMeter.h:154:6" shape : ellipse }
+edge: { sourcename: "MetersPanel.c:MetersPanel_eventHandler" targetname: "Meter_setMode" label: "MetersPanel.c:115:10" }
+node: { title: "Meter_toListItem" label: "Meter_toListItem\nMeter.h:156:11" shape : ellipse }
+edge: { sourcename: "MetersPanel.c:MetersPanel_eventHandler" targetname: "Meter_toListItem" label: "MetersPanel.c:116:47" }
+node: { title: "Panel_set" label: "Panel_set\nPanel.h:115:6" shape : ellipse }
+edge: { sourcename: "MetersPanel.c:MetersPanel_eventHandler" targetname: "Panel_set" label: "MetersPanel.c:116:10" }
+node: { title: "Vector_moveUp" label: "Vector_moveUp\nVector.h:61:6" shape : ellipse }
+edge: { sourcename: "MetersPanel.c:MetersPanel_eventHandler" targetname: "Vector_moveUp" label: "MetersPanel.c:131:10" }
+node: { title: "Panel_moveSelectedUp" label: "Panel_moveSelectedUp\nPanel.h:123:6" shape : ellipse }
+edge: { sourcename: "MetersPanel.c:MetersPanel_eventHandler" targetname: "Panel_moveSelectedUp" label: "MetersPanel.c:132:10" }
+node: { title: "Vector_moveDown" label: "Vector_moveDown\nVector.h:63:6" shape : ellipse }
+edge: { sourcename: "MetersPanel.c:MetersPanel_eventHandler" targetname: "Vector_moveDown" label: "MetersPanel.c:147:10" }
+node: { title: "Panel_moveSelectedDown" label: "Panel_moveSelectedDown\nPanel.h:125:6" shape : ellipse }
+edge: { sourcename: "MetersPanel.c:MetersPanel_eventHandler" targetname: "Panel_moveSelectedDown" label: "MetersPanel.c:148:10" }
+edge: { sourcename: "MetersPanel.c:MetersPanel_eventHandler" targetname: "Panel_getSelected" label: "MetersPanel.c:53:36" }
+edge: { sourcename: "MetersPanel.c:MetersPanel_eventHandler" targetname: "Panel_setSelectionColor" label: "MetersPanel.c:58:7" }
+node: { title: "Vector_take" label: "Vector_take\nVector.h:48:9" shape : ellipse }
+edge: { sourcename: "MetersPanel.c:MetersPanel_eventHandler" targetname: "Vector_take" label: "MetersPanel.c:73:37" }
+node: { title: "Panel_remove" label: "Panel_remove\nPanel.h:119:9" shape : ellipse }
+edge: { sourcename: "MetersPanel.c:MetersPanel_eventHandler" targetname: "Panel_remove" label: "MetersPanel.c:74:13" }
+node: { title: "Vector_insert" label: "Vector_insert\nVector.h:46:6" shape : ellipse }
+edge: { sourcename: "MetersPanel.c:MetersPanel_eventHandler" targetname: "Vector_insert" label: "MetersPanel.c:75:13" }
+edge: { sourcename: "MetersPanel.c:MetersPanel_eventHandler" targetname: "Meter_toListItem" label: "MetersPanel.c:76:66" }
+node: { title: "Panel_insert" label: "Panel_insert\nPanel.h:113:6" shape : ellipse }
+edge: { sourcename: "MetersPanel.c:MetersPanel_eventHandler" targetname: "Panel_insert" label: "MetersPanel.c:76:13" }
+node: { title: "Panel_setSelected" label: "Panel_setSelected\nPanel.h:131:6" shape : ellipse }
+edge: { sourcename: "MetersPanel.c:MetersPanel_eventHandler" targetname: "Panel_setSelected" label: "MetersPanel.c:77:13" }
+edge: { sourcename: "MetersPanel.c:MetersPanel_eventHandler" targetname: "Panel_getSelected" label: "MetersPanel.c:53:36" }
+edge: { sourcename: "MetersPanel.c:MetersPanel_eventHandler" targetname: "Panel_setSelectionColor" label: "MetersPanel.c:61:7" }
+edge: { sourcename: "MetersPanel.c:MetersPanel_eventHandler" targetname: "Panel_getSelected" label: "MetersPanel.c:53:36" }
+edge: { sourcename: "MetersPanel.c:MetersPanel_eventHandler" targetname: "Panel_setSelectionColor" label: "MetersPanel.c:58:7" }
+edge: { sourcename: "MetersPanel.c:MetersPanel_eventHandler" targetname: "Vector_take" label: "MetersPanel.c:73:37" }
+edge: { sourcename: "MetersPanel.c:MetersPanel_eventHandler" targetname: "Panel_remove" label: "MetersPanel.c:74:13" }
+edge: { sourcename: "MetersPanel.c:MetersPanel_eventHandler" targetname: "Vector_insert" label: "MetersPanel.c:75:13" }
+edge: { sourcename: "MetersPanel.c:MetersPanel_eventHandler" targetname: "Meter_toListItem" label: "MetersPanel.c:76:66" }
+edge: { sourcename: "MetersPanel.c:MetersPanel_eventHandler" targetname: "Panel_insert" label: "MetersPanel.c:76:13" }
+edge: { sourcename: "MetersPanel.c:MetersPanel_eventHandler" targetname: "Panel_setSelected" label: "MetersPanel.c:77:13" }
+edge: { sourcename: "MetersPanel.c:MetersPanel_eventHandler" targetname: "Panel_getSelected" label: "MetersPanel.c:53:36" }
+edge: { sourcename: "MetersPanel.c:MetersPanel_eventHandler" targetname: "Panel_setSelectionColor" label: "MetersPanel.c:61:7" }
+node: { title: "Vector_remove" label: "Vector_remove\nVector.h:50:9" shape : ellipse }
+edge: { sourcename: "MetersPanel.c:MetersPanel_eventHandler" targetname: "Vector_remove" label: "MetersPanel.c:177:13" }
+edge: { sourcename: "MetersPanel.c:MetersPanel_eventHandler" targetname: "Panel_remove" label: "MetersPanel.c:178:13" }
+edge: { sourcename: "MetersPanel.c:MetersPanel_eventHandler" targetname: "Panel_getSelected" label: "MetersPanel.c:53:36" }
+edge: { sourcename: "MetersPanel.c:MetersPanel_eventHandler" targetname: "Panel_setSelectionColor" label: "MetersPanel.c:58:7" }
+node: { title: "Header_calculateHeight" label: "Header_calculateHeight\nHeader.h:46:5" shape : ellipse }
+edge: { sourcename: "MetersPanel.c:MetersPanel_eventHandler" targetname: "Header_calculateHeight" label: "MetersPanel.c:189:7" }
+node: { title: "ScreenManager_resize" label: "ScreenManager_resize\nScreenManager.h:45:6" shape : ellipse }
+edge: { sourcename: "MetersPanel.c:MetersPanel_eventHandler" targetname: "ScreenManager_resize" label: "MetersPanel.c:190:7" }
+node: { title: "MetersPanel_cleanup" label: "MetersPanel_cleanup\nMetersPanel.c:36:6\n32 bytes (static)" }
+node: { title: "FunctionBar_delete" label: "FunctionBar_delete\nFunctionBar.h:28:6" shape : ellipse }
+edge: { sourcename: "MetersPanel_cleanup" targetname: "FunctionBar_delete" label: "MetersPanel.c:38:7" }
+node: { title: "MetersPanel_setMoving" label: "MetersPanel_setMoving\nMetersPanel.c:50:6\n32 bytes (static)" }
+edge: { sourcename: "MetersPanel_setMoving" targetname: "Panel_getSelected" label: "MetersPanel.c:53:36" }
+edge: { sourcename: "MetersPanel_setMoving" targetname: "Panel_setSelectionColor" label: "MetersPanel.c:58:7" }
+edge: { sourcename: "MetersPanel_setMoving" targetname: "Panel_setSelectionColor" label: "MetersPanel.c:61:7" }
+node: { title: "MetersPanel_new" label: "MetersPanel_new\nMetersPanel.c:203:14\n96 bytes (static)" }
+node: { title: "xMalloc" label: "xMalloc\nXUtils.h:23:7" shape : ellipse }
+edge: { sourcename: "MetersPanel_new" targetname: "xMalloc" label: "MetersPanel.c:204:24" }
+node: { title: "FunctionBar_new" label: "FunctionBar_new\nFunctionBar.h:26:14" shape : ellipse }
+edge: { sourcename: "MetersPanel_new" targetname: "FunctionBar_new" label: "MetersPanel.c:206:25" }
+edge: { sourcename: "MetersPanel_new" targetname: "FunctionBar_new" label: "MetersPanel.c:208:26" }
+node: { title: "Panel_init" label: "Panel_init\nPanel.h:95:6" shape : ellipse }
+edge: { sourcename: "MetersPanel_new" targetname: "Panel_init" label: "MetersPanel.c:210:4" }
+node: { title: "Panel_setHeader" label: "Panel_setHeader\nPanel.h:103:6" shape : ellipse }
+edge: { sourcename: "MetersPanel_new" targetname: "Panel_setHeader" label: "MetersPanel.c:218:4" }
+edge: { sourcename: "MetersPanel_new" targetname: "Meter_toListItem" label: "MetersPanel.c:221:34" }
+node: { title: "Panel_add" label: "Panel_add\nPanel.h:111:6" shape : ellipse }
+edge: { sourcename: "MetersPanel_new" targetname: "Panel_add" label: "MetersPanel.c:221:7" }
+}

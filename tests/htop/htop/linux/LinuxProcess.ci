@@ -1,0 +1,94 @@
+graph: { title: "linux/LinuxProcess.c"
+node: { title: "Process_delete" label: "Process_delete\nlinux/LinuxProcess.c:112:6\n32 bytes (static)" }
+node: { title: "Process_done" label: "Process_done\n./Process.h:375:6" shape : ellipse }
+edge: { sourcename: "Process_delete" targetname: "Process_done" label: "linux/LinuxProcess.c:114:4" }
+node: { title: "free" label: "free\n/usr/include/stdlib.h:565:13" shape : ellipse }
+edge: { sourcename: "Process_delete" targetname: "free" label: "linux/LinuxProcess.c:115:4" }
+edge: { sourcename: "Process_delete" targetname: "free" label: "linux/LinuxProcess.c:116:4" }
+edge: { sourcename: "Process_delete" targetname: "free" label: "linux/LinuxProcess.c:120:4" }
+edge: { sourcename: "Process_delete" targetname: "free" label: "linux/LinuxProcess.c:121:4" }
+node: { title: "linux/LinuxProcess.c:LinuxProcess_writeField" label: "LinuxProcess_writeField\nlinux/LinuxProcess.c:194:13\n320 bytes (static)" }
+node: { title: "Process_printCount" label: "Process_printCount\n./Process.h:359:6" shape : ellipse }
+edge: { sourcename: "linux/LinuxProcess.c:LinuxProcess_writeField" targetname: "Process_printCount" label: "linux/LinuxProcess.c:201:18" }
+edge: { sourcename: "linux/LinuxProcess.c:LinuxProcess_writeField" targetname: "Process_printCount" label: "linux/LinuxProcess.c:202:18" }
+node: { title: "Process_printBytes" label: "Process_printBytes\n./Process.h:353:6" shape : ellipse }
+edge: { sourcename: "linux/LinuxProcess.c:LinuxProcess_writeField" targetname: "Process_printBytes" label: "linux/LinuxProcess.c:203:16" }
+edge: { sourcename: "linux/LinuxProcess.c:LinuxProcess_writeField" targetname: "Process_printBytes" label: "linux/LinuxProcess.c:206:10" }
+node: { title: "xSnprintf" label: "xSnprintf\n./XUtils.h:66:5" shape : ellipse }
+edge: { sourcename: "linux/LinuxProcess.c:LinuxProcess_writeField" targetname: "xSnprintf" label: "linux/LinuxProcess.c:211:7" }
+edge: { sourcename: "linux/LinuxProcess.c:LinuxProcess_writeField" targetname: "Process_printBytes" label: "linux/LinuxProcess.c:213:16" }
+edge: { sourcename: "linux/LinuxProcess.c:LinuxProcess_writeField" targetname: "Process_printBytes" label: "linux/LinuxProcess.c:214:18" }
+node: { title: "Process_printKBytes" label: "Process_printKBytes\n./Process.h:356:6" shape : ellipse }
+edge: { sourcename: "linux/LinuxProcess.c:LinuxProcess_writeField" targetname: "Process_printKBytes" label: "linux/LinuxProcess.c:215:16" }
+edge: { sourcename: "linux/LinuxProcess.c:LinuxProcess_writeField" targetname: "Process_printKBytes" label: "linux/LinuxProcess.c:216:17" }
+edge: { sourcename: "linux/LinuxProcess.c:LinuxProcess_writeField" targetname: "Process_printKBytes" label: "linux/LinuxProcess.c:217:18" }
+node: { title: "Process_printTime" label: "Process_printTime\n./Process.h:362:6" shape : ellipse }
+edge: { sourcename: "linux/LinuxProcess.c:LinuxProcess_writeField" targetname: "Process_printTime" label: "linux/LinuxProcess.c:218:16" }
+edge: { sourcename: "linux/LinuxProcess.c:LinuxProcess_writeField" targetname: "Process_printTime" label: "linux/LinuxProcess.c:219:16" }
+edge: { sourcename: "linux/LinuxProcess.c:LinuxProcess_writeField" targetname: "Process_printTime" label: "linux/LinuxProcess.c:220:17" }
+edge: { sourcename: "linux/LinuxProcess.c:LinuxProcess_writeField" targetname: "Process_printTime" label: "linux/LinuxProcess.c:221:17" }
+edge: { sourcename: "linux/LinuxProcess.c:LinuxProcess_writeField" targetname: "Process_printBytes" label: "linux/LinuxProcess.c:222:17" }
+edge: { sourcename: "linux/LinuxProcess.c:LinuxProcess_writeField" targetname: "Process_printBytes" label: "linux/LinuxProcess.c:223:17" }
+edge: { sourcename: "linux/LinuxProcess.c:LinuxProcess_writeField" targetname: "Process_printCount" label: "linux/LinuxProcess.c:224:17" }
+edge: { sourcename: "linux/LinuxProcess.c:LinuxProcess_writeField" targetname: "Process_printCount" label: "linux/LinuxProcess.c:225:17" }
+edge: { sourcename: "linux/LinuxProcess.c:LinuxProcess_writeField" targetname: "Process_printBytes" label: "linux/LinuxProcess.c:226:17" }
+edge: { sourcename: "linux/LinuxProcess.c:LinuxProcess_writeField" targetname: "Process_printBytes" label: "linux/LinuxProcess.c:227:17" }
+edge: { sourcename: "linux/LinuxProcess.c:LinuxProcess_writeField" targetname: "Process_printBytes" label: "linux/LinuxProcess.c:228:17" }
+node: { title: "Process_printRate" label: "Process_printRate\n./Process.h:365:6" shape : ellipse }
+edge: { sourcename: "linux/LinuxProcess.c:LinuxProcess_writeField" targetname: "Process_printRate" label: "linux/LinuxProcess.c:229:24" }
+edge: { sourcename: "linux/LinuxProcess.c:LinuxProcess_writeField" targetname: "Process_printRate" label: "linux/LinuxProcess.c:230:24" }
+edge: { sourcename: "linux/LinuxProcess.c:LinuxProcess_writeField" targetname: "Process_printRate" label: "linux/LinuxProcess.c:241:7" }
+edge: { sourcename: "linux/LinuxProcess.c:LinuxProcess_writeField" targetname: "xSnprintf" label: "linux/LinuxProcess.c:251:17" }
+edge: { sourcename: "linux/LinuxProcess.c:LinuxProcess_writeField" targetname: "xSnprintf" label: "linux/LinuxProcess.c:252:18" }
+edge: { sourcename: "linux/LinuxProcess.c:LinuxProcess_writeField" targetname: "xSnprintf" label: "linux/LinuxProcess.c:253:14" }
+edge: { sourcename: "linux/LinuxProcess.c:LinuxProcess_writeField" targetname: "xSnprintf" label: "linux/LinuxProcess.c:258:10" }
+edge: { sourcename: "linux/LinuxProcess.c:LinuxProcess_writeField" targetname: "xSnprintf" label: "linux/LinuxProcess.c:260:10" }
+edge: { sourcename: "linux/LinuxProcess.c:LinuxProcess_writeField" targetname: "xSnprintf" label: "linux/LinuxProcess.c:263:10" }
+edge: { sourcename: "linux/LinuxProcess.c:LinuxProcess_writeField" targetname: "xSnprintf" label: "linux/LinuxProcess.c:266:10" }
+edge: { sourcename: "linux/LinuxProcess.c:LinuxProcess_writeField" targetname: "xSnprintf" label: "linux/LinuxProcess.c:268:10" }
+edge: { sourcename: "linux/LinuxProcess.c:LinuxProcess_writeField" targetname: "xSnprintf" label: "linux/LinuxProcess.c:281:7" }
+node: { title: "snprintf" label: "snprintf\n/usr/include/stdio.h:354:12" shape : ellipse }
+edge: { sourcename: "linux/LinuxProcess.c:LinuxProcess_writeField" targetname: "snprintf" label: "linux/LinuxProcess.c:283:18" }
+edge: { sourcename: "linux/LinuxProcess.c:LinuxProcess_writeField" targetname: "xSnprintf" label: "linux/LinuxProcess.c:286:10" }
+edge: { sourcename: "linux/LinuxProcess.c:LinuxProcess_writeField" targetname: "xSnprintf" label: "linux/LinuxProcess.c:289:10" }
+edge: { sourcename: "linux/LinuxProcess.c:LinuxProcess_writeField" targetname: "xSnprintf" label: "linux/LinuxProcess.c:294:10" }
+edge: { sourcename: "linux/LinuxProcess.c:LinuxProcess_writeField" targetname: "xSnprintf" label: "linux/LinuxProcess.c:300:10" }
+node: { title: "Process_writeField" label: "Process_writeField\n./Process.h:284:6" shape : ellipse }
+edge: { sourcename: "linux/LinuxProcess.c:LinuxProcess_writeField" targetname: "Process_writeField" label: "linux/LinuxProcess.c:304:7" }
+node: { title: "RichString_appendAscii" label: "RichString_appendAscii\n./RichString.h:73:5" shape : ellipse }
+edge: { sourcename: "linux/LinuxProcess.c:LinuxProcess_writeField" targetname: "RichString_appendAscii" label: "linux/LinuxProcess.c:307:4" }
+node: { title: "linux/LinuxProcess.c:LinuxProcess_compareByKey" label: "LinuxProcess_compareByKey\nlinux/LinuxProcess.c:317:12\n0 bytes (static)" }
+node: { title: "strcmp" label: "strcmp\n/usr/include/string.h:137:12" shape : ellipse }
+edge: { sourcename: "linux/LinuxProcess.c:LinuxProcess_compareByKey" targetname: "strcmp" label: "linux/LinuxProcess.c:375:14" }
+edge: { sourcename: "linux/LinuxProcess.c:LinuxProcess_compareByKey" targetname: "strcmp" label: "linux/LinuxProcess.c:377:14" }
+edge: { sourcename: "linux/LinuxProcess.c:LinuxProcess_compareByKey" targetname: "strcmp" label: "linux/LinuxProcess.c:393:14" }
+node: { title: "Process_compareByKey_Base" label: "Process_compareByKey_Base\n./Process.h:399:5" shape : ellipse }
+edge: { sourcename: "linux/LinuxProcess.c:LinuxProcess_compareByKey" targetname: "Process_compareByKey_Base" label: "linux/LinuxProcess.c:399:14" }
+node: { title: "LinuxProcess_new" label: "LinuxProcess_new\nlinux/LinuxProcess.c:105:10\n32 bytes (static)" }
+node: { title: "xCalloc" label: "xCalloc\n./XUtils.h:27:7" shape : ellipse }
+edge: { sourcename: "LinuxProcess_new" targetname: "xCalloc" label: "linux/LinuxProcess.c:106:25" }
+node: { title: "Process_init" label: "Process_init\n./Process.h:379:6" shape : ellipse }
+edge: { sourcename: "LinuxProcess_new" targetname: "Process_init" label: "linux/LinuxProcess.c:108:4" }
+node: { title: "LinuxProcess_updateIOPriority" label: "LinuxProcess_updateIOPriority\nlinux/LinuxProcess.c:145:12\n32 bytes (static)" }
+node: { title: "syscall" label: "syscall\n/usr/include/unistd.h:1056:17" shape : ellipse }
+edge: { sourcename: "LinuxProcess_updateIOPriority" targetname: "syscall" label: "linux/LinuxProcess.c:149:13" }
+node: { title: "LinuxProcess_setIOPriority" label: "LinuxProcess_setIOPriority\nlinux/LinuxProcess.c:155:6\n32 bytes (static)" }
+edge: { sourcename: "LinuxProcess_setIOPriority" targetname: "syscall" label: "linux/LinuxProcess.c:158:4" }
+edge: { sourcename: "LinuxProcess_setIOPriority" targetname: "syscall" label: "linux/LinuxProcess.c:149:13" }
+node: { title: "LinuxProcess_isAutogroupEnabled" label: "LinuxProcess_isAutogroupEnabled\nlinux/LinuxProcess.c:163:6\n32 bytes (static)" }
+node: { title: "xReadfile" label: "xReadfile\n./XUtils.h:73:9" shape : ellipse }
+edge: { sourcename: "LinuxProcess_isAutogroupEnabled" targetname: "xReadfile" label: "linux/LinuxProcess.c:165:8" }
+node: { title: "LinuxProcess_changeAutogroupPriorityBy" label: "LinuxProcess_changeAutogroupPriorityBy\nlinux/LinuxProcess.c:170:6\n320 bytes (static)" }
+edge: { sourcename: "LinuxProcess_changeAutogroupPriorityBy" targetname: "xSnprintf" label: "linux/LinuxProcess.c:172:4" }
+node: { title: "fopen" label: "fopen\n/usr/include/stdio.h:246:14" shape : ellipse }
+edge: { sourcename: "LinuxProcess_changeAutogroupPriorityBy" targetname: "fopen" label: "linux/LinuxProcess.c:174:17" }
+node: { title: "*__isoc99_fscanf" label: "fscanf\n/usr/include/stdio.h:407:12" shape : ellipse }
+edge: { sourcename: "LinuxProcess_changeAutogroupPriorityBy" targetname: "*__isoc99_fscanf" label: "linux/LinuxProcess.c:180:13" }
+node: { title: "rewind" label: "rewind\n/usr/include/stdio.h:694:13" shape : ellipse }
+edge: { sourcename: "LinuxProcess_changeAutogroupPriorityBy" targetname: "rewind" label: "linux/LinuxProcess.c:183:7" }
+edge: { sourcename: "LinuxProcess_changeAutogroupPriorityBy" targetname: "xSnprintf" label: "linux/LinuxProcess.c:184:7" }
+node: { title: "fputs" label: "fputs\n/usr/include/stdio.h:626:12" shape : ellipse }
+edge: { sourcename: "LinuxProcess_changeAutogroupPriorityBy" targetname: "fputs" label: "linux/LinuxProcess.c:185:17" }
+node: { title: "fclose" label: "fclose\n/usr/include/stdio.h:213:12" shape : ellipse }
+edge: { sourcename: "LinuxProcess_changeAutogroupPriorityBy" targetname: "fclose" label: "linux/LinuxProcess.c:190:4" }
+}

@@ -1,0 +1,48 @@
+graph: { title: "Vector.c"
+node: { title: "Vector.c:quickSort" label: "quickSort\nVector.c:140:13\n96 bytes (static)" }
+node: { title: "__indirect_call" label: "Indirect Call Placeholder" shape : ellipse }
+edge: { sourcename: "Vector.c:quickSort" targetname: "__indirect_call" label: "Vector.c:131:11" }
+edge: { sourcename: "Vector.c:quickSort" targetname: "Vector.c:quickSort" label: "Vector.c:146:4" }
+node: { title: "Vector_new" label: "Vector_new\nVector.c:17:9\n64 bytes (static)" }
+node: { title: "xMalloc" label: "xMalloc\nXUtils.h:23:7" shape : ellipse }
+edge: { sourcename: "Vector_new" targetname: "xMalloc" label: "Vector.c:25:11" }
+node: { title: "xCalloc" label: "xCalloc\nXUtils.h:27:7" shape : ellipse }
+edge: { sourcename: "Vector_new" targetname: "xCalloc" label: "Vector.c:27:29" }
+node: { title: "Vector_delete" label: "Vector_delete\nVector.c:37:6\n32 bytes (static)" }
+edge: { sourcename: "Vector_delete" targetname: "__indirect_call" label: "Vector.c:41:13" }
+node: { title: "free" label: "free\n/usr/include/stdlib.h:565:13" shape : ellipse }
+edge: { sourcename: "Vector_delete" targetname: "free" label: "Vector.c:45:4" }
+edge: { sourcename: "Vector_delete" targetname: "free" label: "Vector.c:46:4" }
+node: { title: "Vector_prune" label: "Vector_prune\nVector.c:100:6\n32 bytes (static)" }
+edge: { sourcename: "Vector_prune" targetname: "__indirect_call" label: "Vector.c:105:13" }
+node: { title: "Vector_quickSortCustomCompare" label: "Vector_quickSortCustomCompare\nVector.c:189:6\n0 bytes (static)" }
+edge: { sourcename: "Vector_quickSortCustomCompare" targetname: "Vector.c:quickSort" label: "Vector.c:192:4" }
+node: { title: "Vector_insertionSort" label: "Vector_insertionSort\nVector.c:196:6\n96 bytes (static)" }
+edge: { sourcename: "Vector_insertionSort" targetname: "__indirect_call" label: "Vector.c:179:14" }
+node: { title: "Vector_insert" label: "Vector_insert\nVector.c:216:6\n48 bytes (static)" }
+node: { title: "xRealloc" label: "xRealloc\nXUtils.h:29:7" shape : ellipse }
+edge: { sourcename: "Vector_insert" targetname: "xRealloc" label: "Vector.c:209:32" }
+node: { title: "memmove" label: "memmove\n/usr/include/string.h:47:14" shape : ellipse }
+edge: { sourcename: "Vector_insert" targetname: "memmove" label: "Vector.c:229:7" }
+node: { title: "Vector_take" label: "Vector_take\nVector.c:236:9\n32 bytes (static)" }
+edge: { sourcename: "Vector_take" targetname: "memmove" label: "Vector.c:243:7" }
+node: { title: "Vector_remove" label: "Vector_remove\nVector.c:250:9\n32 bytes (static)" }
+edge: { sourcename: "Vector_remove" targetname: "memmove" label: "Vector.c:243:7" }
+edge: { sourcename: "Vector_remove" targetname: "__indirect_call" label: "Vector.c:253:7" }
+node: { title: "Vector_softRemove" label: "Vector_softRemove\nVector.c:260:9\n16 bytes (static)" }
+edge: { sourcename: "Vector_softRemove" targetname: "__indirect_call" label: "Vector.c:274:10" }
+node: { title: "Vector_compact" label: "Vector_compact\nVector.c:282:6\n32 bytes (static)" }
+edge: { sourcename: "Vector_compact" targetname: "memmove" label: "Vector.c:295:7" }
+node: { title: "Vector_moveUp" label: "Vector_moveUp\nVector.c:312:6\n0 bytes (static)" }
+node: { title: "Vector_moveDown" label: "Vector_moveDown\nVector.c:324:6\n0 bytes (static)" }
+node: { title: "Vector_set" label: "Vector_set\nVector.c:336:6\n48 bytes (static)" }
+edge: { sourcename: "Vector_set" targetname: "xRealloc" label: "Vector.c:209:32" }
+edge: { sourcename: "Vector_set" targetname: "__indirect_call" label: "Vector.c:349:10" }
+node: { title: "Vector_add" label: "Vector_add\nVector.c:371:6\n64 bytes (static)" }
+edge: { sourcename: "Vector_add" targetname: "xRealloc" label: "Vector.c:209:32" }
+edge: { sourcename: "Vector_add" targetname: "__indirect_call" label: "Vector.c:349:10" }
+node: { title: "Vector_indexOf" label: "Vector_indexOf\nVector.c:381:5\n64 bytes (static)" }
+edge: { sourcename: "Vector_indexOf" targetname: "__indirect_call" label: "Vector.c:389:11" }
+node: { title: "Vector_splice" label: "Vector_splice\nVector.c:396:6\n48 bytes (static)" }
+edge: { sourcename: "Vector_splice" targetname: "xRealloc" label: "Vector.c:209:32" }
+}

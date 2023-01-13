@@ -1,0 +1,43 @@
+graph: { title: "ProcessLocksScreen.c"
+node: { title: "ProcessLocksScreen_delete" label: "ProcessLocksScreen_delete\nProcessLocksScreen.c:34:6\n16 bytes (static)" }
+node: { title: "InfoScreen_done" label: "InfoScreen_done\nInfoScreen.h:44:13" shape : ellipse }
+edge: { sourcename: "ProcessLocksScreen_delete" targetname: "InfoScreen_done" label: "ProcessLocksScreen.c:35:9" }
+node: { title: "free" label: "free\n/usr/include/stdlib.h:565:13" shape : ellipse }
+edge: { sourcename: "ProcessLocksScreen_delete" targetname: "free" label: "ProcessLocksScreen.c:35:4" }
+node: { title: "ProcessLocksScreen.c:ProcessLocksScreen_draw" label: "ProcessLocksScreen_draw\nProcessLocksScreen.c:38:13\n32 bytes (static)" }
+node: { title: "Process_getCommand" label: "Process_getCommand\nProcess.h:401:13" shape : ellipse }
+edge: { sourcename: "ProcessLocksScreen.c:ProcessLocksScreen_draw" targetname: "Process_getCommand" label: "ProcessLocksScreen.c:39:4" }
+node: { title: "InfoScreen_drawTitled" label: "InfoScreen_drawTitled\nInfoScreen.h:47:6" shape : ellipse }
+edge: { sourcename: "ProcessLocksScreen.c:ProcessLocksScreen_draw" targetname: "InfoScreen_drawTitled" label: "ProcessLocksScreen.c:39:4" }
+node: { title: "ProcessLocksScreen.c:ProcessLocksScreen_scan" label: "ProcessLocksScreen_scan\nProcessLocksScreen.c:49:13\n640 bytes (static)" }
+node: { title: "Panel_getSelectedIndex" label: "Panel_getSelectedIndex\nPanel.h:127:5" shape : ellipse }
+edge: { sourcename: "ProcessLocksScreen.c:ProcessLocksScreen_scan" targetname: "Panel_getSelectedIndex" label: "ProcessLocksScreen.c:51:14" }
+node: { title: "Panel_prune" label: "Panel_prune\nPanel.h:109:6" shape : ellipse }
+edge: { sourcename: "ProcessLocksScreen.c:ProcessLocksScreen_scan" targetname: "Panel_prune" label: "ProcessLocksScreen.c:52:4" }
+node: { title: "Platform_getProcessLocks" label: "Platform_getProcessLocks\n./linux/Platform.h:78:24" shape : ellipse }
+edge: { sourcename: "ProcessLocksScreen.c:ProcessLocksScreen_scan" targetname: "Platform_getProcessLocks" label: "ProcessLocksScreen.c:53:35" }
+node: { title: "InfoScreen_addLine" label: "InfoScreen_addLine\nInfoScreen.h:49:6" shape : ellipse }
+edge: { sourcename: "ProcessLocksScreen.c:ProcessLocksScreen_scan" targetname: "InfoScreen_addLine" label: "ProcessLocksScreen.c:55:7" }
+edge: { sourcename: "ProcessLocksScreen.c:ProcessLocksScreen_scan" targetname: "InfoScreen_addLine" label: "ProcessLocksScreen.c:57:7" }
+edge: { sourcename: "ProcessLocksScreen.c:ProcessLocksScreen_scan" targetname: "InfoScreen_addLine" label: "ProcessLocksScreen.c:61:10" }
+node: { title: "xSnprintf" label: "xSnprintf\nXUtils.h:66:5" shape : ellipse }
+edge: { sourcename: "ProcessLocksScreen.c:ProcessLocksScreen_scan" targetname: "xSnprintf" label: "ProcessLocksScreen.c:68:13" }
+edge: { sourcename: "ProcessLocksScreen.c:ProcessLocksScreen_scan" targetname: "xSnprintf" label: "ProcessLocksScreen.c:76:13" }
+edge: { sourcename: "ProcessLocksScreen.c:ProcessLocksScreen_scan" targetname: "InfoScreen_addLine" label: "ProcessLocksScreen.c:85:10" }
+edge: { sourcename: "ProcessLocksScreen.c:ProcessLocksScreen_scan" targetname: "free" label: "ProcessLocksScreen.c:43:4" }
+edge: { sourcename: "ProcessLocksScreen.c:ProcessLocksScreen_scan" targetname: "free" label: "ProcessLocksScreen.c:44:4" }
+edge: { sourcename: "ProcessLocksScreen.c:ProcessLocksScreen_scan" targetname: "free" label: "ProcessLocksScreen.c:45:4" }
+edge: { sourcename: "ProcessLocksScreen.c:ProcessLocksScreen_scan" targetname: "free" label: "ProcessLocksScreen.c:46:4" }
+edge: { sourcename: "ProcessLocksScreen.c:ProcessLocksScreen_scan" targetname: "free" label: "ProcessLocksScreen.c:90:10" }
+edge: { sourcename: "ProcessLocksScreen.c:ProcessLocksScreen_scan" targetname: "free" label: "ProcessLocksScreen.c:93:4" }
+node: { title: "Vector_insertionSort" label: "Vector_insertionSort\nVector.h:44:6" shape : ellipse }
+edge: { sourcename: "ProcessLocksScreen.c:ProcessLocksScreen_scan" targetname: "Vector_insertionSort" label: "ProcessLocksScreen.c:94:4" }
+edge: { sourcename: "ProcessLocksScreen.c:ProcessLocksScreen_scan" targetname: "Vector_insertionSort" label: "ProcessLocksScreen.c:95:4" }
+node: { title: "Panel_setSelected" label: "Panel_setSelected\nPanel.h:131:6" shape : ellipse }
+edge: { sourcename: "ProcessLocksScreen.c:ProcessLocksScreen_scan" targetname: "Panel_setSelected" label: "ProcessLocksScreen.c:96:4" }
+node: { title: "ProcessLocksScreen_new" label: "ProcessLocksScreen_new\nProcessLocksScreen.c:23:21\n32 bytes (static)" }
+node: { title: "xMalloc" label: "xMalloc\nXUtils.h:23:7" shape : ellipse }
+edge: { sourcename: "ProcessLocksScreen_new" targetname: "xMalloc" label: "ProcessLocksScreen.c:24:31" }
+node: { title: "InfoScreen_init" label: "InfoScreen_init\nInfoScreen.h:42:13" shape : ellipse }
+edge: { sourcename: "ProcessLocksScreen_new" targetname: "InfoScreen_init" label: "ProcessLocksScreen.c:31:33" }
+}

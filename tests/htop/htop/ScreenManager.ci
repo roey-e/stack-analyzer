@@ -1,0 +1,89 @@
+graph: { title: "ScreenManager.c"
+node: { title: "ScreenManager.c:drawTab" label: "drawTab\nScreenManager.c:156:20\n96 bytes (static)" }
+node: { title: "wattrset" label: "wattrset\n/usr/include/curses.h:787:28" shape : ellipse }
+edge: { sourcename: "ScreenManager.c:drawTab" targetname: "wattrset" label: "ScreenManager.c:157:4" }
+node: { title: "wmove" label: "wmove\n/usr/include/curses.h:819:28" shape : ellipse }
+edge: { sourcename: "ScreenManager.c:drawTab" targetname: "wmove" label: "ScreenManager.c:158:4" }
+node: { title: "waddch" label: "waddch\n/usr/include/curses.h:780:28" shape : ellipse }
+edge: { sourcename: "ScreenManager.c:drawTab" targetname: "waddch" label: "ScreenManager.c:158:4" }
+node: { title: "strlen" label: "strlen\n/usr/include/string.h:385:15" shape : ellipse }
+edge: { sourcename: "ScreenManager.c:drawTab" targetname: "strlen" label: "ScreenManager.c:162:18" }
+edge: { sourcename: "ScreenManager.c:drawTab" targetname: "wattrset" label: "ScreenManager.c:164:4" }
+edge: { sourcename: "ScreenManager.c:drawTab" targetname: "wmove" label: "ScreenManager.c:165:4" }
+node: { title: "waddnstr" label: "waddnstr\n/usr/include/curses.h:783:28" shape : ellipse }
+edge: { sourcename: "ScreenManager.c:drawTab" targetname: "waddnstr" label: "ScreenManager.c:165:4" }
+edge: { sourcename: "ScreenManager.c:drawTab" targetname: "wattrset" label: "ScreenManager.c:169:4" }
+edge: { sourcename: "ScreenManager.c:drawTab" targetname: "wmove" label: "ScreenManager.c:170:4" }
+edge: { sourcename: "ScreenManager.c:drawTab" targetname: "waddch" label: "ScreenManager.c:170:4" }
+node: { title: "ScreenManager_new" label: "ScreenManager_new\nScreenManager.c:27:16\n64 bytes (static)" }
+node: { title: "xMalloc" label: "xMalloc\nXUtils.h:23:7" shape : ellipse }
+edge: { sourcename: "ScreenManager_new" targetname: "xMalloc" label: "ScreenManager.c:29:11" }
+node: { title: "Vector_new" label: "Vector_new\nVector.h:33:9" shape : ellipse }
+edge: { sourcename: "ScreenManager_new" targetname: "Vector_new" label: "ScreenManager.c:34:19" }
+node: { title: "ScreenManager_delete" label: "ScreenManager_delete\nScreenManager.c:43:6\n32 bytes (static)" }
+node: { title: "Vector_delete" label: "Vector_delete\nVector.h:35:6" shape : ellipse }
+edge: { sourcename: "ScreenManager_delete" targetname: "Vector_delete" label: "ScreenManager.c:44:4" }
+node: { title: "free" label: "free\n/usr/include/stdlib.h:565:13" shape : ellipse }
+edge: { sourcename: "ScreenManager_delete" targetname: "free" label: "ScreenManager.c:45:4" }
+node: { title: "ScreenManager_size" label: "ScreenManager_size\nScreenManager.c:48:12\n0 bytes (static)" }
+node: { title: "ScreenManager_insert" label: "ScreenManager_insert\nScreenManager.c:66:6\n64 bytes (static)" }
+node: { title: "Panel_resize" label: "Panel_resize\nPanel.h:107:6" shape : ellipse }
+edge: { sourcename: "ScreenManager_insert" targetname: "Panel_resize" label: "ScreenManager.c:76:4" }
+node: { title: "Panel_move" label: "Panel_move\nPanel.h:105:6" shape : ellipse }
+edge: { sourcename: "ScreenManager_insert" targetname: "Panel_move" label: "ScreenManager.c:77:4" }
+node: { title: "Vector_insert" label: "Vector_insert\nVector.h:46:6" shape : ellipse }
+edge: { sourcename: "ScreenManager_insert" targetname: "Vector_insert" label: "ScreenManager.c:84:4" }
+edge: { sourcename: "ScreenManager_insert" targetname: "Panel_move" label: "ScreenManager.c:81:10" }
+node: { title: "ScreenManager_add" label: "ScreenManager_add\nScreenManager.c:52:6\n0 bytes (static)" }
+edge: { sourcename: "ScreenManager_add" targetname: "ScreenManager_insert" label: "ScreenManager.c:53:4" }
+node: { title: "ScreenManager_remove" label: "ScreenManager_remove\nScreenManager.c:89:8\n64 bytes (static)" }
+node: { title: "Vector_remove" label: "Vector_remove\nVector.h:50:9" shape : ellipse }
+edge: { sourcename: "ScreenManager_remove" targetname: "Vector_remove" label: "ScreenManager.c:92:28" }
+edge: { sourcename: "ScreenManager_remove" targetname: "Panel_move" label: "ScreenManager.c:97:10" }
+node: { title: "ScreenManager_resize" label: "ScreenManager_resize\nScreenManager.c:103:6\n96 bytes (static)" }
+edge: { sourcename: "ScreenManager_resize" targetname: "Panel_resize" label: "ScreenManager.c:109:7" }
+edge: { sourcename: "ScreenManager_resize" targetname: "Panel_move" label: "ScreenManager.c:110:7" }
+edge: { sourcename: "ScreenManager_resize" targetname: "Panel_resize" label: "ScreenManager.c:114:4" }
+edge: { sourcename: "ScreenManager_resize" targetname: "Panel_move" label: "ScreenManager.c:115:4" }
+node: { title: "ScreenManager_run" label: "ScreenManager_run\nScreenManager.c:215:6\n208 bytes (static)" }
+node: { title: "Generic_gettime_realtime" label: "Generic_gettime_realtime\n./generic/gettime.h:14:6" shape : ellipse }
+edge: { sourcename: "ScreenManager_run" targetname: "Generic_gettime_realtime" label: "./linux/Platform.h:108:4" }
+node: { title: "ProcessList_scan" label: "ProcessList_scan\nProcessList.h:121:6" shape : ellipse }
+edge: { sourcename: "ScreenManager_run" targetname: "ProcessList_scan" label: "ScreenManager.c:139:7" }
+node: { title: "Header_updateData" label: "Header_updateData\nHeader.h:44:6" shape : ellipse }
+edge: { sourcename: "ScreenManager_run" targetname: "Header_updateData" label: "ScreenManager.c:141:7" }
+node: { title: "ProcessList_rebuildPanel" label: "ProcessList_rebuildPanel\nProcessList.h:117:6" shape : ellipse }
+edge: { sourcename: "ScreenManager_run" targetname: "ProcessList_rebuildPanel" label: "ScreenManager.c:149:7" }
+node: { title: "Header_draw" label: "Header_draw\nHeader.h:42:6" shape : ellipse }
+edge: { sourcename: "ScreenManager_run" targetname: "Header_draw" label: "ScreenManager.c:151:10" }
+edge: { sourcename: "ScreenManager_run" targetname: "wattrset" label: "ScreenManager.c:196:4" }
+edge: { sourcename: "ScreenManager_run" targetname: "ScreenManager.c:drawTab" label: "ScreenManager.c:186:7" }
+edge: { sourcename: "ScreenManager_run" targetname: "ScreenManager.c:drawTab" label: "ScreenManager.c:191:17" }
+node: { title: "Panel_draw" label: "Panel_draw\nPanel.h:133:6" shape : ellipse }
+edge: { sourcename: "ScreenManager_run" targetname: "Panel_draw" label: "ScreenManager.c:206:7" }
+edge: { sourcename: "ScreenManager_run" targetname: "wmove" label: "ScreenManager.c:211:7" }
+node: { title: "wvline" label: "wvline\n/usr/include/curses.h:835:28" shape : ellipse }
+edge: { sourcename: "ScreenManager_run" targetname: "wvline" label: "ScreenManager.c:211:7" }
+node: { title: "Panel_getCh" label: "Panel_getCh\nPanel.h:141:5" shape : ellipse }
+edge: { sourcename: "ScreenManager_run" targetname: "Panel_getCh" label: "ScreenManager.c:246:12" }
+node: { title: "getmouse" label: "getmouse\n/usr/include/curses.h:1966:32" shape : ellipse }
+edge: { sourcename: "ScreenManager_run" targetname: "getmouse" label: "ScreenManager.c:253:19" }
+node: { title: "FunctionBar_synthesizeEvent" label: "FunctionBar_synthesizeEvent\nFunctionBar.h:38:5" shape : ellipse }
+edge: { sourcename: "ScreenManager_run" targetname: "FunctionBar_synthesizeEvent" label: "ScreenManager.c:257:24" }
+node: { title: "__indirect_call" label: "Indirect Call Placeholder" shape : ellipse }
+edge: { sourcename: "ScreenManager_run" targetname: "__indirect_call" label: "ScreenManager.c:316:19" }
+edge: { sourcename: "ScreenManager_run" targetname: "ScreenManager_resize" label: "ScreenManager.c:328:10" }
+edge: { sourcename: "ScreenManager_run" targetname: "ScreenManager_resize" label: "ScreenManager.c:345:10" }
+node: { title: "Panel_size" label: "Panel_size\nPanel.h:129:5" shape : ellipse }
+edge: { sourcename: "ScreenManager_run" targetname: "Panel_size" label: "ScreenManager.c:364:14" }
+edge: { sourcename: "ScreenManager_run" targetname: "Panel_size" label: "ScreenManager.c:385:14" }
+edge: { sourcename: "ScreenManager_run" targetname: "ScreenManager_resize" label: "ScreenManager.c:392:10" }
+node: { title: "Panel_onKey" label: "Panel_onKey\nPanel.h:137:6" shape : ellipse }
+edge: { sourcename: "ScreenManager_run" targetname: "Panel_onKey" label: "ScreenManager.c:403:10" }
+edge: { sourcename: "ScreenManager_run" targetname: "Panel_size" label: "ScreenManager.c:364:14" }
+node: { title: "Panel_getSelected" label: "Panel_getSelected\nPanel.h:121:9" shape : ellipse }
+edge: { sourcename: "ScreenManager_run" targetname: "Panel_getSelected" label: "ScreenManager.c:273:60" }
+node: { title: "Panel_setSelected" label: "Panel_setSelected\nPanel.h:131:6" shape : ellipse }
+edge: { sourcename: "ScreenManager_run" targetname: "Panel_setSelected" label: "ScreenManager.c:274:31" }
+edge: { sourcename: "ScreenManager_run" targetname: "Panel_getSelected" label: "ScreenManager.c:275:35" }
+}

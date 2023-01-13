@@ -1,0 +1,88 @@
+graph: { title: "OpenFilesScreen.c"
+node: { title: "OpenFilesScreen_delete" label: "OpenFilesScreen_delete\nOpenFilesScreen.c:85:6\n16 bytes (static)" }
+node: { title: "InfoScreen_done" label: "InfoScreen_done\nInfoScreen.h:44:13" shape : ellipse }
+edge: { sourcename: "OpenFilesScreen_delete" targetname: "InfoScreen_done" label: "OpenFilesScreen.c:86:9" }
+node: { title: "free" label: "free\n/usr/include/stdlib.h:565:13" shape : ellipse }
+edge: { sourcename: "OpenFilesScreen_delete" targetname: "free" label: "OpenFilesScreen.c:86:4" }
+node: { title: "OpenFilesScreen.c:OpenFilesScreen_draw" label: "OpenFilesScreen_draw\nOpenFilesScreen.c:89:13\n32 bytes (static)" }
+node: { title: "Process_getCommand" label: "Process_getCommand\nProcess.h:401:13" shape : ellipse }
+edge: { sourcename: "OpenFilesScreen.c:OpenFilesScreen_draw" targetname: "Process_getCommand" label: "OpenFilesScreen.c:90:4" }
+node: { title: "InfoScreen_drawTitled" label: "InfoScreen_drawTitled\nInfoScreen.h:47:6" shape : ellipse }
+edge: { sourcename: "OpenFilesScreen.c:OpenFilesScreen_draw" targetname: "InfoScreen_drawTitled" label: "OpenFilesScreen.c:90:4" }
+node: { title: "OpenFilesScreen.c:getIndexForType" label: "getIndexForType\nOpenFilesScreen.c:45:15\n16 bytes (static)" }
+node: { title: "abort" label: "abort\n/usr/include/stdlib.h:591:13" shape : ellipse }
+edge: { sourcename: "OpenFilesScreen.c:getIndexForType" targetname: "abort" label: "OpenFilesScreen.c:66:4" }
+node: { title: "OpenFilesScreen.c:OpenFilesScreen_scan" label: "OpenFilesScreen_scan\nOpenFilesScreen.c:242:13\n336 bytes (dynamic)" }
+node: { title: "Panel_getSelectedIndex" label: "Panel_getSelectedIndex\nPanel.h:127:5" shape : ellipse }
+edge: { sourcename: "OpenFilesScreen.c:OpenFilesScreen_scan" targetname: "Panel_getSelectedIndex" label: "OpenFilesScreen.c:244:14" }
+node: { title: "Panel_prune" label: "Panel_prune\nPanel.h:109:6" shape : ellipse }
+edge: { sourcename: "OpenFilesScreen.c:OpenFilesScreen_scan" targetname: "Panel_prune" label: "OpenFilesScreen.c:245:4" }
+node: { title: "xCalloc" label: "xCalloc\nXUtils.h:27:7" shape : ellipse }
+edge: { sourcename: "OpenFilesScreen.c:OpenFilesScreen_scan" targetname: "xCalloc" label: "OpenFilesScreen.c:94:35" }
+node: { title: "pipe" label: "pipe\n/usr/include/unistd.h:417:12" shape : ellipse }
+edge: { sourcename: "OpenFilesScreen.c:OpenFilesScreen_scan" targetname: "pipe" label: "OpenFilesScreen.c:97:8" }
+node: { title: "fork" label: "fork\n/usr/include/unistd.h:756:16" shape : ellipse }
+edge: { sourcename: "OpenFilesScreen.c:OpenFilesScreen_scan" targetname: "fork" label: "OpenFilesScreen.c:102:18" }
+node: { title: "close" label: "close\n/usr/include/unistd.h:353:12" shape : ellipse }
+edge: { sourcename: "OpenFilesScreen.c:OpenFilesScreen_scan" targetname: "close" label: "OpenFilesScreen.c:104:7" }
+edge: { sourcename: "OpenFilesScreen.c:OpenFilesScreen_scan" targetname: "close" label: "OpenFilesScreen.c:105:7" }
+edge: { sourcename: "OpenFilesScreen.c:OpenFilesScreen_scan" targetname: "close" label: "OpenFilesScreen.c:111:7" }
+node: { title: "dup2" label: "dup2\n/usr/include/unistd.h:534:12" shape : ellipse }
+edge: { sourcename: "OpenFilesScreen.c:OpenFilesScreen_scan" targetname: "dup2" label: "OpenFilesScreen.c:112:7" }
+edge: { sourcename: "OpenFilesScreen.c:OpenFilesScreen_scan" targetname: "close" label: "OpenFilesScreen.c:113:7" }
+node: { title: "open" label: "open\n/usr/include/fcntl.h:168:12" shape : ellipse }
+edge: { sourcename: "OpenFilesScreen.c:OpenFilesScreen_scan" targetname: "open" label: "OpenFilesScreen.c:114:20" }
+node: { title: "exit" label: "exit\n/usr/include/stdlib.h:617:13" shape : ellipse }
+edge: { sourcename: "OpenFilesScreen.c:OpenFilesScreen_scan" targetname: "exit" label: "OpenFilesScreen.c:116:10" }
+edge: { sourcename: "OpenFilesScreen.c:OpenFilesScreen_scan" targetname: "dup2" label: "OpenFilesScreen.c:119:7" }
+edge: { sourcename: "OpenFilesScreen.c:OpenFilesScreen_scan" targetname: "close" label: "OpenFilesScreen.c:120:7" }
+node: { title: "xSnprintf" label: "xSnprintf\nXUtils.h:66:5" shape : ellipse }
+edge: { sourcename: "OpenFilesScreen.c:OpenFilesScreen_scan" targetname: "xSnprintf" label: "OpenFilesScreen.c:122:7" }
+node: { title: "execlp" label: "execlp\n/usr/include/unistd.h:584:12" shape : ellipse }
+edge: { sourcename: "OpenFilesScreen.c:OpenFilesScreen_scan" targetname: "execlp" label: "OpenFilesScreen.c:125:7" }
+edge: { sourcename: "OpenFilesScreen.c:OpenFilesScreen_scan" targetname: "exit" label: "OpenFilesScreen.c:126:7" }
+edge: { sourcename: "OpenFilesScreen.c:OpenFilesScreen_scan" targetname: "close" label: "OpenFilesScreen.c:128:4" }
+node: { title: "fdopen" label: "fdopen\n/usr/include/stdio.h:279:14" shape : ellipse }
+edge: { sourcename: "OpenFilesScreen.c:OpenFilesScreen_scan" targetname: "fdopen" label: "OpenFilesScreen.c:134:15" }
+node: { title: "String_readLine" label: "String_readLine\nXUtils.h:57:7" shape : ellipse }
+edge: { sourcename: "OpenFilesScreen.c:OpenFilesScreen_scan" targetname: "String_readLine" label: "OpenFilesScreen.c:140:20" }
+edge: { sourcename: "OpenFilesScreen.c:OpenFilesScreen_scan" targetname: "xCalloc" label: "OpenFilesScreen.c:149:41" }
+edge: { sourcename: "OpenFilesScreen.c:OpenFilesScreen_scan" targetname: "OpenFilesScreen.c:getIndexForType" label: "OpenFilesScreen.c:165:25" }
+node: { title: "free_and_xStrdup" label: "free_and_xStrdup\nXUtils.h:69:6" shape : ellipse }
+edge: { sourcename: "OpenFilesScreen.c:OpenFilesScreen_scan" targetname: "free_and_xStrdup" label: "OpenFilesScreen.c:166:10" }
+edge: { sourcename: "OpenFilesScreen.c:OpenFilesScreen_scan" targetname: "OpenFilesScreen.c:getIndexForType" label: "OpenFilesScreen.c:171:25" }
+edge: { sourcename: "OpenFilesScreen.c:OpenFilesScreen_scan" targetname: "free_and_xStrdup" label: "OpenFilesScreen.c:173:13" }
+edge: { sourcename: "OpenFilesScreen.c:OpenFilesScreen_scan" targetname: "free_and_xStrdup" label: "OpenFilesScreen.c:175:13" }
+edge: { sourcename: "OpenFilesScreen.c:OpenFilesScreen_scan" targetname: "free" label: "OpenFilesScreen.c:198:7" }
+node: { title: "fclose" label: "fclose\n/usr/include/stdio.h:213:12" shape : ellipse }
+edge: { sourcename: "OpenFilesScreen.c:OpenFilesScreen_scan" targetname: "fclose" label: "OpenFilesScreen.c:200:4" }
+node: { title: "__errno_location" label: "__errno_location\n/usr/include/errno.h:37:13" shape : ellipse }
+edge: { sourcename: "OpenFilesScreen.c:OpenFilesScreen_scan" targetname: "__errno_location" label: "OpenFilesScreen.c:204:11" }
+node: { title: "waitpid" label: "waitpid\n/usr/include/aarch64-linux-gnu/sys/wait.h:100:16" shape : ellipse }
+edge: { sourcename: "OpenFilesScreen.c:OpenFilesScreen_scan" targetname: "waitpid" label: "OpenFilesScreen.c:203:11" }
+node: { title: "__xstat" label: "__xstat\n/usr/include/aarch64-linux-gnu/sys/stat.h:397:12" shape : ellipse }
+edge: { sourcename: "OpenFilesScreen.c:OpenFilesScreen_scan" targetname: "__xstat" label: "/usr/include/aarch64-linux-gnu/sys/stat.h:455:10" }
+edge: { sourcename: "OpenFilesScreen.c:OpenFilesScreen_scan" targetname: "xSnprintf" label: "OpenFilesScreen.c:229:10" }
+edge: { sourcename: "OpenFilesScreen.c:OpenFilesScreen_scan" targetname: "free_and_xStrdup" label: "OpenFilesScreen.c:230:10" }
+node: { title: "InfoScreen_addLine" label: "InfoScreen_addLine\nInfoScreen.h:49:6" shape : ellipse }
+edge: { sourcename: "OpenFilesScreen.c:OpenFilesScreen_scan" targetname: "InfoScreen_addLine" label: "OpenFilesScreen.c:248:7" }
+edge: { sourcename: "OpenFilesScreen.c:OpenFilesScreen_scan" targetname: "InfoScreen_addLine" label: "OpenFilesScreen.c:250:7" }
+node: { title: "strlen" label: "strlen\n/usr/include/string.h:385:15" shape : ellipse }
+edge: { sourcename: "OpenFilesScreen.c:OpenFilesScreen_scan" targetname: "strlen" label: "OpenFilesScreen.c:255:24" }
+edge: { sourcename: "OpenFilesScreen.c:OpenFilesScreen_scan" targetname: "xSnprintf" label: "OpenFilesScreen.c:258:10" }
+edge: { sourcename: "OpenFilesScreen.c:OpenFilesScreen_scan" targetname: "InfoScreen_addLine" label: "OpenFilesScreen.c:267:10" }
+edge: { sourcename: "OpenFilesScreen.c:OpenFilesScreen_scan" targetname: "free" label: "OpenFilesScreen.c:239:7" }
+edge: { sourcename: "OpenFilesScreen.c:OpenFilesScreen_scan" targetname: "free" label: "OpenFilesScreen.c:271:10" }
+edge: { sourcename: "OpenFilesScreen.c:OpenFilesScreen_scan" targetname: "free" label: "OpenFilesScreen.c:239:7" }
+edge: { sourcename: "OpenFilesScreen.c:OpenFilesScreen_scan" targetname: "free" label: "OpenFilesScreen.c:275:4" }
+node: { title: "Vector_insertionSort" label: "Vector_insertionSort\nVector.h:44:6" shape : ellipse }
+edge: { sourcename: "OpenFilesScreen.c:OpenFilesScreen_scan" targetname: "Vector_insertionSort" label: "OpenFilesScreen.c:276:4" }
+edge: { sourcename: "OpenFilesScreen.c:OpenFilesScreen_scan" targetname: "Vector_insertionSort" label: "OpenFilesScreen.c:277:4" }
+node: { title: "Panel_setSelected" label: "Panel_setSelected\nPanel.h:131:6" shape : ellipse }
+edge: { sourcename: "OpenFilesScreen.c:OpenFilesScreen_scan" targetname: "Panel_setSelected" label: "OpenFilesScreen.c:278:4" }
+node: { title: "OpenFilesScreen_new" label: "OpenFilesScreen_new\nOpenFilesScreen.c:74:18\n32 bytes (static)" }
+node: { title: "xMalloc" label: "xMalloc\nXUtils.h:23:7" shape : ellipse }
+edge: { sourcename: "OpenFilesScreen_new" targetname: "xMalloc" label: "OpenFilesScreen.c:75:28" }
+node: { title: "InfoScreen_init" label: "InfoScreen_init\nInfoScreen.h:42:13" shape : ellipse }
+edge: { sourcename: "OpenFilesScreen_new" targetname: "InfoScreen_init" label: "OpenFilesScreen.c:82:30" }
+}

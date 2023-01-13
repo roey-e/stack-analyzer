@@ -1,0 +1,105 @@
+graph: { title: "DisplayOptionsPanel.c"
+node: { title: "DisplayOptionsPanel.c:DisplayOptionsPanel_eventHandler" label: "DisplayOptionsPanel_eventHandler\nDisplayOptionsPanel.c:33:22\n32 bytes (static)" }
+node: { title: "Panel_getSelected" label: "Panel_getSelected\nPanel.h:121:9" shape : ellipse }
+edge: { sourcename: "DisplayOptionsPanel.c:DisplayOptionsPanel_eventHandler" targetname: "Panel_getSelected" label: "DisplayOptionsPanel.c:37:41" }
+node: { title: "CheckItem_toggle" label: "CheckItem_toggle\nOptionItem.h:71:6" shape : ellipse }
+edge: { sourcename: "DisplayOptionsPanel.c:DisplayOptionsPanel_eventHandler" targetname: "CheckItem_toggle" label: "DisplayOptionsPanel.c:50:10" }
+node: { title: "NumberItem_toggle" label: "NumberItem_toggle\nOptionItem.h:78:6" shape : ellipse }
+edge: { sourcename: "DisplayOptionsPanel.c:DisplayOptionsPanel_eventHandler" targetname: "NumberItem_toggle" label: "DisplayOptionsPanel.c:54:10" }
+node: { title: "NumberItem_decrease" label: "NumberItem_decrease\nOptionItem.h:76:6" shape : ellipse }
+edge: { sourcename: "DisplayOptionsPanel.c:DisplayOptionsPanel_eventHandler" targetname: "NumberItem_decrease" label: "DisplayOptionsPanel.c:61:10" }
+node: { title: "NumberItem_increase" label: "NumberItem_increase\nOptionItem.h:77:6" shape : ellipse }
+edge: { sourcename: "DisplayOptionsPanel.c:DisplayOptionsPanel_eventHandler" targetname: "NumberItem_increase" label: "DisplayOptionsPanel.c:67:10" }
+node: { title: "Header_calculateHeight" label: "Header_calculateHeight\nHeader.h:46:5" shape : ellipse }
+edge: { sourcename: "DisplayOptionsPanel.c:DisplayOptionsPanel_eventHandler" targetname: "Header_calculateHeight" label: "DisplayOptionsPanel.c:77:7" }
+node: { title: "Header_reinit" label: "Header_reinit\nHeader.h:40:6" shape : ellipse }
+edge: { sourcename: "DisplayOptionsPanel.c:DisplayOptionsPanel_eventHandler" targetname: "Header_reinit" label: "DisplayOptionsPanel.c:78:7" }
+node: { title: "Header_updateData" label: "Header_updateData\nHeader.h:44:6" shape : ellipse }
+edge: { sourcename: "DisplayOptionsPanel.c:DisplayOptionsPanel_eventHandler" targetname: "Header_updateData" label: "DisplayOptionsPanel.c:79:7" }
+node: { title: "Header_draw" label: "Header_draw\nHeader.h:42:6" shape : ellipse }
+edge: { sourcename: "DisplayOptionsPanel.c:DisplayOptionsPanel_eventHandler" targetname: "Header_draw" label: "DisplayOptionsPanel.c:80:7" }
+node: { title: "ScreenManager_resize" label: "ScreenManager_resize\nScreenManager.h:45:6" shape : ellipse }
+edge: { sourcename: "DisplayOptionsPanel.c:DisplayOptionsPanel_eventHandler" targetname: "ScreenManager_resize" label: "DisplayOptionsPanel.c:81:7" }
+node: { title: "DisplayOptionsPanel.c:DisplayOptionsPanel_delete" label: "DisplayOptionsPanel_delete\nDisplayOptionsPanel.c:26:13\n32 bytes (static)" }
+node: { title: "Panel_done" label: "Panel_done\nPanel.h:97:6" shape : ellipse }
+edge: { sourcename: "DisplayOptionsPanel.c:DisplayOptionsPanel_delete" targetname: "Panel_done" label: "DisplayOptionsPanel.c:29:4" }
+node: { title: "free" label: "free\n/usr/include/stdlib.h:565:13" shape : ellipse }
+edge: { sourcename: "DisplayOptionsPanel.c:DisplayOptionsPanel_delete" targetname: "free" label: "DisplayOptionsPanel.c:30:4" }
+node: { title: "DisplayOptionsPanel_new" label: "DisplayOptionsPanel_new\nDisplayOptionsPanel.c:94:22\n96 bytes (static)" }
+node: { title: "xMalloc" label: "xMalloc\nXUtils.h:23:7" shape : ellipse }
+edge: { sourcename: "DisplayOptionsPanel_new" targetname: "xMalloc" label: "DisplayOptionsPanel.c:95:32" }
+node: { title: "FunctionBar_new" label: "FunctionBar_new\nFunctionBar.h:26:14" shape : ellipse }
+edge: { sourcename: "DisplayOptionsPanel_new" targetname: "FunctionBar_new" label: "DisplayOptionsPanel.c:97:25" }
+node: { title: "Panel_init" label: "Panel_init\nPanel.h:95:6" shape : ellipse }
+edge: { sourcename: "DisplayOptionsPanel_new" targetname: "Panel_init" label: "DisplayOptionsPanel.c:98:4" }
+node: { title: "Panel_setHeader" label: "Panel_setHeader\nPanel.h:103:6" shape : ellipse }
+edge: { sourcename: "DisplayOptionsPanel_new" targetname: "Panel_setHeader" label: "DisplayOptionsPanel.c:103:4" }
+node: { title: "strncat" label: "strncat\n/usr/include/string.h:133:14" shape : ellipse }
+edge: { sourcename: "DisplayOptionsPanel_new" targetname: "strncat" label: "DisplayOptionsPanel.c:107:4" }
+node: { title: "TextItem_new" label: "TextItem_new\nOptionItem.h:65:11" shape : ellipse }
+edge: { sourcename: "DisplayOptionsPanel_new" targetname: "TextItem_new" label: "DisplayOptionsPanel.c:108:31" }
+node: { title: "Panel_add" label: "Panel_add\nPanel.h:111:6" shape : ellipse }
+edge: { sourcename: "DisplayOptionsPanel_new" targetname: "Panel_add" label: "DisplayOptionsPanel.c:108:4" }
+node: { title: "CheckItem_newByRef" label: "CheckItem_newByRef\nOptionItem.h:67:12" shape : ellipse }
+edge: { sourcename: "DisplayOptionsPanel_new" targetname: "CheckItem_newByRef" label: "DisplayOptionsPanel.c:111:31" }
+edge: { sourcename: "DisplayOptionsPanel_new" targetname: "Panel_add" label: "DisplayOptionsPanel.c:111:4" }
+edge: { sourcename: "DisplayOptionsPanel_new" targetname: "CheckItem_newByRef" label: "DisplayOptionsPanel.c:112:31" }
+edge: { sourcename: "DisplayOptionsPanel_new" targetname: "Panel_add" label: "DisplayOptionsPanel.c:112:4" }
+edge: { sourcename: "DisplayOptionsPanel_new" targetname: "CheckItem_newByRef" label: "DisplayOptionsPanel.c:113:31" }
+edge: { sourcename: "DisplayOptionsPanel_new" targetname: "Panel_add" label: "DisplayOptionsPanel.c:113:4" }
+edge: { sourcename: "DisplayOptionsPanel_new" targetname: "TextItem_new" label: "DisplayOptionsPanel.c:114:31" }
+edge: { sourcename: "DisplayOptionsPanel_new" targetname: "Panel_add" label: "DisplayOptionsPanel.c:114:4" }
+edge: { sourcename: "DisplayOptionsPanel_new" targetname: "CheckItem_newByRef" label: "DisplayOptionsPanel.c:115:31" }
+edge: { sourcename: "DisplayOptionsPanel_new" targetname: "Panel_add" label: "DisplayOptionsPanel.c:115:4" }
+edge: { sourcename: "DisplayOptionsPanel_new" targetname: "CheckItem_newByRef" label: "DisplayOptionsPanel.c:116:31" }
+edge: { sourcename: "DisplayOptionsPanel_new" targetname: "Panel_add" label: "DisplayOptionsPanel.c:116:4" }
+edge: { sourcename: "DisplayOptionsPanel_new" targetname: "CheckItem_newByRef" label: "DisplayOptionsPanel.c:117:31" }
+edge: { sourcename: "DisplayOptionsPanel_new" targetname: "Panel_add" label: "DisplayOptionsPanel.c:117:4" }
+edge: { sourcename: "DisplayOptionsPanel_new" targetname: "CheckItem_newByRef" label: "DisplayOptionsPanel.c:118:31" }
+edge: { sourcename: "DisplayOptionsPanel_new" targetname: "Panel_add" label: "DisplayOptionsPanel.c:118:4" }
+edge: { sourcename: "DisplayOptionsPanel_new" targetname: "CheckItem_newByRef" label: "DisplayOptionsPanel.c:119:31" }
+edge: { sourcename: "DisplayOptionsPanel_new" targetname: "Panel_add" label: "DisplayOptionsPanel.c:119:4" }
+edge: { sourcename: "DisplayOptionsPanel_new" targetname: "CheckItem_newByRef" label: "DisplayOptionsPanel.c:120:31" }
+edge: { sourcename: "DisplayOptionsPanel_new" targetname: "Panel_add" label: "DisplayOptionsPanel.c:120:4" }
+edge: { sourcename: "DisplayOptionsPanel_new" targetname: "CheckItem_newByRef" label: "DisplayOptionsPanel.c:121:31" }
+edge: { sourcename: "DisplayOptionsPanel_new" targetname: "Panel_add" label: "DisplayOptionsPanel.c:121:4" }
+edge: { sourcename: "DisplayOptionsPanel_new" targetname: "CheckItem_newByRef" label: "DisplayOptionsPanel.c:122:31" }
+edge: { sourcename: "DisplayOptionsPanel_new" targetname: "Panel_add" label: "DisplayOptionsPanel.c:122:4" }
+edge: { sourcename: "DisplayOptionsPanel_new" targetname: "CheckItem_newByRef" label: "DisplayOptionsPanel.c:123:31" }
+edge: { sourcename: "DisplayOptionsPanel_new" targetname: "Panel_add" label: "DisplayOptionsPanel.c:123:4" }
+edge: { sourcename: "DisplayOptionsPanel_new" targetname: "CheckItem_newByRef" label: "DisplayOptionsPanel.c:124:31" }
+edge: { sourcename: "DisplayOptionsPanel_new" targetname: "Panel_add" label: "DisplayOptionsPanel.c:124:4" }
+edge: { sourcename: "DisplayOptionsPanel_new" targetname: "CheckItem_newByRef" label: "DisplayOptionsPanel.c:125:31" }
+edge: { sourcename: "DisplayOptionsPanel_new" targetname: "Panel_add" label: "DisplayOptionsPanel.c:125:4" }
+edge: { sourcename: "DisplayOptionsPanel_new" targetname: "CheckItem_newByRef" label: "DisplayOptionsPanel.c:126:31" }
+edge: { sourcename: "DisplayOptionsPanel_new" targetname: "Panel_add" label: "DisplayOptionsPanel.c:126:4" }
+edge: { sourcename: "DisplayOptionsPanel_new" targetname: "CheckItem_newByRef" label: "DisplayOptionsPanel.c:127:31" }
+edge: { sourcename: "DisplayOptionsPanel_new" targetname: "Panel_add" label: "DisplayOptionsPanel.c:127:4" }
+edge: { sourcename: "DisplayOptionsPanel_new" targetname: "CheckItem_newByRef" label: "DisplayOptionsPanel.c:128:31" }
+edge: { sourcename: "DisplayOptionsPanel_new" targetname: "Panel_add" label: "DisplayOptionsPanel.c:128:4" }
+edge: { sourcename: "DisplayOptionsPanel_new" targetname: "CheckItem_newByRef" label: "DisplayOptionsPanel.c:129:31" }
+edge: { sourcename: "DisplayOptionsPanel_new" targetname: "Panel_add" label: "DisplayOptionsPanel.c:129:4" }
+edge: { sourcename: "DisplayOptionsPanel_new" targetname: "CheckItem_newByRef" label: "DisplayOptionsPanel.c:130:31" }
+edge: { sourcename: "DisplayOptionsPanel_new" targetname: "Panel_add" label: "DisplayOptionsPanel.c:130:4" }
+edge: { sourcename: "DisplayOptionsPanel_new" targetname: "CheckItem_newByRef" label: "DisplayOptionsPanel.c:131:31" }
+edge: { sourcename: "DisplayOptionsPanel_new" targetname: "Panel_add" label: "DisplayOptionsPanel.c:131:4" }
+edge: { sourcename: "DisplayOptionsPanel_new" targetname: "CheckItem_newByRef" label: "DisplayOptionsPanel.c:132:31" }
+edge: { sourcename: "DisplayOptionsPanel_new" targetname: "Panel_add" label: "DisplayOptionsPanel.c:132:4" }
+edge: { sourcename: "DisplayOptionsPanel_new" targetname: "CheckItem_newByRef" label: "DisplayOptionsPanel.c:133:31" }
+edge: { sourcename: "DisplayOptionsPanel_new" targetname: "Panel_add" label: "DisplayOptionsPanel.c:133:4" }
+edge: { sourcename: "DisplayOptionsPanel_new" targetname: "CheckItem_newByRef" label: "DisplayOptionsPanel.c:134:31" }
+edge: { sourcename: "DisplayOptionsPanel_new" targetname: "Panel_add" label: "DisplayOptionsPanel.c:134:4" }
+edge: { sourcename: "DisplayOptionsPanel_new" targetname: "CheckItem_newByRef" label: "DisplayOptionsPanel.c:135:31" }
+edge: { sourcename: "DisplayOptionsPanel_new" targetname: "Panel_add" label: "DisplayOptionsPanel.c:135:4" }
+edge: { sourcename: "DisplayOptionsPanel_new" targetname: "CheckItem_newByRef" label: "DisplayOptionsPanel.c:149:31" }
+edge: { sourcename: "DisplayOptionsPanel_new" targetname: "Panel_add" label: "DisplayOptionsPanel.c:149:4" }
+node: { title: "NumberItem_newByRef" label: "NumberItem_newByRef\nOptionItem.h:73:13" shape : ellipse }
+edge: { sourcename: "DisplayOptionsPanel_new" targetname: "NumberItem_newByRef" label: "DisplayOptionsPanel.c:151:31" }
+edge: { sourcename: "DisplayOptionsPanel_new" targetname: "Panel_add" label: "DisplayOptionsPanel.c:151:4" }
+edge: { sourcename: "DisplayOptionsPanel_new" targetname: "CheckItem_newByRef" label: "DisplayOptionsPanel.c:152:31" }
+edge: { sourcename: "DisplayOptionsPanel_new" targetname: "Panel_add" label: "DisplayOptionsPanel.c:152:4" }
+edge: { sourcename: "DisplayOptionsPanel_new" targetname: "NumberItem_newByRef" label: "DisplayOptionsPanel.c:153:31" }
+edge: { sourcename: "DisplayOptionsPanel_new" targetname: "Panel_add" label: "DisplayOptionsPanel.c:153:4" }
+edge: { sourcename: "DisplayOptionsPanel_new" targetname: "NumberItem_newByRef" label: "DisplayOptionsPanel.c:154:31" }
+edge: { sourcename: "DisplayOptionsPanel_new" targetname: "Panel_add" label: "DisplayOptionsPanel.c:154:4" }
+}

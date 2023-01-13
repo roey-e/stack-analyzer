@@ -1,0 +1,294 @@
+graph: { title: "Process.c"
+node: { title: "Process_display" label: "Process_display\nProcess.c:967:6\n48 bytes (static)" }
+node: { title: "__indirect_call" label: "Indirect Call Placeholder" shape : ellipse }
+edge: { sourcename: "Process_display" targetname: "__indirect_call" label: "Process.c:971:7" }
+node: { title: "RichString_setAttr" label: "RichString_setAttr\nRichString.h:58:6" shape : ellipse }
+edge: { sourcename: "Process_display" targetname: "RichString_setAttr" label: "Process.c:974:7" }
+edge: { sourcename: "Process_display" targetname: "RichString_setAttr" label: "Process.c:978:7" }
+node: { title: "Process_setupColumnWidths" label: "Process_setupColumnWidths\nProcess.c:47:6\n16 bytes (static)" }
+node: { title: "Platform_getMaxPid" label: "Platform_getMaxPid\n./linux/Platform.h:62:5" shape : ellipse }
+edge: { sourcename: "Process_setupColumnWidths" targetname: "Platform_getMaxPid" label: "Process.c:48:17" }
+node: { title: "log10" label: "log10\n/usr/include/aarch64-linux-gnu/bits/mathcalls.h:107:1" shape : ellipse }
+edge: { sourcename: "Process_setupColumnWidths" targetname: "log10" label: "Process.c:57:29" }
+node: { title: "Process_setUidColumnWidth" label: "Process_setUidColumnWidth\nProcess.c:61:6\n16 bytes (static)" }
+edge: { sourcename: "Process_setUidColumnWidth" targetname: "log10" label: "Process.c:67:29" }
+node: { title: "Process_printBytes" label: "Process_printBytes\nProcess.c:71:6\n96 bytes (static)" }
+node: { title: "RichString_appendAscii" label: "RichString_appendAscii\nRichString.h:73:5" shape : ellipse }
+edge: { sourcename: "Process_printBytes" targetname: "RichString_appendAscii" label: "Process.c:83:7" }
+node: { title: "xSnprintf" label: "xSnprintf\nXUtils.h:66:5" shape : ellipse }
+edge: { sourcename: "Process_printBytes" targetname: "xSnprintf" label: "Process.c:91:13" }
+node: { title: "RichString_appendnAscii" label: "RichString_appendnAscii\nRichString.h:75:5" shape : ellipse }
+edge: { sourcename: "Process_printBytes" targetname: "RichString_appendnAscii" label: "Process.c:92:7" }
+edge: { sourcename: "Process_printBytes" targetname: "xSnprintf" label: "Process.c:95:13" }
+edge: { sourcename: "Process_printBytes" targetname: "RichString_appendnAscii" label: "Process.c:96:7" }
+edge: { sourcename: "Process_printBytes" targetname: "xSnprintf" label: "Process.c:98:13" }
+edge: { sourcename: "Process_printBytes" targetname: "RichString_appendnAscii" label: "Process.c:99:7" }
+edge: { sourcename: "Process_printBytes" targetname: "xSnprintf" label: "Process.c:103:13" }
+edge: { sourcename: "Process_printBytes" targetname: "RichString_appendnAscii" label: "Process.c:104:7" }
+edge: { sourcename: "Process_printBytes" targetname: "xSnprintf" label: "Process.c:108:13" }
+edge: { sourcename: "Process_printBytes" targetname: "RichString_appendnAscii" label: "Process.c:109:7" }
+edge: { sourcename: "Process_printBytes" targetname: "xSnprintf" label: "Process.c:111:13" }
+edge: { sourcename: "Process_printBytes" targetname: "RichString_appendnAscii" label: "Process.c:112:7" }
+edge: { sourcename: "Process_printBytes" targetname: "xSnprintf" label: "Process.c:116:13" }
+edge: { sourcename: "Process_printBytes" targetname: "RichString_appendnAscii" label: "Process.c:117:7" }
+edge: { sourcename: "Process_printBytes" targetname: "xSnprintf" label: "Process.c:119:13" }
+edge: { sourcename: "Process_printBytes" targetname: "RichString_appendnAscii" label: "Process.c:120:7" }
+edge: { sourcename: "Process_printBytes" targetname: "RichString_appendAscii" label: "Process.c:121:7" }
+edge: { sourcename: "Process_printBytes" targetname: "xSnprintf" label: "Process.c:125:13" }
+edge: { sourcename: "Process_printBytes" targetname: "RichString_appendnAscii" label: "Process.c:126:7" }
+edge: { sourcename: "Process_printBytes" targetname: "xSnprintf" label: "Process.c:130:13" }
+edge: { sourcename: "Process_printBytes" targetname: "RichString_appendnAscii" label: "Process.c:131:7" }
+edge: { sourcename: "Process_printBytes" targetname: "xSnprintf" label: "Process.c:133:13" }
+edge: { sourcename: "Process_printBytes" targetname: "RichString_appendnAscii" label: "Process.c:134:7" }
+edge: { sourcename: "Process_printBytes" targetname: "xSnprintf" label: "Process.c:138:13" }
+edge: { sourcename: "Process_printBytes" targetname: "RichString_appendnAscii" label: "Process.c:139:7" }
+edge: { sourcename: "Process_printBytes" targetname: "xSnprintf" label: "Process.c:141:13" }
+edge: { sourcename: "Process_printBytes" targetname: "RichString_appendnAscii" label: "Process.c:142:7" }
+edge: { sourcename: "Process_printBytes" targetname: "RichString_appendAscii" label: "Process.c:143:7" }
+edge: { sourcename: "Process_printBytes" targetname: "xSnprintf" label: "Process.c:147:13" }
+edge: { sourcename: "Process_printBytes" targetname: "RichString_appendnAscii" label: "Process.c:148:7" }
+edge: { sourcename: "Process_printBytes" targetname: "xSnprintf" label: "Process.c:151:13" }
+edge: { sourcename: "Process_printBytes" targetname: "RichString_appendnAscii" label: "Process.c:152:7" }
+node: { title: "Process_printKBytes" label: "Process_printKBytes\nProcess.c:156:6\n0 bytes (static)" }
+edge: { sourcename: "Process_printKBytes" targetname: "Process_printBytes" label: "Process.c:158:7" }
+edge: { sourcename: "Process_printKBytes" targetname: "Process_printBytes" label: "Process.c:160:7" }
+node: { title: "Process_printCount" label: "Process_printCount\nProcess.c:163:6\n80 bytes (static)" }
+edge: { sourcename: "Process_printCount" targetname: "RichString_appendAscii" label: "Process.c:172:7" }
+edge: { sourcename: "Process_printCount" targetname: "xSnprintf" label: "Process.c:174:7" }
+edge: { sourcename: "Process_printCount" targetname: "RichString_appendnAscii" label: "Process.c:175:7" }
+edge: { sourcename: "Process_printCount" targetname: "xSnprintf" label: "Process.c:177:7" }
+edge: { sourcename: "Process_printCount" targetname: "RichString_appendnAscii" label: "Process.c:178:7" }
+edge: { sourcename: "Process_printCount" targetname: "RichString_appendnAscii" label: "Process.c:179:7" }
+edge: { sourcename: "Process_printCount" targetname: "xSnprintf" label: "Process.c:181:7" }
+edge: { sourcename: "Process_printCount" targetname: "RichString_appendnAscii" label: "Process.c:182:7" }
+edge: { sourcename: "Process_printCount" targetname: "RichString_appendnAscii" label: "Process.c:183:7" }
+edge: { sourcename: "Process_printCount" targetname: "RichString_appendnAscii" label: "Process.c:184:7" }
+edge: { sourcename: "Process_printCount" targetname: "xSnprintf" label: "Process.c:186:7" }
+edge: { sourcename: "Process_printCount" targetname: "RichString_appendnAscii" label: "Process.c:187:7" }
+edge: { sourcename: "Process_printCount" targetname: "RichString_appendnAscii" label: "Process.c:188:7" }
+edge: { sourcename: "Process_printCount" targetname: "RichString_appendnAscii" label: "Process.c:189:7" }
+edge: { sourcename: "Process_printCount" targetname: "RichString_appendnAscii" label: "Process.c:190:7" }
+node: { title: "Process_printTime" label: "Process_printTime\nProcess.c:194:6\n80 bytes (static)" }
+edge: { sourcename: "Process_printTime" targetname: "RichString_appendnAscii" label: "Process.c:215:10" }
+edge: { sourcename: "Process_printTime" targetname: "xSnprintf" label: "Process.c:217:16" }
+edge: { sourcename: "Process_printTime" targetname: "RichString_appendnAscii" label: "Process.c:218:10" }
+edge: { sourcename: "Process_printTime" targetname: "xSnprintf" label: "Process.c:220:16" }
+edge: { sourcename: "Process_printTime" targetname: "RichString_appendnAscii" label: "Process.c:221:10" }
+edge: { sourcename: "Process_printTime" targetname: "xSnprintf" label: "Process.c:222:16" }
+edge: { sourcename: "Process_printTime" targetname: "RichString_appendnAscii" label: "Process.c:223:10" }
+edge: { sourcename: "Process_printTime" targetname: "xSnprintf" label: "Process.c:225:16" }
+edge: { sourcename: "Process_printTime" targetname: "RichString_appendnAscii" label: "Process.c:226:10" }
+edge: { sourcename: "Process_printTime" targetname: "xSnprintf" label: "Process.c:227:16" }
+edge: { sourcename: "Process_printTime" targetname: "RichString_appendnAscii" label: "Process.c:228:10" }
+edge: { sourcename: "Process_printTime" targetname: "xSnprintf" label: "Process.c:230:16" }
+edge: { sourcename: "Process_printTime" targetname: "RichString_appendnAscii" label: "Process.c:231:10" }
+edge: { sourcename: "Process_printTime" targetname: "xSnprintf" label: "Process.c:232:16" }
+edge: { sourcename: "Process_printTime" targetname: "RichString_appendnAscii" label: "Process.c:233:10" }
+edge: { sourcename: "Process_printTime" targetname: "xSnprintf" label: "Process.c:239:16" }
+edge: { sourcename: "Process_printTime" targetname: "RichString_appendnAscii" label: "Process.c:240:10" }
+edge: { sourcename: "Process_printTime" targetname: "xSnprintf" label: "Process.c:241:16" }
+edge: { sourcename: "Process_printTime" targetname: "RichString_appendnAscii" label: "Process.c:242:10" }
+edge: { sourcename: "Process_printTime" targetname: "xSnprintf" label: "Process.c:244:16" }
+edge: { sourcename: "Process_printTime" targetname: "RichString_appendnAscii" label: "Process.c:245:10" }
+edge: { sourcename: "Process_printTime" targetname: "xSnprintf" label: "Process.c:246:16" }
+edge: { sourcename: "Process_printTime" targetname: "RichString_appendnAscii" label: "Process.c:247:10" }
+edge: { sourcename: "Process_printTime" targetname: "xSnprintf" label: "Process.c:253:16" }
+edge: { sourcename: "Process_printTime" targetname: "RichString_appendnAscii" label: "Process.c:254:10" }
+edge: { sourcename: "Process_printTime" targetname: "xSnprintf" label: "Process.c:255:16" }
+edge: { sourcename: "Process_printTime" targetname: "RichString_appendnAscii" label: "Process.c:256:10" }
+edge: { sourcename: "Process_printTime" targetname: "xSnprintf" label: "Process.c:258:16" }
+edge: { sourcename: "Process_printTime" targetname: "RichString_appendnAscii" label: "Process.c:259:10" }
+edge: { sourcename: "Process_printTime" targetname: "xSnprintf" label: "Process.c:260:16" }
+edge: { sourcename: "Process_printTime" targetname: "RichString_appendnAscii" label: "Process.c:261:10" }
+edge: { sourcename: "Process_printTime" targetname: "xSnprintf" label: "Process.c:264:13" }
+edge: { sourcename: "Process_printTime" targetname: "RichString_appendnAscii" label: "Process.c:265:7" }
+edge: { sourcename: "Process_printTime" targetname: "xSnprintf" label: "Process.c:266:13" }
+edge: { sourcename: "Process_printTime" targetname: "RichString_appendnAscii" label: "Process.c:267:7" }
+edge: { sourcename: "Process_printTime" targetname: "xSnprintf" label: "Process.c:269:13" }
+edge: { sourcename: "Process_printTime" targetname: "RichString_appendnAscii" label: "Process.c:270:7" }
+node: { title: "Process_fillStarttimeBuffer" label: "Process_fillStarttimeBuffer\nProcess.c:274:6\n112 bytes (static)" }
+node: { title: "localtime_r" label: "localtime_r\n/usr/include/time.h:133:19" shape : ellipse }
+edge: { sourcename: "Process_fillStarttimeBuffer" targetname: "localtime_r" label: "Process.c:276:11" }
+node: { title: "time" label: "time\n/usr/include/time.h:75:15" shape : ellipse }
+edge: { sourcename: "Process_fillStarttimeBuffer" targetname: "time" label: "Process.c:277:95" }
+node: { title: "strftime" label: "strftime\n/usr/include/time.h:88:15" shape : ellipse }
+edge: { sourcename: "Process_fillStarttimeBuffer" targetname: "strftime" label: "Process.c:277:4" }
+node: { title: "Process_makeCommandStr" label: "Process_makeCommandStr\nProcess.c:407:6\n240 bytes (static)" }
+node: { title: "strlen" label: "strlen\n/usr/include/string.h:385:15" shape : ellipse }
+edge: { sourcename: "Process_makeCommandStr" targetname: "strlen" label: "Process.c:438:30" }
+edge: { sourcename: "Process_makeCommandStr" targetname: "strlen" label: "Process.c:442:30" }
+edge: { sourcename: "Process_makeCommandStr" targetname: "strlen" label: "Process.c:443:31" }
+edge: { sourcename: "Process_makeCommandStr" targetname: "strlen" label: "Process.c:444:30" }
+node: { title: "free" label: "free\n/usr/include/stdlib.h:565:13" shape : ellipse }
+edge: { sourcename: "Process_makeCommandStr" targetname: "free" label: "Process.c:446:4" }
+node: { title: "xCalloc" label: "xCalloc\nXUtils.h:27:7" shape : ellipse }
+edge: { sourcename: "Process_makeCommandStr" targetname: "xCalloc" label: "Process.c:447:14" }
+edge: { sourcename: "Process_makeCommandStr" targetname: "strlen" label: "Process.c:502:64" }
+node: { title: "strncmp" label: "strncmp\n/usr/include/string.h:140:12" shape : ellipse }
+edge: { sourcename: "Process_makeCommandStr" targetname: "strncmp" label: "Process.c:502:14" }
+node: { title: "stpcpy" label: "stpcpy\n/usr/include/string.h:452:14" shape : ellipse }
+edge: { sourcename: "Process_makeCommandStr" targetname: "stpcpy" label: "Process.c:504:19" }
+edge: { sourcename: "Process_makeCommandStr" targetname: "stpcpy" label: "Process.c:509:13" }
+edge: { sourcename: "Process_makeCommandStr" targetname: "strlen" label: "Process.c:526:17" }
+edge: { sourcename: "Process_makeCommandStr" targetname: "strncmp" label: "Process.c:535:23" }
+edge: { sourcename: "Process_makeCommandStr" targetname: "stpcpy" label: "Process.c:547:13" }
+edge: { sourcename: "Process_makeCommandStr" targetname: "stpcpy" label: "Process.c:556:13" }
+edge: { sourcename: "Process_makeCommandStr" targetname: "strlen" label: "Process.c:299:27" }
+edge: { sourcename: "Process_makeCommandStr" targetname: "strncmp" label: "Process.c:313:11" }
+edge: { sourcename: "Process_makeCommandStr" targetname: "strncmp" label: "Process.c:335:11" }
+edge: { sourcename: "Process_makeCommandStr" targetname: "strncmp" label: "Process.c:361:11" }
+edge: { sourcename: "Process_makeCommandStr" targetname: "stpcpy" label: "Process.c:574:7" }
+edge: { sourcename: "Process_makeCommandStr" targetname: "strlen" label: "Process.c:575:7" }
+edge: { sourcename: "Process_makeCommandStr" targetname: "stpcpy" label: "Process.c:576:13" }
+edge: { sourcename: "Process_makeCommandStr" targetname: "stpcpy" label: "Process.c:594:7" }
+edge: { sourcename: "Process_makeCommandStr" targetname: "stpcpy" label: "Process.c:594:7" }
+node: { title: "Process_writeCommand" label: "Process_writeCommand\nProcess.c:608:6\n80 bytes (static)" }
+node: { title: "RichString_appendWide" label: "RichString_appendWide\nRichString.h:64:5" shape : ellipse }
+edge: { sourcename: "Process_writeCommand" targetname: "RichString_appendWide" label: "Process.c:643:7" }
+node: { title: "RichString_setAttrn" label: "RichString_setAttrn\nRichString.h:54:6" shape : ellipse }
+edge: { sourcename: "Process_writeCommand" targetname: "RichString_setAttrn" label: "Process.c:646:10" }
+edge: { sourcename: "Process_writeCommand" targetname: "RichString_appendWide" label: "Process.c:652:4" }
+edge: { sourcename: "Process_writeCommand" targetname: "RichString_setAttrn" label: "Process.c:672:7" }
+node: { title: "Process_printRate" label: "Process_printRate\nProcess.c:676:6\n80 bytes (static)" }
+edge: { sourcename: "Process_printRate" targetname: "RichString_appendAscii" label: "Process.c:690:7" }
+node: { title: "snprintf" label: "snprintf\n/usr/include/stdio.h:354:12" shape : ellipse }
+edge: { sourcename: "Process_printRate" targetname: "snprintf" label: "Process.c:692:17" }
+edge: { sourcename: "Process_printRate" targetname: "RichString_appendnAscii" label: "Process.c:693:7" }
+edge: { sourcename: "Process_printRate" targetname: "snprintf" label: "Process.c:695:17" }
+edge: { sourcename: "Process_printRate" targetname: "RichString_appendnAscii" label: "Process.c:696:7" }
+edge: { sourcename: "Process_printRate" targetname: "snprintf" label: "Process.c:698:17" }
+edge: { sourcename: "Process_printRate" targetname: "RichString_appendnAscii" label: "Process.c:699:7" }
+edge: { sourcename: "Process_printRate" targetname: "snprintf" label: "Process.c:701:17" }
+edge: { sourcename: "Process_printRate" targetname: "RichString_appendnAscii" label: "Process.c:702:7" }
+edge: { sourcename: "Process_printRate" targetname: "snprintf" label: "Process.c:704:17" }
+edge: { sourcename: "Process_printRate" targetname: "RichString_appendnAscii" label: "Process.c:705:7" }
+edge: { sourcename: "Process_printRate" targetname: "snprintf" label: "Process.c:707:17" }
+edge: { sourcename: "Process_printRate" targetname: "RichString_appendnAscii" label: "Process.c:708:7" }
+edge: { sourcename: "Process_printRate" targetname: "snprintf" label: "Process.c:710:17" }
+edge: { sourcename: "Process_printRate" targetname: "RichString_appendnAscii" label: "Process.c:711:7" }
+node: { title: "Process_printLeftAlignedField" label: "Process_printLeftAlignedField\nProcess.c:715:6\n64 bytes (static)" }
+edge: { sourcename: "Process_printLeftAlignedField" targetname: "strlen" label: "Process.c:717:54" }
+node: { title: "RichString_appendnWideColumns" label: "RichString_appendnWideColumns\nRichString.h:69:5" shape : ellipse }
+edge: { sourcename: "Process_printLeftAlignedField" targetname: "RichString_appendnWideColumns" label: "Process.c:717:4" }
+node: { title: "RichString_appendChr" label: "RichString_appendChr\nRichString.h:60:6" shape : ellipse }
+edge: { sourcename: "Process_printLeftAlignedField" targetname: "RichString_appendChr" label: "Process.c:718:4" }
+node: { title: "Process_printPercentage" label: "Process_printPercentage\nProcess.c:721:6\n0 bytes (static)" }
+edge: { sourcename: "Process_printPercentage" targetname: "xSnprintf" label: "Process.c:736:7" }
+edge: { sourcename: "Process_printPercentage" targetname: "xSnprintf" label: "Process.c:739:7" }
+node: { title: "Process_writeField" label: "Process_writeField\nProcess.c:765:6\n384 bytes (static)" }
+edge: { sourcename: "Process_writeField" targetname: "Process_writeCommand" label: "Process.c:780:10" }
+edge: { sourcename: "Process_writeField" targetname: "xSnprintf" label: "Process.c:790:19" }
+edge: { sourcename: "Process_writeField" targetname: "xSnprintf" label: "Process.c:792:19" }
+edge: { sourcename: "Process_writeField" targetname: "xSnprintf" label: "Process.c:804:7" }
+edge: { sourcename: "Process_writeField" targetname: "RichString_appendWide" label: "Process.c:805:7" }
+edge: { sourcename: "Process_writeField" targetname: "Process_writeCommand" label: "Process.c:806:7" }
+edge: { sourcename: "Process_writeField" targetname: "strlen" label: "Process.c:717:54" }
+edge: { sourcename: "Process_writeField" targetname: "RichString_appendnWideColumns" label: "Process.c:717:4" }
+edge: { sourcename: "Process_writeField" targetname: "RichString_appendChr" label: "Process.c:718:4" }
+edge: { sourcename: "Process_writeField" targetname: "strlen" label: "Process.c:717:54" }
+edge: { sourcename: "Process_writeField" targetname: "RichString_appendnWideColumns" label: "Process.c:717:4" }
+edge: { sourcename: "Process_writeField" targetname: "RichString_appendChr" label: "Process.c:718:4" }
+edge: { sourcename: "Process_writeField" targetname: "strncmp" label: "XUtils.h:40:11" }
+node: { title: "strstr" label: "strstr\n/usr/include/string.h:330:14" shape : ellipse }
+edge: { sourcename: "Process_writeField" targetname: "strstr" label: "Process.c:846:64" }
+edge: { sourcename: "Process_writeField" targetname: "strlen" label: "Process.c:717:54" }
+edge: { sourcename: "Process_writeField" targetname: "RichString_appendnWideColumns" label: "Process.c:717:4" }
+edge: { sourcename: "Process_writeField" targetname: "RichString_appendChr" label: "Process.c:718:4" }
+edge: { sourcename: "Process_writeField" targetname: "Process_printTime" label: "Process.c:861:7" }
+edge: { sourcename: "Process_writeField" targetname: "Process_printCount" label: "Process.c:864:17" }
+edge: { sourcename: "Process_writeField" targetname: "Process_printCount" label: "Process.c:865:17" }
+edge: { sourcename: "Process_writeField" targetname: "Process_printBytes" label: "Process.c:158:7" }
+edge: { sourcename: "Process_writeField" targetname: "Process_printBytes" label: "Process.c:160:7" }
+edge: { sourcename: "Process_writeField" targetname: "Process_printBytes" label: "Process.c:158:7" }
+edge: { sourcename: "Process_writeField" targetname: "Process_printBytes" label: "Process.c:160:7" }
+edge: { sourcename: "Process_writeField" targetname: "xSnprintf" label: "Process.c:869:7" }
+edge: { sourcename: "Process_writeField" targetname: "xSnprintf" label: "Process.c:878:7" }
+edge: { sourcename: "Process_writeField" targetname: "Process_printPercentage" label: "Process.c:880:22" }
+edge: { sourcename: "Process_writeField" targetname: "Process_printPercentage" label: "Process.c:883:7" }
+edge: { sourcename: "Process_writeField" targetname: "Process_printPercentage" label: "Process.c:886:22" }
+edge: { sourcename: "Process_writeField" targetname: "xSnprintf" label: "Process.c:887:15" }
+edge: { sourcename: "Process_writeField" targetname: "xSnprintf" label: "Process.c:888:14" }
+edge: { sourcename: "Process_writeField" targetname: "xSnprintf" label: "Process.c:889:15" }
+edge: { sourcename: "Process_writeField" targetname: "xSnprintf" label: "Process.c:892:10" }
+edge: { sourcename: "Process_writeField" targetname: "xSnprintf" label: "Process.c:894:10" }
+edge: { sourcename: "Process_writeField" targetname: "xSnprintf" label: "Process.c:896:20" }
+edge: { sourcename: "Process_writeField" targetname: "xSnprintf" label: "Process.c:897:18" }
+edge: { sourcename: "Process_writeField" targetname: "xSnprintf" label: "Process.c:898:20" }
+edge: { sourcename: "Process_writeField" targetname: "xSnprintf" label: "Process.c:900:7" }
+edge: { sourcename: "Process_writeField" targetname: "xSnprintf" label: "Process.c:928:17" }
+edge: { sourcename: "Process_writeField" targetname: "Process_printTime" label: "Process.c:929:15" }
+edge: { sourcename: "Process_writeField" targetname: "xSnprintf" label: "Process.c:934:7" }
+edge: { sourcename: "Process_writeField" targetname: "xSnprintf" label: "Process.c:936:16" }
+edge: { sourcename: "Process_writeField" targetname: "xSnprintf" label: "Process.c:940:10" }
+edge: { sourcename: "Process_writeField" targetname: "strncmp" label: "XUtils.h:40:11" }
+edge: { sourcename: "Process_writeField" targetname: "xSnprintf" label: "Process.c:943:10" }
+edge: { sourcename: "Process_writeField" targetname: "strlen" label: "Process.c:717:54" }
+edge: { sourcename: "Process_writeField" targetname: "RichString_appendnWideColumns" label: "Process.c:717:4" }
+edge: { sourcename: "Process_writeField" targetname: "RichString_appendChr" label: "Process.c:718:4" }
+edge: { sourcename: "Process_writeField" targetname: "xSnprintf" label: "Process.c:955:7" }
+node: { title: "DynamicColumn_writeField" label: "DynamicColumn_writeField\nDynamicColumn.h:32:6" shape : ellipse }
+edge: { sourcename: "Process_writeField" targetname: "DynamicColumn_writeField" label: "Process.c:958:11" }
+edge: { sourcename: "Process_writeField" targetname: "xSnprintf" label: "Process.c:961:7" }
+edge: { sourcename: "Process_writeField" targetname: "RichString_appendAscii" label: "Process.c:964:4" }
+node: { title: "Process_done" label: "Process_done\nProcess.c:992:6\n32 bytes (static)" }
+edge: { sourcename: "Process_done" targetname: "free" label: "Process.c:994:4" }
+edge: { sourcename: "Process_done" targetname: "free" label: "Process.c:995:4" }
+edge: { sourcename: "Process_done" targetname: "free" label: "Process.c:996:4" }
+edge: { sourcename: "Process_done" targetname: "free" label: "Process.c:997:4" }
+edge: { sourcename: "Process_done" targetname: "free" label: "Process.c:998:4" }
+edge: { sourcename: "Process_done" targetname: "free" label: "Process.c:999:4" }
+node: { title: "Process_getCommand" label: "Process_getCommand\nProcess.c:1005:13\n0 bytes (static)" }
+node: { title: "Process_init" label: "Process_init\nProcess.c:1023:6\n32 bytes (static)" }
+node: { title: "getuid" label: "getuid\n/usr/include/unistd.h:675:16" shape : ellipse }
+edge: { sourcename: "Process_init" targetname: "getuid" label: "Process.c:1033:24" }
+node: { title: "Process_toggleTag" label: "Process_toggleTag\nProcess.c:1037:6\n0 bytes (static)" }
+node: { title: "Process_isNew" label: "Process_isNew\nProcess.c:1041:6\n0 bytes (static)" }
+node: { title: "Process_isTomb" label: "Process_isTomb\nProcess.c:1049:6\n0 bytes (static)" }
+node: { title: "Process_setPriority" label: "Process_setPriority\nProcess.c:1053:6\n48 bytes (static)" }
+node: { title: "Settings_isReadonly" label: "Settings_isReadonly\nSettings.h:131:6" shape : ellipse }
+edge: { sourcename: "Process_setPriority" targetname: "Settings_isReadonly" label: "Process.c:1054:8" }
+node: { title: "getpriority" label: "getpriority\n/usr/include/aarch64-linux-gnu/sys/resource.h:93:12" shape : ellipse }
+edge: { sourcename: "Process_setPriority" targetname: "getpriority" label: "Process.c:1057:19" }
+node: { title: "setpriority" label: "setpriority\n/usr/include/aarch64-linux-gnu/sys/resource.h:97:12" shape : ellipse }
+edge: { sourcename: "Process_setPriority" targetname: "setpriority" label: "Process.c:1058:14" }
+edge: { sourcename: "Process_setPriority" targetname: "getpriority" label: "Process.c:1060:32" }
+node: { title: "Process_changePriorityBy" label: "Process_changePriorityBy\nProcess.c:1066:6\n0 bytes (static)" }
+edge: { sourcename: "Process_changePriorityBy" targetname: "Process_setPriority" label: "Process.c:1067:11" }
+node: { title: "Process_sendSignal" label: "Process_sendSignal\nProcess.c:1070:6\n16 bytes (static)" }
+node: { title: "kill" label: "kill\n/usr/include/signal.h:112:12" shape : ellipse }
+edge: { sourcename: "Process_sendSignal" targetname: "kill" label: "Process.c:1071:11" }
+node: { title: "Process_compareByKey_Base" label: "Process_compareByKey_Base\nProcess.c:1092:5\n0 bytes (static)" }
+node: { title: "strcmp" label: "strcmp\n/usr/include/string.h:137:12" shape : ellipse }
+edge: { sourcename: "Process_compareByKey_Base" targetname: "strcmp" label: "Process.c:1102:14" }
+edge: { sourcename: "Process_compareByKey_Base" targetname: "strcmp" label: "Process.c:1111:14" }
+edge: { sourcename: "Process_compareByKey_Base" targetname: "strcmp" label: "Process.c:1114:14" }
+edge: { sourcename: "Process_compareByKey_Base" targetname: "strcmp" label: "Process.c:1157:14" }
+edge: { sourcename: "Process_compareByKey_Base" targetname: "strcmp" label: "Process.c:1159:14" }
+edge: { sourcename: "Process_compareByKey_Base" targetname: "strcmp" label: "Process.c:1106:14" }
+node: { title: "Process_compare" label: "Process_compare\nProcess.c:1074:5\n48 bytes (static)" }
+edge: { sourcename: "Process_compare" targetname: "__indirect_call" label: "Process.c:1083:17" }
+edge: { sourcename: "Process_compare" targetname: "Process_compareByKey_Base" label: "Process.c:1083:17" }
+node: { title: "Process_updateComm" label: "Process_updateComm\nProcess.c:1167:6\n48 bytes (static)" }
+edge: { sourcename: "Process_updateComm" targetname: "strcmp" label: "XUtils.h:46:11" }
+node: { title: "xStrdup" label: "xStrdup\nXUtils.h:68:7" shape : ellipse }
+edge: { sourcename: "Process_updateComm" targetname: "xStrdup" label: "Process.c:1175:28" }
+edge: { sourcename: "Process_updateComm" targetname: "free" label: "Process.c:1174:4" }
+edge: { sourcename: "Process_updateComm" targetname: "free" label: "Process.c:1174:4" }
+node: { title: "Process_updateCmdline" label: "Process_updateCmdline\nProcess.c:1201:6\n64 bytes (static)" }
+edge: { sourcename: "Process_updateCmdline" targetname: "strcmp" label: "XUtils.h:46:11" }
+edge: { sourcename: "Process_updateCmdline" targetname: "xStrdup" label: "Process.c:1214:30" }
+edge: { sourcename: "Process_updateCmdline" targetname: "free" label: "Process.c:1213:4" }
+edge: { sourcename: "Process_updateCmdline" targetname: "free" label: "Process.c:1213:4" }
+node: { title: "Process_updateExe" label: "Process_updateExe\nProcess.c:1221:6\n48 bytes (static)" }
+edge: { sourcename: "Process_updateExe" targetname: "strcmp" label: "XUtils.h:46:11" }
+edge: { sourcename: "Process_updateExe" targetname: "xStrdup" label: "Process.c:1230:23" }
+node: { title: "strrchr" label: "strrchr\n/usr/include/string.h:253:14" shape : ellipse }
+edge: { sourcename: "Process_updateExe" targetname: "strrchr" label: "Process.c:1231:31" }
+edge: { sourcename: "Process_updateExe" targetname: "free" label: "Process.c:1228:4" }
+edge: { sourcename: "Process_updateExe" targetname: "free" label: "Process.c:1228:4" }
+node: { title: "Process_resetFieldWidths" label: "Process_resetFieldWidths\nProcess.c:1243:6\n48 bytes (static)" }
+edge: { sourcename: "Process_resetFieldWidths" targetname: "strlen" label: "Process.c:1248:20" }
+node: { title: "Process_updateFieldWidth" label: "Process_updateFieldWidth\nProcess.c:1254:6\n0 bytes (static)" }
+node: { title: "Process_updateCPUFieldWidths" label: "Process_updateCPUFieldWidths\nProcess.c:1261:6\n16 bytes (static)" }
+edge: { sourcename: "Process_updateCPUFieldWidths" targetname: "log10" label: "Process.c:1269:20" }
+}

@@ -1,0 +1,34 @@
+graph: { title: "zfs/ZfsArcMeter.c"
+node: { title: "zfs/ZfsArcMeter.c:ZfsArcMeter_updateValues" label: "ZfsArcMeter_updateValues\nzfs/ZfsArcMeter.c:39:13\n32 bytes (static)" }
+node: { title: "Platform_setZfsArcValues" label: "Platform_setZfsArcValues\n./linux/Platform.h:72:6" shape : ellipse }
+edge: { sourcename: "zfs/ZfsArcMeter.c:ZfsArcMeter_updateValues" targetname: "Platform_setZfsArcValues" label: "zfs/ZfsArcMeter.c:43:4" }
+node: { title: "Meter_humanUnit" label: "Meter_humanUnit\n./Meter.h:148:5" shape : ellipse }
+edge: { sourcename: "zfs/ZfsArcMeter.c:ZfsArcMeter_updateValues" targetname: "Meter_humanUnit" label: "zfs/ZfsArcMeter.c:45:14" }
+edge: { sourcename: "zfs/ZfsArcMeter.c:ZfsArcMeter_updateValues" targetname: "Meter_humanUnit" label: "zfs/ZfsArcMeter.c:50:4" }
+node: { title: "zfs/ZfsArcMeter.c:ZfsArcMeter_display" label: "ZfsArcMeter_display\nzfs/ZfsArcMeter.c:53:13\n112 bytes (static)" }
+edge: { sourcename: "zfs/ZfsArcMeter.c:ZfsArcMeter_display" targetname: "Meter_humanUnit" label: "zfs/ZfsArcMeter.c:58:7" }
+node: { title: "RichString_appendAscii" label: "RichString_appendAscii\n./RichString.h:73:5" shape : ellipse }
+edge: { sourcename: "zfs/ZfsArcMeter.c:ZfsArcMeter_display" targetname: "RichString_appendAscii" label: "zfs/ZfsArcMeter.c:59:7" }
+edge: { sourcename: "zfs/ZfsArcMeter.c:ZfsArcMeter_display" targetname: "Meter_humanUnit" label: "zfs/ZfsArcMeter.c:60:7" }
+edge: { sourcename: "zfs/ZfsArcMeter.c:ZfsArcMeter_display" targetname: "RichString_appendAscii" label: "zfs/ZfsArcMeter.c:61:7" }
+edge: { sourcename: "zfs/ZfsArcMeter.c:ZfsArcMeter_display" targetname: "RichString_appendAscii" label: "zfs/ZfsArcMeter.c:62:7" }
+edge: { sourcename: "zfs/ZfsArcMeter.c:ZfsArcMeter_display" targetname: "Meter_humanUnit" label: "zfs/ZfsArcMeter.c:63:7" }
+edge: { sourcename: "zfs/ZfsArcMeter.c:ZfsArcMeter_display" targetname: "RichString_appendAscii" label: "zfs/ZfsArcMeter.c:64:7" }
+edge: { sourcename: "zfs/ZfsArcMeter.c:ZfsArcMeter_display" targetname: "RichString_appendAscii" label: "zfs/ZfsArcMeter.c:65:7" }
+edge: { sourcename: "zfs/ZfsArcMeter.c:ZfsArcMeter_display" targetname: "Meter_humanUnit" label: "zfs/ZfsArcMeter.c:66:7" }
+edge: { sourcename: "zfs/ZfsArcMeter.c:ZfsArcMeter_display" targetname: "RichString_appendAscii" label: "zfs/ZfsArcMeter.c:67:7" }
+edge: { sourcename: "zfs/ZfsArcMeter.c:ZfsArcMeter_display" targetname: "RichString_appendAscii" label: "zfs/ZfsArcMeter.c:68:7" }
+edge: { sourcename: "zfs/ZfsArcMeter.c:ZfsArcMeter_display" targetname: "Meter_humanUnit" label: "zfs/ZfsArcMeter.c:69:7" }
+edge: { sourcename: "zfs/ZfsArcMeter.c:ZfsArcMeter_display" targetname: "RichString_appendAscii" label: "zfs/ZfsArcMeter.c:70:7" }
+edge: { sourcename: "zfs/ZfsArcMeter.c:ZfsArcMeter_display" targetname: "RichString_appendAscii" label: "zfs/ZfsArcMeter.c:71:7" }
+edge: { sourcename: "zfs/ZfsArcMeter.c:ZfsArcMeter_display" targetname: "Meter_humanUnit" label: "zfs/ZfsArcMeter.c:72:7" }
+edge: { sourcename: "zfs/ZfsArcMeter.c:ZfsArcMeter_display" targetname: "RichString_appendAscii" label: "zfs/ZfsArcMeter.c:73:7" }
+edge: { sourcename: "zfs/ZfsArcMeter.c:ZfsArcMeter_display" targetname: "RichString_appendAscii" label: "zfs/ZfsArcMeter.c:74:7" }
+edge: { sourcename: "zfs/ZfsArcMeter.c:ZfsArcMeter_display" targetname: "Meter_humanUnit" label: "zfs/ZfsArcMeter.c:75:7" }
+edge: { sourcename: "zfs/ZfsArcMeter.c:ZfsArcMeter_display" targetname: "RichString_appendAscii" label: "zfs/ZfsArcMeter.c:76:7" }
+edge: { sourcename: "zfs/ZfsArcMeter.c:ZfsArcMeter_display" targetname: "RichString_appendAscii" label: "zfs/ZfsArcMeter.c:77:7" }
+node: { title: "RichString_writeAscii" label: "RichString_writeAscii\n./RichString.h:77:5" shape : ellipse }
+edge: { sourcename: "zfs/ZfsArcMeter.c:ZfsArcMeter_display" targetname: "RichString_writeAscii" label: "zfs/ZfsArcMeter.c:79:7" }
+edge: { sourcename: "zfs/ZfsArcMeter.c:ZfsArcMeter_display" targetname: "RichString_appendAscii" label: "zfs/ZfsArcMeter.c:80:7" }
+node: { title: "ZfsArcMeter_readStats" label: "ZfsArcMeter_readStats\nzfs/ZfsArcMeter.c:24:6\n0 bytes (static)" }
+}

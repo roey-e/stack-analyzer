@@ -1,0 +1,22 @@
+graph: { title: "Affinity.c"
+node: { title: "Affinity_new" label: "Affinity_new\nAffinity.c:30:11\n32 bytes (static)" }
+node: { title: "xCalloc" label: "xCalloc\nXUtils.h:27:7" shape : ellipse }
+edge: { sourcename: "Affinity_new" targetname: "xCalloc" label: "Affinity.c:31:21" }
+edge: { sourcename: "Affinity_new" targetname: "xCalloc" label: "Affinity.c:33:17" }
+node: { title: "Affinity_delete" label: "Affinity_delete\nAffinity.c:38:6\n32 bytes (static)" }
+node: { title: "free" label: "free\n/usr/include/stdlib.h:565:13" shape : ellipse }
+edge: { sourcename: "Affinity_delete" targetname: "free" label: "Affinity.c:39:4" }
+edge: { sourcename: "Affinity_delete" targetname: "free" label: "Affinity.c:40:4" }
+node: { title: "Affinity_add" label: "Affinity_add\nAffinity.c:43:6\n32 bytes (static)" }
+node: { title: "xRealloc" label: "xRealloc\nXUtils.h:29:7" shape : ellipse }
+edge: { sourcename: "Affinity_add" targetname: "xRealloc" label: "Affinity.c:46:20" }
+node: { title: "Affinity_get" label: "Affinity_get\nAffinity.c:89:11\n176 bytes (static)" }
+node: { title: "sched_getaffinity" label: "sched_getaffinity\n/usr/include/sched.h:125:12" shape : ellipse }
+edge: { sourcename: "Affinity_get" targetname: "sched_getaffinity" label: "Affinity.c:91:15" }
+edge: { sourcename: "Affinity_get" targetname: "xCalloc" label: "Affinity.c:31:21" }
+edge: { sourcename: "Affinity_get" targetname: "xCalloc" label: "Affinity.c:33:17" }
+edge: { sourcename: "Affinity_get" targetname: "xRealloc" label: "Affinity.c:46:20" }
+node: { title: "Affinity_set" label: "Affinity_set\nAffinity.c:104:6\n144 bytes (static)" }
+node: { title: "sched_setaffinity" label: "sched_setaffinity\n/usr/include/sched.h:121:12" shape : ellipse }
+edge: { sourcename: "Affinity_set" targetname: "sched_setaffinity" label: "Affinity.c:111:15" }
+}

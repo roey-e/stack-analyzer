@@ -1,0 +1,5 @@
+graph: { title: "HostnameMeter.c"
+node: { title: "HostnameMeter.c:HostnameMeter_updateValues" label: "HostnameMeter_updateValues\nHostnameMeter.c:21:13\n0 bytes (static)" }
+node: { title: "Generic_hostname" label: "Generic_hostname\n./generic/hostname.h:13:6" shape : ellipse }
+edge: { sourcename: "HostnameMeter.c:HostnameMeter_updateValues" targetname: "Generic_hostname" label: "./linux/Platform.h:89:4" }
+}

@@ -1,0 +1,26 @@
+graph: { title: "zfs/ZfsCompressedArcMeter.c"
+node: { title: "zfs/ZfsCompressedArcMeter.c:ZfsCompressedArcMeter_display" label: "ZfsCompressedArcMeter_display\nzfs/ZfsCompressedArcMeter.c:50:13\n128 bytes (static)" }
+node: { title: "Meter_humanUnit" label: "Meter_humanUnit\n./Meter.h:148:5" shape : ellipse }
+edge: { sourcename: "zfs/ZfsCompressedArcMeter.c:ZfsCompressedArcMeter_display" targetname: "Meter_humanUnit" label: "zfs/ZfsCompressedArcMeter.c:57:7" }
+node: { title: "RichString_appendAscii" label: "RichString_appendAscii\n./RichString.h:73:5" shape : ellipse }
+edge: { sourcename: "zfs/ZfsCompressedArcMeter.c:ZfsCompressedArcMeter_display" targetname: "RichString_appendAscii" label: "zfs/ZfsCompressedArcMeter.c:58:7" }
+edge: { sourcename: "zfs/ZfsCompressedArcMeter.c:ZfsCompressedArcMeter_display" targetname: "RichString_appendAscii" label: "zfs/ZfsCompressedArcMeter.c:59:7" }
+edge: { sourcename: "zfs/ZfsCompressedArcMeter.c:ZfsCompressedArcMeter_display" targetname: "Meter_humanUnit" label: "zfs/ZfsCompressedArcMeter.c:60:7" }
+edge: { sourcename: "zfs/ZfsCompressedArcMeter.c:ZfsCompressedArcMeter_display" targetname: "RichString_appendAscii" label: "zfs/ZfsCompressedArcMeter.c:61:7" }
+edge: { sourcename: "zfs/ZfsCompressedArcMeter.c:ZfsCompressedArcMeter_display" targetname: "RichString_appendAscii" label: "zfs/ZfsCompressedArcMeter.c:62:7" }
+node: { title: "xSnprintf" label: "xSnprintf\n./XUtils.h:66:5" shape : ellipse }
+edge: { sourcename: "zfs/ZfsCompressedArcMeter.c:ZfsCompressedArcMeter_display" targetname: "xSnprintf" label: "zfs/ZfsCompressedArcMeter.c:38:14" }
+edge: { sourcename: "zfs/ZfsCompressedArcMeter.c:ZfsCompressedArcMeter_display" targetname: "xSnprintf" label: "zfs/ZfsCompressedArcMeter.c:41:11" }
+node: { title: "RichString_appendnAscii" label: "RichString_appendnAscii\n./RichString.h:75:5" shape : ellipse }
+edge: { sourcename: "zfs/ZfsCompressedArcMeter.c:ZfsCompressedArcMeter_display" targetname: "RichString_appendnAscii" label: "zfs/ZfsCompressedArcMeter.c:64:7" }
+edge: { sourcename: "zfs/ZfsCompressedArcMeter.c:ZfsCompressedArcMeter_display" targetname: "RichString_appendAscii" label: "zfs/ZfsCompressedArcMeter.c:65:7" }
+node: { title: "RichString_writeAscii" label: "RichString_writeAscii\n./RichString.h:77:5" shape : ellipse }
+edge: { sourcename: "zfs/ZfsCompressedArcMeter.c:ZfsCompressedArcMeter_display" targetname: "RichString_writeAscii" label: "zfs/ZfsCompressedArcMeter.c:67:7" }
+edge: { sourcename: "zfs/ZfsCompressedArcMeter.c:ZfsCompressedArcMeter_display" targetname: "RichString_appendAscii" label: "zfs/ZfsCompressedArcMeter.c:68:7" }
+node: { title: "zfs/ZfsCompressedArcMeter.c:ZfsCompressedArcMeter_updateValues" label: "ZfsCompressedArcMeter_updateValues\nzfs/ZfsCompressedArcMeter.c:44:13\n32 bytes (static)" }
+node: { title: "Platform_setZfsCompressedArcValues" label: "Platform_setZfsCompressedArcValues\n./linux/Platform.h:74:6" shape : ellipse }
+edge: { sourcename: "zfs/ZfsCompressedArcMeter.c:ZfsCompressedArcMeter_updateValues" targetname: "Platform_setZfsCompressedArcValues" label: "zfs/ZfsCompressedArcMeter.c:45:4" }
+edge: { sourcename: "zfs/ZfsCompressedArcMeter.c:ZfsCompressedArcMeter_updateValues" targetname: "xSnprintf" label: "zfs/ZfsCompressedArcMeter.c:38:14" }
+edge: { sourcename: "zfs/ZfsCompressedArcMeter.c:ZfsCompressedArcMeter_updateValues" targetname: "xSnprintf" label: "zfs/ZfsCompressedArcMeter.c:41:11" }
+node: { title: "ZfsCompressedArcMeter_readStats" label: "ZfsCompressedArcMeter_readStats\nzfs/ZfsCompressedArcMeter.c:25:6\n0 bytes (static)" }
+}

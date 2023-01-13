@@ -1,0 +1,11 @@
+graph: { title: "UptimeMeter.c"
+node: { title: "UptimeMeter.c:UptimeMeter_updateValues" label: "UptimeMeter_updateValues\nUptimeMeter.c:20:13\n96 bytes (static)" }
+node: { title: "Platform_getUptime" label: "Platform_getUptime\n./linux/Platform.h:58:5" shape : ellipse }
+edge: { sourcename: "UptimeMeter.c:UptimeMeter_updateValues" targetname: "Platform_getUptime" label: "UptimeMeter.c:21:23" }
+node: { title: "xSnprintf" label: "xSnprintf\nXUtils.h:66:5" shape : ellipse }
+edge: { sourcename: "UptimeMeter.c:UptimeMeter_updateValues" targetname: "xSnprintf" label: "UptimeMeter.c:23:7" }
+edge: { sourcename: "UptimeMeter.c:UptimeMeter_updateValues" targetname: "xSnprintf" label: "UptimeMeter.c:36:7" }
+edge: { sourcename: "UptimeMeter.c:UptimeMeter_updateValues" targetname: "xSnprintf" label: "UptimeMeter.c:38:7" }
+edge: { sourcename: "UptimeMeter.c:UptimeMeter_updateValues" targetname: "xSnprintf" label: "UptimeMeter.c:40:7" }
+edge: { sourcename: "UptimeMeter.c:UptimeMeter_updateValues" targetname: "xSnprintf" label: "UptimeMeter.c:44:4" }
+}

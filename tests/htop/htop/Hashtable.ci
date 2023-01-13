@@ -1,0 +1,38 @@
+graph: { title: "Hashtable.c"
+node: { title: "Hashtable.c:insert" label: "insert\nHashtable.c:144:13\n48 bytes (static)" }
+node: { title: "free" label: "free\n/usr/include/stdlib.h:565:13" shape : ellipse }
+edge: { sourcename: "Hashtable.c:insert" targetname: "free" label: "Hashtable.c:162:13" }
+node: { title: "Hashtable.c:Hashtable_setSize.part.0" label: "Hashtable_setSize.part.0\nHashtable.c:187:6\n64 bytes (static)" }
+node: { title: "CRT_fatalError" label: "CRT_fatalError\nCRT.h:151:6" shape : ellipse }
+edge: { sourcename: "Hashtable.c:Hashtable_setSize.part.0" targetname: "CRT_fatalError" label: "Hashtable.c:108:4" }
+node: { title: "xCalloc" label: "xCalloc\nXUtils.h:27:7" shape : ellipse }
+edge: { sourcename: "Hashtable.c:Hashtable_setSize.part.0" targetname: "xCalloc" label: "Hashtable.c:202:37" }
+edge: { sourcename: "Hashtable.c:Hashtable_setSize.part.0" targetname: "Hashtable.c:insert" label: "Hashtable.c:210:7" }
+edge: { sourcename: "Hashtable.c:Hashtable_setSize.part.0" targetname: "free" label: "Hashtable.c:213:4" }
+node: { title: "Hashtable_new" label: "Hashtable_new\nHashtable.c:111:12\n48 bytes (static)" }
+node: { title: "xMalloc" label: "xMalloc\nXUtils.h:23:7" shape : ellipse }
+edge: { sourcename: "Hashtable_new" targetname: "xMalloc" label: "Hashtable.c:114:11" }
+edge: { sourcename: "Hashtable_new" targetname: "CRT_fatalError" label: "Hashtable.c:108:4" }
+edge: { sourcename: "Hashtable_new" targetname: "xCalloc" label: "Hashtable.c:117:37" }
+node: { title: "Hashtable_clear" label: "Hashtable_clear\nHashtable.c:131:6\n48 bytes (static)" }
+edge: { sourcename: "Hashtable_clear" targetname: "free" label: "Hashtable.c:136:10" }
+node: { title: "memset" label: "__builtin_memset\n<built-in>" shape : ellipse }
+edge: { sourcename: "Hashtable_clear" targetname: "memset" }
+node: { title: "Hashtable_delete" label: "Hashtable_delete\nHashtable.c:124:6\n32 bytes (static)" }
+edge: { sourcename: "Hashtable_delete" targetname: "Hashtable_clear" label: "Hashtable.c:125:4" }
+edge: { sourcename: "Hashtable_delete" targetname: "free" label: "Hashtable.c:127:4" }
+edge: { sourcename: "Hashtable_delete" targetname: "free" label: "Hashtable.c:128:4" }
+node: { title: "Hashtable_setSize" label: "Hashtable_setSize\nHashtable.c:187:6\n0 bytes (static)" }
+edge: { sourcename: "Hashtable_setSize" targetname: "Hashtable.c:Hashtable_setSize.part.0" }
+node: { title: "Hashtable_put" label: "Hashtable_put\nHashtable.c:218:6\n48 bytes (static)" }
+edge: { sourcename: "Hashtable_put" targetname: "CRT_fatalError" label: "Hashtable.c:227:10" }
+edge: { sourcename: "Hashtable_put" targetname: "Hashtable.c:Hashtable_setSize.part.0" }
+edge: { sourcename: "Hashtable_put" targetname: "Hashtable.c:insert" label: "Hashtable.c:232:4" }
+node: { title: "Hashtable_remove" label: "Hashtable_remove\nHashtable.c:239:7\n48 bytes (static)" }
+edge: { sourcename: "Hashtable_remove" targetname: "free" label: "Hashtable.c:253:13" }
+edge: { sourcename: "Hashtable_remove" targetname: "Hashtable.c:Hashtable_setSize.part.0" }
+node: { title: "Hashtable_get" label: "Hashtable_get\nHashtable.c:294:7\n0 bytes (static)" }
+node: { title: "Hashtable_foreach" label: "Hashtable_foreach\nHashtable.c:322:6\n64 bytes (static)" }
+node: { title: "__indirect_call" label: "Indirect Call Placeholder" shape : ellipse }
+edge: { sourcename: "Hashtable_foreach" targetname: "__indirect_call" label: "Hashtable.c:327:10" }
+}
