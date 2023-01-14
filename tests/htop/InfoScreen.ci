@@ -1,0 +1,91 @@
+graph: { title: "InfoScreen.c"
+node: { title: "InfoScreen_init" label: "InfoScreen_init\nInfoScreen.c:23:13\n64 bytes (static)" }
+node: { title: "FunctionBar_new" label: "FunctionBar_new\nFunctionBar.h:26:14" shape : ellipse }
+edge: { sourcename: "InfoScreen_init" targetname: "FunctionBar_new" label: "InfoScreen.c:26:13" }
+node: { title: "Panel_new" label: "Panel_new\nPanel.h:91:8" shape : ellipse }
+edge: { sourcename: "InfoScreen_init" targetname: "Panel_new" label: "InfoScreen.c:28:20" }
+node: { title: "IncSet_new" label: "IncSet_new\nIncSet.h:51:9" shape : ellipse }
+edge: { sourcename: "InfoScreen_init" targetname: "IncSet_new" label: "InfoScreen.c:29:16" }
+node: { title: "Vector_new" label: "Vector_new\nVector.h:33:9" shape : ellipse }
+edge: { sourcename: "InfoScreen_init" targetname: "Vector_new" label: "InfoScreen.c:30:18" }
+node: { title: "Panel_setHeader" label: "Panel_setHeader\nPanel.h:103:6" shape : ellipse }
+edge: { sourcename: "InfoScreen_init" targetname: "Panel_setHeader" label: "InfoScreen.c:31:4" }
+node: { title: "InfoScreen_done" label: "InfoScreen_done\nInfoScreen.c:35:13\n32 bytes (static)" }
+node: { title: "Panel_delete" label: "Panel_delete\nPanel.h:93:6" shape : ellipse }
+edge: { sourcename: "InfoScreen_done" targetname: "Panel_delete" label: "InfoScreen.c:36:4" }
+node: { title: "IncSet_delete" label: "IncSet_delete\nIncSet.h:53:6" shape : ellipse }
+edge: { sourcename: "InfoScreen_done" targetname: "IncSet_delete" label: "InfoScreen.c:37:4" }
+node: { title: "Vector_delete" label: "Vector_delete\nVector.h:35:6" shape : ellipse }
+edge: { sourcename: "InfoScreen_done" targetname: "Vector_delete" label: "InfoScreen.c:38:4" }
+node: { title: "InfoScreen_drawTitled" label: "InfoScreen_drawTitled\nInfoScreen.c:42:6\n304 bytes (dynamic)" }
+node: { title: "vsnprintf" label: "vsnprintf\n/usr/include/stdio.h:358:12" shape : ellipse }
+edge: { sourcename: "InfoScreen_drawTitled" targetname: "vsnprintf" label: "InfoScreen.c:47:14" }
+node: { title: "wattrset" label: "wattrset\n/usr/include/curses.h:787:28" shape : ellipse }
+edge: { sourcename: "InfoScreen_drawTitled" targetname: "wattrset" label: "InfoScreen.c:54:4" }
+node: { title: "wmove" label: "wmove\n/usr/include/curses.h:819:28" shape : ellipse }
+edge: { sourcename: "InfoScreen_drawTitled" targetname: "wmove" label: "InfoScreen.c:55:4" }
+node: { title: "whline" label: "whline\n/usr/include/curses.h:808:28" shape : ellipse }
+edge: { sourcename: "InfoScreen_drawTitled" targetname: "whline" label: "InfoScreen.c:55:4" }
+edge: { sourcename: "InfoScreen_drawTitled" targetname: "wmove" label: "InfoScreen.c:56:4" }
+node: { title: "waddnstr" label: "waddnstr\n/usr/include/curses.h:783:28" shape : ellipse }
+edge: { sourcename: "InfoScreen_drawTitled" targetname: "waddnstr" label: "InfoScreen.c:56:4" }
+edge: { sourcename: "InfoScreen_drawTitled" targetname: "wattrset" label: "InfoScreen.c:57:4" }
+node: { title: "Panel_draw" label: "Panel_draw\nPanel.h:133:6" shape : ellipse }
+edge: { sourcename: "InfoScreen_drawTitled" targetname: "Panel_draw" label: "InfoScreen.c:58:4" }
+node: { title: "IncSet_drawBar" label: "IncSet_drawBar\nIncSet.h:61:6" shape : ellipse }
+edge: { sourcename: "InfoScreen_drawTitled" targetname: "IncSet_drawBar" label: "InfoScreen.c:60:4" }
+node: { title: "InfoScreen_addLine" label: "InfoScreen_addLine\nInfoScreen.c:63:6\n48 bytes (static)" }
+node: { title: "ListItem_new" label: "ListItem_new\nListItem.h:30:11" shape : ellipse }
+edge: { sourcename: "InfoScreen_addLine" targetname: "ListItem_new" label: "InfoScreen.c:64:38" }
+node: { title: "Vector_add" label: "Vector_add\nVector.h:93:6" shape : ellipse }
+edge: { sourcename: "InfoScreen_addLine" targetname: "Vector_add" label: "InfoScreen.c:64:4" }
+node: { title: "Panel_add" label: "Panel_add\nPanel.h:111:6" shape : ellipse }
+edge: { sourcename: "InfoScreen_addLine" targetname: "Panel_add" label: "InfoScreen.c:67:7" }
+node: { title: "String_contains_i" label: "String_contains_i\nXUtils.h:43:6" shape : ellipse }
+edge: { sourcename: "InfoScreen_addLine" targetname: "String_contains_i" label: "InfoScreen.c:66:22" }
+node: { title: "InfoScreen_appendLine" label: "InfoScreen_appendLine\nInfoScreen.c:71:6\n64 bytes (static)" }
+node: { title: "ListItem_append" label: "ListItem_append\nListItem.h:32:6" shape : ellipse }
+edge: { sourcename: "InfoScreen_appendLine" targetname: "ListItem_append" label: "InfoScreen.c:73:4" }
+node: { title: "Panel_size" label: "Panel_size\nPanel.h:129:5" shape : ellipse }
+edge: { sourcename: "InfoScreen_appendLine" targetname: "Panel_size" label: "InfoScreen.c:75:46" }
+node: { title: "Panel_get" label: "Panel_get\nPanel.h:117:9" shape : ellipse }
+edge: { sourcename: "InfoScreen_appendLine" targetname: "Panel_get" label: "InfoScreen.c:75:21" }
+edge: { sourcename: "InfoScreen_appendLine" targetname: "String_contains_i" label: "InfoScreen.c:75:97" }
+edge: { sourcename: "InfoScreen_appendLine" targetname: "Panel_add" label: "InfoScreen.c:76:7" }
+node: { title: "InfoScreen_run" label: "InfoScreen_run\nInfoScreen.c:80:6\n112 bytes (static)" }
+node: { title: "__indirect_call" label: "Indirect Call Placeholder" shape : ellipse }
+edge: { sourcename: "InfoScreen_run" targetname: "__indirect_call" label: "InfoScreen.c:84:7" }
+edge: { sourcename: "InfoScreen_run" targetname: "__indirect_call" label: "InfoScreen.c:86:4" }
+edge: { sourcename: "InfoScreen_run" targetname: "__indirect_call" label: "InfoScreen.c:98:13" }
+node: { title: "getmouse" label: "getmouse\n/usr/include/curses.h:1966:32" shape : ellipse }
+edge: { sourcename: "InfoScreen_run" targetname: "getmouse" label: "InfoScreen.c:106:19" }
+node: { title: "Panel_setSelected" label: "Panel_setSelected\nPanel.h:131:6" shape : ellipse }
+edge: { sourcename: "InfoScreen_run" targetname: "Panel_setSelected" label: "InfoScreen.c:110:19" }
+node: { title: "IncSet_synthesizeEvent" label: "IncSet_synthesizeEvent\nIncSet.h:63:5" shape : ellipse }
+edge: { sourcename: "InfoScreen_run" targetname: "IncSet_synthesizeEvent" label: "InfoScreen.c:113:24" }
+node: { title: "IncSet_handleKey" label: "IncSet_handleKey\nIncSet.h:55:6" shape : ellipse }
+edge: { sourcename: "InfoScreen_run" targetname: "IncSet_handleKey" label: "InfoScreen.c:128:10" }
+node: { title: "IncSet_activate" label: "IncSet_activate\nIncSet.h:59:6" shape : ellipse }
+edge: { sourcename: "InfoScreen_run" targetname: "IncSet_activate" label: "InfoScreen.c:137:10" }
+edge: { sourcename: "InfoScreen_run" targetname: "IncSet_activate" label: "InfoScreen.c:141:10" }
+node: { title: "wclear" label: "wclear\n/usr/include/curses.h:796:28" shape : ellipse }
+edge: { sourcename: "InfoScreen_run" targetname: "wclear" label: "InfoScreen.c:144:10" }
+node: { title: "Vector_prune" label: "Vector_prune\nVector.h:37:6" shape : ellipse }
+edge: { sourcename: "InfoScreen_run" targetname: "Vector_prune" label: "InfoScreen.c:146:13" }
+edge: { sourcename: "InfoScreen_run" targetname: "__indirect_call" label: "InfoScreen.c:147:13" }
+edge: { sourcename: "InfoScreen_run" targetname: "__indirect_call" label: "InfoScreen.c:150:10" }
+edge: { sourcename: "InfoScreen_run" targetname: "wclear" label: "InfoScreen.c:153:10" }
+edge: { sourcename: "InfoScreen_run" targetname: "__indirect_call" label: "InfoScreen.c:154:10" }
+node: { title: "Panel_resize" label: "Panel_resize\nPanel.h:107:6" shape : ellipse }
+edge: { sourcename: "InfoScreen_run" targetname: "Panel_resize" label: "InfoScreen.c:162:10" }
+edge: { sourcename: "InfoScreen_run" targetname: "Vector_prune" label: "InfoScreen.c:164:13" }
+edge: { sourcename: "InfoScreen_run" targetname: "__indirect_call" label: "InfoScreen.c:165:13" }
+edge: { sourcename: "InfoScreen_run" targetname: "__indirect_call" label: "InfoScreen.c:168:10" }
+node: { title: "Panel_onKey" label: "Panel_onKey\nPanel.h:137:6" shape : ellipse }
+edge: { sourcename: "InfoScreen_run" targetname: "Panel_onKey" label: "InfoScreen.c:174:10" }
+edge: { sourcename: "InfoScreen_run" targetname: "__indirect_call" label: "InfoScreen.c:171:44" }
+edge: { sourcename: "InfoScreen_run" targetname: "Panel_draw" label: "InfoScreen.c:91:7" }
+edge: { sourcename: "InfoScreen_run" targetname: "IncSet_drawBar" label: "InfoScreen.c:92:7" }
+node: { title: "Panel_getCh" label: "Panel_getCh\nPanel.h:141:5" shape : ellipse }
+edge: { sourcename: "InfoScreen_run" targetname: "Panel_getCh" label: "InfoScreen.c:94:16" }
+}

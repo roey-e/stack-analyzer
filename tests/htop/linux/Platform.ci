@@ -1,0 +1,195 @@
+graph: { title: "linux/Platform.c"
+node: { title: "linux/Platform.c:procAcpiCheck" label: "procAcpiCheck\nlinux/Platform.c:685:19\n1056 bytes (static)" }
+node: { title: "memset" label: "__builtin_memset\n<built-in>" shape : ellipse }
+edge: { sourcename: "linux/Platform.c:procAcpiCheck" targetname: "memset" }
+node: { title: "xReadfile" label: "xReadfile\n./XUtils.h:73:9" shape : ellipse }
+edge: { sourcename: "linux/Platform.c:procAcpiCheck" targetname: "xReadfile" label: "linux/Platform.c:687:16" }
+node: { title: "strcmp" label: "strcmp\n/usr/include/string.h:137:12" shape : ellipse }
+edge: { sourcename: "linux/Platform.c:procAcpiCheck" targetname: "strcmp" label: "./XUtils.h:46:11" }
+node: { title: "linux/Platform.c:Platform_actionSetIOPriority" label: "Platform_actionSetIOPriority\nlinux/Platform.c:153:22\n48 bytes (static)" }
+node: { title: "Settings_isReadonly" label: "Settings_isReadonly\n./Settings.h:131:6" shape : ellipse }
+edge: { sourcename: "linux/Platform.c:Platform_actionSetIOPriority" targetname: "Settings_isReadonly" label: "linux/Platform.c:154:8" }
+node: { title: "Panel_getSelected" label: "Panel_getSelected\n./Panel.h:121:9" shape : ellipse }
+edge: { sourcename: "linux/Platform.c:Platform_actionSetIOPriority" targetname: "Panel_getSelected" label: "linux/Platform.c:157:50" }
+node: { title: "IOPriorityPanel_new" label: "IOPriorityPanel_new\n./linux/IOPriorityPanel.h:13:8" shape : ellipse }
+edge: { sourcename: "linux/Platform.c:Platform_actionSetIOPriority" targetname: "IOPriorityPanel_new" label: "linux/Platform.c:162:25" }
+node: { title: "Action_pickFromVector" label: "Action_pickFromVector\n./Action.h:55:9" shape : ellipse }
+edge: { sourcename: "linux/Platform.c:Platform_actionSetIOPriority" targetname: "Action_pickFromVector" label: "linux/Platform.c:163:22" }
+node: { title: "IOPriorityPanel_getIOPriority" label: "IOPriorityPanel_getIOPriority\n./linux/IOPriorityPanel.h:15:12" shape : ellipse }
+edge: { sourcename: "linux/Platform.c:Platform_actionSetIOPriority" targetname: "IOPriorityPanel_getIOPriority" label: "linux/Platform.c:165:28" }
+node: { title: "MainPanel_foreachProcess" label: "MainPanel_foreachProcess\n./MainPanel.h:40:6" shape : ellipse }
+edge: { sourcename: "linux/Platform.c:Platform_actionSetIOPriority" targetname: "MainPanel_foreachProcess" label: "linux/Platform.c:166:17" }
+node: { title: "beep" label: "beep\n/usr/include/curses.h:576:28" shape : ellipse }
+edge: { sourcename: "linux/Platform.c:Platform_actionSetIOPriority" targetname: "beep" label: "linux/Platform.c:168:10" }
+node: { title: "Panel_delete" label: "Panel_delete\n./Panel.h:93:6" shape : ellipse }
+edge: { sourcename: "linux/Platform.c:Platform_actionSetIOPriority" targetname: "Panel_delete" label: "linux/Platform.c:171:4" }
+node: { title: "linux/Platform.c:Platform_actionHigherAutogroupPriority" label: "Platform_actionHigherAutogroupPriority\nlinux/Platform.c:187:22\n48 bytes (static)" }
+edge: { sourcename: "linux/Platform.c:Platform_actionHigherAutogroupPriority" targetname: "Settings_isReadonly" label: "linux/Platform.c:188:8" }
+node: { title: "LinuxProcess_isAutogroupEnabled" label: "LinuxProcess_isAutogroupEnabled\n./linux/LinuxProcess.h:129:6" shape : ellipse }
+edge: { sourcename: "linux/Platform.c:Platform_actionHigherAutogroupPriority" targetname: "LinuxProcess_isAutogroupEnabled" label: "linux/Platform.c:176:8" }
+edge: { sourcename: "linux/Platform.c:Platform_actionHigherAutogroupPriority" targetname: "beep" label: "linux/Platform.c:177:7" }
+edge: { sourcename: "linux/Platform.c:Platform_actionHigherAutogroupPriority" targetname: "MainPanel_foreachProcess" label: "linux/Platform.c:181:14" }
+edge: { sourcename: "linux/Platform.c:Platform_actionHigherAutogroupPriority" targetname: "beep" label: "linux/Platform.c:183:7" }
+node: { title: "linux/Platform.c:Platform_actionLowerAutogroupPriority" label: "Platform_actionLowerAutogroupPriority\nlinux/Platform.c:195:22\n48 bytes (static)" }
+edge: { sourcename: "linux/Platform.c:Platform_actionLowerAutogroupPriority" targetname: "Settings_isReadonly" label: "linux/Platform.c:196:8" }
+edge: { sourcename: "linux/Platform.c:Platform_actionLowerAutogroupPriority" targetname: "LinuxProcess_isAutogroupEnabled" label: "linux/Platform.c:176:8" }
+edge: { sourcename: "linux/Platform.c:Platform_actionLowerAutogroupPriority" targetname: "beep" label: "linux/Platform.c:177:7" }
+edge: { sourcename: "linux/Platform.c:Platform_actionLowerAutogroupPriority" targetname: "MainPanel_foreachProcess" label: "linux/Platform.c:181:14" }
+edge: { sourcename: "linux/Platform.c:Platform_actionLowerAutogroupPriority" targetname: "beep" label: "linux/Platform.c:183:7" }
+node: { title: "linux/Platform.c:Platform_Battery_getProcBatInfo" label: "Platform_Battery_getProcBatInfo\nlinux/Platform.c:622:15\n2560 bytes (static)" }
+node: { title: "opendir" label: "opendir\n/usr/include/dirent.h:134:13" shape : ellipse }
+edge: { sourcename: "linux/Platform.c:Platform_Battery_getProcBatInfo" targetname: "opendir" label: "linux/Platform.c:623:22" }
+edge: { sourcename: "linux/Platform.c:Platform_Battery_getProcBatInfo" targetname: "memset" }
+node: { title: "xSnprintf" label: "xSnprintf\n./XUtils.h:66:5" shape : ellipse }
+edge: { sourcename: "linux/Platform.c:Platform_Battery_getProcBatInfo" targetname: "xSnprintf" label: "linux/Platform.c:638:7" }
+edge: { sourcename: "linux/Platform.c:Platform_Battery_getProcBatInfo" targetname: "xReadfile" label: "linux/Platform.c:639:19" }
+edge: { sourcename: "linux/Platform.c:Platform_Battery_getProcBatInfo" targetname: "memset" }
+edge: { sourcename: "linux/Platform.c:Platform_Battery_getProcBatInfo" targetname: "xSnprintf" label: "linux/Platform.c:644:7" }
+edge: { sourcename: "linux/Platform.c:Platform_Battery_getProcBatInfo" targetname: "xReadfile" label: "linux/Platform.c:645:11" }
+node: { title: "*__isoc99_sscanf" label: "sscanf\n/usr/include/stdio.h:412:12" shape : ellipse }
+edge: { sourcename: "linux/Platform.c:Platform_Battery_getProcBatInfo" targetname: "*__isoc99_sscanf" label: "linux/Platform.c:656:19" }
+edge: { sourcename: "linux/Platform.c:Platform_Battery_getProcBatInfo" targetname: "strcmp" label: "./XUtils.h:46:11" }
+node: { title: "strsep" label: "strsep\n/usr/include/string.h:440:14" shape : ellipse }
+edge: { sourcename: "linux/Platform.c:Platform_Battery_getProcBatInfo" targetname: "strsep" label: "linux/Platform.c:653:22" }
+edge: { sourcename: "linux/Platform.c:Platform_Battery_getProcBatInfo" targetname: "*__isoc99_sscanf" label: "linux/Platform.c:670:19" }
+edge: { sourcename: "linux/Platform.c:Platform_Battery_getProcBatInfo" targetname: "strcmp" label: "./XUtils.h:46:11" }
+edge: { sourcename: "linux/Platform.c:Platform_Battery_getProcBatInfo" targetname: "strsep" label: "linux/Platform.c:667:22" }
+node: { title: "readdir" label: "readdir\n/usr/include/dirent.h:162:23" shape : ellipse }
+edge: { sourcename: "linux/Platform.c:Platform_Battery_getProcBatInfo" targetname: "readdir" label: "linux/Platform.c:631:23" }
+node: { title: "closedir" label: "closedir\n/usr/include/dirent.h:149:12" shape : ellipse }
+edge: { sourcename: "linux/Platform.c:Platform_Battery_getProcBatInfo" targetname: "closedir" label: "linux/Platform.c:680:4" }
+node: { title: "linux/Platform.c:Platform_Battery_getSysData" label: "Platform_Battery_getSysData\nlinux/Platform.c:703:13\n1312 bytes (static)" }
+edge: { sourcename: "linux/Platform.c:Platform_Battery_getSysData" targetname: "opendir" label: "linux/Platform.c:707:15" }
+node: { title: "dirfd" label: "dirfd\n/usr/include/dirent.h:224:12" shape : ellipse }
+edge: { sourcename: "linux/Platform.c:Platform_Battery_getSysData" targetname: "dirfd" label: "linux/Platform.c:719:21" }
+node: { title: "openat" label: "openat\n/usr/include/fcntl.h:192:12" shape : ellipse }
+edge: { sourcename: "linux/Platform.c:Platform_Battery_getSysData" targetname: "openat" label: "linux/Platform.c:719:21" }
+node: { title: "xReadfileat" label: "xReadfileat\n./XUtils.h:74:9" shape : ellipse }
+edge: { sourcename: "linux/Platform.c:Platform_Battery_getSysData" targetname: "xReadfileat" label: "linux/Platform.c:734:24" }
+edge: { sourcename: "linux/Platform.c:Platform_Battery_getSysData" targetname: "xReadfileat" label: "linux/Platform.c:752:22" }
+edge: { sourcename: "linux/Platform.c:Platform_Battery_getSysData" targetname: "*__isoc99_sscanf" label: "linux/Platform.c:767:22" }
+edge: { sourcename: "linux/Platform.c:Platform_Battery_getSysData" targetname: "strcmp" label: "./XUtils.h:46:11" }
+edge: { sourcename: "linux/Platform.c:Platform_Battery_getSysData" targetname: "strcmp" label: "./XUtils.h:46:11" }
+edge: { sourcename: "linux/Platform.c:Platform_Battery_getSysData" targetname: "strcmp" label: "./XUtils.h:46:11" }
+edge: { sourcename: "linux/Platform.c:Platform_Battery_getSysData" targetname: "strcmp" label: "./XUtils.h:46:11" }
+edge: { sourcename: "linux/Platform.c:Platform_Battery_getSysData" targetname: "strcmp" label: "./XUtils.h:46:11" }
+edge: { sourcename: "linux/Platform.c:Platform_Battery_getSysData" targetname: "strsep" label: "linux/Platform.c:764:25" }
+edge: { sourcename: "linux/Platform.c:Platform_Battery_getSysData" targetname: "xReadfileat" label: "linux/Platform.c:801:22" }
+node: { title: "close" label: "close\n/usr/include/unistd.h:353:12" shape : ellipse }
+edge: { sourcename: "linux/Platform.c:Platform_Battery_getSysData" targetname: "close" label: "./Compat.h:34:4" }
+edge: { sourcename: "linux/Platform.c:Platform_Battery_getSysData" targetname: "readdir" label: "linux/Platform.c:715:23" }
+edge: { sourcename: "linux/Platform.c:Platform_Battery_getSysData" targetname: "closedir" label: "linux/Platform.c:817:4" }
+node: { title: "Platform_setBindings" label: "Platform_setBindings\nlinux/Platform.c:203:6\n0 bytes (static)" }
+node: { title: "Platform_getUptime" label: "Platform_getUptime\nlinux/Platform.c:255:5\n48 bytes (static)" }
+node: { title: "fopen" label: "fopen\n/usr/include/stdio.h:246:14" shape : ellipse }
+edge: { sourcename: "Platform_getUptime" targetname: "fopen" label: "linux/Platform.c:257:15" }
+node: { title: "*__isoc99_fscanf" label: "fscanf\n/usr/include/stdio.h:407:12" shape : ellipse }
+edge: { sourcename: "Platform_getUptime" targetname: "*__isoc99_fscanf" label: "linux/Platform.c:259:15" }
+node: { title: "fclose" label: "fclose\n/usr/include/stdio.h:213:12" shape : ellipse }
+edge: { sourcename: "Platform_getUptime" targetname: "fclose" label: "linux/Platform.c:260:7" }
+node: { title: "Platform_getLoadAverage" label: "Platform_getLoadAverage\nlinux/Platform.c:268:6\n80 bytes (static)" }
+edge: { sourcename: "Platform_getLoadAverage" targetname: "fopen" label: "linux/Platform.c:269:15" }
+edge: { sourcename: "Platform_getLoadAverage" targetname: "*__isoc99_fscanf" label: "linux/Platform.c:274:12" }
+edge: { sourcename: "Platform_getLoadAverage" targetname: "fclose" label: "linux/Platform.c:275:4" }
+node: { title: "Platform_getMaxPid" label: "Platform_getMaxPid\nlinux/Platform.c:290:5\n48 bytes (static)" }
+edge: { sourcename: "Platform_getMaxPid" targetname: "fopen" label: "linux/Platform.c:291:17" }
+edge: { sourcename: "Platform_getMaxPid" targetname: "*__isoc99_fscanf" label: "linux/Platform.c:296:16" }
+edge: { sourcename: "Platform_getMaxPid" targetname: "fclose" label: "linux/Platform.c:298:4" }
+node: { title: "Platform_setCPUValues" label: "Platform_setCPUValues\nlinux/Platform.c:302:8\n0 bytes (static)" }
+node: { title: "Platform_setMemoryValues" label: "Platform_setMemoryValues\nlinux/Platform.c:351:6\n0 bytes (static)" }
+node: { title: "Platform_setSwapValues" label: "Platform_setSwapValues\nlinux/Platform.c:373:6\n0 bytes (static)" }
+node: { title: "Platform_setZramValues" label: "Platform_setZramValues\nlinux/Platform.c:380:6\n0 bytes (static)" }
+node: { title: "Platform_setZfsArcValues" label: "Platform_setZfsArcValues\nlinux/Platform.c:387:6\n0 bytes (static)" }
+node: { title: "ZfsArcMeter_readStats" label: "ZfsArcMeter_readStats\n./zfs/ZfsArcMeter.h:15:6" shape : ellipse }
+edge: { sourcename: "Platform_setZfsArcValues" targetname: "ZfsArcMeter_readStats" label: "linux/Platform.c:390:4" }
+node: { title: "Platform_setZfsCompressedArcValues" label: "Platform_setZfsCompressedArcValues\nlinux/Platform.c:393:6\n0 bytes (static)" }
+node: { title: "ZfsCompressedArcMeter_readStats" label: "ZfsCompressedArcMeter_readStats\n./zfs/ZfsCompressedArcMeter.h:15:6" shape : ellipse }
+edge: { sourcename: "Platform_setZfsCompressedArcValues" targetname: "ZfsCompressedArcMeter_readStats" label: "linux/Platform.c:396:4" }
+node: { title: "Platform_getProcessEnv" label: "Platform_getProcessEnv\nlinux/Platform.c:399:7\n192 bytes (static)" }
+edge: { sourcename: "Platform_getProcessEnv" targetname: "xSnprintf" label: "linux/Platform.c:401:4" }
+edge: { sourcename: "Platform_getProcessEnv" targetname: "fopen" label: "linux/Platform.c:402:15" }
+node: { title: "xRealloc" label: "xRealloc\n./XUtils.h:29:7" shape : ellipse }
+edge: { sourcename: "Platform_getProcessEnv" targetname: "xRealloc" label: "linux/Platform.c:415:13" }
+node: { title: "fread" label: "fread\n/usr/include/stdio.h:646:15" shape : ellipse }
+edge: { sourcename: "Platform_getProcessEnv" targetname: "fread" label: "linux/Platform.c:416:22" }
+edge: { sourcename: "Platform_getProcessEnv" targetname: "fclose" label: "linux/Platform.c:418:4" }
+node: { title: "free" label: "free\n/usr/include/stdlib.h:565:13" shape : ellipse }
+edge: { sourcename: "Platform_getProcessEnv" targetname: "free" label: "linux/Platform.c:421:7" }
+edge: { sourcename: "Platform_getProcessEnv" targetname: "xRealloc" label: "linux/Platform.c:427:10" }
+node: { title: "Platform_getProcessLocks" label: "Platform_getProcessLocks\nlinux/Platform.c:435:24\n9648 bytes (static)" }
+node: { title: "xCalloc" label: "xCalloc\n./XUtils.h:27:7" shape : ellipse }
+edge: { sourcename: "Platform_getProcessLocks" targetname: "xCalloc" label: "linux/Platform.c:436:35" }
+edge: { sourcename: "Platform_getProcessLocks" targetname: "xSnprintf" label: "linux/Platform.c:441:4" }
+node: { title: "strlen" label: "strlen\n/usr/include/string.h:385:15" shape : ellipse }
+edge: { sourcename: "Platform_getProcessLocks" targetname: "strlen" label: "linux/Platform.c:442:8" }
+edge: { sourcename: "Platform_getProcessLocks" targetname: "opendir" label: "linux/Platform.c:445:17" }
+edge: { sourcename: "Platform_getProcessLocks" targetname: "dirfd" label: "linux/Platform.c:448:15" }
+edge: { sourcename: "Platform_getProcessLocks" targetname: "closedir" label: "linux/Platform.c:449:7" }
+node: { title: "__errno_location" label: "__errno_location\n/usr/include/errno.h:37:13" shape : ellipse }
+edge: { sourcename: "Platform_getProcessLocks" targetname: "__errno_location" label: "linux/Platform.c:458:7" }
+node: { title: "strtoull" label: "strtoull\n/usr/include/stdlib.h:205:31" shape : ellipse }
+edge: { sourcename: "Platform_getProcessLocks" targetname: "strtoull" label: "linux/Platform.c:460:18" }
+edge: { sourcename: "Platform_getProcessLocks" targetname: "openat" label: "linux/Platform.c:464:16" }
+node: { title: "fdopen" label: "fdopen\n/usr/include/stdio.h:279:14" shape : ellipse }
+edge: { sourcename: "Platform_getProcessLocks" targetname: "fdopen" label: "linux/Platform.c:467:17" }
+edge: { sourcename: "Platform_getProcessLocks" targetname: "close" label: "linux/Platform.c:469:10" }
+node: { title: "strchr" label: "strchr\n/usr/include/string.h:226:14" shape : ellipse }
+edge: { sourcename: "Platform_getProcessLocks" targetname: "strchr" label: "linux/Platform.c:474:15" }
+edge: { sourcename: "Platform_getProcessLocks" targetname: "*__isoc99_sscanf" label: "linux/Platform.c:484:20" }
+node: { title: "xStrdup" label: "xStrdup\n./XUtils.h:68:7" shape : ellipse }
+edge: { sourcename: "Platform_getProcessLocks" targetname: "xStrdup" label: "linux/Platform.c:490:26" }
+edge: { sourcename: "Platform_getProcessLocks" targetname: "xStrdup" label: "linux/Platform.c:491:27" }
+edge: { sourcename: "Platform_getProcessLocks" targetname: "xStrdup" label: "linux/Platform.c:492:27" }
+edge: { sourcename: "Platform_getProcessLocks" targetname: "strtoull" label: "linux/Platform.c:498:24" }
+edge: { sourcename: "Platform_getProcessLocks" targetname: "xSnprintf" label: "linux/Platform.c:500:10" }
+edge: { sourcename: "Platform_getProcessLocks" targetname: "strlen" label: "linux/Platform.c:503:14" }
+node: { title: "readlink" label: "readlink\n/usr/include/unistd.h:808:16" shape : ellipse }
+edge: { sourcename: "Platform_getProcessLocks" targetname: "readlink" label: "linux/Platform.c:503:63" }
+node: { title: "xStrndup" label: "xStrndup\n./XUtils.h:71:7" shape : ellipse }
+edge: { sourcename: "Platform_getProcessLocks" targetname: "xStrndup" label: "linux/Platform.c:504:29" }
+edge: { sourcename: "Platform_getProcessLocks" targetname: "xCalloc" label: "linux/Platform.c:506:22" }
+node: { title: "fgets" label: "fgets\n/usr/include/stdio.h:564:14" shape : ellipse }
+edge: { sourcename: "Platform_getProcessLocks" targetname: "fgets" label: "linux/Platform.c:473:31" }
+edge: { sourcename: "Platform_getProcessLocks" targetname: "fclose" label: "linux/Platform.c:511:7" }
+edge: { sourcename: "Platform_getProcessLocks" targetname: "readdir" label: "linux/Platform.c:454:34" }
+edge: { sourcename: "Platform_getProcessLocks" targetname: "closedir" label: "linux/Platform.c:514:4" }
+node: { title: "Platform_getPressureStall" label: "Platform_getPressureStall\nlinux/Platform.c:522:6\n192 bytes (static)" }
+edge: { sourcename: "Platform_getPressureStall" targetname: "xSnprintf" label: "linux/Platform.c:525:4" }
+edge: { sourcename: "Platform_getPressureStall" targetname: "fopen" label: "linux/Platform.c:526:15" }
+edge: { sourcename: "Platform_getPressureStall" targetname: "*__isoc99_fscanf" label: "linux/Platform.c:531:16" }
+edge: { sourcename: "Platform_getPressureStall" targetname: "*__isoc99_fscanf" label: "linux/Platform.c:533:15" }
+edge: { sourcename: "Platform_getPressureStall" targetname: "fclose" label: "linux/Platform.c:537:4" }
+node: { title: "Platform_getDiskIO" label: "Platform_getDiskIO\nlinux/Platform.c:540:6\n464 bytes (static)" }
+edge: { sourcename: "Platform_getDiskIO" targetname: "fopen" label: "linux/Platform.c:541:15" }
+edge: { sourcename: "Platform_getDiskIO" targetname: "*__isoc99_sscanf" label: "linux/Platform.c:552:11" }
+edge: { sourcename: "Platform_getDiskIO" targetname: "strlen" label: "./XUtils.h:40:11" }
+node: { title: "strncmp" label: "strncmp\n/usr/include/string.h:140:12" shape : ellipse }
+edge: { sourcename: "Platform_getDiskIO" targetname: "strncmp" label: "./XUtils.h:40:11" }
+node: { title: "String_safeStrncpy" label: "String_safeStrncpy\n./XUtils.h:60:8" shape : ellipse }
+edge: { sourcename: "Platform_getDiskIO" targetname: "String_safeStrncpy" label: "linux/Platform.c:564:10" }
+edge: { sourcename: "Platform_getDiskIO" targetname: "fgets" label: "linux/Platform.c:549:11" }
+edge: { sourcename: "Platform_getDiskIO" targetname: "fclose" label: "linux/Platform.c:571:4" }
+node: { title: "Platform_getNetworkIO" label: "Platform_getNetworkIO\nlinux/Platform.c:579:6\n640 bytes (static)" }
+edge: { sourcename: "Platform_getNetworkIO" targetname: "fopen" label: "linux/Platform.c:580:15" }
+edge: { sourcename: "Platform_getNetworkIO" targetname: "*__isoc99_sscanf" label: "linux/Platform.c:589:11" }
+edge: { sourcename: "Platform_getNetworkIO" targetname: "fgets" label: "linux/Platform.c:586:11" }
+edge: { sourcename: "Platform_getNetworkIO" targetname: "fclose" label: "linux/Platform.c:606:4" }
+node: { title: "Platform_getBattery" label: "Platform_getBattery\nlinux/Platform.c:822:6\n64 bytes (static)" }
+node: { title: "time" label: "time\n/usr/include/time.h:75:15" shape : ellipse }
+edge: { sourcename: "Platform_getBattery" targetname: "time" label: "linux/Platform.c:823:17" }
+edge: { sourcename: "Platform_getBattery" targetname: "linux/Platform.c:procAcpiCheck" label: "linux/Platform.c:695:14" }
+edge: { sourcename: "Platform_getBattery" targetname: "linux/Platform.c:Platform_Battery_getProcBatInfo" label: "linux/Platform.c:696:37" }
+edge: { sourcename: "Platform_getBattery" targetname: "linux/Platform.c:Platform_Battery_getSysData" label: "linux/Platform.c:837:7" }
+node: { title: "Platform_longOptionsUsage" label: "Platform_longOptionsUsage\nlinux/Platform.c:852:6\n0 bytes (static)" }
+node: { title: "Platform_getLongOption" label: "Platform_getLongOption\nlinux/Platform.c:866:19\n0 bytes (static)" }
+node: { title: "Platform_init" label: "Platform_init\nlinux/Platform.c:987:6\n4416 bytes (static)" }
+node: { title: "access" label: "access\n/usr/include/unistd.h:287:12" shape : ellipse }
+edge: { sourcename: "Platform_init" targetname: "access" label: "linux/Platform.c:993:8" }
+node: { title: "fprintf" label: "fprintf\n/usr/include/stdio.h:326:12" shape : ellipse }
+edge: { sourcename: "Platform_init" targetname: "fprintf" label: "linux/Platform.c:994:7" }
+edge: { sourcename: "Platform_init" targetname: "readlink" label: "linux/Platform.c:1003:18" }
+edge: { sourcename: "Platform_init" targetname: "fopen" label: "linux/Platform.c:1013:15" }
+edge: { sourcename: "Platform_init" targetname: "fgets" label: "linux/Platform.c:1016:14" }
+edge: { sourcename: "Platform_init" targetname: "fclose" label: "linux/Platform.c:1023:7" }
+node: { title: "Platform_done" label: "Platform_done\nlinux/Platform.c:1029:6\n0 bytes (static)" }
+}

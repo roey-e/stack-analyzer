@@ -1,0 +1,97 @@
+graph: { title: "linux/SystemdMeter.c"
+node: { title: "linux/SystemdMeter.c:SystemdMeter_done" label: "SystemdMeter_done\nlinux/SystemdMeter.c:62:13\n32 bytes (static)" }
+node: { title: "free" label: "free\n/usr/include/stdlib.h:565:13" shape : ellipse }
+edge: { sourcename: "linux/SystemdMeter.c:SystemdMeter_done" targetname: "free" label: "linux/SystemdMeter.c:63:4" }
+node: { title: "__indirect_call" label: "Indirect Call Placeholder" shape : ellipse }
+edge: { sourcename: "linux/SystemdMeter.c:SystemdMeter_done" targetname: "__indirect_call" label: "linux/SystemdMeter.c:75:7" }
+node: { title: "dlclose" label: "dlclose\n/usr/include/dlfcn.h:60:12" shape : ellipse }
+edge: { sourcename: "linux/SystemdMeter.c:SystemdMeter_done" targetname: "dlclose" label: "linux/SystemdMeter.c:80:7" }
+node: { title: "linux/SystemdMeter.c:SystemdMeter_display" label: "SystemdMeter_display\nlinux/SystemdMeter.c:310:13\n96 bytes (static)" }
+node: { title: "strcmp" label: "strcmp\n/usr/include/string.h:137:12" shape : ellipse }
+edge: { sourcename: "linux/SystemdMeter.c:SystemdMeter_display" targetname: "strcmp" label: "./XUtils.h:46:11" }
+edge: { sourcename: "linux/SystemdMeter.c:SystemdMeter_display" targetname: "strcmp" label: "./XUtils.h:46:11" }
+node: { title: "RichString_writeAscii" label: "RichString_writeAscii\n./RichString.h:77:5" shape : ellipse }
+edge: { sourcename: "linux/SystemdMeter.c:SystemdMeter_display" targetname: "RichString_writeAscii" label: "linux/SystemdMeter.c:319:4" }
+node: { title: "RichString_appendAscii" label: "RichString_appendAscii\n./RichString.h:73:5" shape : ellipse }
+edge: { sourcename: "linux/SystemdMeter.c:SystemdMeter_display" targetname: "RichString_appendAscii" label: "linux/SystemdMeter.c:321:4" }
+node: { title: "xSnprintf" label: "xSnprintf\n./XUtils.h:66:5" shape : ellipse }
+edge: { sourcename: "linux/SystemdMeter.c:SystemdMeter_display" targetname: "xSnprintf" label: "linux/SystemdMeter.c:328:13" }
+node: { title: "RichString_appendnAscii" label: "RichString_appendnAscii\n./RichString.h:75:5" shape : ellipse }
+edge: { sourcename: "linux/SystemdMeter.c:SystemdMeter_display" targetname: "RichString_appendnAscii" label: "linux/SystemdMeter.c:330:4" }
+edge: { sourcename: "linux/SystemdMeter.c:SystemdMeter_display" targetname: "RichString_appendAscii" label: "linux/SystemdMeter.c:332:4" }
+edge: { sourcename: "linux/SystemdMeter.c:SystemdMeter_display" targetname: "xSnprintf" label: "linux/SystemdMeter.c:339:13" }
+edge: { sourcename: "linux/SystemdMeter.c:SystemdMeter_display" targetname: "RichString_appendnAscii" label: "linux/SystemdMeter.c:341:4" }
+edge: { sourcename: "linux/SystemdMeter.c:SystemdMeter_display" targetname: "RichString_appendAscii" label: "linux/SystemdMeter.c:343:4" }
+edge: { sourcename: "linux/SystemdMeter.c:SystemdMeter_display" targetname: "xSnprintf" label: "linux/SystemdMeter.c:350:13" }
+edge: { sourcename: "linux/SystemdMeter.c:SystemdMeter_display" targetname: "RichString_appendnAscii" label: "linux/SystemdMeter.c:352:4" }
+edge: { sourcename: "linux/SystemdMeter.c:SystemdMeter_display" targetname: "RichString_appendAscii" label: "linux/SystemdMeter.c:354:4" }
+edge: { sourcename: "linux/SystemdMeter.c:SystemdMeter_display" targetname: "xSnprintf" label: "linux/SystemdMeter.c:361:13" }
+edge: { sourcename: "linux/SystemdMeter.c:SystemdMeter_display" targetname: "RichString_appendnAscii" label: "linux/SystemdMeter.c:363:4" }
+edge: { sourcename: "linux/SystemdMeter.c:SystemdMeter_display" targetname: "RichString_appendAscii" label: "linux/SystemdMeter.c:365:4" }
+node: { title: "linux/SystemdMeter.c:SystemdMeter_updateValues" label: "SystemdMeter_updateValues\nlinux/SystemdMeter.c:272:13\n272 bytes (static)" }
+edge: { sourcename: "linux/SystemdMeter.c:SystemdMeter_updateValues" targetname: "free" label: "linux/SystemdMeter.c:273:4" }
+node: { title: "dlopen" label: "dlopen\n/usr/include/dlfcn.h:56:14" shape : ellipse }
+edge: { sourcename: "linux/SystemdMeter.c:SystemdMeter_updateValues" targetname: "dlopen" label: "linux/SystemdMeter.c:90:22" }
+node: { title: "dlerror" label: "dlerror\n/usr/include/dlfcn.h:82:14" shape : ellipse }
+edge: { sourcename: "linux/SystemdMeter.c:SystemdMeter_updateValues" targetname: "dlerror" label: "linux/SystemdMeter.c:95:7" }
+node: { title: "dlsym" label: "dlsym\n/usr/include/dlfcn.h:64:14" shape : ellipse }
+edge: { sourcename: "linux/SystemdMeter.c:SystemdMeter_updateValues" targetname: "dlsym" label: "linux/SystemdMeter.c:103:7" }
+edge: { sourcename: "linux/SystemdMeter.c:SystemdMeter_updateValues" targetname: "dlerror" label: "linux/SystemdMeter.c:103:7" }
+edge: { sourcename: "linux/SystemdMeter.c:SystemdMeter_updateValues" targetname: "dlsym" label: "linux/SystemdMeter.c:104:7" }
+edge: { sourcename: "linux/SystemdMeter.c:SystemdMeter_updateValues" targetname: "dlerror" label: "linux/SystemdMeter.c:104:7" }
+edge: { sourcename: "linux/SystemdMeter.c:SystemdMeter_updateValues" targetname: "dlsym" label: "linux/SystemdMeter.c:105:7" }
+edge: { sourcename: "linux/SystemdMeter.c:SystemdMeter_updateValues" targetname: "dlerror" label: "linux/SystemdMeter.c:105:7" }
+edge: { sourcename: "linux/SystemdMeter.c:SystemdMeter_updateValues" targetname: "dlsym" label: "linux/SystemdMeter.c:106:7" }
+edge: { sourcename: "linux/SystemdMeter.c:SystemdMeter_updateValues" targetname: "dlerror" label: "linux/SystemdMeter.c:106:7" }
+edge: { sourcename: "linux/SystemdMeter.c:SystemdMeter_updateValues" targetname: "__indirect_call" label: "linux/SystemdMeter.c:116:11" }
+edge: { sourcename: "linux/SystemdMeter.c:SystemdMeter_updateValues" targetname: "__indirect_call" label: "linux/SystemdMeter.c:183:4" }
+edge: { sourcename: "linux/SystemdMeter.c:SystemdMeter_updateValues" targetname: "__indirect_call" label: "linux/SystemdMeter.c:125:8" }
+edge: { sourcename: "linux/SystemdMeter.c:SystemdMeter_updateValues" targetname: "__indirect_call" label: "linux/SystemdMeter.c:135:8" }
+edge: { sourcename: "linux/SystemdMeter.c:SystemdMeter_updateValues" targetname: "__indirect_call" label: "linux/SystemdMeter.c:146:8" }
+edge: { sourcename: "linux/SystemdMeter.c:SystemdMeter_updateValues" targetname: "__indirect_call" label: "linux/SystemdMeter.c:157:8" }
+edge: { sourcename: "linux/SystemdMeter.c:SystemdMeter_updateValues" targetname: "__indirect_call" label: "linux/SystemdMeter.c:168:8" }
+node: { title: "Settings_isReadonly" label: "Settings_isReadonly\n./Settings.h:131:6" shape : ellipse }
+edge: { sourcename: "linux/SystemdMeter.c:SystemdMeter_updateValues" targetname: "Settings_isReadonly" label: "linux/SystemdMeter.c:199:8" }
+node: { title: "pipe" label: "pipe\n/usr/include/unistd.h:417:12" shape : ellipse }
+edge: { sourcename: "linux/SystemdMeter.c:SystemdMeter_updateValues" targetname: "pipe" label: "linux/SystemdMeter.c:203:8" }
+node: { title: "fork" label: "fork\n/usr/include/unistd.h:756:16" shape : ellipse }
+edge: { sourcename: "linux/SystemdMeter.c:SystemdMeter_updateValues" targetname: "fork" label: "linux/SystemdMeter.c:206:18" }
+node: { title: "close" label: "close\n/usr/include/unistd.h:353:12" shape : ellipse }
+edge: { sourcename: "linux/SystemdMeter.c:SystemdMeter_updateValues" targetname: "close" label: "linux/SystemdMeter.c:208:7" }
+edge: { sourcename: "linux/SystemdMeter.c:SystemdMeter_updateValues" targetname: "close" label: "linux/SystemdMeter.c:209:7" }
+edge: { sourcename: "linux/SystemdMeter.c:SystemdMeter_updateValues" targetname: "close" label: "linux/SystemdMeter.c:214:7" }
+node: { title: "dup2" label: "dup2\n/usr/include/unistd.h:534:12" shape : ellipse }
+edge: { sourcename: "linux/SystemdMeter.c:SystemdMeter_updateValues" targetname: "dup2" label: "linux/SystemdMeter.c:215:7" }
+edge: { sourcename: "linux/SystemdMeter.c:SystemdMeter_updateValues" targetname: "close" label: "linux/SystemdMeter.c:216:7" }
+node: { title: "open" label: "open\n/usr/include/fcntl.h:168:12" shape : ellipse }
+edge: { sourcename: "linux/SystemdMeter.c:SystemdMeter_updateValues" targetname: "open" label: "linux/SystemdMeter.c:217:20" }
+node: { title: "exit" label: "exit\n/usr/include/stdlib.h:617:13" shape : ellipse }
+edge: { sourcename: "linux/SystemdMeter.c:SystemdMeter_updateValues" targetname: "exit" label: "linux/SystemdMeter.c:219:10" }
+edge: { sourcename: "linux/SystemdMeter.c:SystemdMeter_updateValues" targetname: "dup2" label: "linux/SystemdMeter.c:220:7" }
+edge: { sourcename: "linux/SystemdMeter.c:SystemdMeter_updateValues" targetname: "close" label: "linux/SystemdMeter.c:221:7" }
+node: { title: "execlp" label: "execlp\n/usr/include/unistd.h:584:12" shape : ellipse }
+edge: { sourcename: "linux/SystemdMeter.c:SystemdMeter_updateValues" targetname: "execlp" label: "linux/SystemdMeter.c:224:7" }
+edge: { sourcename: "linux/SystemdMeter.c:SystemdMeter_updateValues" targetname: "exit" label: "linux/SystemdMeter.c:234:7" }
+edge: { sourcename: "linux/SystemdMeter.c:SystemdMeter_updateValues" targetname: "close" label: "linux/SystemdMeter.c:236:4" }
+node: { title: "waitpid" label: "waitpid\n/usr/include/aarch64-linux-gnu/sys/wait.h:100:16" shape : ellipse }
+edge: { sourcename: "linux/SystemdMeter.c:SystemdMeter_updateValues" targetname: "waitpid" label: "linux/SystemdMeter.c:239:8" }
+edge: { sourcename: "linux/SystemdMeter.c:SystemdMeter_updateValues" targetname: "close" label: "linux/SystemdMeter.c:240:7" }
+node: { title: "fdopen" label: "fdopen\n/usr/include/stdio.h:279:14" shape : ellipse }
+edge: { sourcename: "linux/SystemdMeter.c:SystemdMeter_updateValues" targetname: "fdopen" label: "linux/SystemdMeter.c:244:26" }
+edge: { sourcename: "linux/SystemdMeter.c:SystemdMeter_updateValues" targetname: "close" label: "linux/SystemdMeter.c:246:7" }
+node: { title: "strchr" label: "strchr\n/usr/include/string.h:226:14" shape : ellipse }
+edge: { sourcename: "linux/SystemdMeter.c:SystemdMeter_updateValues" targetname: "strchr" label: "linux/SystemdMeter.c:253:26" }
+node: { title: "free_and_xStrdup" label: "free_and_xStrdup\n./XUtils.h:69:6" shape : ellipse }
+edge: { sourcename: "linux/SystemdMeter.c:SystemdMeter_updateValues" targetname: "free_and_xStrdup" label: "linux/SystemdMeter.c:257:10" }
+node: { title: "strtoul" label: "strtoul\n/usr/include/stdlib.h:180:26" shape : ellipse }
+edge: { sourcename: "linux/SystemdMeter.c:SystemdMeter_updateValues" targetname: "strtoul" label: "linux/SystemdMeter.c:259:25" }
+edge: { sourcename: "linux/SystemdMeter.c:SystemdMeter_updateValues" targetname: "strtoul" label: "linux/SystemdMeter.c:261:19" }
+edge: { sourcename: "linux/SystemdMeter.c:SystemdMeter_updateValues" targetname: "strtoul" label: "linux/SystemdMeter.c:263:18" }
+edge: { sourcename: "linux/SystemdMeter.c:SystemdMeter_updateValues" targetname: "strtoul" label: "linux/SystemdMeter.c:265:27" }
+node: { title: "fgets" label: "fgets\n/usr/include/stdio.h:564:14" shape : ellipse }
+edge: { sourcename: "linux/SystemdMeter.c:SystemdMeter_updateValues" targetname: "fgets" label: "linux/SystemdMeter.c:251:11" }
+node: { title: "fclose" label: "fclose\n/usr/include/stdio.h:213:12" shape : ellipse }
+edge: { sourcename: "linux/SystemdMeter.c:SystemdMeter_updateValues" targetname: "fclose" label: "linux/SystemdMeter.c:269:4" }
+edge: { sourcename: "linux/SystemdMeter.c:SystemdMeter_updateValues" targetname: "xSnprintf" label: "linux/SystemdMeter.c:284:4" }
+edge: { sourcename: "linux/SystemdMeter.c:SystemdMeter_updateValues" targetname: "dlclose" label: "linux/SystemdMeter.c:190:7" }
+}

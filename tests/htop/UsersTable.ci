@@ -1,0 +1,24 @@
+graph: { title: "UsersTable.c"
+node: { title: "UsersTable_new" label: "UsersTable_new\nUsersTable.c:20:13\n32 bytes (static)" }
+node: { title: "xMalloc" label: "xMalloc\nXUtils.h:23:7" shape : ellipse }
+edge: { sourcename: "UsersTable_new" targetname: "xMalloc" label: "UsersTable.c:22:11" }
+node: { title: "Hashtable_new" label: "Hashtable_new\nHashtable.h:26:12" shape : ellipse }
+edge: { sourcename: "UsersTable_new" targetname: "Hashtable_new" label: "UsersTable.c:23:18" }
+node: { title: "UsersTable_delete" label: "UsersTable_delete\nUsersTable.c:27:6\n32 bytes (static)" }
+node: { title: "Hashtable_delete" label: "Hashtable_delete\nHashtable.h:28:6" shape : ellipse }
+edge: { sourcename: "UsersTable_delete" targetname: "Hashtable_delete" label: "UsersTable.c:28:4" }
+node: { title: "free" label: "free\n/usr/include/stdlib.h:565:13" shape : ellipse }
+edge: { sourcename: "UsersTable_delete" targetname: "free" label: "UsersTable.c:29:4" }
+node: { title: "UsersTable_getRef" label: "UsersTable_getRef\nUsersTable.c:32:7\n48 bytes (static)" }
+node: { title: "Hashtable_get" label: "Hashtable_get\nHashtable.h:38:7" shape : ellipse }
+edge: { sourcename: "UsersTable_getRef" targetname: "Hashtable_get" label: "UsersTable.c:33:17" }
+node: { title: "getpwuid" label: "getpwuid\n/usr/include/pwd.h:110:23" shape : ellipse }
+edge: { sourcename: "UsersTable_getRef" targetname: "getpwuid" label: "UsersTable.c:35:39" }
+node: { title: "xStrdup" label: "xStrdup\nXUtils.h:68:7" shape : ellipse }
+edge: { sourcename: "UsersTable_getRef" targetname: "xStrdup" label: "UsersTable.c:37:17" }
+node: { title: "Hashtable_put" label: "Hashtable_put\nHashtable.h:34:6" shape : ellipse }
+edge: { sourcename: "UsersTable_getRef" targetname: "Hashtable_put" label: "UsersTable.c:38:10" }
+node: { title: "UsersTable_foreach" label: "UsersTable_foreach\nUsersTable.c:44:13\n0 bytes (static)" }
+node: { title: "Hashtable_foreach" label: "Hashtable_foreach\nHashtable.h:40:6" shape : ellipse }
+edge: { sourcename: "UsersTable_foreach" targetname: "Hashtable_foreach" label: "UsersTable.c:45:4" }
+}

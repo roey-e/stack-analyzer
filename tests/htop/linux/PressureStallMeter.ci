@@ -1,0 +1,20 @@
+graph: { title: "linux/PressureStallMeter.c"
+node: { title: "linux/PressureStallMeter.c:PressureStallMeter_updateValues" label: "PressureStallMeter_updateValues\nlinux/PressureStallMeter.c:28:13\n48 bytes (static)" }
+node: { title: "strstr" label: "strstr\n/usr/include/string.h:330:14" shape : ellipse }
+edge: { sourcename: "linux/PressureStallMeter.c:PressureStallMeter_updateValues" targetname: "strstr" label: "linux/PressureStallMeter.c:30:8" }
+edge: { sourcename: "linux/PressureStallMeter.c:PressureStallMeter_updateValues" targetname: "strstr" label: "linux/PressureStallMeter.c:32:15" }
+edge: { sourcename: "linux/PressureStallMeter.c:PressureStallMeter_updateValues" targetname: "strstr" label: "linux/PressureStallMeter.c:39:8" }
+node: { title: "xSnprintf" label: "xSnprintf\n./XUtils.h:66:5" shape : ellipse }
+edge: { sourcename: "linux/PressureStallMeter.c:PressureStallMeter_updateValues" targetname: "xSnprintf" label: "linux/PressureStallMeter.c:50:4" }
+node: { title: "Platform_getPressureStall" label: "Platform_getPressureStall\nlinux/Platform.h:80:6" shape : ellipse }
+edge: { sourcename: "linux/PressureStallMeter.c:PressureStallMeter_updateValues" targetname: "Platform_getPressureStall" label: "linux/PressureStallMeter.c:45:4" }
+edge: { sourcename: "linux/PressureStallMeter.c:PressureStallMeter_updateValues" targetname: "Platform_getPressureStall" label: "linux/PressureStallMeter.c:45:4" }
+node: { title: "linux/PressureStallMeter.c:PressureStallMeter_display" label: "PressureStallMeter_display\nlinux/PressureStallMeter.c:53:13\n96 bytes (static)" }
+edge: { sourcename: "linux/PressureStallMeter.c:PressureStallMeter_display" targetname: "xSnprintf" label: "linux/PressureStallMeter.c:58:10" }
+node: { title: "RichString_appendnAscii" label: "RichString_appendnAscii\n./RichString.h:75:5" shape : ellipse }
+edge: { sourcename: "linux/PressureStallMeter.c:PressureStallMeter_display" targetname: "RichString_appendnAscii" label: "linux/PressureStallMeter.c:59:4" }
+edge: { sourcename: "linux/PressureStallMeter.c:PressureStallMeter_display" targetname: "xSnprintf" label: "linux/PressureStallMeter.c:60:10" }
+edge: { sourcename: "linux/PressureStallMeter.c:PressureStallMeter_display" targetname: "RichString_appendnAscii" label: "linux/PressureStallMeter.c:61:4" }
+edge: { sourcename: "linux/PressureStallMeter.c:PressureStallMeter_display" targetname: "xSnprintf" label: "linux/PressureStallMeter.c:62:10" }
+edge: { sourcename: "linux/PressureStallMeter.c:PressureStallMeter_display" targetname: "RichString_appendnAscii" label: "linux/PressureStallMeter.c:63:4" }
+}

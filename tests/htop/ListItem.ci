@@ -1,0 +1,29 @@
+graph: { title: "ListItem.c"
+node: { title: "ListItem_delete" label: "ListItem_delete\nListItem.c:21:6\n32 bytes (static)" }
+node: { title: "free" label: "free\n/usr/include/stdlib.h:565:13" shape : ellipse }
+edge: { sourcename: "ListItem_delete" targetname: "free" label: "ListItem.c:23:4" }
+edge: { sourcename: "ListItem_delete" targetname: "free" label: "ListItem.c:24:4" }
+node: { title: "ListItem_display" label: "ListItem_display\nListItem.c:27:6\n48 bytes (static)" }
+node: { title: "RichString_writeWide" label: "RichString_writeWide\nRichString.h:71:5" shape : ellipse }
+edge: { sourcename: "ListItem_display" targetname: "RichString_writeWide" label: "ListItem.c:32:7" }
+node: { title: "RichString_appendWide" label: "RichString_appendWide\nRichString.h:64:5" shape : ellipse }
+edge: { sourcename: "ListItem_display" targetname: "RichString_appendWide" label: "ListItem.c:38:4" }
+node: { title: "ListItem_compare" label: "ListItem_compare\nListItem.c:62:5\n0 bytes (static)" }
+node: { title: "strcmp" label: "strcmp\n/usr/include/string.h:137:12" shape : ellipse }
+edge: { sourcename: "ListItem_compare" targetname: "strcmp" label: "ListItem.c:65:11" }
+node: { title: "ListItem_init" label: "ListItem_init\nListItem.c:41:6\n32 bytes (static)" }
+node: { title: "xStrdup" label: "xStrdup\nXUtils.h:68:7" shape : ellipse }
+edge: { sourcename: "ListItem_init" targetname: "xStrdup" label: "ListItem.c:42:18" }
+node: { title: "ListItem_new" label: "ListItem_new\nListItem.c:47:11\n48 bytes (static)" }
+node: { title: "xMalloc" label: "xMalloc\nXUtils.h:23:7" shape : ellipse }
+edge: { sourcename: "ListItem_new" targetname: "xMalloc" label: "ListItem.c:48:21" }
+edge: { sourcename: "ListItem_new" targetname: "xStrdup" label: "ListItem.c:42:18" }
+node: { title: "ListItem_append" label: "ListItem_append\nListItem.c:53:6\n64 bytes (static)" }
+node: { title: "strlen" label: "strlen\n/usr/include/string.h:385:15" shape : ellipse }
+edge: { sourcename: "ListItem_append" targetname: "strlen" label: "ListItem.c:54:20" }
+edge: { sourcename: "ListItem_append" targetname: "strlen" label: "ListItem.c:55:21" }
+node: { title: "xRealloc" label: "xRealloc\nXUtils.h:29:7" shape : ellipse }
+edge: { sourcename: "ListItem_append" targetname: "xRealloc" label: "ListItem.c:57:18" }
+node: { title: "memcpy" label: "__builtin_memcpy\n<built-in>" shape : ellipse }
+edge: { sourcename: "ListItem_append" targetname: "memcpy" }
+}

@@ -1,0 +1,27 @@
+graph: { title: "MemorySwapMeter.c"
+node: { title: "MemorySwapMeter.c:MemorySwapMeter_updateValues" label: "MemorySwapMeter_updateValues\nMemorySwapMeter.c:26:13\n32 bytes (static)" }
+node: { title: "__indirect_call" label: "Indirect Call Placeholder" shape : ellipse }
+edge: { sourcename: "MemorySwapMeter.c:MemorySwapMeter_updateValues" targetname: "__indirect_call" label: "MemorySwapMeter.c:29:4" }
+edge: { sourcename: "MemorySwapMeter.c:MemorySwapMeter_updateValues" targetname: "__indirect_call" label: "MemorySwapMeter.c:30:4" }
+node: { title: "MemorySwapMeter.c:MemorySwapMeter_draw" label: "MemorySwapMeter_draw\nMemorySwapMeter.c:33:13\n64 bytes (static)" }
+edge: { sourcename: "MemorySwapMeter.c:MemorySwapMeter_draw" targetname: "__indirect_call" label: "MemorySwapMeter.c:41:4" }
+edge: { sourcename: "MemorySwapMeter.c:MemorySwapMeter_draw" targetname: "__indirect_call" label: "MemorySwapMeter.c:43:4" }
+node: { title: "MemorySwapMeter.c:MemorySwapMeter_updateMode" label: "MemorySwapMeter_updateMode\nMemorySwapMeter.c:71:13\n48 bytes (static)" }
+node: { title: "Meter_setMode" label: "Meter_setMode\nMeter.h:154:6" shape : ellipse }
+edge: { sourcename: "MemorySwapMeter.c:MemorySwapMeter_updateMode" targetname: "Meter_setMode" label: "MemorySwapMeter.c:76:4" }
+edge: { sourcename: "MemorySwapMeter.c:MemorySwapMeter_updateMode" targetname: "Meter_setMode" label: "MemorySwapMeter.c:77:4" }
+node: { title: "MemorySwapMeter.c:MemorySwapMeter_done" label: "MemorySwapMeter_done\nMemorySwapMeter.c:82:13\n32 bytes (static)" }
+node: { title: "Meter_delete" label: "Meter_delete\nMeter.h:150:6" shape : ellipse }
+edge: { sourcename: "MemorySwapMeter.c:MemorySwapMeter_done" targetname: "Meter_delete" label: "MemorySwapMeter.c:85:4" }
+edge: { sourcename: "MemorySwapMeter.c:MemorySwapMeter_done" targetname: "Meter_delete" label: "MemorySwapMeter.c:86:4" }
+node: { title: "free" label: "free\n/usr/include/stdlib.h:565:13" shape : ellipse }
+edge: { sourcename: "MemorySwapMeter.c:MemorySwapMeter_done" targetname: "free" label: "MemorySwapMeter.c:88:4" }
+node: { title: "MemorySwapMeter.c:MemorySwapMeter_init" label: "MemorySwapMeter_init\nMemorySwapMeter.c:46:13\n32 bytes (static)" }
+node: { title: "xMalloc" label: "xMalloc\nXUtils.h:23:7" shape : ellipse }
+edge: { sourcename: "MemorySwapMeter.c:MemorySwapMeter_init" targetname: "xMalloc" label: "MemorySwapMeter.c:50:32" }
+node: { title: "Meter_new" label: "Meter_new\nMeter.h:146:8" shape : ellipse }
+edge: { sourcename: "MemorySwapMeter.c:MemorySwapMeter_init" targetname: "Meter_new" label: "MemorySwapMeter.c:56:27" }
+edge: { sourcename: "MemorySwapMeter.c:MemorySwapMeter_init" targetname: "Meter_new" label: "MemorySwapMeter.c:58:25" }
+edge: { sourcename: "MemorySwapMeter.c:MemorySwapMeter_init" targetname: "__indirect_call" label: "MemorySwapMeter.c:61:7" }
+edge: { sourcename: "MemorySwapMeter.c:MemorySwapMeter_init" targetname: "__indirect_call" label: "MemorySwapMeter.c:63:7" }
+}

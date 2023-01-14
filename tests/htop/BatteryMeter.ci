@@ -1,0 +1,8 @@
+graph: { title: "BatteryMeter.c"
+node: { title: "BatteryMeter.c:BatteryMeter_updateValues" label: "BatteryMeter_updateValues\nBatteryMeter.c:24:13\n48 bytes (static)" }
+node: { title: "Platform_getBattery" label: "Platform_getBattery\n./linux/Platform.h:86:6" shape : ellipse }
+edge: { sourcename: "BatteryMeter.c:BatteryMeter_updateValues" targetname: "Platform_getBattery" label: "BatteryMeter.c:28:4" }
+node: { title: "xSnprintf" label: "xSnprintf\nXUtils.h:66:5" shape : ellipse }
+edge: { sourcename: "BatteryMeter.c:BatteryMeter_updateValues" targetname: "xSnprintf" label: "BatteryMeter.c:32:7" }
+edge: { sourcename: "BatteryMeter.c:BatteryMeter_updateValues" targetname: "xSnprintf" label: "BatteryMeter.c:52:4" }
+}

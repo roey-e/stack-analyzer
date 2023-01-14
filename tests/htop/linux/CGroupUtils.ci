@@ -1,0 +1,69 @@
+graph: { title: "linux/CGroupUtils.c"
+node: { title: "linux/CGroupUtils.c:StrBuf_putc_count" label: "StrBuf_putc_count\nlinux/CGroupUtils.c:21:13\n0 bytes (static)" }
+node: { title: "linux/CGroupUtils.c:StrBuf_putc_write" label: "StrBuf_putc_write\nlinux/CGroupUtils.c:26:13\n0 bytes (static)" }
+node: { title: "linux/CGroupUtils.c:CGroup_filterName_internal.constprop.0" label: "CGroup_filterName_internal.constprop\nlinux/CGroupUtils.c:63:13\n112 bytes (static)" }
+node: { title: "__indirect_call" label: "Indirect Call Placeholder" shape : ellipse }
+edge: { sourcename: "linux/CGroupUtils.c:CGroup_filterName_internal.constprop.0" targetname: "__indirect_call" label: "linux/CGroupUtils.c:90:15" }
+node: { title: "strchrnul" label: "strchrnul\n/usr/include/string.h:266:14" shape : ellipse }
+edge: { sourcename: "linux/CGroupUtils.c:CGroup_filterName_internal.constprop.0" targetname: "strchrnul" label: "linux/CGroupUtils.c:97:31" }
+node: { title: "strncmp" label: "strncmp\n/usr/include/string.h:140:12" shape : ellipse }
+edge: { sourcename: "linux/CGroupUtils.c:CGroup_filterName_internal.constprop.0" targetname: "strncmp" label: "./XUtils.h:40:11" }
+edge: { sourcename: "linux/CGroupUtils.c:CGroup_filterName_internal.constprop.0" targetname: "__indirect_call" label: "linux/CGroupUtils.c:45:12" }
+edge: { sourcename: "linux/CGroupUtils.c:CGroup_filterName_internal.constprop.0" targetname: "strchrnul" label: "linux/CGroupUtils.c:107:22" }
+edge: { sourcename: "linux/CGroupUtils.c:CGroup_filterName_internal.constprop.0" targetname: "strncmp" label: "./XUtils.h:40:11" }
+edge: { sourcename: "linux/CGroupUtils.c:CGroup_filterName_internal.constprop.0" targetname: "__indirect_call" label: "linux/CGroupUtils.c:45:12" }
+edge: { sourcename: "linux/CGroupUtils.c:CGroup_filterName_internal.constprop.0" targetname: "strncmp" label: "./XUtils.h:40:11" }
+edge: { sourcename: "linux/CGroupUtils.c:CGroup_filterName_internal.constprop.0" targetname: "__indirect_call" label: "linux/CGroupUtils.c:45:12" }
+edge: { sourcename: "linux/CGroupUtils.c:CGroup_filterName_internal.constprop.0" targetname: "strchrnul" label: "linux/CGroupUtils.c:132:39" }
+edge: { sourcename: "linux/CGroupUtils.c:CGroup_filterName_internal.constprop.0" targetname: "strncmp" label: "./XUtils.h:40:11" }
+edge: { sourcename: "linux/CGroupUtils.c:CGroup_filterName_internal.constprop.0" targetname: "__indirect_call" label: "linux/CGroupUtils.c:141:15" }
+edge: { sourcename: "linux/CGroupUtils.c:CGroup_filterName_internal.constprop.0" targetname: "__indirect_call" label: "linux/CGroupUtils.c:37:12" }
+edge: { sourcename: "linux/CGroupUtils.c:CGroup_filterName_internal.constprop.0" targetname: "strncmp" label: "./XUtils.h:40:11" }
+edge: { sourcename: "linux/CGroupUtils.c:CGroup_filterName_internal.constprop.0" targetname: "__indirect_call" label: "linux/CGroupUtils.c:37:12" }
+edge: { sourcename: "linux/CGroupUtils.c:CGroup_filterName_internal.constprop.0" targetname: "strncmp" label: "./XUtils.h:40:11" }
+edge: { sourcename: "linux/CGroupUtils.c:CGroup_filterName_internal.constprop.0" targetname: "__indirect_call" label: "linux/CGroupUtils.c:45:12" }
+edge: { sourcename: "linux/CGroupUtils.c:CGroup_filterName_internal.constprop.0" targetname: "__indirect_call" label: "linux/CGroupUtils.c:37:12" }
+edge: { sourcename: "linux/CGroupUtils.c:CGroup_filterName_internal.constprop.0" targetname: "__indirect_call" label: "linux/CGroupUtils.c:45:12" }
+edge: { sourcename: "linux/CGroupUtils.c:CGroup_filterName_internal.constprop.0" targetname: "__indirect_call" label: "linux/CGroupUtils.c:37:12" }
+edge: { sourcename: "linux/CGroupUtils.c:CGroup_filterName_internal.constprop.0" targetname: "strncmp" label: "./XUtils.h:40:11" }
+edge: { sourcename: "linux/CGroupUtils.c:CGroup_filterName_internal.constprop.0" targetname: "strncmp" label: "./XUtils.h:40:11" }
+edge: { sourcename: "linux/CGroupUtils.c:CGroup_filterName_internal.constprop.0" targetname: "strchrnul" label: "linux/CGroupUtils.c:215:22" }
+edge: { sourcename: "linux/CGroupUtils.c:CGroup_filterName_internal.constprop.0" targetname: "__indirect_call" label: "linux/CGroupUtils.c:45:12" }
+edge: { sourcename: "linux/CGroupUtils.c:CGroup_filterName_internal.constprop.0" targetname: "__indirect_call" label: "linux/CGroupUtils.c:37:12" }
+edge: { sourcename: "linux/CGroupUtils.c:CGroup_filterName_internal.constprop.0" targetname: "strncmp" label: "./XUtils.h:40:11" }
+edge: { sourcename: "linux/CGroupUtils.c:CGroup_filterName_internal.constprop.0" targetname: "__indirect_call" label: "linux/CGroupUtils.c:37:12" }
+edge: { sourcename: "linux/CGroupUtils.c:CGroup_filterName_internal.constprop.0" targetname: "strncmp" label: "./XUtils.h:40:11" }
+edge: { sourcename: "linux/CGroupUtils.c:CGroup_filterName_internal.constprop.0" targetname: "strncmp" label: "./XUtils.h:40:11" }
+edge: { sourcename: "linux/CGroupUtils.c:CGroup_filterName_internal.constprop.0" targetname: "__indirect_call" label: "linux/CGroupUtils.c:45:12" }
+edge: { sourcename: "linux/CGroupUtils.c:CGroup_filterName_internal.constprop.0" targetname: "__indirect_call" label: "linux/CGroupUtils.c:37:12" }
+edge: { sourcename: "linux/CGroupUtils.c:CGroup_filterName_internal.constprop.0" targetname: "strncmp" label: "./XUtils.h:40:11" }
+edge: { sourcename: "linux/CGroupUtils.c:CGroup_filterName_internal.constprop.0" targetname: "strncmp" label: "./XUtils.h:40:11" }
+edge: { sourcename: "linux/CGroupUtils.c:CGroup_filterName_internal.constprop.0" targetname: "strncmp" label: "./XUtils.h:40:11" }
+edge: { sourcename: "linux/CGroupUtils.c:CGroup_filterName_internal.constprop.0" targetname: "__indirect_call" label: "linux/CGroupUtils.c:45:12" }
+edge: { sourcename: "linux/CGroupUtils.c:CGroup_filterName_internal.constprop.0" targetname: "__indirect_call" label: "linux/CGroupUtils.c:37:12" }
+edge: { sourcename: "linux/CGroupUtils.c:CGroup_filterName_internal.constprop.0" targetname: "__indirect_call" label: "linux/CGroupUtils.c:37:12" }
+edge: { sourcename: "linux/CGroupUtils.c:CGroup_filterName_internal.constprop.0" targetname: "__indirect_call" label: "linux/CGroupUtils.c:37:12" }
+edge: { sourcename: "linux/CGroupUtils.c:CGroup_filterName_internal.constprop.0" targetname: "strncmp" label: "./XUtils.h:40:11" }
+edge: { sourcename: "linux/CGroupUtils.c:CGroup_filterName_internal.constprop.0" targetname: "__indirect_call" label: "linux/CGroupUtils.c:147:15" }
+edge: { sourcename: "linux/CGroupUtils.c:CGroup_filterName_internal.constprop.0" targetname: "strncmp" label: "./XUtils.h:40:11" }
+edge: { sourcename: "linux/CGroupUtils.c:CGroup_filterName_internal.constprop.0" targetname: "__indirect_call" label: "linux/CGroupUtils.c:164:15" }
+edge: { sourcename: "linux/CGroupUtils.c:CGroup_filterName_internal.constprop.0" targetname: "__indirect_call" label: "linux/CGroupUtils.c:181:15" }
+edge: { sourcename: "linux/CGroupUtils.c:CGroup_filterName_internal.constprop.0" targetname: "__indirect_call" label: "linux/CGroupUtils.c:198:15" }
+edge: { sourcename: "linux/CGroupUtils.c:CGroup_filterName_internal.constprop.0" targetname: "__indirect_call" label: "linux/CGroupUtils.c:223:18" }
+edge: { sourcename: "linux/CGroupUtils.c:CGroup_filterName_internal.constprop.0" targetname: "__indirect_call" label: "linux/CGroupUtils.c:268:18" }
+edge: { sourcename: "linux/CGroupUtils.c:CGroup_filterName_internal.constprop.0" targetname: "__indirect_call" label: "linux/CGroupUtils.c:296:15" }
+edge: { sourcename: "linux/CGroupUtils.c:CGroup_filterName_internal.constprop.0" targetname: "strchrnul" label: "linux/CGroupUtils.c:279:35" }
+edge: { sourcename: "linux/CGroupUtils.c:CGroup_filterName_internal.constprop.0" targetname: "strncmp" label: "./XUtils.h:40:11" }
+edge: { sourcename: "linux/CGroupUtils.c:CGroup_filterName_internal.constprop.0" targetname: "strncmp" label: "./XUtils.h:40:11" }
+edge: { sourcename: "linux/CGroupUtils.c:CGroup_filterName_internal.constprop.0" targetname: "strncmp" label: "./XUtils.h:40:11" }
+edge: { sourcename: "linux/CGroupUtils.c:CGroup_filterName_internal.constprop.0" targetname: "__indirect_call" label: "linux/CGroupUtils.c:158:15" }
+edge: { sourcename: "linux/CGroupUtils.c:CGroup_filterName_internal.constprop.0" targetname: "strncmp" label: "./XUtils.h:40:11" }
+edge: { sourcename: "linux/CGroupUtils.c:CGroup_filterName_internal.constprop.0" targetname: "strncmp" label: "./XUtils.h:40:11" }
+node: { title: "CGroup_filterName" label: "CGroup_filterName\nlinux/CGroupUtils.c:319:7\n64 bytes (static)" }
+edge: { sourcename: "CGroup_filterName" targetname: "linux/CGroupUtils.c:CGroup_filterName_internal.constprop.0" label: "linux/CGroupUtils.c:326:9" }
+node: { title: "xCalloc" label: "xCalloc\n./XUtils.h:27:7" shape : ellipse }
+edge: { sourcename: "CGroup_filterName" targetname: "xCalloc" label: "linux/CGroupUtils.c:330:12" }
+edge: { sourcename: "CGroup_filterName" targetname: "linux/CGroupUtils.c:CGroup_filterName_internal.constprop.0" label: "linux/CGroupUtils.c:334:9" }
+node: { title: "free" label: "free\n/usr/include/stdlib.h:565:13" shape : ellipse }
+edge: { sourcename: "CGroup_filterName" targetname: "free" label: "linux/CGroupUtils.c:335:7" }
+}

@@ -1,0 +1,31 @@
+graph: { title: "DiskIOMeter.c"
+node: { title: "DiskIOMeter.c:DiskIOMeter_updateValues" label: "DiskIOMeter_updateValues\nDiskIOMeter.c:34:13\n112 bytes (static)" }
+node: { title: "Platform_getDiskIO" label: "Platform_getDiskIO\n./linux/Platform.h:82:6" shape : ellipse }
+edge: { sourcename: "DiskIOMeter.c:DiskIOMeter_updateValues" targetname: "Platform_getDiskIO" label: "DiskIOMeter.c:48:12" }
+node: { title: "xSnprintf" label: "xSnprintf\nXUtils.h:66:5" shape : ellipse }
+edge: { sourcename: "DiskIOMeter.c:DiskIOMeter_updateValues" targetname: "xSnprintf" label: "DiskIOMeter.c:61:10" }
+edge: { sourcename: "DiskIOMeter.c:DiskIOMeter_updateValues" targetname: "xSnprintf" label: "DiskIOMeter.c:95:7" }
+edge: { sourcename: "DiskIOMeter.c:DiskIOMeter_updateValues" targetname: "xSnprintf" label: "DiskIOMeter.c:99:7" }
+node: { title: "Meter_humanUnit" label: "Meter_humanUnit\nMeter.h:148:5" shape : ellipse }
+edge: { sourcename: "DiskIOMeter.c:DiskIOMeter_updateValues" targetname: "Meter_humanUnit" label: "DiskIOMeter.c:107:4" }
+edge: { sourcename: "DiskIOMeter.c:DiskIOMeter_updateValues" targetname: "Meter_humanUnit" label: "DiskIOMeter.c:108:4" }
+node: { title: "snprintf" label: "snprintf\n/usr/include/stdio.h:354:12" shape : ellipse }
+edge: { sourcename: "DiskIOMeter.c:DiskIOMeter_updateValues" targetname: "snprintf" label: "DiskIOMeter.c:109:4" }
+node: { title: "DiskIOMeter.c:DiskIOMeter_display" label: "DiskIOMeter_display\nDiskIOMeter.c:112:13\n80 bytes (static)" }
+node: { title: "RichString_writeAscii" label: "RichString_writeAscii\nRichString.h:77:5" shape : ellipse }
+edge: { sourcename: "DiskIOMeter.c:DiskIOMeter_display" targetname: "RichString_writeAscii" label: "DiskIOMeter.c:115:7" }
+edge: { sourcename: "DiskIOMeter.c:DiskIOMeter_display" targetname: "RichString_writeAscii" label: "DiskIOMeter.c:118:7" }
+edge: { sourcename: "DiskIOMeter.c:DiskIOMeter_display" targetname: "RichString_writeAscii" label: "DiskIOMeter.c:121:7" }
+edge: { sourcename: "DiskIOMeter.c:DiskIOMeter_display" targetname: "xSnprintf" label: "DiskIOMeter.c:131:10" }
+node: { title: "RichString_appendnAscii" label: "RichString_appendnAscii\nRichString.h:75:5" shape : ellipse }
+edge: { sourcename: "DiskIOMeter.c:DiskIOMeter_display" targetname: "RichString_appendnAscii" label: "DiskIOMeter.c:132:4" }
+node: { title: "RichString_appendAscii" label: "RichString_appendAscii\nRichString.h:73:5" shape : ellipse }
+edge: { sourcename: "DiskIOMeter.c:DiskIOMeter_display" targetname: "RichString_appendAscii" label: "DiskIOMeter.c:134:4" }
+edge: { sourcename: "DiskIOMeter.c:DiskIOMeter_display" targetname: "Meter_humanUnit" label: "DiskIOMeter.c:135:4" }
+edge: { sourcename: "DiskIOMeter.c:DiskIOMeter_display" targetname: "RichString_appendAscii" label: "DiskIOMeter.c:136:4" }
+edge: { sourcename: "DiskIOMeter.c:DiskIOMeter_display" targetname: "RichString_appendAscii" label: "DiskIOMeter.c:137:4" }
+edge: { sourcename: "DiskIOMeter.c:DiskIOMeter_display" targetname: "RichString_appendAscii" label: "DiskIOMeter.c:139:4" }
+edge: { sourcename: "DiskIOMeter.c:DiskIOMeter_display" targetname: "Meter_humanUnit" label: "DiskIOMeter.c:140:4" }
+edge: { sourcename: "DiskIOMeter.c:DiskIOMeter_display" targetname: "RichString_appendAscii" label: "DiskIOMeter.c:141:4" }
+edge: { sourcename: "DiskIOMeter.c:DiskIOMeter_display" targetname: "RichString_appendAscii" label: "DiskIOMeter.c:142:4" }
+}

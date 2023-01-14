@@ -1,0 +1,22 @@
+graph: { title: "TasksMeter.c"
+node: { title: "TasksMeter.c:TasksMeter_updateValues" label: "TasksMeter_updateValues\nTasksMeter.c:26:13\n0 bytes (static)" }
+node: { title: "xSnprintf" label: "xSnprintf\nXUtils.h:66:5" shape : ellipse }
+edge: { sourcename: "TasksMeter.c:TasksMeter_updateValues" targetname: "xSnprintf" label: "TasksMeter.c:34:4" }
+node: { title: "TasksMeter.c:TasksMeter_display" label: "TasksMeter_display\nTasksMeter.c:37:13\n112 bytes (static)" }
+edge: { sourcename: "TasksMeter.c:TasksMeter_display" targetname: "xSnprintf" label: "TasksMeter.c:43:10" }
+node: { title: "RichString_appendnAscii" label: "RichString_appendnAscii\nRichString.h:75:5" shape : ellipse }
+edge: { sourcename: "TasksMeter.c:TasksMeter_display" targetname: "RichString_appendnAscii" label: "TasksMeter.c:44:4" }
+node: { title: "RichString_appendAscii" label: "RichString_appendAscii\nRichString.h:73:5" shape : ellipse }
+edge: { sourcename: "TasksMeter.c:TasksMeter_display" targetname: "RichString_appendAscii" label: "TasksMeter.c:46:4" }
+edge: { sourcename: "TasksMeter.c:TasksMeter_display" targetname: "xSnprintf" label: "TasksMeter.c:47:10" }
+edge: { sourcename: "TasksMeter.c:TasksMeter_display" targetname: "RichString_appendnAscii" label: "TasksMeter.c:48:4" }
+edge: { sourcename: "TasksMeter.c:TasksMeter_display" targetname: "RichString_appendAscii" label: "TasksMeter.c:49:4" }
+edge: { sourcename: "TasksMeter.c:TasksMeter_display" targetname: "RichString_appendAscii" label: "TasksMeter.c:51:4" }
+edge: { sourcename: "TasksMeter.c:TasksMeter_display" targetname: "xSnprintf" label: "TasksMeter.c:52:10" }
+edge: { sourcename: "TasksMeter.c:TasksMeter_display" targetname: "RichString_appendnAscii" label: "TasksMeter.c:53:4" }
+edge: { sourcename: "TasksMeter.c:TasksMeter_display" targetname: "RichString_appendAscii" label: "TasksMeter.c:54:4" }
+edge: { sourcename: "TasksMeter.c:TasksMeter_display" targetname: "RichString_appendAscii" label: "TasksMeter.c:56:4" }
+edge: { sourcename: "TasksMeter.c:TasksMeter_display" targetname: "xSnprintf" label: "TasksMeter.c:57:10" }
+edge: { sourcename: "TasksMeter.c:TasksMeter_display" targetname: "RichString_appendnAscii" label: "TasksMeter.c:58:4" }
+edge: { sourcename: "TasksMeter.c:TasksMeter_display" targetname: "RichString_appendAscii" label: "TasksMeter.c:59:4" }
+}

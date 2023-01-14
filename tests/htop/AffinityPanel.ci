@@ -1,0 +1,75 @@
+graph: { title: "AffinityPanel.c"
+node: { title: "AffinityPanel.c:AffinityPanel_eventHandler" label: "AffinityPanel_eventHandler\nAffinityPanel.c:198:22\n32 bytes (static)" }
+node: { title: "Panel_getSelected" label: "Panel_getSelected\nPanel.h:121:9" shape : ellipse }
+edge: { sourcename: "AffinityPanel.c:AffinityPanel_eventHandler" targetname: "Panel_getSelected" label: "AffinityPanel.c:201:37" }
+node: { title: "FunctionBar_setLabel" label: "FunctionBar_setLabel\nFunctionBar.h:30:6" shape : ellipse }
+edge: { sourcename: "AffinityPanel.c:AffinityPanel_eventHandler" targetname: "FunctionBar_setLabel" label: "AffinityPanel.c:175:4" }
+node: { title: "Panel_getSelectedIndex" label: "Panel_getSelectedIndex\nPanel.h:127:5" shape : ellipse }
+edge: { sourcename: "AffinityPanel.c:AffinityPanel_eventHandler" targetname: "Panel_getSelectedIndex" label: "AffinityPanel.c:177:22" }
+node: { title: "Panel_prune" label: "Panel_prune\nPanel.h:109:6" shape : ellipse }
+edge: { sourcename: "AffinityPanel.c:AffinityPanel_eventHandler" targetname: "Panel_prune" label: "AffinityPanel.c:178:4" }
+node: { title: "Panel_splice" label: "Panel_splice\nPanel.h:135:6" shape : ellipse }
+edge: { sourcename: "AffinityPanel.c:AffinityPanel_eventHandler" targetname: "Panel_splice" label: "AffinityPanel.c:189:4" }
+node: { title: "Panel_setSelected" label: "Panel_setSelected\nPanel.h:131:6" shape : ellipse }
+edge: { sourcename: "AffinityPanel.c:AffinityPanel_eventHandler" targetname: "Panel_setSelected" label: "AffinityPanel.c:193:7" }
+node: { title: "AffinityPanel.c:AffinityPanel_delete" label: "AffinityPanel_delete\nAffinityPanel.c:137:13\n32 bytes (static)" }
+node: { title: "Panel_done" label: "Panel_done\nPanel.h:97:6" shape : ellipse }
+edge: { sourcename: "AffinityPanel.c:AffinityPanel_delete" targetname: "Panel_done" label: "AffinityPanel.c:140:4" }
+node: { title: "Vector_delete" label: "Vector_delete\nVector.h:35:6" shape : ellipse }
+edge: { sourcename: "AffinityPanel.c:AffinityPanel_delete" targetname: "Vector_delete" label: "AffinityPanel.c:141:4" }
+node: { title: "free" label: "free\n/usr/include/stdlib.h:565:13" shape : ellipse }
+edge: { sourcename: "AffinityPanel.c:AffinityPanel_delete" targetname: "free" label: "AffinityPanel.c:146:4" }
+node: { title: "AffinityPanel.c:MaskItem_delete" label: "MaskItem_delete\nAffinityPanel.c:47:13\n32 bytes (static)" }
+edge: { sourcename: "AffinityPanel.c:MaskItem_delete" targetname: "free" label: "AffinityPanel.c:49:4" }
+edge: { sourcename: "AffinityPanel.c:MaskItem_delete" targetname: "free" label: "AffinityPanel.c:50:4" }
+edge: { sourcename: "AffinityPanel.c:MaskItem_delete" targetname: "Vector_delete" label: "AffinityPanel.c:51:4" }
+edge: { sourcename: "AffinityPanel.c:MaskItem_delete" targetname: "free" label: "AffinityPanel.c:56:4" }
+node: { title: "AffinityPanel.c:MaskItem_display" label: "MaskItem_display\nAffinityPanel.c:59:13\n64 bytes (static)" }
+node: { title: "RichString_appendAscii" label: "RichString_appendAscii\nRichString.h:73:5" shape : ellipse }
+edge: { sourcename: "AffinityPanel.c:MaskItem_display" targetname: "RichString_appendAscii" label: "AffinityPanel.c:62:4" }
+edge: { sourcename: "AffinityPanel.c:MaskItem_display" targetname: "RichString_appendAscii" label: "AffinityPanel.c:64:7" }
+edge: { sourcename: "AffinityPanel.c:MaskItem_display" targetname: "RichString_appendAscii" label: "AffinityPanel.c:66:7" }
+edge: { sourcename: "AffinityPanel.c:MaskItem_display" targetname: "RichString_appendAscii" label: "AffinityPanel.c:68:7" }
+edge: { sourcename: "AffinityPanel.c:MaskItem_display" targetname: "RichString_appendAscii" label: "AffinityPanel.c:70:4" }
+edge: { sourcename: "AffinityPanel.c:MaskItem_display" targetname: "RichString_appendAscii" label: "AffinityPanel.c:71:4" }
+node: { title: "RichString_appendWide" label: "RichString_appendWide\nRichString.h:64:5" shape : ellipse }
+edge: { sourcename: "AffinityPanel.c:MaskItem_display" targetname: "RichString_appendWide" label: "AffinityPanel.c:73:7" }
+edge: { sourcename: "AffinityPanel.c:MaskItem_display" targetname: "RichString_appendWide" label: "AffinityPanel.c:74:7" }
+edge: { sourcename: "AffinityPanel.c:MaskItem_display" targetname: "RichString_appendAscii" label: "AffinityPanel.c:78:7" }
+edge: { sourcename: "AffinityPanel.c:MaskItem_display" targetname: "RichString_appendWide" label: "AffinityPanel.c:80:4" }
+node: { title: "AffinityPanel_new" label: "AffinityPanel_new\nAffinityPanel.c:360:8\n128 bytes (static)" }
+node: { title: "xMalloc" label: "xMalloc\nXUtils.h:23:7" shape : ellipse }
+edge: { sourcename: "AffinityPanel_new" targetname: "xMalloc" label: "AffinityPanel.c:361:26" }
+node: { title: "FunctionBar_new" label: "FunctionBar_new\nFunctionBar.h:26:14" shape : ellipse }
+edge: { sourcename: "AffinityPanel_new" targetname: "FunctionBar_new" label: "AffinityPanel.c:363:4" }
+node: { title: "Panel_init" label: "Panel_init\nPanel.h:95:6" shape : ellipse }
+edge: { sourcename: "AffinityPanel_new" targetname: "Panel_init" label: "AffinityPanel.c:363:4" }
+node: { title: "Vector_new" label: "Vector_new\nVector.h:33:9" shape : ellipse }
+edge: { sourcename: "AffinityPanel_new" targetname: "Vector_new" label: "AffinityPanel.c:370:21" }
+node: { title: "Panel_setHeader" label: "Panel_setHeader\nPanel.h:103:6" shape : ellipse }
+edge: { sourcename: "AffinityPanel_new" targetname: "Panel_setHeader" label: "AffinityPanel.c:383:4" }
+node: { title: "ProcessList_isCPUonline" label: "ProcessList_isCPUonline\nProcessList.h:96:6" shape : ellipse }
+edge: { sourcename: "AffinityPanel_new" targetname: "ProcessList_isCPUonline" label: "AffinityPanel.c:387:12" }
+node: { title: "xSnprintf" label: "xSnprintf\nXUtils.h:66:5" shape : ellipse }
+edge: { sourcename: "AffinityPanel_new" targetname: "xSnprintf" label: "AffinityPanel.c:391:7" }
+node: { title: "strlen" label: "strlen\n/usr/include/string.h:385:15" shape : ellipse }
+edge: { sourcename: "AffinityPanel_new" targetname: "strlen" label: "AffinityPanel.c:392:32" }
+edge: { sourcename: "AffinityPanel_new" targetname: "xMalloc" label: "AffinityPanel.c:105:21" }
+node: { title: "xStrdup" label: "xStrdup\nXUtils.h:68:7" shape : ellipse }
+edge: { sourcename: "AffinityPanel_new" targetname: "xStrdup" label: "AffinityPanel.c:106:17" }
+edge: { sourcename: "AffinityPanel_new" targetname: "Vector_new" label: "AffinityPanel.c:109:21" }
+node: { title: "Vector_add" label: "Vector_add\nVector.h:93:6" shape : ellipse }
+edge: { sourcename: "AffinityPanel_new" targetname: "Vector_add" label: "AffinityPanel.c:407:7" }
+edge: { sourcename: "AffinityPanel_new" targetname: "FunctionBar_setLabel" label: "AffinityPanel.c:175:4" }
+edge: { sourcename: "AffinityPanel_new" targetname: "Panel_getSelectedIndex" label: "AffinityPanel.c:177:22" }
+edge: { sourcename: "AffinityPanel_new" targetname: "Panel_prune" label: "AffinityPanel.c:178:4" }
+edge: { sourcename: "AffinityPanel_new" targetname: "Panel_splice" label: "AffinityPanel.c:189:4" }
+edge: { sourcename: "AffinityPanel_new" targetname: "xMalloc" label: "AffinityPanel.c:105:21" }
+edge: { sourcename: "AffinityPanel_new" targetname: "xStrdup" label: "AffinityPanel.c:106:17" }
+edge: { sourcename: "AffinityPanel_new" targetname: "Vector_new" label: "AffinityPanel.c:109:21" }
+node: { title: "AffinityPanel_getAffinity" label: "AffinityPanel_getAffinity\nAffinityPanel.c:423:11\n48 bytes (static)" }
+node: { title: "Affinity_new" label: "Affinity_new\nAffinity.h:35:11" shape : ellipse }
+edge: { sourcename: "AffinityPanel_getAffinity" targetname: "Affinity_new" label: "AffinityPanel.c:425:25" }
+node: { title: "Affinity_add" label: "Affinity_add\nAffinity.h:39:6" shape : ellipse }
+edge: { sourcename: "AffinityPanel_getAffinity" targetname: "Affinity_add" label: "AffinityPanel.c:436:10" }
+}

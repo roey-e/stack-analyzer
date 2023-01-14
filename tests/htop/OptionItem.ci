@@ -1,0 +1,55 @@
+graph: { title: "OptionItem.c"
+node: { title: "OptionItem.c:OptionItem_delete" label: "OptionItem_delete\nOptionItem.c:20:13\n32 bytes (static)" }
+node: { title: "free" label: "free\n/usr/include/stdlib.h:565:13" shape : ellipse }
+edge: { sourcename: "OptionItem.c:OptionItem_delete" targetname: "free" label: "OptionItem.c:24:4" }
+edge: { sourcename: "OptionItem.c:OptionItem_delete" targetname: "free" label: "OptionItem.c:25:4" }
+node: { title: "OptionItem.c:TextItem_display" label: "TextItem_display\nOptionItem.c:28:13\n0 bytes (static)" }
+node: { title: "RichString_appendWide" label: "RichString_appendWide\nRichString.h:64:5" shape : ellipse }
+edge: { sourcename: "OptionItem.c:TextItem_display" targetname: "RichString_appendWide" label: "OptionItem.c:32:4" }
+node: { title: "OptionItem.c:CheckItem_display" label: "CheckItem_display\nOptionItem.c:35:13\n48 bytes (static)" }
+node: { title: "RichString_writeAscii" label: "RichString_writeAscii\nRichString.h:77:5" shape : ellipse }
+edge: { sourcename: "OptionItem.c:CheckItem_display" targetname: "RichString_writeAscii" label: "OptionItem.c:39:4" }
+node: { title: "RichString_appendAscii" label: "RichString_appendAscii\nRichString.h:73:5" shape : ellipse }
+edge: { sourcename: "OptionItem.c:CheckItem_display" targetname: "RichString_appendAscii" label: "OptionItem.c:41:7" }
+edge: { sourcename: "OptionItem.c:CheckItem_display" targetname: "RichString_appendAscii" label: "OptionItem.c:43:7" }
+edge: { sourcename: "OptionItem.c:CheckItem_display" targetname: "RichString_appendAscii" label: "OptionItem.c:45:4" }
+edge: { sourcename: "OptionItem.c:CheckItem_display" targetname: "RichString_appendWide" label: "OptionItem.c:46:4" }
+node: { title: "OptionItem.c:NumberItem_display" label: "NumberItem_display\nOptionItem.c:49:13\n80 bytes (static)" }
+edge: { sourcename: "OptionItem.c:NumberItem_display" targetname: "RichString_writeAscii" label: "OptionItem.c:54:4" }
+node: { title: "pow" label: "pow\n/usr/include/aarch64-linux-gnu/bits/mathcalls.h:140:1" shape : ellipse }
+edge: { sourcename: "OptionItem.c:NumberItem_display" targetname: "pow" label: "OptionItem.c:57:73" }
+node: { title: "xSnprintf" label: "xSnprintf\nXUtils.h:66:5" shape : ellipse }
+edge: { sourcename: "OptionItem.c:NumberItem_display" targetname: "xSnprintf" label: "OptionItem.c:57:17" }
+edge: { sourcename: "OptionItem.c:NumberItem_display" targetname: "pow" label: "OptionItem.c:59:64" }
+edge: { sourcename: "OptionItem.c:NumberItem_display" targetname: "xSnprintf" label: "OptionItem.c:59:17" }
+edge: { sourcename: "OptionItem.c:NumberItem_display" targetname: "xSnprintf" label: "OptionItem.c:61:17" }
+node: { title: "RichString_appendnAscii" label: "RichString_appendnAscii\nRichString.h:75:5" shape : ellipse }
+edge: { sourcename: "OptionItem.c:NumberItem_display" targetname: "RichString_appendnAscii" label: "OptionItem.c:63:4" }
+edge: { sourcename: "OptionItem.c:NumberItem_display" targetname: "RichString_appendAscii" label: "OptionItem.c:64:4" }
+edge: { sourcename: "OptionItem.c:NumberItem_display" targetname: "RichString_appendAscii" label: "OptionItem.c:66:7" }
+edge: { sourcename: "OptionItem.c:NumberItem_display" targetname: "RichString_appendWide" label: "OptionItem.c:68:4" }
+node: { title: "TextItem_new" label: "TextItem_new\nOptionItem.c:107:11\n32 bytes (static)" }
+node: { title: "xMalloc" label: "xMalloc\nXUtils.h:23:7" shape : ellipse }
+edge: { sourcename: "TextItem_new" targetname: "xMalloc" label: "OptionItem.c:108:21" }
+node: { title: "xStrdup" label: "xStrdup\nXUtils.h:68:7" shape : ellipse }
+edge: { sourcename: "TextItem_new" targetname: "xStrdup" label: "OptionItem.c:109:23" }
+node: { title: "CheckItem_newByRef" label: "CheckItem_newByRef\nOptionItem.c:113:12\n48 bytes (static)" }
+edge: { sourcename: "CheckItem_newByRef" targetname: "xMalloc" label: "OptionItem.c:114:22" }
+edge: { sourcename: "CheckItem_newByRef" targetname: "xStrdup" label: "OptionItem.c:115:23" }
+node: { title: "CheckItem_newByVal" label: "CheckItem_newByVal\nOptionItem.c:121:12\n48 bytes (static)" }
+edge: { sourcename: "CheckItem_newByVal" targetname: "xMalloc" label: "OptionItem.c:122:22" }
+edge: { sourcename: "CheckItem_newByVal" targetname: "xStrdup" label: "OptionItem.c:123:23" }
+node: { title: "CheckItem_get" label: "CheckItem_get\nOptionItem.c:129:6\n0 bytes (static)" }
+node: { title: "CheckItem_set" label: "CheckItem_set\nOptionItem.c:137:6\n0 bytes (static)" }
+node: { title: "CheckItem_toggle" label: "CheckItem_toggle\nOptionItem.c:145:6\n0 bytes (static)" }
+node: { title: "NumberItem_newByRef" label: "NumberItem_newByRef\nOptionItem.c:153:13\n64 bytes (static)" }
+edge: { sourcename: "NumberItem_newByRef" targetname: "xMalloc" label: "OptionItem.c:156:23" }
+edge: { sourcename: "NumberItem_newByRef" targetname: "xStrdup" label: "OptionItem.c:157:23" }
+node: { title: "NumberItem_newByVal" label: "NumberItem_newByVal\nOptionItem.c:166:13\n64 bytes (static)" }
+edge: { sourcename: "NumberItem_newByVal" targetname: "xMalloc" label: "OptionItem.c:169:23" }
+edge: { sourcename: "NumberItem_newByVal" targetname: "xStrdup" label: "OptionItem.c:170:23" }
+node: { title: "NumberItem_get" label: "NumberItem_get\nOptionItem.c:179:5\n0 bytes (static)" }
+node: { title: "NumberItem_decrease" label: "NumberItem_decrease\nOptionItem.c:187:6\n0 bytes (static)" }
+node: { title: "NumberItem_increase" label: "NumberItem_increase\nOptionItem.c:195:6\n0 bytes (static)" }
+node: { title: "NumberItem_toggle" label: "NumberItem_toggle\nOptionItem.c:203:6\n0 bytes (static)" }
+}

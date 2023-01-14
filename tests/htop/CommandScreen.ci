@@ -1,0 +1,31 @@
+graph: { title: "CommandScreen.c"
+node: { title: "CommandScreen.c:CommandScreen_draw" label: "CommandScreen_draw\nCommandScreen.c:48:13\n32 bytes (static)" }
+node: { title: "Process_getCommand" label: "Process_getCommand\nProcess.h:401:13" shape : ellipse }
+edge: { sourcename: "CommandScreen.c:CommandScreen_draw" targetname: "Process_getCommand" label: "CommandScreen.c:49:4" }
+node: { title: "InfoScreen_drawTitled" label: "InfoScreen_drawTitled\nInfoScreen.h:47:6" shape : ellipse }
+edge: { sourcename: "CommandScreen.c:CommandScreen_draw" targetname: "InfoScreen_drawTitled" label: "CommandScreen.c:49:4" }
+node: { title: "CommandScreen.c:CommandScreen_scan" label: "CommandScreen_scan\nCommandScreen.c:14:13\n96 bytes (dynamic)" }
+node: { title: "Panel_getSelectedIndex" label: "Panel_getSelectedIndex\nPanel.h:127:5" shape : ellipse }
+edge: { sourcename: "CommandScreen.c:CommandScreen_scan" targetname: "Panel_getSelectedIndex" label: "CommandScreen.c:16:14" }
+edge: { sourcename: "CommandScreen.c:CommandScreen_scan" targetname: "Panel_getSelectedIndex" label: "CommandScreen.c:16:14" }
+node: { title: "Panel_prune" label: "Panel_prune\nPanel.h:109:6" shape : ellipse }
+edge: { sourcename: "CommandScreen.c:CommandScreen_scan" targetname: "Panel_prune" label: "CommandScreen.c:17:4" }
+edge: { sourcename: "CommandScreen.c:CommandScreen_scan" targetname: "Process_getCommand" label: "CommandScreen.c:19:20" }
+node: { title: "InfoScreen_addLine" label: "InfoScreen_addLine\nInfoScreen.h:49:6" shape : ellipse }
+edge: { sourcename: "CommandScreen.c:CommandScreen_scan" targetname: "InfoScreen_addLine" label: "CommandScreen.c:32:10" }
+node: { title: "memcpy" label: "__builtin_memcpy\n<built-in>" shape : ellipse }
+edge: { sourcename: "CommandScreen.c:CommandScreen_scan" targetname: "memcpy" }
+edge: { sourcename: "CommandScreen.c:CommandScreen_scan" targetname: "InfoScreen_addLine" label: "CommandScreen.c:42:7" }
+node: { title: "Panel_setSelected" label: "Panel_setSelected\nPanel.h:131:6" shape : ellipse }
+edge: { sourcename: "CommandScreen.c:CommandScreen_scan" targetname: "Panel_setSelected" label: "CommandScreen.c:45:4" }
+node: { title: "CommandScreen_delete" label: "CommandScreen_delete\nCommandScreen.c:66:6\n16 bytes (static)" }
+node: { title: "InfoScreen_done" label: "InfoScreen_done\nInfoScreen.h:44:13" shape : ellipse }
+edge: { sourcename: "CommandScreen_delete" targetname: "InfoScreen_done" label: "CommandScreen.c:67:9" }
+node: { title: "free" label: "free\n/usr/include/stdlib.h:565:13" shape : ellipse }
+edge: { sourcename: "CommandScreen_delete" targetname: "free" label: "CommandScreen.c:67:4" }
+node: { title: "CommandScreen_new" label: "CommandScreen_new\nCommandScreen.c:61:16\n32 bytes (static)" }
+node: { title: "xMalloc" label: "xMalloc\nXUtils.h:23:7" shape : ellipse }
+edge: { sourcename: "CommandScreen_new" targetname: "xMalloc" label: "CommandScreen.c:62:26" }
+node: { title: "InfoScreen_init" label: "InfoScreen_init\nInfoScreen.h:42:13" shape : ellipse }
+edge: { sourcename: "CommandScreen_new" targetname: "InfoScreen_init" label: "CommandScreen.c:63:28" }
+}

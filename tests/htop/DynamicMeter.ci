@@ -1,0 +1,27 @@
+graph: { title: "DynamicMeter.c"
+node: { title: "DynamicMeter.c:DynamicMeter_init" label: "DynamicMeter_init\nDynamicMeter.c:77:13\n0 bytes (static)" }
+node: { title: "DynamicMeter.c:DynamicMeter_display" label: "DynamicMeter_display\nDynamicMeter.c:85:13\n0 bytes (static)" }
+node: { title: "DynamicMeter.c:DynamicMeter_compare" label: "DynamicMeter_compare\nDynamicMeter.c:54:13\n32 bytes (static)" }
+node: { title: "strcmp" label: "strcmp\n/usr/include/string.h:137:12" shape : ellipse }
+edge: { sourcename: "DynamicMeter.c:DynamicMeter_compare" targetname: "strcmp" label: "XUtils.h:46:11" }
+node: { title: "DynamicMeter.c:DynamicMeter_getCaption" label: "DynamicMeter_getCaption\nDynamicMeter.c:90:20\n32 bytes (static)" }
+node: { title: "Hashtable_get" label: "Hashtable_get\nHashtable.h:38:7" shape : ellipse }
+edge: { sourcename: "DynamicMeter.c:DynamicMeter_getCaption" targetname: "Hashtable_get" label: "DynamicMeter.c:92:32" }
+node: { title: "DynamicMeter.c:DynamicMeter_getUiName" label: "DynamicMeter_getUiName\nDynamicMeter.c:98:13\n48 bytes (static)" }
+edge: { sourcename: "DynamicMeter.c:DynamicMeter_getUiName" targetname: "Hashtable_get" label: "DynamicMeter.c:100:32" }
+node: { title: "strlen" label: "strlen\n/usr/include/string.h:385:15" shape : ellipse }
+edge: { sourcename: "DynamicMeter.c:DynamicMeter_getUiName" targetname: "strlen" label: "DynamicMeter.c:104:20" }
+node: { title: "xSnprintf" label: "xSnprintf\nXUtils.h:66:5" shape : ellipse }
+edge: { sourcename: "DynamicMeter.c:DynamicMeter_getUiName" targetname: "xSnprintf" label: "DynamicMeter.c:107:10" }
+edge: { sourcename: "DynamicMeter.c:DynamicMeter_getUiName" targetname: "xSnprintf" label: "DynamicMeter.c:109:10" }
+node: { title: "DynamicMeter.c:DynamicMeter_updateValues" label: "DynamicMeter_updateValues\nDynamicMeter.c:81:13\n0 bytes (static)" }
+node: { title: "DynamicMeters_new" label: "DynamicMeters_new\nDynamicMeter.c:37:12\n0 bytes (static)" }
+node: { title: "DynamicMeters_delete" label: "DynamicMeters_delete\nDynamicMeter.c:41:6\n0 bytes (static)" }
+node: { title: "Hashtable_delete" label: "Hashtable_delete\nHashtable.h:28:6" shape : ellipse }
+edge: { sourcename: "DynamicMeters_delete" targetname: "Hashtable_delete" label: "DynamicMeter.c:44:7" }
+node: { title: "DynamicMeter_search" label: "DynamicMeter_search\nDynamicMeter.c:63:6\n64 bytes (static)" }
+node: { title: "Hashtable_foreach" label: "Hashtable_foreach\nHashtable.h:40:6" shape : ellipse }
+edge: { sourcename: "DynamicMeter_search" targetname: "Hashtable_foreach" label: "DynamicMeter.c:66:7" }
+node: { title: "DynamicMeter_lookup" label: "DynamicMeter_lookup\nDynamicMeter.c:72:13\n0 bytes (static)" }
+edge: { sourcename: "DynamicMeter_lookup" targetname: "Hashtable_get" label: "DynamicMeter.c:73:32" }
+}

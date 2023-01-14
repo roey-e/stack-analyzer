@@ -1,0 +1,81 @@
+graph: { title: "MainPanel.c"
+node: { title: "MainPanel.c:MainPanel_printHeader" label: "MainPanel_printHeader\nMainPanel.c:198:13\n0 bytes (static)" }
+node: { title: "ProcessList_printHeader" label: "ProcessList_printHeader\nProcessList.h:105:6" shape : ellipse }
+edge: { sourcename: "MainPanel.c:MainPanel_printHeader" targetname: "ProcessList_printHeader" label: "MainPanel.c:200:4" }
+node: { title: "MainPanel.c:MainPanel_getValue" label: "MainPanel_getValue\nMainPanel.c:49:20\n16 bytes (static)" }
+node: { title: "Panel_get" label: "Panel_get\nPanel.h:117:9" shape : ellipse }
+edge: { sourcename: "MainPanel.c:MainPanel_getValue" targetname: "Panel_get" label: "MainPanel.c:50:40" }
+node: { title: "Process_getCommand" label: "Process_getCommand\nProcess.h:401:13" shape : ellipse }
+edge: { sourcename: "MainPanel.c:MainPanel_getValue" targetname: "Process_getCommand" label: "MainPanel.c:51:11" }
+node: { title: "MainPanel_delete" label: "MainPanel_delete\nMainPanel.c:229:6\n32 bytes (static)" }
+node: { title: "Panel_done" label: "Panel_done\nPanel.h:97:6" shape : ellipse }
+edge: { sourcename: "MainPanel_delete" targetname: "Panel_done" label: "MainPanel.c:232:4" }
+node: { title: "IncSet_delete" label: "IncSet_delete\nIncSet.h:53:6" shape : ellipse }
+edge: { sourcename: "MainPanel_delete" targetname: "IncSet_delete" label: "MainPanel.c:233:4" }
+node: { title: "free" label: "free\n/usr/include/stdlib.h:565:13" shape : ellipse }
+edge: { sourcename: "MainPanel_delete" targetname: "free" label: "MainPanel.c:234:4" }
+edge: { sourcename: "MainPanel_delete" targetname: "free" label: "MainPanel.c:235:4" }
+node: { title: "MainPanel.c:MainPanel_drawFunctionBar" label: "MainPanel_drawFunctionBar\nMainPanel.c:185:13\n32 bytes (static)" }
+node: { title: "IncSet_drawBar" label: "IncSet_drawBar\nIncSet.h:61:6" shape : ellipse }
+edge: { sourcename: "MainPanel.c:MainPanel_drawFunctionBar" targetname: "IncSet_drawBar" label: "MainPanel.c:192:4" }
+node: { title: "FunctionBar_append" label: "FunctionBar_append\nFunctionBar.h:36:6" shape : ellipse }
+edge: { sourcename: "MainPanel.c:MainPanel_drawFunctionBar" targetname: "FunctionBar_append" label: "MainPanel.c:194:7" }
+node: { title: "MainPanel.c:MainPanel_eventHandler" label: "MainPanel_eventHandler\nMainPanel.c:54:22\n96 bytes (static)" }
+node: { title: "ProcessList_keyAt" label: "ProcessList_keyAt\nProcessList.h:111:14" shape : ellipse }
+edge: { sourcename: "MainPanel.c:MainPanel_eventHandler" targetname: "ProcessList_keyAt" label: "MainPanel.c:82:28" }
+node: { title: "Action_setSortKey" label: "Action_setSortKey\nAction.h:59:15" shape : ellipse }
+edge: { sourcename: "MainPanel.c:MainPanel_eventHandler" targetname: "Action_setSortKey" label: "MainPanel.c:86:22" }
+node: { title: "ScreenSettings_invertSortOrder" label: "ScreenSettings_invertSortOrder\nSettings.h:125:6" shape : ellipse }
+edge: { sourcename: "MainPanel.c:MainPanel_eventHandler" targetname: "ScreenSettings_invertSortOrder" label: "MainPanel.c:88:10" }
+edge: { sourcename: "MainPanel.c:MainPanel_eventHandler" targetname: "Action_setSortKey" label: "MainPanel.c:90:22" }
+node: { title: "Action_setScreenTab" label: "Action_setScreenTab\nAction.h:61:15" shape : ellipse }
+edge: { sourcename: "MainPanel.c:MainPanel_eventHandler" targetname: "Action_setScreenTab" label: "MainPanel.c:96:19" }
+node: { title: "IncSet_handleKey" label: "IncSet_handleKey\nIncSet.h:55:6" shape : ellipse }
+edge: { sourcename: "MainPanel.c:MainPanel_eventHandler" targetname: "IncSet_handleKey" label: "MainPanel.c:99:28" }
+node: { title: "Action_follow" label: "Action_follow\nAction.h:63:15" shape : ellipse }
+edge: { sourcename: "MainPanel.c:MainPanel_eventHandler" targetname: "Action_follow" label: "MainPanel.c:105:22" }
+node: { title: "__indirect_call" label: "Indirect Call Placeholder" shape : ellipse }
+edge: { sourcename: "MainPanel.c:MainPanel_eventHandler" targetname: "__indirect_call" label: "MainPanel.c:113:30" }
+node: { title: "__ctype_b_loc" label: "__ctype_b_loc\n/usr/include/ctype.h:79:35" shape : ellipse }
+edge: { sourcename: "MainPanel.c:MainPanel_eventHandler" targetname: "__ctype_b_loc" label: "MainPanel.c:115:37" }
+edge: { sourcename: "MainPanel.c:MainPanel_eventHandler" targetname: "Panel_get" label: "MainPanel.c:37:43" }
+node: { title: "Panel_setSelected" label: "Panel_setSelected\nPanel.h:131:6" shape : ellipse }
+edge: { sourcename: "MainPanel.c:MainPanel_eventHandler" targetname: "Panel_setSelected" label: "MainPanel.c:39:10" }
+node: { title: "Panel_size" label: "Panel_size\nPanel.h:129:5" shape : ellipse }
+edge: { sourcename: "MainPanel.c:MainPanel_eventHandler" targetname: "Panel_size" label: "MainPanel.c:36:24" }
+node: { title: "FunctionBar_setLabel" label: "FunctionBar_setLabel\nFunctionBar.h:30:6" shape : ellipse }
+edge: { sourcename: "MainPanel.c:MainPanel_eventHandler" targetname: "FunctionBar_setLabel" label: "MainPanel.c:29:4" }
+edge: { sourcename: "MainPanel.c:MainPanel_eventHandler" targetname: "FunctionBar_setLabel" label: "MainPanel.c:30:4" }
+node: { title: "Panel_setSelectionColor" label: "Panel_setSelectionColor\nPanel.h:101:6" shape : ellipse }
+edge: { sourcename: "MainPanel.c:MainPanel_eventHandler" targetname: "Panel_setSelectionColor" label: "MainPanel.c:148:7" }
+node: { title: "MainPanel_updateLabels" label: "MainPanel_updateLabels\nMainPanel.c:27:6\n32 bytes (static)" }
+edge: { sourcename: "MainPanel_updateLabels" targetname: "FunctionBar_setLabel" label: "MainPanel.c:29:4" }
+edge: { sourcename: "MainPanel_updateLabels" targetname: "FunctionBar_setLabel" label: "MainPanel.c:30:4" }
+node: { title: "MainPanel_selectedPid" label: "MainPanel_selectedPid\nMainPanel.c:153:5\n16 bytes (static)" }
+node: { title: "Panel_getSelected" label: "Panel_getSelected\nPanel.h:121:9" shape : ellipse }
+edge: { sourcename: "MainPanel_selectedPid" targetname: "Panel_getSelected" label: "MainPanel.c:154:40" }
+node: { title: "MainPanel_foreachProcess" label: "MainPanel_foreachProcess\nMainPanel.c:161:6\n80 bytes (static)" }
+edge: { sourcename: "MainPanel_foreachProcess" targetname: "Panel_get" label: "MainPanel.c:166:31" }
+edge: { sourcename: "MainPanel_foreachProcess" targetname: "__indirect_call" label: "MainPanel.c:168:15" }
+edge: { sourcename: "MainPanel_foreachProcess" targetname: "Panel_size" label: "MainPanel.c:165:24" }
+edge: { sourcename: "MainPanel_foreachProcess" targetname: "Panel_getSelected" label: "MainPanel.c:173:31" }
+edge: { sourcename: "MainPanel_foreachProcess" targetname: "__indirect_call" label: "MainPanel.c:175:16" }
+node: { title: "MainPanel_new" label: "MainPanel_new\nMainPanel.c:213:12\n32 bytes (static)" }
+node: { title: "xMalloc" label: "xMalloc\nXUtils.h:23:7" shape : ellipse }
+edge: { sourcename: "MainPanel_new" targetname: "xMalloc" label: "MainPanel.c:214:22" }
+node: { title: "Settings_isReadonly" label: "Settings_isReadonly\nSettings.h:131:6" shape : ellipse }
+edge: { sourcename: "MainPanel_new" targetname: "Settings_isReadonly" label: "MainPanel.c:215:81" }
+node: { title: "FunctionBar_new" label: "FunctionBar_new\nFunctionBar.h:26:14" shape : ellipse }
+edge: { sourcename: "MainPanel_new" targetname: "FunctionBar_new" label: "MainPanel.c:215:4" }
+node: { title: "Panel_init" label: "Panel_init\nPanel.h:95:6" shape : ellipse }
+edge: { sourcename: "MainPanel_new" targetname: "Panel_init" label: "MainPanel.c:215:4" }
+node: { title: "xCalloc" label: "xCalloc\nXUtils.h:27:7" shape : ellipse }
+edge: { sourcename: "MainPanel_new" targetname: "xCalloc" label: "MainPanel.c:216:17" }
+node: { title: "IncSet_new" label: "IncSet_new\nIncSet.h:51:9" shape : ellipse }
+edge: { sourcename: "MainPanel_new" targetname: "IncSet_new" label: "MainPanel.c:217:16" }
+node: { title: "Action_setBindings" label: "Action_setBindings\nAction.h:65:6" shape : ellipse }
+edge: { sourcename: "MainPanel_new" targetname: "Action_setBindings" label: "MainPanel.c:219:4" }
+node: { title: "Platform_setBindings" label: "Platform_setBindings\n./linux/Platform.h:56:6" shape : ellipse }
+edge: { sourcename: "MainPanel_new" targetname: "Platform_setBindings" label: "MainPanel.c:220:4" }
+node: { title: "MainPanel_setState" label: "MainPanel_setState\nMainPanel.c:225:6\n0 bytes (static)" }
+}

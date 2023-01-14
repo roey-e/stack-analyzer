@@ -1,0 +1,35 @@
+graph: { title: "ColorsPanel.c"
+node: { title: "ColorsPanel.c:ColorsPanel_delete" label: "ColorsPanel_delete\nColorsPanel.c:42:13\n32 bytes (static)" }
+node: { title: "Panel_done" label: "Panel_done\nPanel.h:97:6" shape : ellipse }
+edge: { sourcename: "ColorsPanel.c:ColorsPanel_delete" targetname: "Panel_done" label: "ColorsPanel.c:45:4" }
+node: { title: "free" label: "free\n/usr/include/stdlib.h:565:13" shape : ellipse }
+edge: { sourcename: "ColorsPanel.c:ColorsPanel_delete" targetname: "free" label: "ColorsPanel.c:46:4" }
+node: { title: "ColorsPanel.c:ColorsPanel_eventHandler" label: "ColorsPanel_eventHandler\nColorsPanel.c:49:22\n48 bytes (static)" }
+node: { title: "Panel_getSelectedIndex" label: "Panel_getSelectedIndex\nPanel.h:127:5" shape : ellipse }
+edge: { sourcename: "ColorsPanel.c:ColorsPanel_eventHandler" targetname: "Panel_getSelectedIndex" label: "ColorsPanel.c:62:14" }
+node: { title: "Panel_get" label: "Panel_get\nPanel.h:117:9" shape : ellipse }
+edge: { sourcename: "ColorsPanel.c:ColorsPanel_eventHandler" targetname: "Panel_get" label: "ColorsPanel.c:66:36" }
+node: { title: "CheckItem_set" label: "CheckItem_set\nOptionItem.h:70:6" shape : ellipse }
+edge: { sourcename: "ColorsPanel.c:ColorsPanel_eventHandler" targetname: "CheckItem_set" label: "ColorsPanel.c:66:10" }
+edge: { sourcename: "ColorsPanel.c:ColorsPanel_eventHandler" targetname: "Panel_get" label: "ColorsPanel.c:67:33" }
+edge: { sourcename: "ColorsPanel.c:ColorsPanel_eventHandler" targetname: "CheckItem_set" label: "ColorsPanel.c:67:7" }
+node: { title: "CRT_setColors" label: "CRT_setColors\nCRT.h:206:6" shape : ellipse }
+edge: { sourcename: "ColorsPanel.c:ColorsPanel_eventHandler" targetname: "CRT_setColors" label: "ColorsPanel.c:73:7" }
+node: { title: "wclear" label: "wclear\n/usr/include/curses.h:796:28" shape : ellipse }
+edge: { sourcename: "ColorsPanel.c:ColorsPanel_eventHandler" targetname: "wclear" label: "ColorsPanel.c:74:7" }
+node: { title: "ColorsPanel_new" label: "ColorsPanel_new\nColorsPanel.c:90:14\n48 bytes (static)" }
+node: { title: "xMalloc" label: "xMalloc\nXUtils.h:23:7" shape : ellipse }
+edge: { sourcename: "ColorsPanel_new" targetname: "xMalloc" label: "ColorsPanel.c:91:24" }
+node: { title: "FunctionBar_new" label: "FunctionBar_new\nFunctionBar.h:26:14" shape : ellipse }
+edge: { sourcename: "ColorsPanel_new" targetname: "FunctionBar_new" label: "ColorsPanel.c:93:25" }
+node: { title: "Panel_init" label: "Panel_init\nPanel.h:95:6" shape : ellipse }
+edge: { sourcename: "ColorsPanel_new" targetname: "Panel_init" label: "ColorsPanel.c:94:4" }
+node: { title: "Panel_setHeader" label: "Panel_setHeader\nPanel.h:103:6" shape : ellipse }
+edge: { sourcename: "ColorsPanel_new" targetname: "Panel_setHeader" label: "ColorsPanel.c:100:4" }
+node: { title: "CheckItem_newByVal" label: "CheckItem_newByVal\nOptionItem.h:68:12" shape : ellipse }
+edge: { sourcename: "ColorsPanel_new" targetname: "CheckItem_newByVal" label: "ColorsPanel.c:102:34" }
+node: { title: "Panel_add" label: "Panel_add\nPanel.h:111:6" shape : ellipse }
+edge: { sourcename: "ColorsPanel_new" targetname: "Panel_add" label: "ColorsPanel.c:102:7" }
+edge: { sourcename: "ColorsPanel_new" targetname: "Panel_get" label: "ColorsPanel.c:104:30" }
+edge: { sourcename: "ColorsPanel_new" targetname: "CheckItem_set" label: "ColorsPanel.c:104:4" }
+}

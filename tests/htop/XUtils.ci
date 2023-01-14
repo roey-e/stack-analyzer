@@ -1,0 +1,135 @@
+graph: { title: "XUtils.c"
+node: { title: "XUtils.c:readfd_internal" label: "readfd_internal\nXUtils.c:268:16\n64 bytes (static)" }
+node: { title: "close" label: "close\n/usr/include/unistd.h:353:12" shape : ellipse }
+edge: { sourcename: "XUtils.c:readfd_internal" targetname: "close" label: "XUtils.c:270:7" }
+node: { title: "read" label: "read\n/usr/include/unistd.h:360:16" shape : ellipse }
+edge: { sourcename: "XUtils.c:readfd_internal" targetname: "read" label: "XUtils.c:278:21" }
+node: { title: "__errno_location" label: "__errno_location\n/usr/include/errno.h:37:13" shape : ellipse }
+edge: { sourcename: "XUtils.c:readfd_internal" targetname: "__errno_location" label: "XUtils.c:280:14" }
+edge: { sourcename: "XUtils.c:readfd_internal" targetname: "close" label: "XUtils.c:283:10" }
+edge: { sourcename: "XUtils.c:readfd_internal" targetname: "close" label: "XUtils.c:294:10" }
+node: { title: "fail" label: "fail\nXUtils.c:24:6\n16 bytes (static)" }
+node: { title: "CRT_done" label: "CRT_done\nCRT.h:196:6" shape : ellipse }
+edge: { sourcename: "fail" targetname: "CRT_done" label: "XUtils.c:25:4" }
+node: { title: "abort" label: "abort\n/usr/include/stdlib.h:591:13" shape : ellipse }
+edge: { sourcename: "fail" targetname: "abort" label: "XUtils.c:26:4" }
+node: { title: "xMalloc" label: "xMalloc\nXUtils.c:31:7\n16 bytes (static)" }
+node: { title: "malloc" label: "malloc\n/usr/include/stdlib.h:539:14" shape : ellipse }
+edge: { sourcename: "xMalloc" targetname: "malloc" label: "XUtils.c:33:17" }
+edge: { sourcename: "xMalloc" targetname: "fail" label: "XUtils.c:35:7" }
+node: { title: "xMallocArray" label: "xMallocArray\nXUtils.c:40:7\n16 bytes (static)" }
+edge: { sourcename: "xMallocArray" targetname: "fail" label: "XUtils.c:44:7" }
+edge: { sourcename: "xMallocArray" targetname: "malloc" label: "XUtils.c:33:17" }
+node: { title: "xCalloc" label: "xCalloc\nXUtils.c:49:7\n16 bytes (static)" }
+edge: { sourcename: "xCalloc" targetname: "fail" label: "XUtils.c:53:7" }
+node: { title: "calloc" label: "calloc\n/usr/include/stdlib.h:542:14" shape : ellipse }
+edge: { sourcename: "xCalloc" targetname: "calloc" label: "XUtils.c:55:17" }
+node: { title: "xRealloc" label: "xRealloc\nXUtils.c:62:7\n32 bytes (static)" }
+node: { title: "realloc" label: "realloc\n/usr/include/stdlib.h:550:14" shape : ellipse }
+edge: { sourcename: "xRealloc" targetname: "realloc" label: "XUtils.c:64:17" }
+node: { title: "free" label: "free\n/usr/include/stdlib.h:565:13" shape : ellipse }
+edge: { sourcename: "xRealloc" targetname: "free" label: "XUtils.c:66:7" }
+edge: { sourcename: "xRealloc" targetname: "fail" label: "XUtils.c:67:7" }
+node: { title: "xReallocArray" label: "xReallocArray\nXUtils.c:72:7\n32 bytes (static)" }
+edge: { sourcename: "xReallocArray" targetname: "fail" label: "XUtils.c:76:7" }
+edge: { sourcename: "xReallocArray" targetname: "realloc" label: "XUtils.c:64:17" }
+edge: { sourcename: "xReallocArray" targetname: "free" label: "XUtils.c:66:7" }
+edge: { sourcename: "xReallocArray" targetname: "fail" label: "XUtils.c:67:7" }
+node: { title: "xReallocArrayZero" label: "xReallocArrayZero\nXUtils.c:81:7\n64 bytes (static)" }
+edge: { sourcename: "xReallocArrayZero" targetname: "fail" label: "XUtils.c:76:7" }
+edge: { sourcename: "xReallocArrayZero" targetname: "realloc" label: "XUtils.c:64:17" }
+edge: { sourcename: "xReallocArrayZero" targetname: "free" label: "XUtils.c:66:7" }
+edge: { sourcename: "xReallocArrayZero" targetname: "fail" label: "XUtils.c:67:7" }
+node: { title: "memset" label: "__builtin_memset\n<built-in>" shape : ellipse }
+edge: { sourcename: "xReallocArrayZero" targetname: "memset" }
+node: { title: "String_cat" label: "String_cat\nXUtils.c:115:7\n64 bytes (static)" }
+node: { title: "strlen" label: "strlen\n/usr/include/string.h:385:15" shape : ellipse }
+edge: { sourcename: "String_cat" targetname: "strlen" label: "XUtils.c:116:22" }
+edge: { sourcename: "String_cat" targetname: "strlen" label: "XUtils.c:117:22" }
+edge: { sourcename: "String_cat" targetname: "malloc" label: "XUtils.c:33:17" }
+edge: { sourcename: "String_cat" targetname: "fail" label: "XUtils.c:35:7" }
+node: { title: "memcpy" label: "__builtin_memcpy\n<built-in>" shape : ellipse }
+edge: { sourcename: "String_cat" targetname: "memcpy" }
+edge: { sourcename: "String_cat" targetname: "memcpy" }
+node: { title: "String_trim" label: "String_trim\nXUtils.c:128:7\n32 bytes (static)" }
+edge: { sourcename: "String_trim" targetname: "strlen" label: "XUtils.c:133:17" }
+node: { title: "strndup" label: "strndup\n/usr/include/string.h:175:14" shape : ellipse }
+edge: { sourcename: "String_trim" targetname: "strndup" label: "XUtils.c:261:17" }
+edge: { sourcename: "String_trim" targetname: "fail" label: "XUtils.c:263:7" }
+node: { title: "String_split" label: "String_split\nXUtils.c:141:8\n80 bytes (static)" }
+edge: { sourcename: "String_split" targetname: "calloc" label: "XUtils.c:55:17" }
+edge: { sourcename: "String_split" targetname: "fail" label: "XUtils.c:57:7" }
+edge: { sourcename: "String_split" targetname: "strndup" label: "XUtils.c:261:17" }
+edge: { sourcename: "String_split" targetname: "realloc" label: "XUtils.c:64:17" }
+edge: { sourcename: "String_split" targetname: "free" label: "XUtils.c:66:7" }
+edge: { sourcename: "String_split" targetname: "fail" label: "XUtils.c:67:7" }
+node: { title: "strchr" label: "strchr\n/usr/include/string.h:226:14" shape : ellipse }
+edge: { sourcename: "String_split" targetname: "strchr" label: "XUtils.c:147:20" }
+node: { title: "strdup" label: "strdup\n/usr/include/string.h:167:14" shape : ellipse }
+edge: { sourcename: "String_split" targetname: "strdup" label: "XUtils.c:245:17" }
+edge: { sourcename: "String_split" targetname: "realloc" label: "XUtils.c:64:17" }
+edge: { sourcename: "String_split" targetname: "free" label: "XUtils.c:66:7" }
+edge: { sourcename: "String_split" targetname: "fail" label: "XUtils.c:67:7" }
+node: { title: "String_contains_i" label: "String_contains_i\nXUtils.c:97:13\n80 bytes (static)" }
+node: { title: "strchr" label: "__builtin_strchr\n<built-in>" shape : ellipse }
+edge: { sourcename: "String_contains_i" targetname: "strchr" label: "XUtils.c:99:17" }
+edge: { sourcename: "String_contains_i" targetname: "String_split" label: "XUtils.c:101:24" }
+node: { title: "strcasestr" label: "strcasestr\n/usr/include/string.h:360:14" shape : ellipse }
+edge: { sourcename: "String_contains_i" targetname: "strcasestr" label: "XUtils.c:103:14" }
+edge: { sourcename: "String_contains_i" targetname: "free" label: "XUtils.c:175:7" }
+edge: { sourcename: "String_contains_i" targetname: "free" label: "XUtils.c:177:4" }
+edge: { sourcename: "String_contains_i" targetname: "free" label: "XUtils.c:175:7" }
+edge: { sourcename: "String_contains_i" targetname: "free" label: "XUtils.c:177:4" }
+edge: { sourcename: "String_contains_i" targetname: "strcasestr" label: "XUtils.c:111:14" }
+node: { title: "String_freeArray" label: "String_freeArray\nXUtils.c:170:6\n32 bytes (static)" }
+edge: { sourcename: "String_freeArray" targetname: "free" label: "XUtils.c:175:7" }
+edge: { sourcename: "String_freeArray" targetname: "free" label: "XUtils.c:177:4" }
+node: { title: "String_readLine" label: "String_readLine\nXUtils.c:180:7\n48 bytes (static)" }
+edge: { sourcename: "String_readLine" targetname: "malloc" label: "XUtils.c:33:17" }
+edge: { sourcename: "String_readLine" targetname: "fail" label: "XUtils.c:35:7" }
+node: { title: "fgets" label: "fgets\n/usr/include/stdio.h:564:14" shape : ellipse }
+edge: { sourcename: "String_readLine" targetname: "fgets" label: "XUtils.c:186:24" }
+edge: { sourcename: "String_readLine" targetname: "free" label: "XUtils.c:188:10" }
+node: { title: "strrchr" label: "strrchr\n/usr/include/string.h:253:14" shape : ellipse }
+edge: { sourcename: "String_readLine" targetname: "strrchr" label: "XUtils.c:191:23" }
+node: { title: "feof" label: "feof\n/usr/include/stdio.h:759:12" shape : ellipse }
+edge: { sourcename: "String_readLine" targetname: "feof" label: "XUtils.c:196:14" }
+edge: { sourcename: "String_readLine" targetname: "realloc" label: "XUtils.c:64:17" }
+edge: { sourcename: "String_readLine" targetname: "free" label: "XUtils.c:66:7" }
+edge: { sourcename: "String_readLine" targetname: "fail" label: "XUtils.c:67:7" }
+node: { title: "String_safeStrncpy" label: "String_safeStrncpy\nXUtils.c:206:8\n0 bytes (static)" }
+node: { title: "xAsprintf" label: "xAsprintf\nXUtils.c:218:5\n272 bytes (static)" }
+node: { title: "vasprintf" label: "vasprintf\n/usr/include/stdio.h:366:12" shape : ellipse }
+edge: { sourcename: "xAsprintf" targetname: "vasprintf" label: "XUtils.c:221:12" }
+edge: { sourcename: "xAsprintf" targetname: "fail" label: "XUtils.c:225:7" }
+node: { title: "xSnprintf" label: "xSnprintf\nXUtils.c:231:5\n288 bytes (static)" }
+node: { title: "vsnprintf" label: "vsnprintf\n/usr/include/stdio.h:358:12" shape : ellipse }
+edge: { sourcename: "xSnprintf" targetname: "vsnprintf" label: "XUtils.c:234:12" }
+edge: { sourcename: "xSnprintf" targetname: "fail" label: "XUtils.c:238:7" }
+node: { title: "xStrdup" label: "xStrdup\nXUtils.c:244:7\n16 bytes (static)" }
+edge: { sourcename: "xStrdup" targetname: "strdup" label: "XUtils.c:245:17" }
+edge: { sourcename: "xStrdup" targetname: "fail" label: "XUtils.c:247:7" }
+node: { title: "free_and_xStrdup" label: "free_and_xStrdup\nXUtils.c:252:6\n48 bytes (static)" }
+node: { title: "strcmp" label: "strcmp\n/usr/include/string.h:137:12" shape : ellipse }
+edge: { sourcename: "free_and_xStrdup" targetname: "strcmp" label: "XUtils.h:46:11" }
+edge: { sourcename: "free_and_xStrdup" targetname: "free" label: "XUtils.c:256:4" }
+edge: { sourcename: "free_and_xStrdup" targetname: "strdup" label: "XUtils.c:245:17" }
+edge: { sourcename: "free_and_xStrdup" targetname: "fail" label: "XUtils.c:247:7" }
+node: { title: "xStrndup" label: "xStrndup\nXUtils.c:260:7\n16 bytes (static)" }
+edge: { sourcename: "xStrndup" targetname: "strndup" label: "XUtils.c:261:17" }
+edge: { sourcename: "xStrndup" targetname: "fail" label: "XUtils.c:263:7" }
+node: { title: "xReadfile" label: "xReadfile\nXUtils.c:301:9\n32 bytes (static)" }
+node: { title: "open" label: "open\n/usr/include/fcntl.h:168:12" shape : ellipse }
+edge: { sourcename: "xReadfile" targetname: "open" label: "XUtils.c:302:13" }
+edge: { sourcename: "xReadfile" targetname: "__errno_location" label: "XUtils.c:304:15" }
+edge: { sourcename: "xReadfile" targetname: "XUtils.c:readfd_internal" label: "XUtils.c:306:11" }
+node: { title: "xReadfileat" label: "xReadfileat\nXUtils.c:309:9\n32 bytes (static)" }
+node: { title: "openat" label: "openat\n/usr/include/fcntl.h:192:12" shape : ellipse }
+edge: { sourcename: "xReadfileat" targetname: "openat" label: "Compat.h:38:11" }
+edge: { sourcename: "xReadfileat" targetname: "__errno_location" label: "XUtils.c:312:15" }
+edge: { sourcename: "xReadfileat" targetname: "XUtils.c:readfd_internal" label: "XUtils.c:314:11" }
+node: { title: "full_write" label: "full_write\nXUtils.c:317:9\n64 bytes (static)" }
+node: { title: "write" label: "write\n/usr/include/unistd.h:366:16" shape : ellipse }
+edge: { sourcename: "full_write" targetname: "write" label: "XUtils.c:321:19" }
+edge: { sourcename: "full_write" targetname: "__errno_location" label: "XUtils.c:323:14" }
+}

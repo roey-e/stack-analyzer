@@ -1,0 +1,21 @@
+graph: { title: "linux/ZramMeter.c"
+node: { title: "linux/ZramMeter.c:ZramMeter_updateValues" label: "ZramMeter_updateValues\nlinux/ZramMeter.c:16:13\n48 bytes (static)" }
+node: { title: "Platform_setZramValues" label: "Platform_setZramValues\nlinux/Platform.h:70:6" shape : ellipse }
+edge: { sourcename: "linux/ZramMeter.c:ZramMeter_updateValues" targetname: "Platform_setZramValues" label: "linux/ZramMeter.c:21:4" }
+node: { title: "Meter_humanUnit" label: "Meter_humanUnit\n./Meter.h:148:5" shape : ellipse }
+edge: { sourcename: "linux/ZramMeter.c:ZramMeter_updateValues" targetname: "Meter_humanUnit" label: "linux/ZramMeter.c:26:14" }
+edge: { sourcename: "linux/ZramMeter.c:ZramMeter_updateValues" targetname: "Meter_humanUnit" label: "linux/ZramMeter.c:31:14" }
+edge: { sourcename: "linux/ZramMeter.c:ZramMeter_updateValues" targetname: "Meter_humanUnit" label: "linux/ZramMeter.c:38:4" }
+node: { title: "linux/ZramMeter.c:ZramMeter_display" label: "ZramMeter_display\nlinux/ZramMeter.c:41:13\n112 bytes (static)" }
+node: { title: "RichString_writeAscii" label: "RichString_writeAscii\n./RichString.h:77:5" shape : ellipse }
+edge: { sourcename: "linux/ZramMeter.c:ZramMeter_display" targetname: "RichString_writeAscii" label: "linux/ZramMeter.c:45:4" }
+edge: { sourcename: "linux/ZramMeter.c:ZramMeter_display" targetname: "Meter_humanUnit" label: "linux/ZramMeter.c:47:4" }
+node: { title: "RichString_appendAscii" label: "RichString_appendAscii\n./RichString.h:73:5" shape : ellipse }
+edge: { sourcename: "linux/ZramMeter.c:ZramMeter_display" targetname: "RichString_appendAscii" label: "linux/ZramMeter.c:48:4" }
+edge: { sourcename: "linux/ZramMeter.c:ZramMeter_display" targetname: "Meter_humanUnit" label: "linux/ZramMeter.c:50:4" }
+edge: { sourcename: "linux/ZramMeter.c:ZramMeter_display" targetname: "RichString_appendAscii" label: "linux/ZramMeter.c:51:4" }
+edge: { sourcename: "linux/ZramMeter.c:ZramMeter_display" targetname: "RichString_appendAscii" label: "linux/ZramMeter.c:52:4" }
+edge: { sourcename: "linux/ZramMeter.c:ZramMeter_display" targetname: "Meter_humanUnit" label: "linux/ZramMeter.c:54:4" }
+edge: { sourcename: "linux/ZramMeter.c:ZramMeter_display" targetname: "RichString_appendAscii" label: "linux/ZramMeter.c:55:4" }
+edge: { sourcename: "linux/ZramMeter.c:ZramMeter_display" targetname: "RichString_appendAscii" label: "linux/ZramMeter.c:56:4" }
+}

@@ -1,0 +1,81 @@
+graph: { title: "TraceScreen.c"
+node: { title: "TraceScreen_delete" label: "TraceScreen_delete\nTraceScreen.c:47:6\n32 bytes (static)" }
+node: { title: "kill" label: "kill\n/usr/include/signal.h:112:12" shape : ellipse }
+edge: { sourcename: "TraceScreen_delete" targetname: "kill" label: "TraceScreen.c:50:7" }
+node: { title: "__errno_location" label: "__errno_location\n/usr/include/errno.h:37:13" shape : ellipse }
+edge: { sourcename: "TraceScreen_delete" targetname: "__errno_location" label: "TraceScreen.c:52:14" }
+node: { title: "waitpid" label: "waitpid\n/usr/include/aarch64-linux-gnu/sys/wait.h:100:16" shape : ellipse }
+edge: { sourcename: "TraceScreen_delete" targetname: "waitpid" label: "TraceScreen.c:51:14" }
+node: { title: "fclose" label: "fclose\n/usr/include/stdio.h:213:12" shape : ellipse }
+edge: { sourcename: "TraceScreen_delete" targetname: "fclose" label: "TraceScreen.c:57:7" }
+node: { title: "CRT_enableDelay" label: "CRT_enableDelay\nCRT.h:204:6" shape : ellipse }
+edge: { sourcename: "TraceScreen_delete" targetname: "CRT_enableDelay" label: "TraceScreen.c:60:4" }
+node: { title: "InfoScreen_done" label: "InfoScreen_done\nInfoScreen.h:44:13" shape : ellipse }
+edge: { sourcename: "TraceScreen_delete" targetname: "InfoScreen_done" label: "TraceScreen.c:61:9" }
+node: { title: "free" label: "free\n/usr/include/stdlib.h:565:13" shape : ellipse }
+edge: { sourcename: "TraceScreen_delete" targetname: "free" label: "TraceScreen.c:61:4" }
+node: { title: "TraceScreen.c:TraceScreen_onKey" label: "TraceScreen_onKey\nTraceScreen.c:165:13\n32 bytes (static)" }
+node: { title: "Panel_size" label: "Panel_size\nPanel.h:129:5" shape : ellipse }
+edge: { sourcename: "TraceScreen.c:TraceScreen_onKey" targetname: "Panel_size" label: "TraceScreen.c:172:47" }
+node: { title: "Panel_setSelected" label: "Panel_setSelected\nPanel.h:131:6" shape : ellipse }
+edge: { sourcename: "TraceScreen.c:TraceScreen_onKey" targetname: "Panel_setSelected" label: "TraceScreen.c:172:13" }
+node: { title: "FunctionBar_setLabel" label: "FunctionBar_setLabel\nFunctionBar.h:30:6" shape : ellipse }
+edge: { sourcename: "TraceScreen.c:TraceScreen_onKey" targetname: "FunctionBar_setLabel" label: "TraceScreen.c:177:10" }
+node: { title: "__indirect_call" label: "Indirect Call Placeholder" shape : ellipse }
+edge: { sourcename: "TraceScreen.c:TraceScreen_onKey" targetname: "__indirect_call" label: "TraceScreen.c:178:10" }
+node: { title: "TraceScreen.c:TraceScreen_updateTrace" label: "TraceScreen_updateTrace\nTraceScreen.c:120:13\n1248 bytes (static)" }
+node: { title: "fileno" label: "fileno\n/usr/include/stdio.h:786:12" shape : ellipse }
+edge: { sourcename: "TraceScreen.c:TraceScreen_updateTrace" targetname: "fileno" label: "TraceScreen.c:124:20" }
+node: { title: "select" label: "select\n/usr/include/aarch64-linux-gnu/sys/select.h:101:12" shape : ellipse }
+edge: { sourcename: "TraceScreen.c:TraceScreen_updateTrace" targetname: "select" label: "TraceScreen.c:133:16" }
+node: { title: "fread" label: "fread\n/usr/include/stdio.h:646:15" shape : ellipse }
+edge: { sourcename: "TraceScreen.c:TraceScreen_updateTrace" targetname: "fread" label: "TraceScreen.c:137:15" }
+node: { title: "InfoScreen_appendLine" label: "InfoScreen_appendLine\nInfoScreen.h:51:6" shape : ellipse }
+edge: { sourcename: "TraceScreen.c:TraceScreen_updateTrace" targetname: "InfoScreen_appendLine" label: "TraceScreen.c:146:16" }
+node: { title: "InfoScreen_addLine" label: "InfoScreen_addLine\nInfoScreen.h:49:6" shape : ellipse }
+edge: { sourcename: "TraceScreen.c:TraceScreen_updateTrace" targetname: "InfoScreen_addLine" label: "TraceScreen.c:149:16" }
+edge: { sourcename: "TraceScreen.c:TraceScreen_updateTrace" targetname: "InfoScreen_addLine" label: "TraceScreen.c:155:10" }
+edge: { sourcename: "TraceScreen.c:TraceScreen_updateTrace" targetname: "Panel_size" label: "TraceScreen.c:160:49" }
+edge: { sourcename: "TraceScreen.c:TraceScreen_updateTrace" targetname: "Panel_setSelected" label: "TraceScreen.c:160:10" }
+node: { title: "TraceScreen.c:TraceScreen_draw" label: "TraceScreen_draw\nTraceScreen.c:64:13\n32 bytes (static)" }
+node: { title: "Process_getCommand" label: "Process_getCommand\nProcess.h:401:13" shape : ellipse }
+edge: { sourcename: "TraceScreen.c:TraceScreen_draw" targetname: "Process_getCommand" label: "TraceScreen.c:65:4" }
+node: { title: "InfoScreen_drawTitled" label: "InfoScreen_drawTitled\nInfoScreen.h:47:6" shape : ellipse }
+edge: { sourcename: "TraceScreen.c:TraceScreen_draw" targetname: "InfoScreen_drawTitled" label: "TraceScreen.c:65:4" }
+node: { title: "TraceScreen_new" label: "TraceScreen_new\nTraceScreen.c:37:14\n48 bytes (static)" }
+node: { title: "xCalloc" label: "xCalloc\nXUtils.h:27:7" shape : ellipse }
+edge: { sourcename: "TraceScreen_new" targetname: "xCalloc" label: "TraceScreen.c:39:24" }
+node: { title: "FunctionBar_new" label: "FunctionBar_new\nFunctionBar.h:26:14" shape : ellipse }
+edge: { sourcename: "TraceScreen_new" targetname: "FunctionBar_new" label: "TraceScreen.c:42:25" }
+node: { title: "CRT_disableDelay" label: "CRT_disableDelay\nCRT.h:202:6" shape : ellipse }
+edge: { sourcename: "TraceScreen_new" targetname: "CRT_disableDelay" label: "TraceScreen.c:43:4" }
+node: { title: "InfoScreen_init" label: "InfoScreen_init\nInfoScreen.h:42:13" shape : ellipse }
+edge: { sourcename: "TraceScreen_new" targetname: "InfoScreen_init" label: "TraceScreen.c:44:26" }
+node: { title: "TraceScreen_forkTracer" label: "TraceScreen_forkTracer\nTraceScreen.c:68:6\n112 bytes (static)" }
+node: { title: "pipe" label: "pipe\n/usr/include/unistd.h:417:12" shape : ellipse }
+edge: { sourcename: "TraceScreen_forkTracer" targetname: "pipe" label: "TraceScreen.c:71:8" }
+node: { title: "fcntl" label: "fcntl\n/usr/include/fcntl.h:148:12" shape : ellipse }
+edge: { sourcename: "TraceScreen_forkTracer" targetname: "fcntl" label: "TraceScreen.c:74:8" }
+edge: { sourcename: "TraceScreen_forkTracer" targetname: "fcntl" label: "TraceScreen.c:77:8" }
+node: { title: "fork" label: "fork\n/usr/include/unistd.h:756:16" shape : ellipse }
+edge: { sourcename: "TraceScreen_forkTracer" targetname: "fork" label: "TraceScreen.c:80:18" }
+node: { title: "close" label: "close\n/usr/include/unistd.h:353:12" shape : ellipse }
+edge: { sourcename: "TraceScreen_forkTracer" targetname: "close" label: "TraceScreen.c:85:7" }
+node: { title: "dup2" label: "dup2\n/usr/include/unistd.h:534:12" shape : ellipse }
+edge: { sourcename: "TraceScreen_forkTracer" targetname: "dup2" label: "TraceScreen.c:87:7" }
+edge: { sourcename: "TraceScreen_forkTracer" targetname: "dup2" label: "TraceScreen.c:88:7" }
+edge: { sourcename: "TraceScreen_forkTracer" targetname: "close" label: "TraceScreen.c:89:7" }
+node: { title: "xSnprintf" label: "xSnprintf\nXUtils.h:66:5" shape : ellipse }
+edge: { sourcename: "TraceScreen_forkTracer" targetname: "xSnprintf" label: "TraceScreen.c:92:7" }
+node: { title: "execlp" label: "execlp\n/usr/include/unistd.h:584:12" shape : ellipse }
+edge: { sourcename: "TraceScreen_forkTracer" targetname: "execlp" label: "TraceScreen.c:95:7" }
+node: { title: "write" label: "write\n/usr/include/unistd.h:366:16" shape : ellipse }
+edge: { sourcename: "TraceScreen_forkTracer" targetname: "write" label: "TraceScreen.c:99:15" }
+node: { title: "exit" label: "exit\n/usr/include/stdlib.h:617:13" shape : ellipse }
+edge: { sourcename: "TraceScreen_forkTracer" targetname: "exit" label: "TraceScreen.c:101:7" }
+node: { title: "fdopen" label: "fdopen\n/usr/include/stdio.h:279:14" shape : ellipse }
+edge: { sourcename: "TraceScreen_forkTracer" targetname: "fdopen" label: "TraceScreen.c:104:15" }
+edge: { sourcename: "TraceScreen_forkTracer" targetname: "close" label: "TraceScreen.c:108:4" }
+edge: { sourcename: "TraceScreen_forkTracer" targetname: "close" label: "TraceScreen.c:115:4" }
+edge: { sourcename: "TraceScreen_forkTracer" targetname: "close" label: "TraceScreen.c:116:4" }
+}

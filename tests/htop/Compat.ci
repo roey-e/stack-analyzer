@@ -1,0 +1,24 @@
+graph: { title: "Compat.c"
+node: { title: "Compat_faccessat" label: "Compat_faccessat\nCompat.c:28:5\n192 bytes (static)" }
+node: { title: "__errno_location" label: "__errno_location\n/usr/include/errno.h:37:13" shape : ellipse }
+edge: { sourcename: "Compat_faccessat" targetname: "__errno_location" label: "Compat.c:38:4" }
+node: { title: "faccessat" label: "faccessat\n/usr/include/unistd.h:304:12" shape : ellipse }
+edge: { sourcename: "Compat_faccessat" targetname: "faccessat" label: "Compat.c:40:10" }
+node: { title: "__lxstat" label: "__lxstat\n/usr/include/aarch64-linux-gnu/sys/stat.h:399:12" shape : ellipse }
+edge: { sourcename: "Compat_faccessat" targetname: "__lxstat" label: "/usr/include/aarch64-linux-gnu/sys/stat.h:462:10" }
+node: { title: "__xstat" label: "__xstat\n/usr/include/aarch64-linux-gnu/sys/stat.h:397:12" shape : ellipse }
+edge: { sourcename: "Compat_faccessat" targetname: "__xstat" label: "/usr/include/aarch64-linux-gnu/sys/stat.h:455:10" }
+node: { title: "Compat_fstatat" label: "Compat_fstatat\nCompat.c:63:5\n0 bytes (static)" }
+node: { title: "__fxstatat" label: "__fxstatat\n/usr/include/aarch64-linux-gnu/sys/stat.h:401:12" shape : ellipse }
+edge: { sourcename: "Compat_fstatat" targetname: "__fxstatat" label: "/usr/include/aarch64-linux-gnu/sys/stat.h:477:10" }
+node: { title: "Compat_readlinkat" label: "Compat_readlinkat\nCompat.c:104:9\n0 bytes (static)" }
+node: { title: "readlinkat" label: "readlinkat\n/usr/include/unistd.h:819:16" shape : ellipse }
+edge: { sourcename: "Compat_readlinkat" targetname: "readlinkat" label: "Compat.c:114:11" }
+node: { title: "Compat_readlink" label: "Compat_readlink\nCompat.c:128:9\n8304 bytes (static)" }
+node: { title: "xSnprintf" label: "xSnprintf\nXUtils.h:66:5" shape : ellipse }
+edge: { sourcename: "Compat_readlink" targetname: "xSnprintf" label: "Compat.c:136:4" }
+node: { title: "readlink" label: "readlink\n/usr/include/unistd.h:808:16" shape : ellipse }
+edge: { sourcename: "Compat_readlink" targetname: "readlink" label: "Compat.c:139:16" }
+edge: { sourcename: "Compat_readlink" targetname: "xSnprintf" label: "Compat.c:146:4" }
+edge: { sourcename: "Compat_readlink" targetname: "readlink" label: "Compat.c:155:11" }
+}

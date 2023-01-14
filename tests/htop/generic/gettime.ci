@@ -1,0 +1,7 @@
+graph: { title: "generic/gettime.c"
+node: { title: "Generic_gettime_realtime" label: "Generic_gettime_realtime\ngeneric/gettime.c:15:6\n48 bytes (static)" }
+node: { title: "clock_gettime" label: "clock_gettime\n/usr/include/time.h:213:12" shape : ellipse }
+edge: { sourcename: "Generic_gettime_realtime" targetname: "clock_gettime" label: "generic/gettime.c:20:8" }
+node: { title: "Generic_gettime_monotonic" label: "Generic_gettime_monotonic\ngeneric/gettime.c:43:6\n48 bytes (static)" }
+edge: { sourcename: "Generic_gettime_monotonic" targetname: "clock_gettime" label: "generic/gettime.c:47:8" }
+}

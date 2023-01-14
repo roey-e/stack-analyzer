@@ -1,0 +1,73 @@
+graph: { title: "CategoriesPanel.c"
+node: { title: "CategoriesPanel.c:CategoriesPanel_eventHandler" label: "CategoriesPanel_eventHandler\nCategoriesPanel.c:100:22\n48 bytes (static)" }
+node: { title: "Panel_getSelectedIndex" label: "Panel_getSelectedIndex\nPanel.h:127:5" shape : ellipse }
+edge: { sourcename: "CategoriesPanel.c:CategoriesPanel_eventHandler" targetname: "Panel_getSelectedIndex" label: "CategoriesPanel.c:105:19" }
+node: { title: "Panel_onKey" label: "Panel_onKey\nPanel.h:137:6" shape : ellipse }
+edge: { sourcename: "CategoriesPanel.c:CategoriesPanel_eventHandler" targetname: "Panel_onKey" label: "CategoriesPanel.c:119:10" }
+edge: { sourcename: "CategoriesPanel.c:CategoriesPanel_eventHandler" targetname: "Panel_getSelectedIndex" label: "CategoriesPanel.c:120:21" }
+node: { title: "__ctype_b_loc" label: "__ctype_b_loc\n/usr/include/ctype.h:79:35" shape : ellipse }
+edge: { sourcename: "CategoriesPanel.c:CategoriesPanel_eventHandler" targetname: "__ctype_b_loc" label: "CategoriesPanel.c:126:36" }
+node: { title: "Panel_selectByTyping" label: "Panel_selectByTyping\nPanel.h:139:15" shape : ellipse }
+edge: { sourcename: "CategoriesPanel.c:CategoriesPanel_eventHandler" targetname: "Panel_selectByTyping" label: "CategoriesPanel.c:127:22" }
+node: { title: "ScreenManager_size" label: "ScreenManager_size\nScreenManager.h:37:5" shape : ellipse }
+edge: { sourcename: "CategoriesPanel.c:CategoriesPanel_eventHandler" targetname: "ScreenManager_size" label: "CategoriesPanel.c:133:18" }
+node: { title: "ScreenManager_remove" label: "ScreenManager_remove\nScreenManager.h:43:8" shape : ellipse }
+edge: { sourcename: "CategoriesPanel.c:CategoriesPanel_eventHandler" targetname: "ScreenManager_remove" label: "CategoriesPanel.c:135:10" }
+node: { title: "__indirect_call" label: "Indirect Call Placeholder" shape : ellipse }
+edge: { sourcename: "CategoriesPanel.c:CategoriesPanel_eventHandler" targetname: "__indirect_call" label: "CategoriesPanel.c:138:10" }
+node: { title: "CategoriesPanel.c:CategoriesPanel_makeColorsPage" label: "CategoriesPanel_makeColorsPage\nCategoriesPanel.c:67:13\n32 bytes (static)" }
+node: { title: "ColorsPanel_new" label: "ColorsPanel_new\nColorsPanel.h:22:14" shape : ellipse }
+edge: { sourcename: "CategoriesPanel.c:CategoriesPanel_makeColorsPage" targetname: "ColorsPanel_new" label: "CategoriesPanel.c:68:29" }
+node: { title: "ScreenManager_add" label: "ScreenManager_add\nScreenManager.h:39:6" shape : ellipse }
+edge: { sourcename: "CategoriesPanel.c:CategoriesPanel_makeColorsPage" targetname: "ScreenManager_add" label: "CategoriesPanel.c:69:4" }
+node: { title: "CategoriesPanel.c:CategoriesPanel_makeScreensPage" label: "CategoriesPanel_makeScreensPage\nCategoriesPanel.c:72:13\n48 bytes (static)" }
+node: { title: "ScreensPanel_new" label: "ScreensPanel_new\nScreensPanel.h:49:15" shape : ellipse }
+edge: { sourcename: "CategoriesPanel.c:CategoriesPanel_makeScreensPage" targetname: "ScreensPanel_new" label: "CategoriesPanel.c:73:30" }
+node: { title: "AvailableColumnsPanel_new" label: "AvailableColumnsPanel_new\nAvailableColumnsPanel.h:21:24" shape : ellipse }
+edge: { sourcename: "CategoriesPanel.c:CategoriesPanel_makeScreensPage" targetname: "AvailableColumnsPanel_new" label: "CategoriesPanel.c:75:39" }
+edge: { sourcename: "CategoriesPanel.c:CategoriesPanel_makeScreensPage" targetname: "ScreenManager_add" label: "CategoriesPanel.c:76:4" }
+edge: { sourcename: "CategoriesPanel.c:CategoriesPanel_makeScreensPage" targetname: "ScreenManager_add" label: "CategoriesPanel.c:77:4" }
+edge: { sourcename: "CategoriesPanel.c:CategoriesPanel_makeScreensPage" targetname: "ScreenManager_add" label: "CategoriesPanel.c:78:4" }
+node: { title: "CategoriesPanel.c:CategoriesPanel_makeMetersPage" label: "CategoriesPanel_makeMetersPage\nCategoriesPanel.c:41:13\n112 bytes (static)" }
+node: { title: "xMallocArray" label: "xMallocArray\nXUtils.h:25:7" shape : ellipse }
+edge: { sourcename: "CategoriesPanel.c:CategoriesPanel_makeMetersPage" targetname: "xMallocArray" label: "CategoriesPanel.c:43:32" }
+node: { title: "AvailableMetersPanel_new" label: "AvailableMetersPanel_new\nAvailableMetersPanel.h:32:23" shape : ellipse }
+edge: { sourcename: "CategoriesPanel.c:CategoriesPanel_makeMetersPage" targetname: "AvailableMetersPanel_new" label: "CategoriesPanel.c:58:38" }
+edge: { sourcename: "CategoriesPanel.c:CategoriesPanel_makeMetersPage" targetname: "ScreenManager_add" label: "CategoriesPanel.c:59:4" }
+node: { title: "xSnprintf" label: "xSnprintf\nXUtils.h:66:5" shape : ellipse }
+edge: { sourcename: "CategoriesPanel.c:CategoriesPanel_makeMetersPage" targetname: "xSnprintf" label: "CategoriesPanel.c:47:7" }
+node: { title: "MetersPanel_new" label: "MetersPanel_new\nMetersPanel.h:38:14" shape : ellipse }
+edge: { sourcename: "CategoriesPanel.c:CategoriesPanel_makeMetersPage" targetname: "MetersPanel_new" label: "CategoriesPanel.c:48:24" }
+edge: { sourcename: "CategoriesPanel.c:CategoriesPanel_makeMetersPage" targetname: "ScreenManager_add" label: "CategoriesPanel.c:55:7" }
+edge: { sourcename: "CategoriesPanel.c:CategoriesPanel_makeMetersPage" targetname: "xSnprintf" label: "CategoriesPanel.c:47:7" }
+edge: { sourcename: "CategoriesPanel.c:CategoriesPanel_makeMetersPage" targetname: "MetersPanel_new" label: "CategoriesPanel.c:48:24" }
+node: { title: "CategoriesPanel.c:CategoriesPanel_makeHeaderOptionsPage" label: "CategoriesPanel_makeHeaderOptionsPage\nCategoriesPanel.c:81:13\n32 bytes (static)" }
+node: { title: "HeaderOptionsPanel_new" label: "HeaderOptionsPanel_new\nHeaderOptionsPanel.h:24:21" shape : ellipse }
+edge: { sourcename: "CategoriesPanel.c:CategoriesPanel_makeHeaderOptionsPage" targetname: "HeaderOptionsPanel_new" label: "CategoriesPanel.c:82:29" }
+edge: { sourcename: "CategoriesPanel.c:CategoriesPanel_makeHeaderOptionsPage" targetname: "ScreenManager_add" label: "CategoriesPanel.c:83:4" }
+node: { title: "CategoriesPanel.c:CategoriesPanel_makeDisplayOptionsPage" label: "CategoriesPanel_makeDisplayOptionsPage\nCategoriesPanel.c:62:13\n32 bytes (static)" }
+node: { title: "DisplayOptionsPanel_new" label: "DisplayOptionsPanel_new\nDisplayOptionsPanel.h:24:22" shape : ellipse }
+edge: { sourcename: "CategoriesPanel.c:CategoriesPanel_makeDisplayOptionsPage" targetname: "DisplayOptionsPanel_new" label: "CategoriesPanel.c:63:37" }
+edge: { sourcename: "CategoriesPanel.c:CategoriesPanel_makeDisplayOptionsPage" targetname: "ScreenManager_add" label: "CategoriesPanel.c:64:4" }
+node: { title: "CategoriesPanel.c:CategoriesPanel_delete" label: "CategoriesPanel_delete\nCategoriesPanel.c:34:13\n32 bytes (static)" }
+node: { title: "Panel_done" label: "Panel_done\nPanel.h:97:6" shape : ellipse }
+edge: { sourcename: "CategoriesPanel.c:CategoriesPanel_delete" targetname: "Panel_done" label: "CategoriesPanel.c:37:4" }
+node: { title: "free" label: "free\n/usr/include/stdlib.h:565:13" shape : ellipse }
+edge: { sourcename: "CategoriesPanel.c:CategoriesPanel_delete" targetname: "free" label: "CategoriesPanel.c:38:4" }
+node: { title: "CategoriesPanel_new" label: "CategoriesPanel_new\nCategoriesPanel.c:152:18\n80 bytes (static)" }
+node: { title: "xMalloc" label: "xMalloc\nXUtils.h:23:7" shape : ellipse }
+edge: { sourcename: "CategoriesPanel_new" targetname: "xMalloc" label: "CategoriesPanel.c:153:28" }
+node: { title: "FunctionBar_new" label: "FunctionBar_new\nFunctionBar.h:26:14" shape : ellipse }
+edge: { sourcename: "CategoriesPanel_new" targetname: "FunctionBar_new" label: "CategoriesPanel.c:155:25" }
+node: { title: "Panel_init" label: "Panel_init\nPanel.h:95:6" shape : ellipse }
+edge: { sourcename: "CategoriesPanel_new" targetname: "Panel_init" label: "CategoriesPanel.c:156:4" }
+node: { title: "Panel_setHeader" label: "Panel_setHeader\nPanel.h:103:6" shape : ellipse }
+edge: { sourcename: "CategoriesPanel_new" targetname: "Panel_setHeader" label: "CategoriesPanel.c:162:4" }
+node: { title: "ListItem_new" label: "ListItem_new\nListItem.h:30:11" shape : ellipse }
+edge: { sourcename: "CategoriesPanel_new" targetname: "ListItem_new" label: "CategoriesPanel.c:164:34" }
+node: { title: "Panel_add" label: "Panel_add\nPanel.h:111:6" shape : ellipse }
+edge: { sourcename: "CategoriesPanel_new" targetname: "Panel_add" label: "CategoriesPanel.c:164:7" }
+edge: { sourcename: "CategoriesPanel_new" targetname: "ScreenManager_add" label: "CategoriesPanel.c:166:4" }
+edge: { sourcename: "CategoriesPanel_new" targetname: "DisplayOptionsPanel_new" label: "CategoriesPanel.c:63:37" }
+edge: { sourcename: "CategoriesPanel_new" targetname: "ScreenManager_add" label: "CategoriesPanel.c:64:4" }
+}

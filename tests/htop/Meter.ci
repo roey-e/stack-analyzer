@@ -1,0 +1,116 @@
+graph: { title: "Meter.c"
+node: { title: "Meter.c:BlankMeter_updateValues" label: "BlankMeter_updateValues\nMeter.c:462:13\n0 bytes (static)" }
+node: { title: "Meter.c:BlankMeter_display" label: "BlankMeter_display\nMeter.c:466:13\n0 bytes (static)" }
+node: { title: "Meter_delete" label: "Meter_delete\nMeter.c:81:6\n32 bytes (static)" }
+node: { title: "__indirect_call" label: "Indirect Call Placeholder" shape : ellipse }
+edge: { sourcename: "Meter_delete" targetname: "__indirect_call" label: "Meter.c:87:7" }
+node: { title: "free" label: "free\n/usr/include/stdlib.h:565:13" shape : ellipse }
+edge: { sourcename: "Meter_delete" targetname: "free" label: "Meter.c:89:4" }
+edge: { sourcename: "Meter_delete" targetname: "free" label: "Meter.c:90:4" }
+edge: { sourcename: "Meter_delete" targetname: "free" label: "Meter.c:91:4" }
+edge: { sourcename: "Meter_delete" targetname: "free" label: "Meter.c:92:4" }
+node: { title: "Meter.c:GraphMeterMode_draw" label: "GraphMeterMode_draw\nMeter.c:289:13\n144 bytes (static)" }
+node: { title: "xCalloc" label: "xCalloc\nXUtils.h:27:7" shape : ellipse }
+edge: { sourcename: "Meter.c:GraphMeterMode_draw" targetname: "xCalloc" label: "Meter.c:293:24" }
+edge: { sourcename: "Meter.c:GraphMeterMode_draw" targetname: "__indirect_call" label: "Meter.c:311:26" }
+node: { title: "wattrset" label: "wattrset\n/usr/include/curses.h:787:28" shape : ellipse }
+edge: { sourcename: "Meter.c:GraphMeterMode_draw" targetname: "wattrset" label: "Meter.c:312:4" }
+node: { title: "wmove" label: "wmove\n/usr/include/curses.h:819:28" shape : ellipse }
+edge: { sourcename: "Meter.c:GraphMeterMode_draw" targetname: "wmove" label: "Meter.c:314:4" }
+node: { title: "waddnstr" label: "waddnstr\n/usr/include/curses.h:783:28" shape : ellipse }
+edge: { sourcename: "Meter.c:GraphMeterMode_draw" targetname: "waddnstr" label: "Meter.c:314:4" }
+node: { title: "memmove" label: "__builtin_memmove\n<built-in>" shape : ellipse }
+edge: { sourcename: "Meter.c:GraphMeterMode_draw" targetname: "memmove" label: "Meter.c:324:26" }
+edge: { sourcename: "Meter.c:GraphMeterMode_draw" targetname: "wattrset" label: "Meter.c:354:4" }
+node: { title: "lround" label: "lround\n/usr/include/aarch64-linux-gnu/bits/mathcalls.h:320:1" shape : ellipse }
+edge: { sourcename: "Meter.c:GraphMeterMode_draw" targetname: "lround" label: "Meter.c:341:16" }
+edge: { sourcename: "Meter.c:GraphMeterMode_draw" targetname: "lround" label: "Meter.c:341:16" }
+edge: { sourcename: "Meter.c:GraphMeterMode_draw" targetname: "lround" label: "Meter.c:341:16" }
+edge: { sourcename: "Meter.c:GraphMeterMode_draw" targetname: "lround" label: "Meter.c:342:16" }
+edge: { sourcename: "Meter.c:GraphMeterMode_draw" targetname: "lround" label: "Meter.c:342:16" }
+edge: { sourcename: "Meter.c:GraphMeterMode_draw" targetname: "lround" label: "Meter.c:342:16" }
+edge: { sourcename: "Meter.c:GraphMeterMode_draw" targetname: "wattrset" label: "Meter.c:349:10" }
+edge: { sourcename: "Meter.c:GraphMeterMode_draw" targetname: "wmove" label: "Meter.c:350:10" }
+edge: { sourcename: "Meter.c:GraphMeterMode_draw" targetname: "waddnstr" label: "Meter.c:350:10" }
+node: { title: "Meter.c:BarMeterMode_draw" label: "BarMeterMode_draw\nMeter.c:177:13\n10016 bytes (static)" }
+edge: { sourcename: "Meter.c:BarMeterMode_draw" targetname: "__indirect_call" label: "Meter.c:178:26" }
+edge: { sourcename: "Meter.c:BarMeterMode_draw" targetname: "wattrset" label: "Meter.c:179:4" }
+edge: { sourcename: "Meter.c:BarMeterMode_draw" targetname: "wmove" label: "Meter.c:181:4" }
+edge: { sourcename: "Meter.c:BarMeterMode_draw" targetname: "waddnstr" label: "Meter.c:181:4" }
+edge: { sourcename: "Meter.c:BarMeterMode_draw" targetname: "wattrset" label: "Meter.c:184:4" }
+edge: { sourcename: "Meter.c:BarMeterMode_draw" targetname: "wmove" label: "Meter.c:185:4" }
+node: { title: "waddch" label: "waddch\n/usr/include/curses.h:780:28" shape : ellipse }
+edge: { sourcename: "Meter.c:BarMeterMode_draw" targetname: "waddch" label: "Meter.c:185:4" }
+edge: { sourcename: "Meter.c:BarMeterMode_draw" targetname: "wmove" label: "Meter.c:187:4" }
+edge: { sourcename: "Meter.c:BarMeterMode_draw" targetname: "waddch" label: "Meter.c:187:4" }
+edge: { sourcename: "Meter.c:BarMeterMode_draw" targetname: "wattrset" label: "Meter.c:189:4" }
+node: { title: "RichString_appendChr" label: "RichString_appendChr\nRichString.h:60:6" shape : ellipse }
+edge: { sourcename: "Meter.c:BarMeterMode_draw" targetname: "RichString_appendChr" label: "Meter.c:199:4" }
+node: { title: "RichString_appendWide" label: "RichString_appendWide\nRichString.h:64:5" shape : ellipse }
+edge: { sourcename: "Meter.c:BarMeterMode_draw" targetname: "RichString_appendWide" label: "Meter.c:200:4" }
+node: { title: "RichString_setAttrn" label: "RichString_setAttrn\nRichString.h:54:6" shape : ellipse }
+edge: { sourcename: "Meter.c:BarMeterMode_draw" targetname: "RichString_setAttrn" label: "Meter.c:251:7" }
+edge: { sourcename: "Meter.c:BarMeterMode_draw" targetname: "wmove" label: "Meter.c:252:7" }
+node: { title: "wadd_wchnstr" label: "wadd_wchnstr\n/usr/include/curses.h:1752:28" shape : ellipse }
+edge: { sourcename: "Meter.c:BarMeterMode_draw" targetname: "wadd_wchnstr" label: "Meter.c:252:7" }
+edge: { sourcename: "Meter.c:BarMeterMode_draw" targetname: "RichString_setAttrn" label: "Meter.c:257:7" }
+edge: { sourcename: "Meter.c:BarMeterMode_draw" targetname: "wmove" label: "Meter.c:258:7" }
+edge: { sourcename: "Meter.c:BarMeterMode_draw" targetname: "wadd_wchnstr" label: "Meter.c:258:7" }
+node: { title: "RichString_delete" label: "RichString_delete\nRichString.h:50:6" shape : ellipse }
+edge: { sourcename: "Meter.c:BarMeterMode_draw" targetname: "RichString_delete" label: "Meter.c:261:4" }
+edge: { sourcename: "Meter.c:BarMeterMode_draw" targetname: "wmove" label: "Meter.c:263:4" }
+edge: { sourcename: "Meter.c:BarMeterMode_draw" targetname: "wattrset" label: "Meter.c:264:4" }
+node: { title: "Meter.c:TextMeterMode_draw" label: "TextMeterMode_draw\nMeter.c:155:13\n9936 bytes (static)" }
+edge: { sourcename: "Meter.c:TextMeterMode_draw" targetname: "__indirect_call" label: "Meter.c:156:26" }
+edge: { sourcename: "Meter.c:TextMeterMode_draw" targetname: "wattrset" label: "Meter.c:157:4" }
+edge: { sourcename: "Meter.c:TextMeterMode_draw" targetname: "wmove" label: "Meter.c:158:4" }
+edge: { sourcename: "Meter.c:TextMeterMode_draw" targetname: "waddnstr" label: "Meter.c:158:4" }
+edge: { sourcename: "Meter.c:TextMeterMode_draw" targetname: "wattrset" label: "Meter.c:159:4" }
+node: { title: "strlen" label: "strlen\n/usr/include/string.h:385:15" shape : ellipse }
+edge: { sourcename: "Meter.c:TextMeterMode_draw" targetname: "strlen" label: "Meter.c:161:21" }
+edge: { sourcename: "Meter.c:TextMeterMode_draw" targetname: "__indirect_call" label: "Meter.c:101:7" }
+node: { title: "RichString_writeWide" label: "RichString_writeWide\nRichString.h:71:5" shape : ellipse }
+edge: { sourcename: "Meter.c:TextMeterMode_draw" targetname: "RichString_writeWide" label: "Meter.c:103:7" }
+edge: { sourcename: "Meter.c:TextMeterMode_draw" targetname: "wmove" label: "Meter.c:169:4" }
+edge: { sourcename: "Meter.c:TextMeterMode_draw" targetname: "wadd_wchnstr" label: "Meter.c:169:4" }
+edge: { sourcename: "Meter.c:TextMeterMode_draw" targetname: "RichString_delete" label: "Meter.c:170:4" }
+node: { title: "Meter.c:LEDMeterMode_draw" label: "LEDMeterMode_draw\nMeter.c:382:13\n10032 bytes (static)" }
+edge: { sourcename: "Meter.c:LEDMeterMode_draw" targetname: "__indirect_call" label: "Meter.c:101:7" }
+edge: { sourcename: "Meter.c:LEDMeterMode_draw" targetname: "RichString_writeWide" label: "Meter.c:103:7" }
+edge: { sourcename: "Meter.c:LEDMeterMode_draw" targetname: "wattrset" label: "Meter.c:398:4" }
+edge: { sourcename: "Meter.c:LEDMeterMode_draw" targetname: "__indirect_call" label: "Meter.c:399:26" }
+edge: { sourcename: "Meter.c:LEDMeterMode_draw" targetname: "wmove" label: "Meter.c:400:4" }
+edge: { sourcename: "Meter.c:LEDMeterMode_draw" targetname: "waddnstr" label: "Meter.c:400:4" }
+edge: { sourcename: "Meter.c:LEDMeterMode_draw" targetname: "strlen" label: "Meter.c:401:17" }
+edge: { sourcename: "Meter.c:LEDMeterMode_draw" targetname: "wmove" label: "Meter.c:379:7" }
+edge: { sourcename: "Meter.c:LEDMeterMode_draw" targetname: "waddnstr" label: "Meter.c:379:7" }
+edge: { sourcename: "Meter.c:LEDMeterMode_draw" targetname: "wmove" label: "Meter.c:416:10" }
+node: { title: "wadd_wch" label: "wadd_wch\n/usr/include/curses.h:1751:28" shape : ellipse }
+edge: { sourcename: "Meter.c:LEDMeterMode_draw" targetname: "wadd_wch" label: "Meter.c:416:10" }
+edge: { sourcename: "Meter.c:LEDMeterMode_draw" targetname: "wattrset" label: "Meter.c:423:4" }
+edge: { sourcename: "Meter.c:LEDMeterMode_draw" targetname: "RichString_delete" label: "Meter.c:424:4" }
+node: { title: "Meter_humanUnit" label: "Meter_humanUnit\nMeter.c:53:5\n0 bytes (static)" }
+node: { title: "snprintf" label: "snprintf\n/usr/include/stdio.h:354:12" shape : ellipse }
+edge: { sourcename: "Meter_humanUnit" targetname: "snprintf" label: "Meter.c:78:11" }
+node: { title: "Meter_setCaption" label: "Meter_setCaption\nMeter.c:95:6\n0 bytes (static)" }
+node: { title: "free_and_xStrdup" label: "free_and_xStrdup\nXUtils.h:69:6" shape : ellipse }
+edge: { sourcename: "Meter_setCaption" targetname: "free_and_xStrdup" label: "Meter.c:96:4" }
+node: { title: "Meter_setMode" label: "Meter_setMode\nMeter.c:107:6\n32 bytes (static)" }
+edge: { sourcename: "Meter_setMode" targetname: "__indirect_call" label: "Meter.c:120:10" }
+edge: { sourcename: "Meter_setMode" targetname: "free" label: "Meter.c:124:7" }
+node: { title: "Meter_new" label: "Meter_new\nMeter.c:35:8\n48 bytes (static)" }
+edge: { sourcename: "Meter_new" targetname: "xCalloc" label: "Meter.c:36:18" }
+edge: { sourcename: "Meter_new" targetname: "xCalloc" label: "Meter.c:43:36" }
+node: { title: "xStrdup" label: "xStrdup\nXUtils.h:68:7" shape : ellipse }
+edge: { sourcename: "Meter_new" targetname: "xStrdup" label: "Meter.c:45:20" }
+edge: { sourcename: "Meter_new" targetname: "__indirect_call" label: "Meter.c:47:7" }
+edge: { sourcename: "Meter_new" targetname: "Meter_setMode" label: "Meter.c:49:4" }
+node: { title: "Meter_toListItem" label: "Meter_toListItem\nMeter.c:134:11\n160 bytes (static)" }
+node: { title: "xSnprintf" label: "xSnprintf\nXUtils.h:66:5" shape : ellipse }
+edge: { sourcename: "Meter_toListItem" targetname: "xSnprintf" label: "Meter.c:137:7" }
+edge: { sourcename: "Meter_toListItem" targetname: "__indirect_call" label: "Meter.c:143:7" }
+edge: { sourcename: "Meter_toListItem" targetname: "xSnprintf" label: "Meter.c:145:7" }
+edge: { sourcename: "Meter_toListItem" targetname: "xSnprintf" label: "Meter.c:147:4" }
+node: { title: "ListItem_new" label: "ListItem_new\nListItem.h:30:11" shape : ellipse }
+edge: { sourcename: "Meter_toListItem" targetname: "ListItem_new" label: "Meter.c:148:19" }
+}

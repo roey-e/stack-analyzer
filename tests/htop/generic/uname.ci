@@ -1,0 +1,29 @@
+graph: { title: "generic/uname.c"
+node: { title: "Generic_uname" label: "Generic_uname\ngeneric/uname.c:69:7\n1008 bytes (static)" }
+node: { title: "uname" label: "uname\n/usr/include/aarch64-linux-gnu/sys/utsname.h:81:12" shape : ellipse }
+edge: { sourcename: "Generic_uname" targetname: "uname" label: "generic/uname.c:81:26" }
+node: { title: "fopen" label: "fopen\n/usr/include/stdio.h:246:14" shape : ellipse }
+edge: { sourcename: "Generic_uname" targetname: "fopen" label: "generic/uname.c:28:19" }
+node: { title: "xSnprintf" label: "xSnprintf\n./XUtils.h:66:5" shape : ellipse }
+edge: { sourcename: "Generic_uname" targetname: "xSnprintf" label: "generic/uname.c:30:7" }
+node: { title: "strrchr" label: "strrchr\n/usr/include/string.h:253:14" shape : ellipse }
+edge: { sourcename: "Generic_uname" targetname: "strrchr" label: "generic/uname.c:40:29" }
+node: { title: "String_safeStrncpy" label: "String_safeStrncpy\n./XUtils.h:60:8" shape : ellipse }
+edge: { sourcename: "Generic_uname" targetname: "String_safeStrncpy" label: "generic/uname.c:43:10" }
+node: { title: "fclose" label: "fclose\n/usr/include/stdio.h:213:12" shape : ellipse }
+edge: { sourcename: "Generic_uname" targetname: "fclose" label: "generic/uname.c:44:10" }
+edge: { sourcename: "Generic_uname" targetname: "strrchr" label: "generic/uname.c:49:29" }
+edge: { sourcename: "Generic_uname" targetname: "String_safeStrncpy" label: "generic/uname.c:52:10" }
+edge: { sourcename: "Generic_uname" targetname: "strrchr" label: "generic/uname.c:57:29" }
+edge: { sourcename: "Generic_uname" targetname: "String_safeStrncpy" label: "generic/uname.c:60:10" }
+node: { title: "fgets" label: "fgets\n/usr/include/stdio.h:564:14" shape : ellipse }
+edge: { sourcename: "Generic_uname" targetname: "fgets" label: "generic/uname.c:37:11" }
+edge: { sourcename: "Generic_uname" targetname: "fclose" label: "generic/uname.c:64:4" }
+node: { title: "snprintf" label: "snprintf\n/usr/include/stdio.h:354:12" shape : ellipse }
+edge: { sourcename: "Generic_uname" targetname: "snprintf" label: "generic/uname.c:66:4" }
+edge: { sourcename: "Generic_uname" targetname: "xSnprintf" label: "generic/uname.c:87:27" }
+node: { title: "String_contains_i" label: "String_contains_i\n./XUtils.h:43:6" shape : ellipse }
+edge: { sourcename: "Generic_uname" targetname: "String_contains_i" label: "generic/uname.c:88:15" }
+edge: { sourcename: "Generic_uname" targetname: "snprintf" label: "generic/uname.c:89:13" }
+edge: { sourcename: "Generic_uname" targetname: "snprintf" label: "generic/uname.c:91:10" }
+}

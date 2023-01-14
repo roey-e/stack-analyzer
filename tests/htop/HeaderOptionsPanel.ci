@@ -1,0 +1,35 @@
+graph: { title: "HeaderOptionsPanel.c"
+node: { title: "HeaderOptionsPanel.c:HeaderOptionsPanel_delete" label: "HeaderOptionsPanel_delete\nHeaderOptionsPanel.c:25:13\n32 bytes (static)" }
+node: { title: "Panel_done" label: "Panel_done\nPanel.h:97:6" shape : ellipse }
+edge: { sourcename: "HeaderOptionsPanel.c:HeaderOptionsPanel_delete" targetname: "Panel_done" label: "HeaderOptionsPanel.c:28:4" }
+node: { title: "free" label: "free\n/usr/include/stdlib.h:565:13" shape : ellipse }
+edge: { sourcename: "HeaderOptionsPanel.c:HeaderOptionsPanel_delete" targetname: "free" label: "HeaderOptionsPanel.c:29:4" }
+node: { title: "HeaderOptionsPanel.c:HeaderOptionsPanel_eventHandler" label: "HeaderOptionsPanel_eventHandler\nHeaderOptionsPanel.c:32:22\n48 bytes (static)" }
+node: { title: "Panel_getSelectedIndex" label: "Panel_getSelectedIndex\nPanel.h:127:5" shape : ellipse }
+edge: { sourcename: "HeaderOptionsPanel.c:HeaderOptionsPanel_eventHandler" targetname: "Panel_getSelectedIndex" label: "HeaderOptionsPanel.c:45:14" }
+node: { title: "Panel_get" label: "Panel_get\nPanel.h:117:9" shape : ellipse }
+edge: { sourcename: "HeaderOptionsPanel.c:HeaderOptionsPanel_eventHandler" targetname: "Panel_get" label: "HeaderOptionsPanel.c:50:36" }
+node: { title: "CheckItem_set" label: "CheckItem_set\nOptionItem.h:70:6" shape : ellipse }
+edge: { sourcename: "HeaderOptionsPanel.c:HeaderOptionsPanel_eventHandler" targetname: "CheckItem_set" label: "HeaderOptionsPanel.c:50:10" }
+edge: { sourcename: "HeaderOptionsPanel.c:HeaderOptionsPanel_eventHandler" targetname: "Panel_get" label: "HeaderOptionsPanel.c:51:33" }
+edge: { sourcename: "HeaderOptionsPanel.c:HeaderOptionsPanel_eventHandler" targetname: "CheckItem_set" label: "HeaderOptionsPanel.c:51:7" }
+node: { title: "Header_setLayout" label: "Header_setLayout\nHeader.h:32:6" shape : ellipse }
+edge: { sourcename: "HeaderOptionsPanel.c:HeaderOptionsPanel_eventHandler" targetname: "Header_setLayout" label: "HeaderOptionsPanel.c:53:7" }
+node: { title: "ScreenManager_resize" label: "ScreenManager_resize\nScreenManager.h:45:6" shape : ellipse }
+edge: { sourcename: "HeaderOptionsPanel.c:HeaderOptionsPanel_eventHandler" targetname: "ScreenManager_resize" label: "HeaderOptionsPanel.c:57:7" }
+node: { title: "HeaderOptionsPanel_new" label: "HeaderOptionsPanel_new\nHeaderOptionsPanel.c:73:21\n64 bytes (static)" }
+node: { title: "xMalloc" label: "xMalloc\nXUtils.h:23:7" shape : ellipse }
+edge: { sourcename: "HeaderOptionsPanel_new" targetname: "xMalloc" label: "HeaderOptionsPanel.c:74:31" }
+node: { title: "FunctionBar_new" label: "FunctionBar_new\nFunctionBar.h:26:14" shape : ellipse }
+edge: { sourcename: "HeaderOptionsPanel_new" targetname: "FunctionBar_new" label: "HeaderOptionsPanel.c:76:25" }
+node: { title: "Panel_init" label: "Panel_init\nPanel.h:95:6" shape : ellipse }
+edge: { sourcename: "HeaderOptionsPanel_new" targetname: "Panel_init" label: "HeaderOptionsPanel.c:77:4" }
+node: { title: "Panel_setHeader" label: "Panel_setHeader\nPanel.h:103:6" shape : ellipse }
+edge: { sourcename: "HeaderOptionsPanel_new" targetname: "Panel_setHeader" label: "HeaderOptionsPanel.c:82:4" }
+node: { title: "CheckItem_newByVal" label: "CheckItem_newByVal\nOptionItem.h:68:12" shape : ellipse }
+edge: { sourcename: "HeaderOptionsPanel_new" targetname: "CheckItem_newByVal" label: "HeaderOptionsPanel.c:84:34" }
+node: { title: "Panel_add" label: "Panel_add\nPanel.h:111:6" shape : ellipse }
+edge: { sourcename: "HeaderOptionsPanel_new" targetname: "Panel_add" label: "HeaderOptionsPanel.c:84:7" }
+edge: { sourcename: "HeaderOptionsPanel_new" targetname: "Panel_get" label: "HeaderOptionsPanel.c:86:30" }
+edge: { sourcename: "HeaderOptionsPanel_new" targetname: "CheckItem_set" label: "HeaderOptionsPanel.c:86:4" }
+}

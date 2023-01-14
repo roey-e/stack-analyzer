@@ -1,0 +1,46 @@
+graph: { title: "AvailableColumnsPanel.c"
+node: { title: "AvailableColumnsPanel.c:AvailableColumnsPanel_eventHandler" label: "AvailableColumnsPanel_eventHandler\nAvailableColumnsPanel.c:44:22\n48 bytes (static)" }
+node: { title: "Panel_getSelected" label: "Panel_getSelected\nPanel.h:121:9" shape : ellipse }
+edge: { sourcename: "AvailableColumnsPanel.c:AvailableColumnsPanel_eventHandler" targetname: "Panel_getSelected" label: "AvailableColumnsPanel.c:53:49" }
+node: { title: "Panel_getSelectedIndex" label: "Panel_getSelectedIndex\nPanel.h:127:5" shape : ellipse }
+edge: { sourcename: "AvailableColumnsPanel.c:AvailableColumnsPanel_eventHandler" targetname: "Panel_getSelectedIndex" label: "AvailableColumnsPanel.c:57:19" }
+node: { title: "DynamicColumn_init" label: "DynamicColumn_init\nDynamicColumn.h:26:13" shape : ellipse }
+edge: { sourcename: "AvailableColumnsPanel.c:AvailableColumnsPanel_eventHandler" targetname: "DynamicColumn_init" label: "AvailableColumnsPanel.c:38:14" }
+node: { title: "ListItem_new" label: "ListItem_new\nListItem.h:30:11" shape : ellipse }
+edge: { sourcename: "AvailableColumnsPanel.c:AvailableColumnsPanel_eventHandler" targetname: "ListItem_new" label: "AvailableColumnsPanel.c:41:46" }
+node: { title: "Panel_insert" label: "Panel_insert\nPanel.h:113:6" shape : ellipse }
+edge: { sourcename: "AvailableColumnsPanel.c:AvailableColumnsPanel_eventHandler" targetname: "Panel_insert" label: "AvailableColumnsPanel.c:41:4" }
+node: { title: "Panel_setSelected" label: "Panel_setSelected\nPanel.h:131:6" shape : ellipse }
+edge: { sourcename: "AvailableColumnsPanel.c:AvailableColumnsPanel_eventHandler" targetname: "Panel_setSelected" label: "AvailableColumnsPanel.c:59:10" }
+node: { title: "ColumnsPanel_update" label: "ColumnsPanel_update\nColumnsPanel.h:30:6" shape : ellipse }
+edge: { sourcename: "AvailableColumnsPanel.c:AvailableColumnsPanel_eventHandler" targetname: "ColumnsPanel_update" label: "AvailableColumnsPanel.c:60:10" }
+node: { title: "__ctype_b_loc" label: "__ctype_b_loc\n/usr/include/ctype.h:79:35" shape : ellipse }
+edge: { sourcename: "AvailableColumnsPanel.c:AvailableColumnsPanel_eventHandler" targetname: "__ctype_b_loc" label: "AvailableColumnsPanel.c:66:36" }
+node: { title: "Panel_selectByTyping" label: "Panel_selectByTyping\nPanel.h:139:15" shape : ellipse }
+edge: { sourcename: "AvailableColumnsPanel.c:AvailableColumnsPanel_eventHandler" targetname: "Panel_selectByTyping" label: "AvailableColumnsPanel.c:67:22" }
+node: { title: "AvailableColumnsPanel.c:AvailableColumnsPanel_delete" label: "AvailableColumnsPanel_delete\nAvailableColumnsPanel.c:28:13\n32 bytes (static)" }
+node: { title: "Panel_done" label: "Panel_done\nPanel.h:97:6" shape : ellipse }
+edge: { sourcename: "AvailableColumnsPanel.c:AvailableColumnsPanel_delete" targetname: "Panel_done" label: "AvailableColumnsPanel.c:31:4" }
+node: { title: "free" label: "free\n/usr/include/stdlib.h:565:13" shape : ellipse }
+edge: { sourcename: "AvailableColumnsPanel.c:AvailableColumnsPanel_delete" targetname: "free" label: "AvailableColumnsPanel.c:32:4" }
+node: { title: "AvailableColumnsPanel.c:AvailableColumnsPanel_addDynamicColumn" label: "AvailableColumnsPanel_addDynamicColumn\nAvailableColumnsPanel.c:82:13\n304 bytes (static)" }
+node: { title: "xSnprintf" label: "xSnprintf\nXUtils.h:66:5" shape : ellipse }
+edge: { sourcename: "AvailableColumnsPanel.c:AvailableColumnsPanel_addDynamicColumn" targetname: "xSnprintf" label: "AvailableColumnsPanel.c:89:4" }
+edge: { sourcename: "AvailableColumnsPanel.c:AvailableColumnsPanel_addDynamicColumn" targetname: "ListItem_new" label: "AvailableColumnsPanel.c:90:31" }
+node: { title: "Panel_add" label: "Panel_add\nPanel.h:111:6" shape : ellipse }
+edge: { sourcename: "AvailableColumnsPanel.c:AvailableColumnsPanel_addDynamicColumn" targetname: "Panel_add" label: "AvailableColumnsPanel.c:90:4" }
+node: { title: "AvailableColumnsPanel_new" label: "AvailableColumnsPanel_new\nAvailableColumnsPanel.c:110:24\n336 bytes (static)" }
+node: { title: "xMalloc" label: "xMalloc\nXUtils.h:23:7" shape : ellipse }
+edge: { sourcename: "AvailableColumnsPanel_new" targetname: "xMalloc" label: "AvailableColumnsPanel.c:111:34" }
+node: { title: "FunctionBar_new" label: "FunctionBar_new\nFunctionBar.h:26:14" shape : ellipse }
+edge: { sourcename: "AvailableColumnsPanel_new" targetname: "FunctionBar_new" label: "AvailableColumnsPanel.c:113:25" }
+node: { title: "Panel_init" label: "Panel_init\nPanel.h:95:6" shape : ellipse }
+edge: { sourcename: "AvailableColumnsPanel_new" targetname: "Panel_init" label: "AvailableColumnsPanel.c:114:4" }
+node: { title: "Panel_setHeader" label: "Panel_setHeader\nPanel.h:103:6" shape : ellipse }
+edge: { sourcename: "AvailableColumnsPanel_new" targetname: "Panel_setHeader" label: "AvailableColumnsPanel.c:116:4" }
+edge: { sourcename: "AvailableColumnsPanel_new" targetname: "xSnprintf" label: "AvailableColumnsPanel.c:104:10" }
+edge: { sourcename: "AvailableColumnsPanel_new" targetname: "ListItem_new" label: "AvailableColumnsPanel.c:105:37" }
+edge: { sourcename: "AvailableColumnsPanel_new" targetname: "Panel_add" label: "AvailableColumnsPanel.c:105:10" }
+node: { title: "Hashtable_foreach" label: "Hashtable_foreach\nHashtable.h:40:6" shape : ellipse }
+edge: { sourcename: "AvailableColumnsPanel_new" targetname: "Hashtable_foreach" label: "AvailableColumnsPanel.c:96:4" }
+}

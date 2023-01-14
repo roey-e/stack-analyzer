@@ -1,0 +1,172 @@
+graph: { title: "CRT.c"
+node: { title: "CRT.c:print_backtrace" label: "print_backtrace\nCRT.c:1078:13\n2080 bytes (static)" }
+node: { title: "backtrace" label: "backtrace\n/usr/include/execinfo.h:27:12" shape : ellipse }
+edge: { sourcename: "CRT.c:print_backtrace" targetname: "backtrace" label: "CRT.c:1122:18" }
+node: { title: "backtrace_symbols_fd" label: "backtrace_symbols_fd\n/usr/include/execinfo.h:38:13" shape : ellipse }
+edge: { sourcename: "CRT.c:print_backtrace" targetname: "backtrace_symbols_fd" label: "CRT.c:1123:4" }
+node: { title: "CRT_resetSignalHandlers" label: "CRT_resetSignalHandlers\nCRT.c:889:6\n16 bytes (static)" }
+node: { title: "sigaction" label: "sigaction\n/usr/include/signal.h:240:12" shape : ellipse }
+edge: { sourcename: "CRT_resetSignalHandlers" targetname: "sigaction" label: "CRT.c:890:4" }
+edge: { sourcename: "CRT_resetSignalHandlers" targetname: "sigaction" label: "CRT.c:891:4" }
+edge: { sourcename: "CRT_resetSignalHandlers" targetname: "sigaction" label: "CRT.c:892:4" }
+edge: { sourcename: "CRT_resetSignalHandlers" targetname: "sigaction" label: "CRT.c:893:4" }
+edge: { sourcename: "CRT_resetSignalHandlers" targetname: "sigaction" label: "CRT.c:894:4" }
+edge: { sourcename: "CRT_resetSignalHandlers" targetname: "sigaction" label: "CRT.c:895:4" }
+edge: { sourcename: "CRT_resetSignalHandlers" targetname: "sigaction" label: "CRT.c:896:4" }
+node: { title: "signal" label: "signal\n/usr/include/signal.h:88:23" shape : ellipse }
+edge: { sourcename: "CRT_resetSignalHandlers" targetname: "signal" label: "CRT.c:898:4" }
+edge: { sourcename: "CRT_resetSignalHandlers" targetname: "signal" label: "CRT.c:899:4" }
+edge: { sourcename: "CRT_resetSignalHandlers" targetname: "signal" label: "CRT.c:900:4" }
+node: { title: "CRT_setMouse" label: "CRT_setMouse\nCRT.c:904:6\n0 bytes (static)" }
+node: { title: "mousemask" label: "mousemask\n/usr/include/curses.h:1968:32" shape : ellipse }
+edge: { sourcename: "CRT_setMouse" targetname: "mousemask" label: "CRT.c:907:7" }
+edge: { sourcename: "CRT_setMouse" targetname: "mousemask" label: "CRT.c:912:7" }
+node: { title: "CRT_done" label: "CRT_done\nCRT.c:1014:6\n48 bytes (static)" }
+node: { title: "wattr_on" label: "wattr_on\n/usr/include/curses.h:789:28" shape : ellipse }
+edge: { sourcename: "CRT_done" targetname: "wattr_on" label: "CRT.c:1017:4" }
+node: { title: "wmove" label: "wmove\n/usr/include/curses.h:819:28" shape : ellipse }
+edge: { sourcename: "CRT_done" targetname: "wmove" label: "CRT.c:1018:4" }
+node: { title: "whline" label: "whline\n/usr/include/curses.h:808:28" shape : ellipse }
+edge: { sourcename: "CRT_done" targetname: "whline" label: "CRT.c:1018:4" }
+node: { title: "wattr_off" label: "wattr_off\n/usr/include/curses.h:790:28" shape : ellipse }
+edge: { sourcename: "CRT_done" targetname: "wattr_off" label: "CRT.c:1019:4" }
+node: { title: "wrefresh" label: "wrefresh\n/usr/include/curses.h:824:28" shape : ellipse }
+edge: { sourcename: "CRT_done" targetname: "wrefresh" label: "CRT.c:1020:4" }
+node: { title: "curs_set" label: "curs_set\n/usr/include/curses.h:592:28" shape : ellipse }
+edge: { sourcename: "CRT_done" targetname: "curs_set" label: "CRT.c:1022:4" }
+node: { title: "endwin" label: "endwin\n/usr/include/curses.h:606:28" shape : ellipse }
+edge: { sourcename: "CRT_done" targetname: "endwin" label: "CRT.c:1023:4" }
+node: { title: "CRT.c:CRT_handleSIGTERM" label: "CRT_handleSIGTERM\nCRT.c:766:13\n16 bytes (static)" }
+edge: { sourcename: "CRT.c:CRT_handleSIGTERM" targetname: "CRT_done" label: "CRT.c:767:4" }
+node: { title: "_exit" label: "_exit\n/usr/include/unistd.h:603:13" shape : ellipse }
+edge: { sourcename: "CRT.c:CRT_handleSIGTERM" targetname: "_exit" label: "CRT.c:768:4" }
+node: { title: "CRT_handleSIGSEGV" label: "CRT_handleSIGSEGV\nCRT.c:1130:6\n32 bytes (static)" }
+edge: { sourcename: "CRT_handleSIGSEGV" targetname: "CRT_done" label: "CRT.c:1131:4" }
+node: { title: "fwrite" label: "__builtin_fwrite\n<built-in>" shape : ellipse }
+edge: { sourcename: "CRT_handleSIGSEGV" targetname: "fwrite" label: "CRT.c:1133:4" }
+edge: { sourcename: "CRT_handleSIGSEGV" targetname: "fwrite" label: "CRT.c:1145:4" }
+node: { title: "fputc" label: "__builtin_fputc\n<built-in>" shape : ellipse }
+edge: { sourcename: "CRT_handleSIGSEGV" targetname: "fputc" label: "CRT.c:1148:4" }
+node: { title: "strsignal" label: "strsignal\n/usr/include/string.h:447:14" shape : ellipse }
+edge: { sourcename: "CRT_handleSIGSEGV" targetname: "strsignal" label: "CRT.c:1152:29" }
+node: { title: "fprintf" label: "fprintf\n/usr/include/stdio.h:326:12" shape : ellipse }
+edge: { sourcename: "CRT_handleSIGSEGV" targetname: "fprintf" label: "CRT.c:1156:4" }
+edge: { sourcename: "CRT_handleSIGSEGV" targetname: "fwrite" label: "CRT.c:1164:4" }
+node: { title: "Settings_write" label: "Settings_write\nSettings.h:117:5" shape : ellipse }
+edge: { sourcename: "CRT_handleSIGSEGV" targetname: "Settings_write" label: "CRT.c:1167:4" }
+edge: { sourcename: "CRT_handleSIGSEGV" targetname: "fwrite" label: "CRT.c:1168:4" }
+edge: { sourcename: "CRT_handleSIGSEGV" targetname: "fwrite" label: "CRT.c:1171:4" }
+edge: { sourcename: "CRT_handleSIGSEGV" targetname: "CRT.c:print_backtrace" label: "CRT.c:1176:4" }
+edge: { sourcename: "CRT_handleSIGSEGV" targetname: "fwrite" label: "CRT.c:1178:4" }
+edge: { sourcename: "CRT_handleSIGSEGV" targetname: "fwrite" label: "CRT.c:1189:4" }
+edge: { sourcename: "CRT_handleSIGSEGV" targetname: "fwrite" label: "CRT.c:1192:4" }
+edge: { sourcename: "CRT_handleSIGSEGV" targetname: "fwrite" label: "CRT.c:1198:4" }
+edge: { sourcename: "CRT_handleSIGSEGV" targetname: "sigaction" label: "CRT.c:1206:8" }
+edge: { sourcename: "CRT_handleSIGSEGV" targetname: "fwrite" label: "CRT.c:1208:7" }
+edge: { sourcename: "CRT_handleSIGSEGV" targetname: "_exit" label: "CRT.c:1211:7" }
+node: { title: "raise" label: "raise\n/usr/include/signal.h:123:12" shape : ellipse }
+edge: { sourcename: "CRT_handleSIGSEGV" targetname: "raise" label: "CRT.c:1215:4" }
+edge: { sourcename: "CRT_handleSIGSEGV" targetname: "fwrite" label: "CRT.c:1218:4" }
+edge: { sourcename: "CRT_handleSIGSEGV" targetname: "_exit" label: "CRT.c:1221:4" }
+node: { title: "CRT_fatalError" label: "CRT_fatalError\nCRT.c:1028:6\n32 bytes (static)" }
+node: { title: "__errno_location" label: "__errno_location\n/usr/include/errno.h:37:13" shape : ellipse }
+edge: { sourcename: "CRT_fatalError" targetname: "__errno_location" label: "CRT.c:1029:34" }
+node: { title: "strerror" label: "strerror\n/usr/include/string.h:397:14" shape : ellipse }
+edge: { sourcename: "CRT_fatalError" targetname: "strerror" label: "CRT.c:1029:25" }
+edge: { sourcename: "CRT_fatalError" targetname: "CRT_done" label: "CRT.c:1030:4" }
+edge: { sourcename: "CRT_fatalError" targetname: "fprintf" label: "CRT.c:1031:4" }
+node: { title: "exit" label: "exit\n/usr/include/stdlib.h:617:13" shape : ellipse }
+edge: { sourcename: "CRT_fatalError" targetname: "exit" label: "CRT.c:1032:4" }
+node: { title: "CRT_readKey" label: "CRT_readKey\nCRT.c:1035:5\n32 bytes (static)" }
+node: { title: "nocbreak" label: "nocbreak\n/usr/include/curses.h:704:28" shape : ellipse }
+edge: { sourcename: "CRT_readKey" targetname: "nocbreak" label: "CRT.c:1036:4" }
+node: { title: "cbreak" label: "cbreak\n/usr/include/curses.h:582:28" shape : ellipse }
+edge: { sourcename: "CRT_readKey" targetname: "cbreak" label: "CRT.c:1037:4" }
+node: { title: "nodelay" label: "nodelay\n/usr/include/curses.h:705:28" shape : ellipse }
+edge: { sourcename: "CRT_readKey" targetname: "nodelay" label: "CRT.c:1038:4" }
+node: { title: "wgetch" label: "wgetch\n/usr/include/curses.h:805:28" shape : ellipse }
+edge: { sourcename: "CRT_readKey" targetname: "wgetch" label: "CRT.c:1039:14" }
+node: { title: "halfdelay" label: "halfdelay\n/usr/include/curses.h:616:28" shape : ellipse }
+edge: { sourcename: "CRT_readKey" targetname: "halfdelay" label: "CRT.c:1040:4" }
+node: { title: "CRT_disableDelay" label: "CRT_disableDelay\nCRT.c:1044:6\n16 bytes (static)" }
+edge: { sourcename: "CRT_disableDelay" targetname: "nocbreak" label: "CRT.c:1045:4" }
+edge: { sourcename: "CRT_disableDelay" targetname: "cbreak" label: "CRT.c:1046:4" }
+edge: { sourcename: "CRT_disableDelay" targetname: "nodelay" label: "CRT.c:1047:4" }
+node: { title: "CRT_enableDelay" label: "CRT_enableDelay\nCRT.c:1050:6\n0 bytes (static)" }
+edge: { sourcename: "CRT_enableDelay" targetname: "halfdelay" label: "CRT.c:1051:4" }
+node: { title: "CRT_setColors" label: "CRT_setColors\nCRT.c:1054:6\n80 bytes (static)" }
+node: { title: "init_pair" label: "init_pair\n/usr/include/curses.h:629:28" shape : ellipse }
+edge: { sourcename: "CRT_setColors" targetname: "init_pair" label: "CRT.c:1063:13" }
+edge: { sourcename: "CRT_setColors" targetname: "init_pair" label: "CRT.c:1070:4" }
+edge: { sourcename: "CRT_setColors" targetname: "init_pair" label: "CRT.c:1072:4" }
+node: { title: "CRT_init" label: "CRT_init\nCRT.c:917:6\n224 bytes (static)" }
+node: { title: "initscr" label: "initscr\n/usr/include/curses.h:627:33" shape : ellipse }
+edge: { sourcename: "CRT_init" targetname: "initscr" label: "CRT.c:918:4" }
+node: { title: "noecho" label: "noecho\n/usr/include/curses.h:706:28" shape : ellipse }
+edge: { sourcename: "CRT_init" targetname: "noecho" label: "CRT.c:920:4" }
+edge: { sourcename: "CRT_init" targetname: "halfdelay" label: "CRT.c:931:4" }
+node: { title: "nonl" label: "nonl\n/usr/include/curses.h:707:28" shape : ellipse }
+edge: { sourcename: "CRT_init" targetname: "nonl" label: "CRT.c:932:4" }
+node: { title: "intrflush" label: "intrflush\n/usr/include/curses.h:637:28" shape : ellipse }
+edge: { sourcename: "CRT_init" targetname: "intrflush" label: "CRT.c:933:4" }
+node: { title: "keypad" label: "keypad\n/usr/include/curses.h:642:28" shape : ellipse }
+edge: { sourcename: "CRT_init" targetname: "keypad" label: "CRT.c:934:4" }
+node: { title: "mouseinterval" label: "mouseinterval\n/usr/include/curses.h:1970:32" shape : ellipse }
+edge: { sourcename: "CRT_init" targetname: "mouseinterval" label: "CRT.c:936:4" }
+edge: { sourcename: "CRT_init" targetname: "curs_set" label: "CRT.c:938:4" }
+node: { title: "has_colors" label: "has_colors\n/usr/include/curses.h:617:29" shape : ellipse }
+edge: { sourcename: "CRT_init" targetname: "has_colors" label: "CRT.c:940:8" }
+node: { title: "start_color" label: "start_color\n/usr/include/curses.h:759:28" shape : ellipse }
+edge: { sourcename: "CRT_init" targetname: "start_color" label: "CRT.c:941:7" }
+node: { title: "getenv" label: "getenv\n/usr/include/stdlib.h:634:14" shape : ellipse }
+edge: { sourcename: "CRT_init" targetname: "getenv" label: "CRT.c:944:27" }
+node: { title: "strcmp" label: "strcmp\n/usr/include/string.h:137:12" shape : ellipse }
+edge: { sourcename: "CRT_init" targetname: "strcmp" label: "XUtils.h:46:11" }
+node: { title: "strncmp" label: "strncmp\n/usr/include/string.h:140:12" shape : ellipse }
+edge: { sourcename: "CRT_init" targetname: "strncmp" label: "XUtils.h:40:11" }
+edge: { sourcename: "CRT_init" targetname: "strcmp" label: "XUtils.h:46:11" }
+node: { title: "define_key" label: "define_key\n/usr/include/curses.h:886:28" shape : ellipse }
+edge: { sourcename: "CRT_init" targetname: "define_key" label: "CRT.c:956:7" }
+edge: { sourcename: "CRT_init" targetname: "define_key" label: "CRT.c:957:7" }
+edge: { sourcename: "CRT_init" targetname: "define_key" label: "CRT.c:958:7" }
+edge: { sourcename: "CRT_init" targetname: "define_key" label: "CRT.c:959:7" }
+edge: { sourcename: "CRT_init" targetname: "define_key" label: "CRT.c:960:7" }
+edge: { sourcename: "CRT_init" targetname: "define_key" label: "CRT.c:961:7" }
+edge: { sourcename: "CRT_init" targetname: "define_key" label: "CRT.c:962:7" }
+edge: { sourcename: "CRT_init" targetname: "define_key" label: "CRT.c:963:7" }
+edge: { sourcename: "CRT_init" targetname: "define_key" label: "CRT.c:964:7" }
+edge: { sourcename: "CRT_init" targetname: "define_key" label: "CRT.c:965:7" }
+edge: { sourcename: "CRT_init" targetname: "define_key" label: "CRT.c:966:7" }
+edge: { sourcename: "CRT_init" targetname: "define_key" label: "CRT.c:967:7" }
+edge: { sourcename: "CRT_init" targetname: "define_key" label: "CRT.c:968:7" }
+edge: { sourcename: "CRT_init" targetname: "define_key" label: "CRT.c:969:7" }
+edge: { sourcename: "CRT_init" targetname: "define_key" label: "CRT.c:970:7" }
+edge: { sourcename: "CRT_init" targetname: "define_key" label: "CRT.c:971:7" }
+edge: { sourcename: "CRT_init" targetname: "define_key" label: "CRT.c:975:10" }
+edge: { sourcename: "CRT_init" targetname: "define_key" label: "CRT.c:983:7" }
+node: { title: "sigemptyset" label: "sigemptyset\n/usr/include/signal.h:196:12" shape : ellipse }
+edge: { sourcename: "CRT_init" targetname: "sigemptyset" label: "CRT.c:872:4" }
+edge: { sourcename: "CRT_init" targetname: "sigaction" label: "CRT.c:875:4" }
+edge: { sourcename: "CRT_init" targetname: "sigaction" label: "CRT.c:876:4" }
+edge: { sourcename: "CRT_init" targetname: "sigaction" label: "CRT.c:877:4" }
+edge: { sourcename: "CRT_init" targetname: "sigaction" label: "CRT.c:878:4" }
+edge: { sourcename: "CRT_init" targetname: "sigaction" label: "CRT.c:879:4" }
+edge: { sourcename: "CRT_init" targetname: "sigaction" label: "CRT.c:880:4" }
+edge: { sourcename: "CRT_init" targetname: "sigaction" label: "CRT.c:881:4" }
+edge: { sourcename: "CRT_init" targetname: "signal" label: "CRT.c:883:4" }
+edge: { sourcename: "CRT_init" targetname: "signal" label: "CRT.c:884:4" }
+edge: { sourcename: "CRT_init" targetname: "signal" label: "CRT.c:885:4" }
+edge: { sourcename: "CRT_init" targetname: "signal" label: "CRT.c:886:4" }
+node: { title: "use_default_colors" label: "use_default_colors\n/usr/include/curses.h:902:28" shape : ellipse }
+edge: { sourcename: "CRT_init" targetname: "use_default_colors" label: "CRT.c:988:4" }
+edge: { sourcename: "CRT_init" targetname: "has_colors" label: "CRT.c:989:9" }
+edge: { sourcename: "CRT_init" targetname: "CRT_setColors" label: "CRT.c:991:4" }
+node: { title: "nl_langinfo" label: "nl_langinfo\n/usr/include/langinfo.h:661:14" shape : ellipse }
+edge: { sourcename: "CRT_init" targetname: "nl_langinfo" label: "CRT.c:994:34" }
+edge: { sourcename: "CRT_init" targetname: "strcmp" label: "XUtils.h:46:11" }
+edge: { sourcename: "CRT_init" targetname: "mousemask" label: "CRT.c:907:7" }
+edge: { sourcename: "CRT_init" targetname: "mousemask" label: "CRT.c:912:7" }
+node: { title: "snprintf" label: "snprintf\n/usr/include/stdio.h:354:12" shape : ellipse }
+edge: { sourcename: "CRT_init" targetname: "snprintf" label: "CRT.c:105:12" }
+edge: { sourcename: "CRT_init" targetname: "strncmp" label: "XUtils.h:40:11" }
+}

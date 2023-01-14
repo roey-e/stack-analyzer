@@ -1,0 +1,82 @@
+graph: { title: "Header.c"
+node: { title: "Header_new" label: "Header_new\nHeader.c:28:9\n64 bytes (static)" }
+node: { title: "xCalloc" label: "xCalloc\nXUtils.h:27:7" shape : ellipse }
+edge: { sourcename: "Header_new" targetname: "xCalloc" label: "Header.c:29:19" }
+node: { title: "xMallocArray" label: "xMallocArray\nXUtils.h:25:7" shape : ellipse }
+edge: { sourcename: "Header_new" targetname: "xMallocArray" label: "Header.c:30:20" }
+node: { title: "Vector_new" label: "Vector_new\nVector.h:33:9" shape : ellipse }
+edge: { sourcename: "Header_new" targetname: "Vector_new" label: "Header.c:36:26" }
+node: { title: "Header_delete" label: "Header_delete\nHeader.c:42:6\n48 bytes (static)" }
+node: { title: "Vector_delete" label: "Vector_delete\nVector.h:35:6" shape : ellipse }
+edge: { sourcename: "Header_delete" targetname: "Vector_delete" label: "Header.c:44:7" }
+node: { title: "free" label: "free\n/usr/include/stdlib.h:565:13" shape : ellipse }
+edge: { sourcename: "Header_delete" targetname: "free" label: "Header.c:47:4" }
+edge: { sourcename: "Header_delete" targetname: "free" label: "Header.c:48:4" }
+node: { title: "Header_writeBackToSettings" label: "Header_writeBackToSettings\nHeader.c:132:6\n144 bytes (static)" }
+node: { title: "Settings_setHeaderLayout" label: "Settings_setHeaderLayout\nSettings.h:133:6" shape : ellipse }
+edge: { sourcename: "Header_writeBackToSettings" targetname: "Settings_setHeaderLayout" label: "Header.c:133:4" }
+edge: { sourcename: "Header_writeBackToSettings" targetname: "free" label: "Header.c:140:13" }
+edge: { sourcename: "Header_writeBackToSettings" targetname: "free" label: "Header.c:141:10" }
+edge: { sourcename: "Header_writeBackToSettings" targetname: "free" label: "Header.c:143:7" }
+edge: { sourcename: "Header_writeBackToSettings" targetname: "xCalloc" label: "Header.c:148:34" }
+edge: { sourcename: "Header_writeBackToSettings" targetname: "xCalloc" label: "Header.c:149:34" }
+node: { title: "DynamicMeter_lookup" label: "DynamicMeter_lookup\nDynamicMeter.h:22:13" shape : ellipse }
+edge: { sourcename: "Header_writeBackToSettings" targetname: "DynamicMeter_lookup" label: "Header.c:156:35" }
+node: { title: "xAsprintf" label: "xAsprintf\nXUtils.h:63:5" shape : ellipse }
+edge: { sourcename: "Header_writeBackToSettings" targetname: "xAsprintf" label: "Header.c:157:13" }
+edge: { sourcename: "Header_writeBackToSettings" targetname: "xAsprintf" label: "Header.c:159:13" }
+edge: { sourcename: "Header_writeBackToSettings" targetname: "xAsprintf" label: "Header.c:161:13" }
+node: { title: "Header_addMeterByClass" label: "Header_addMeterByClass\nHeader.c:169:8\n32 bytes (static)" }
+node: { title: "Meter_new" label: "Meter_new\nMeter.h:146:8" shape : ellipse }
+edge: { sourcename: "Header_addMeterByClass" targetname: "Meter_new" label: "Header.c:174:19" }
+node: { title: "Vector_add" label: "Vector_add\nVector.h:93:6" shape : ellipse }
+edge: { sourcename: "Header_addMeterByClass" targetname: "Vector_add" label: "Header.c:175:4" }
+node: { title: "Header_reinit" label: "Header_reinit\nHeader.c:179:6\n64 bytes (static)" }
+node: { title: "__indirect_call" label: "Indirect Call Placeholder" shape : ellipse }
+edge: { sourcename: "Header_reinit" targetname: "__indirect_call" label: "Header.c:184:13" }
+node: { title: "Header_draw" label: "Header_draw\nHeader.c:190:6\n144 bytes (static)" }
+node: { title: "wattrset" label: "wattrset\n/usr/include/curses.h:787:28" shape : ellipse }
+edge: { sourcename: "Header_draw" targetname: "wattrset" label: "Header.c:193:4" }
+node: { title: "wmove" label: "wmove\n/usr/include/curses.h:819:28" shape : ellipse }
+edge: { sourcename: "Header_draw" targetname: "wmove" label: "Header.c:195:7" }
+node: { title: "whline" label: "whline\n/usr/include/curses.h:808:28" shape : ellipse }
+edge: { sourcename: "Header_draw" targetname: "whline" label: "Header.c:195:7" }
+edge: { sourcename: "Header_draw" targetname: "__indirect_call" label: "Header.c:227:10" }
+node: { title: "Header_updateData" label: "Header_updateData\nHeader.c:236:6\n64 bytes (static)" }
+edge: { sourcename: "Header_updateData" targetname: "__indirect_call" label: "Header.c:242:10" }
+node: { title: "Header_calculateHeight" label: "Header_calculateHeight\nHeader.c:275:5\n144 bytes (static)" }
+node: { title: "Object_isA" label: "Object_isA\nObject.h:57:6" shape : ellipse }
+edge: { sourcename: "Header_calculateHeight" targetname: "Object_isA" label: "Header.c:267:15" }
+node: { title: "Header_setLayout" label: "Header_setLayout\nHeader.c:51:6\n80 bytes (static)" }
+node: { title: "xReallocArray" label: "xReallocArray\nXUtils.h:31:7" shape : ellipse }
+edge: { sourcename: "Header_setLayout" targetname: "xReallocArray" label: "Header.c:61:23" }
+edge: { sourcename: "Header_setLayout" targetname: "Vector_new" label: "Header.c:63:29" }
+node: { title: "Vector_take" label: "Vector_take\nVector.h:48:9" shape : ellipse }
+edge: { sourcename: "Header_setLayout" targetname: "Vector_take" label: "Header.c:68:55" }
+edge: { sourcename: "Header_setLayout" targetname: "Vector_add" label: "Header.c:68:13" }
+edge: { sourcename: "Header_setLayout" targetname: "Vector_delete" label: "Header.c:70:10" }
+edge: { sourcename: "Header_setLayout" targetname: "xReallocArray" label: "Header.c:72:23" }
+edge: { sourcename: "Header_setLayout" targetname: "Header_calculateHeight" label: "Header.c:75:4" }
+node: { title: "Header_populateFromSettings" label: "Header_populateFromSettings\nHeader.c:118:6\n192 bytes (static)" }
+edge: { sourcename: "Header_populateFromSettings" targetname: "Header_setLayout" label: "Header.c:119:4" }
+node: { title: "Vector_prune" label: "Vector_prune\nVector.h:37:6" shape : ellipse }
+edge: { sourcename: "Header_populateFromSettings" targetname: "Vector_prune" label: "Header.c:123:7" }
+node: { title: "strchr" label: "strchr\n/usr/include/string.h:226:14" shape : ellipse }
+edge: { sourcename: "Header_populateFromSettings" targetname: "strchr" label: "Header.c:83:24" }
+node: { title: "*__isoc99_sscanf" label: "sscanf\n/usr/include/stdio.h:412:12" shape : ellipse }
+edge: { sourcename: "Header_populateFromSettings" targetname: "*__isoc99_sscanf" label: "Header.c:87:16" }
+edge: { sourcename: "Header_populateFromSettings" targetname: "*__isoc99_sscanf" label: "Header.c:90:14" }
+node: { title: "strrchr" label: "strrchr\n/usr/include/string.h:253:14" shape : ellipse }
+edge: { sourcename: "Header_populateFromSettings" targetname: "strrchr" label: "Header.c:92:24" }
+node: { title: "DynamicMeter_search" label: "DynamicMeter_search\nDynamicMeter.h:24:6" shape : ellipse }
+edge: { sourcename: "Header_populateFromSettings" targetname: "DynamicMeter_search" label: "Header.c:95:18" }
+node: { title: "strlen" label: "strlen\n/usr/include/string.h:385:15" shape : ellipse }
+edge: { sourcename: "Header_populateFromSettings" targetname: "strlen" label: "Header.c:103:17" }
+node: { title: "strncmp" label: "strncmp\n/usr/include/string.h:140:12" shape : ellipse }
+edge: { sourcename: "Header_populateFromSettings" targetname: "strncmp" label: "Header.c:107:16" }
+edge: { sourcename: "Header_populateFromSettings" targetname: "Meter_new" label: "Header.c:108:25" }
+node: { title: "Meter_setMode" label: "Meter_setMode\nMeter.h:154:6" shape : ellipse }
+edge: { sourcename: "Header_populateFromSettings" targetname: "Meter_setMode" label: "Header.c:110:13" }
+edge: { sourcename: "Header_populateFromSettings" targetname: "Vector_add" label: "Header.c:112:10" }
+edge: { sourcename: "Header_populateFromSettings" targetname: "Header_calculateHeight" label: "Header.c:129:4" }
+}

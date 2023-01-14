@@ -1,0 +1,20 @@
+graph: { title: "SwapMeter.c"
+node: { title: "SwapMeter.c:SwapMeter_updateValues" label: "SwapMeter_updateValues\nSwapMeter.c:26:13\n32 bytes (static)" }
+node: { title: "Platform_setSwapValues" label: "Platform_setSwapValues\n./linux/Platform.h:68:6" shape : ellipse }
+edge: { sourcename: "SwapMeter.c:SwapMeter_updateValues" targetname: "Platform_setSwapValues" label: "SwapMeter.c:32:4" }
+node: { title: "Meter_humanUnit" label: "Meter_humanUnit\nMeter.h:148:5" shape : ellipse }
+edge: { sourcename: "SwapMeter.c:SwapMeter_updateValues" targetname: "Meter_humanUnit" label: "SwapMeter.c:34:14" }
+edge: { sourcename: "SwapMeter.c:SwapMeter_updateValues" targetname: "Meter_humanUnit" label: "SwapMeter.c:39:4" }
+node: { title: "SwapMeter.c:SwapMeter_display" label: "SwapMeter_display\nSwapMeter.c:42:13\n112 bytes (static)" }
+node: { title: "RichString_writeAscii" label: "RichString_writeAscii\nRichString.h:77:5" shape : ellipse }
+edge: { sourcename: "SwapMeter.c:SwapMeter_display" targetname: "RichString_writeAscii" label: "SwapMeter.c:45:4" }
+edge: { sourcename: "SwapMeter.c:SwapMeter_display" targetname: "Meter_humanUnit" label: "SwapMeter.c:46:4" }
+node: { title: "RichString_appendAscii" label: "RichString_appendAscii\nRichString.h:73:5" shape : ellipse }
+edge: { sourcename: "SwapMeter.c:SwapMeter_display" targetname: "RichString_appendAscii" label: "SwapMeter.c:47:4" }
+edge: { sourcename: "SwapMeter.c:SwapMeter_display" targetname: "Meter_humanUnit" label: "SwapMeter.c:48:4" }
+edge: { sourcename: "SwapMeter.c:SwapMeter_display" targetname: "RichString_appendAscii" label: "SwapMeter.c:49:4" }
+edge: { sourcename: "SwapMeter.c:SwapMeter_display" targetname: "RichString_appendAscii" label: "SwapMeter.c:50:4" }
+edge: { sourcename: "SwapMeter.c:SwapMeter_display" targetname: "Meter_humanUnit" label: "SwapMeter.c:53:7" }
+edge: { sourcename: "SwapMeter.c:SwapMeter_display" targetname: "RichString_appendAscii" label: "SwapMeter.c:54:7" }
+edge: { sourcename: "SwapMeter.c:SwapMeter_display" targetname: "RichString_appendAscii" label: "SwapMeter.c:55:7" }
+}

@@ -1,0 +1,5 @@
+graph: { title: "generic/hostname.c"
+node: { title: "Generic_hostname" label: "Generic_hostname\ngeneric/hostname.c:14:6\n32 bytes (static)" }
+node: { title: "gethostname" label: "gethostname\n/usr/include/unistd.h:877:12" shape : ellipse }
+edge: { sourcename: "Generic_hostname" targetname: "gethostname" label: "generic/hostname.c:15:4" }
+}
