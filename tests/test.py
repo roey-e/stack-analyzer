@@ -55,6 +55,24 @@ class HtopTest(unittest.TestCase):
             self.assertIn(node, (node for node, stack_usage in callstack))
         self.assertEqual(EXPECTED_STACK_USAGE, stack_usage)
 
+    def test_joint(self):
+        ci_graphs = []
+        for ci_path in self.SOURCE_DIR.rglob("*.ci"):
+            with open(ci_path) as ci_file:
+                ci_graphs.append(CallgraphInfoGraph.from_text(ci_file.read()))
+
+        joint_ci_graph = nx.compose_all(ci_graphs)
+        weighted_ci_graph = WeightedCallgraph.from_callgraph_info(joint_ci_graph)
+
+        stack_usage = weighted_ci_graph.max_stack_usage()
+        callstack = weighted_ci_graph.max_stack_usage_callstack()
+
+        logging.info(
+            "Max stack usage of %u from the callstack: %s",
+            stack_usage,
+            callstack,
+        )
+
 
 class FactorialTest(unittest.TestCase):
 

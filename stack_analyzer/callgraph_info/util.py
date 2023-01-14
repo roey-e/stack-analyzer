@@ -38,3 +38,6 @@ class ParsedDataclass:
             raise Exception(f"Couldn't parse the line: '{line}'")
 
         return cls(**match.groupdict())
+
+    def as_clean_dict(self) -> typing.Dict[str, typing.Any]:
+        return {k: v for k, v in dataclasses.asdict(self).items() if v is not None}

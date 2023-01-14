@@ -1,5 +1,4 @@
 from collections.abc import Iterable, Iterator
-from functools import reduce
 from itertools import chain
 from typing import List, Optional, Tuple
 
@@ -25,7 +24,7 @@ class WeightedCallgraph(nx.DiGraph):
             dummy_edges.append((dummy_node, node))
 
         for src, dst in chain(graph.edges, dummy_edges):
-            stack_usage = graph.nodes[dst]["stack_usage"] or 0
+            stack_usage = graph.nodes[dst].get("stack_usage", 0)
             weighted_graph.add_edge(src, dst, weight=stack_usage)
 
         weighted_graph.break_cycles()
