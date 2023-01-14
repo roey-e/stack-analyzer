@@ -67,7 +67,7 @@ class HtopTest(unittest.TestCase):
         stack_usage = weighted_ci_graph.max_stack_usage()
         callstack = weighted_ci_graph.max_stack_usage_callstack()
 
-        logging.warning(
+        logging.info(
             "Max stack usage of %u from the callstack: %s",
             stack_usage,
             callstack,
