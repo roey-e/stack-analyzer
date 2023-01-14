@@ -1,4 +1,3 @@
-import dataclasses
 import re
 from typing import ClassVar
 
@@ -13,10 +12,10 @@ class CallgraphInfoGraph(nx.DiGraph):
     TITLE_FORMAT: ClassVar[str] = r"graph: \{ title: \"(?P<title>\S*)\""
 
     def add_node(self, node: CallgraphInfoNode) -> None:
-        super().add_node(node.name, **dataclasses.asdict(node))
+        super().add_node(node.name, **node.as_clean_dict())
 
     def add_edge(self, edge: CallgraphInfoEdge) -> None:
-        super().add_edge(edge.sourcename, edge.targername, **dataclasses.asdict(edge))
+        super().add_edge(edge.sourcename, edge.targername, **edge.as_clean_dict())
 
     @classmethod
     def from_text(cls, text: str) -> "CallgraphInfoGraph":
@@ -34,3 +33,6 @@ class CallgraphInfoGraph(nx.DiGraph):
                 graph.add_edge(CallgraphInfoEdge.from_line(line))
 
         return graph
+
+    def __str__(self) -> str:
+        return f"{self.graph['title']}:\nNodes: {self.nodes(data=True)}\nEdges: {self.edges(data=True)}"
