@@ -12,9 +12,6 @@ class CallgraphInfoGraph(nx.DiGraph):
 
     TITLE_FORMAT: ClassVar[str] = r"graph: \{ title: \"(?P<title>\S*)\""
 
-    def __init__(self, title: str) -> None:
-        super().__init__(title=title)
-
     def add_node(self, node: CallgraphInfoNode) -> None:
         super().add_node(node.name, **dataclasses.asdict(node))
 
@@ -28,7 +25,7 @@ class CallgraphInfoGraph(nx.DiGraph):
         if not match:
             raise Exception(f"Couldn't parse the graph:\n'''{text}'''")
 
-        graph = cls(match.groupdict()["title"])
+        graph = cls(**match.groupdict())
 
         for line in text.splitlines():
             if line.strip().startswith("node"):

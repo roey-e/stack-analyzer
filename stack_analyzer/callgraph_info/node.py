@@ -7,8 +7,8 @@ from .util import ParsedDataclass
 @dataclass
 class CallgraphInfoNode(ParsedDataclass):
     name: str
-    declared_name: str
-    origin: str
+    declared_name: Optional[str] = None
+    origin: Optional[str] = None
     stack_usage: Optional[int] = None
     stack_usage_qualifier: Optional[str] = None
 

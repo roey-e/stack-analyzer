@@ -1,0 +1,8 @@
+graph: { title: "factorial.c"
+node: { title: "factorial" label: "factorial\nfactorial.c:3:5\n48 bytes (static)" }
+edge: { sourcename: "factorial" targetname: "factorial" label: "factorial.c:7:17" }
+node: { title: "main" label: "main\nfactorial.c:12:5\n32 bytes (static)" }
+edge: { sourcename: "main" targetname: "factorial" label: "factorial.c:13:13" }
+node: { title: "printf" label: "printf\n/usr/include/stdio.h:332:12" shape : ellipse }
+edge: { sourcename: "main" targetname: "printf" label: "factorial.c:14:5" }
+}
