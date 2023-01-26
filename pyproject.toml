@@ -6,7 +6,7 @@ build-backend = "hatchling.build"
 name = "stack-analyzer"
 description = ""
 readme = "README.md"
-requires-python = ">=3.7"
+requires-python = ">=3.8"
 license = "MIT"
 keywords = []
 authors = [
