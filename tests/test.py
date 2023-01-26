@@ -4,6 +4,7 @@ import unittest
 from typing import ClassVar
 
 import networkx as nx
+
 from stack_analyzer.callgraph_info.graph import CallgraphInfoGraph
 from stack_analyzer.core import WeightedCallgraph
 

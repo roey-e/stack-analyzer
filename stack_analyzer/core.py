@@ -1,6 +1,5 @@
-from collections.abc import Iterable, Iterator
 from itertools import chain
-from typing import List, Optional, Tuple
+from typing import Iterable, Iterator, List, Optional, Tuple
 
 import networkx as nx
 
