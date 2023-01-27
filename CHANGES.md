@@ -1,3 +1,10 @@
+# v0.0.4
+
+## Misc
+
+* `README.md` update.
+* `CHANGES.md` added.
+
 # v0.0.3
 
 ## Fixes
